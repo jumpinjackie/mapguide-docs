@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Unique features of the .net API | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Unique features of the .net API | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="unique-features-of-the-net-api">Unique features of the .net API</h1>
+
+<p>The MapGuide API for .net provides the following unique features on-top of the standard C++ API surface that is exposed and wrapped by proxy classes in .net.</p>
+<h2 id="property-support">Property support</h2>
+<p>Most <code>Get</code> and <code>Set</code> pairs of methods are encapsulated as standard .net properties</p>
+<h2 id="mgreadonlystream">MgReadOnlyStream</h2>
+<p>The <code>MgByteReader</code> class models a read-only stream of data. However, when interoperating in the .net world such streams are generally represented in the form of <code>System.IO.Stream</code>. Thus, one would have to write stream conversion code to transfer the underlying stream contents from a <code>MgByteReader</code> to a <code>System.IO.Stream</code>.</p>
+<p>The .net API includes a <code>MgReadOnlyStream</code> class to eliminate such boilerplate by provided a <code>System.IO.Stream</code> adapter over the existing <code>MgByteReader</code>.</p>
+<h2 id="net-collection-interface-support">.net collection interface support</h2>
+<p>All collection proxy classes implement the <code>IList&lt;T&gt;</code> interface allowing for instances of your MapGuide collection classes to be passed to anything expecting <code>IList&lt;T&gt;</code>.</p>
+<p>The only exception is <code>MgReadOnlyCollection</code>, which only implements <code>IReadOnlyList&lt;T&gt;</code> given its read-only nature</p>
+<h2 id="library-specific-initialization">Library-specific initialization</h2>
+<p>When using the MapGuide API, you must call <code>MapGuideApi.MgInitializeWebTier(&lt;path to webconfig.ini&gt;)</code> to initialize the API before using it.</p>
+<p>If you are building an application only using the <code>OSGeo.MapGuide.Foundation</code>, <code>OSGeo.MapGuide.Geometry</code> and <code>OSGeo.MapGuide.PlatformBase</code> subsets of the MapGuide API, the <code>MgInitializeWebTier</code> method is not available for you to call, as that is part of the <code>OSGeo.MapGuide.Web</code> module.</p>
+<p>For such cases, the <code>OSGeo.MapGuide.Foundation</code> provides the following methods to initalize only this subset:</p>
+<ul>
+<li><code>FoundationApi.MgInitializeLibrary(string stringResourcesPath, string locale)</code></li>
+<li><code>FoundationApi.MgUninitializeLibrary()</code></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

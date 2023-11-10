@@ -1,0 +1,724 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Filters and Expressions | MapGuide API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Filters and Expressions | MapGuide API Reference ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide API Reference">
+            MapGuide API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="filters-and-expressions">Filters and Expressions</h1>
+
+<p>Use a filter to select a subset of the features in a
+datastore. Filters are used in calls to
+<code>MgFeatureService::SelectFeatures()</code> and
+<code>MgFeatureService::SelectAggregate()</code>. There are two types of
+filters: basic and spatial.</p>
+<h2 id="spatial-filter">Spatial Filter</h2>
+<p>A spatial filter relates two geometries by way of a spatial
+operator. A spatial filter is set by a call to
+<code>MgFeatureQueryOptions::SetSpatialFilter()</code> or
+<code>MgFeatureAggregateOptions::SetSpatialFilter()</code>. These methods
+take 3 arguments: a name which identifies a geometry property
+of a feature in a datastore, a geometry object, and a
+spatial operation identifier. The effect of the filter is to
+select features from the datastore whose geometry property is
+related according to the spatial operator to the geometry
+object argument. For example, if the spatial operator is
+MgFeatureSpatialOperations::Within, and the geometry object's
+WKT representation is <code>POLYGON((0 0, 2 0, 2 2, 0 2, 0 0))</code>,
+then the effect of the filter is to select those features
+which have geometries within this polygon.</p>
+<h2 id="basic-filter">Basic Filter</h2>
+<p>Use non-geometry feature property names, data values, and
+operators to construct a filter string which is passed as an
+argument to the <code>MgFeatureQueryOption::SetFilter()</code> or
+<code>MgFeatureAggregateOptions::SetFilter()</code> method. For example,
+if FEATID is a feature property name, then the filter &quot;FEATID &gt; 20&quot; selects the features whose FEATID has a value greater
+than 20.</p>
+<h2 id="expressions">Expressions</h2>
+<p>Expressions are subcomponents of a basic filter. One
+expression might constitute the entire filter, or several
+expressions can be strung together using operators.</p>
+<h2 id="basic-filter-grammar">Basic Filter Grammar</h2>
+<pre><code>&lt;Filter&gt; ::= '(' Filter ')'
+| &lt;LogicalOperator&gt;
+| &lt;SearchCondition&gt;
+&lt;LogicalOperator&gt; ::= &lt;BinaryLogicalOperator&gt;
+| &lt;UnaryLogicalOperator&gt;
+
+&lt;BinaryLogicalOperator&gt; ::=
+
+&lt;Filter&gt; &lt;BinaryLogicalOperations&gt; &lt;Filter&gt;
+
+&lt;SearchCondition&gt; ::= &lt;InCondition&gt;
+| &lt;ComparisonCondition&gt;
+| &lt;GeometricCondition&gt;
+| &lt;NullCondition&gt;
+
+&lt;InCondition&gt; ::= &lt;Identifier&gt; IN '('
+ValueExpressionCollection ')'
+
+&lt;ValueExpressionCollection&gt; ::= &lt;ValueExpression&gt;
+| &lt;ValueExpressionCollection&gt; ',' &lt;ValueExpression&gt;
+
+&lt;ComparisonCondition&gt; ::=
+
+&lt;Expression&gt; &lt;ComparisonOperations&gt; &lt;Expression&gt;
+
+&lt;GeometricCondition&gt; ::= &lt;SpatialCondition&gt; |
+&lt;DistanceCondition&gt;
+
+&lt;NullCondition&gt; ::= &lt;Identifier&gt; NULL
+
+&lt;SpatialCondition&gt; ::= &lt;Identifier&gt; &lt;SpatialOperations&gt;
+&lt;Expression&gt;
+
+&lt;DistanceCondition&gt; ::= &lt;Identifier&gt; &lt;DistanceOperations&gt;
+&lt;Expression&gt; &lt;distance&gt;
+
+&lt;UnaryLogicalOperator&gt; ::= NOT &lt;Filter&gt;
+
+&lt;BinaryLogicalOperations&gt; ::= AND | OR
+
+&lt;ComparisionOperations&gt; ::= = 
+| &lt;&gt;
+| &gt;
+| &gt;=
+| &lt;
+| &lt;=
+| LIKE
+
+&lt;SpatialOperations&gt; ::= CONTAINS | CROSSES | DISJOINT |
+EQUALS | INTERSECTS | OVERLAPS | TOUCHES | WITHIN | COVEREDBY
+| INSIDE
+
+&lt;DistanceOperations&gt; ::= BEYOND | WITHINDISTANCE
+
+&lt;distance&gt; ::= BEYOND | WITHINDISTANCE
+</code></pre>
+<h2 id="expression-grammar">Expression Grammar</h2>
+<pre><code>&lt;Expression&gt; ::= '(' Expression ')'
+| &lt;UnaryExpression&gt;
+| &lt;BinaryExpression&gt;
+| &lt;Function&gt;
+| &lt;Identifier&gt;
+| &lt;ValueExpression&gt;
+
+&lt;BinaryExpression&gt; ::= &lt;Expression&gt; '+' &lt;Expression&gt;
+| &lt;Expression&gt; '-' &lt;Expression&gt;
+| &lt;Expression&gt; '*' &lt;Expression&gt;
+| &lt;Expression&gt; '/' &lt;Expression&gt;
+
+&lt;ValueExpression&gt; ::= &lt;LiteralValue&gt;
+
+&lt;LiteralValue&gt; ::= &lt;GeometryValue&gt; | &lt;DataValue&gt;
+
+&lt;GeometryValue&gt; ::= GEOMFROMTEXT '(' STRING ')'
+
+&lt;DataValue&gt; ::= TRUE
+| FALSE
+| DATETIME
+| DOUBLE
+| INTEGER
+| STRING
+| BLOB
+| CLOB
+| NULL
+
+&lt;Function&gt; ::= &lt;Identifier&gt; '(' &lt;ExpressionCollection&gt;
+')'
+
+&lt;ExpressionCollection&gt; ::=
+| &lt;Expression&gt;
+| &lt;ExpressionCollection&gt; ',' &lt;Expression&gt;
+
+&lt;Identifier&gt; ::= IDENTIFIER
+
+&lt;UnaryExpression&gt; ::= '-' &lt;Expression&gt;
+</code></pre>
+<h2 id="operator-precedence">Operator Precedence</h2>
+<p>The operator precedence from highest to lowest is:</p>
+<p>Negate NOT
+Multiply Divide
+Add Subtract
+= &lt;&gt; &gt; &gt;= &lt; &lt;=
+AND
+OR</p>
+<h2 id="filter-and-expression-keywords">Filter and Expression Keywords</h2>
+<p>The following case-insensitive keywords are reserved in the
+language. That is, they cannot be used as identifier or
+function names:</p>
+<pre><code>AND BEYOND COMPARE CONTAINS COVEREDBY CROSSES DATA DISJOINT
+DISTANCE EQUALS FALSE GEOMFROMTEXT IN INSIDE INTERSECTS LIKE
+NOT NULL OR OVERLAPS RELATE SPATIAL TIME TIMESTAMP TOUCHES
+TRUE WITHIN WITHINDISTANCE
+</code></pre>
+<h2 id="string">STRING</h2>
+<p>Strings are literal constants enclosed in single quotes. If
+you need to include a single quote character inside a string,
+you can double the character, for example, 'aaa''bbb'.</p>
+<h2 id="identifier">IDENTIFIER</h2>
+<p>An identifier can be any alphanumeric sequence of characters
+other than a keyword. Identifiers can be enclosed in double
+quotes to show special characters and white space. If you
+need to include a double quote character inside an
+identifier, you can double the character, for example
+&quot;abc&quot;&quot;def&quot;.</p>
+<h2 id="integer">INTEGER</h2>
+<p>Integers allow only decimal characters with an optional unary
+minus sign. Unary plus is not supported. If an integer is out
+of the 32-bit precision range, it is converted to floating
+point.</p>
+<h2 id="double">DOUBLE</h2>
+<p>Floating point numbers have a decimal point, can be signed
+(-), and include an optional exponent (e{[0-9]}).</p>
+<h2 id="datetime">DATETIME</h2>
+<p>Date and time are parsed using the standard literal strings:</p>
+<p><code>DATE 'YYYY-MM-DD'</code>
+<code>TIME 'HH:MM:SS[.sss]'</code>
+<code>TIMESTAMP 'YYYY-MM-DD HH:MM:SS[.sss]'</code></p>
+<h2 id="clobblob">CLOB/BLOB</h2>
+<p>These data types are not currently supported. If you need to
+support binary input, use parameters.</p>
+<h2 id="function"><code>&lt;Function&gt;</code></h2>
+<p>Some functions such as ceil, floor, concat, lower, and upper
+take as an argument the value of a property from a single
+feature and return a value related to the property value.</p>
+<p>Some functions such as avg, count, max, min, stddev, and sum
+take as an argument the values of a property from multiple
+features and return a single value related to the values of
+the group of property arguments.</p>
+<table class="RuledTable">
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Double Avg(n)</td>
+    <td>Average value of n, ignoring nulls</td>
+  </tr>
+  <tr>
+    <td>Int64 Ceil(Double)</td>
+    <td>Smallest integer >= Double</td>
+  </tr>
+  <tr>
+    <td>String Concat(Str1, Str2)</td>
+    <td>Concatenates Str1 and Str2</td>
+  </tr>
+  <tr>
+    <td>Int64 Count(expression)</td>
+    <td>Number of features where expression is not null</td>
+  </tr>
+  <tr>
+    <td>Int64 Floor(Double)</td>
+    <td>Largest integer <= Double</td>
+  </tr>
+  <tr>
+    <td>String Lower(Str)</td>
+    <td>Str with all lowercase letters</td>
+  </tr>
+  <tr>
+    <td>Double Min(expression)</td>
+    <td>Minimum value of expression</td>
+  </tr>
+  <tr>
+    <td>Double Max(expression)</td>
+    <td>Maximum value of expression</td>
+  </tr>
+  <tr>
+    <td>Double Stddev(n)</td>
+    <td>Standard deviation of n, ignoring nulls</td>
+  </tr>
+  <tr>
+    <td>Double Sum(n)</td>
+    <td>Sum of values of n</td>
+  </tr>
+  <tr>
+    <td>String Upper(Str)</td>
+    <td>Str with all uppercase letters</td>
+  </tr>
+</table>
+<h2 id="examples">Examples</h2>
+<p>PHP and C# sample code for the setting of filters for select operations is
+presented. The SQL expression equivalent to the PHP and C# code is also
+presented.</p>
+<p>PHP Code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions = new MgFeatureQueryOptions();
+$stringCollection = new MgStringCollection();
+$wktReaderWriter = new MgWktReaderWriter();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">using OSGeo.MapGuide;
+private MgFeatureQueryOptions queryOptions;
+private MgStringCollection stringCollection;
+private MgWktReaderWriter wktReaderWriter;
+private String featClassName = &quot;SdfFeatureClass&quot;;
+private MgResourceIdentifier featureSrcResourceId;
+private MgFeatureService featureService;
+
+stringCollection = new MgStringCollection();
+queryOptions = new MgFeatureQueryOptions();
+// the feature source has already been installed in the repository
+featureSrcResourceId = new MgResourceIdentifier(&quot;Library://PlatformApiDocTests/SdfFeatureClass.FeatureSource&quot;);
+wktReaderWriter = new MgWktReaderWriter();
+</code></pre>
+<h3 id="identifier-null"><code>&lt;Identifier&gt; NULL</code></h3>
+<p>SometimesNULL is a string property. If you have not given a
+value to it when inserting certain features and you apply
+the filter, sometimesNULL NULL, you select those
+features. If you have given a value to it when inserting other
+features and you apply the filter, NOT sometimesNULL
+NULL, you select those other features.</p>
+<pre><code>sqlplus&gt; select sometimesnull from featclass where sometimesnull is null;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;sometimesNULL&quot;);
+$queryOptions-&gt;SetFilter(&quot;sometimesNULL NULL&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;SometimesNull&quot;);
+queryOptions.SetFilter(&quot;SometimesNull NULL&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<pre><code>sqlplus&gt; select sometimesnull from featclass where sometimesnull is not null;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;sometimesNULL&quot;);
+$queryOptions-&gt;SetFilter(&quot;NOT sometimesNULL NULL&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;SometimesNull&quot;);
+queryOptions.SetFilter(&quot;NOT SometimesNull NULL&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="identifier-like-string"><code>&lt;Identifier&gt; LIKE &lt;String&gt;</code></h3>
+<p>Identifier is the name of a property whose type is
+MgPropertyType::String. String contains a pattern. A percent
+character (%) in a pattern matches zero or more characters.
+An underscore character (_) matches one character.</p>
+<p>Description is a string property. There are 2 features with
+this property in the datastore, and the contents of the two
+properties are: &quot;POINT XY (1 1)&quot; and &quot;POLYGON XY ((0 0, 2 0, 2 2, 0 2, 0 0))&quot;.</p>
+<p>The filter, Description LIKE '%POLYGON%', returns
+&quot;POLYGON XY ((0 0, 2 0, 2 2, 0 2, 0 0))&quot;, the filter,
+NOT Description LIKE '%POLYGON%', returns
+&quot;POINT XY (1 1)&quot;, and the filter, Description LIKE
+'%POL_GON%', returns &quot;POLYGON XY ((0 0, 2 0, 2 2, 0
+2, 0 0))&quot;.</p>
+<pre><code>sqlplus&gt; select Description from featclass where Description LIKE '%POLYGON%';
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">$queryOptions-&gt;AddFeatureProperty(&quot;Description&quot;);
+$queryOptions-&gt;SetFilter(&quot;Description LIKE '%POLYGON%'&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;Description&quot;);
+queryOptions.SetFilter(&quot;Description LIKE '%POLYGON%'&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<pre><code>sqlplus&gt; select Description from featclass where Description NOT LIKE '%POLYGON%';
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">$queryOptions-&gt;AddFeatureProperty(&quot;Description&quot;);
+$queryOptions-&gt;SetFilter(&quot;NOT Description LIKE '%POLYGON%'&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;Description&quot;);
+queryOptions.SetFilter(&quot;NOT Description LIKE '%POLYGON%'&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<pre><code>sqlplus&gt; select Description from featclass where Description LIKE '%POL_GON%';
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">$queryOptions-&gt;AddFeatureProperty(&quot;Description&quot;);
+$queryOptions-&gt;SetFilter(&quot;Description LIKE '%POL_GON%'&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;Description&quot;);
+queryOptions.SetFilter(&quot;Description LIKE '%POL_GON%'&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="identifier-in--valueexpressioncollection-"><code>&lt;Identifier&gt; IN ( &lt;ValueExpressionCollection&gt; )</code></h3>
+<p>anInt16 is an Int16 property. In one feature instance the
+value of anInt16 is -7033. If you apply <filter>anInt16 IN
+( -5995, -7033 ), you select this feature.</filter></p>
+<pre><code>sqlplus&gt; select anInt16 from featclass where anInt16 in ( -5995, -7033 );
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;anInt16&quot;);
+$queryOptions-&gt;SetFilter(&quot;anInt16 IN ( -5995, -7033 )&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;anInt16&quot;);
+queryOptions.SetFilter(&quot;anInt16 IN ( -5995, -7033 )&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="identifier----datavalue"><code>&lt;Identifier&gt;  &gt;  &lt;DataValue&gt;</code></h3>
+<p>featid is an identity property. If you apply the filter, featid</p>
+<blockquote>
+<p>20, you select the features whose featid has a
+value &gt; 20. If you apply the filter, featid &gt; 0 AND featid &lt;
+5, you select the features whose featid belongs to
+{ 1, 2, 3, 4}. If you apply the filter, featid &lt; 3 OR featid
+3, you select features whose featid is not 3.</p>
+</blockquote>
+<p>aDateTime is a date property. There is a feature whose
+aDateTime property has the value 9/20/2005::10:9:34:0. If you
+apply the filter, aDateTime &lt; '2005-09-21', you
+select this feature.</p>
+<pre><code>sqlplus&gt; select anInt16 from featclass where adatetime &lt; '21-SEP-05';
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;anInt16&quot;);
+$queryOptions-&gt;SetFilter(&quot;aDateTime &lt; '2005-09-21'&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;anInt16&quot;);
+queryOptions.SetFilter(&quot;aDateTime &lt; '2005-09-21'&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="expression----datavalue"><code>&lt;Expression&gt;  &lt;  &lt;DataValue&gt;</code></h3>
+<p>anInt16 is an Int16 property. Two features have non-NULL
+values for this property. One has a value -7033, and the
+other -5995. If you apply the filter, ( anInt16 + 1000 ) &lt;
+-5995, you select the feature whose anInt16
+property has the value -7033. The parentheses in this filter
+are optional because operator precedence would dictate that
+the filter, anInt16 + 1000 &lt; -5995, is equivalent.</p>
+<pre><code>sqlplus&gt; select anInt16 from featclass where anInt16 + 1000 &lt; -5995;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;anInt16&quot;);
+$queryOptions-&gt;SetFilter(&quot;anInt16 + 1000 &lt; -5995&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;anInt16&quot;);
+queryOptions.SetFilter(&quot;anInt16 + 1000 &lt; -5995&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="functionvalue--datavalue"><code>&lt;FunctionValue&gt; = &lt;DataValue&gt;</code></h3>
+<p>aDouble is a double property. One feature has aDouble
+property with a value of 8103.08393. If you apply
+the filter, ceil(aDouble) = 8104, you select this
+feature.</p>
+<pre><code>sqlplus&gt; select aDouble from featclass where ceil(aDouble) = 8104;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;aDouble&quot;);
+$queryOptions-&gt;SetFilter(&quot;ceil(aDouble) = 8104&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;aDouble&quot;);
+queryOptions.SetFilter(&quot;ceil(aDouble) = 8104&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="group-function">Group Function</h3>
+<p>aDouble is a double property. sum is a group function.
+sum(aDouble) sums the values of the aDouble property taken
+from a group of features.</p>
+<pre><code>sqlplus&gt; select sum(aDouble) from featclass;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-php">&lt;?php
+$queryOptions-&gt;AddComputedProperty(&quot;sumDbl&quot;, &quot;sum(aDouble)&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddComputedProperty(&quot;sumDbl&quot;, &quot;sum(aDouble)&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="ordering">Ordering</h3>
+<p>aDouble is a double property. anInt32Key is the identity
+property. The first example returns aDouble values in
+ascending order, and the second example returns them in
+descending order.</p>
+<h4 id="ascending">Ascending</h4>
+<pre><code>sqlplus&gt; select anint32key,adouble from tuxuniversalclassxy order by adouble ASC;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;aDouble&quot;);
+$queryOptions-&gt;AddFeatureProperty(&quot;anInt32Key&quot;);
+$stringCollection-&gt;Add(&quot;aDouble&quot;);
+$queryOptions-&gt;SetOrderingFilter($stringCollection, MgOrderingOption::Ascending);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;aDouble&quot;);
+queryOptions.AddFeatureProperty(&quot;anInt32Key&quot;);
+stringCollection.Add(&quot;aDouble&quot;);
+queryOptions.SetOrderingFilter(stringCollection, MgOrderingOption::Ascending);
+featureReader = $featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process $featureReader
+featureReader.Close();
+</code></pre>
+<h4 id="descending">Descending</h4>
+<pre><code>sqlplus&gt; select anint32key,adouble from tuxuniversalclassxy order by adouble DESC;
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;aDouble&quot;);
+$queryOptions-&gt;AddFeatureProperty(&quot;anInt32Key&quot;);
+$stringCollection-&gt;Add(&quot;aDouble&quot;);
+$queryOptions-&gt;SetOrderingFilter($stringCollection, MgOrderingOption::Descending);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;aDouble&quot;);
+queryOptions.AddFeatureProperty(&quot;anInt32Key&quot;);
+stringCollection.Add(&quot;aDouble&quot;);
+queryOptions.SetOrderingFilter(stringCollection, MgOrderingOption::Descending);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process $featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="basic-filter-or-spatial-filter">Basic Filter OR Spatial Filter</h3>
+<p>featId is an identity property, and geometry is a geometry
+property. The feature whose featId value is 0 has a geometry
+value of POINT(1 1). The feature whose featid value is 1 has
+a null geometry value. The spatial filter requests features
+whose geometry intersects with POINT(1 1). The following
+select operation returns both of these features. The
+operation can be coded in two ways. The first way uses the
+SetFilter(), SetSpatialFilter() and SetBinaryOperator()
+methods, and the second way uses only the SetFilter() method.</p>
+<pre><code>sqlplus&gt; select a.featId from featclass a where a.featId = 1 or sdo_relate(a.geometry, MDSYS.SDO_GEOMETRY(2001, NULL, MDSYS.SDO_POINT_TYPE(1,1,NULL), NULL, NULL), 'mask=anyinteract') = 'TRUE';
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;featId&quot;);
+$queryOptions-&gt;SetFilter(&quot;featId = 1&quot;);
+$queryOptions-&gt;SetBinaryOperator(false);
+$geometry = $wktReaderWriter-&gt;Read(&quot;POINT(1 1)&quot;);
+$queryOptions-&gt;SetSpatialFilter(&quot;geometry&quot;, $geometry, MgFeatureSpatialOperations::Intersects);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;featId&quot;);
+queryOptions.SetFilter(&quot;featId = 1&quot;);
+queryOptions.SetBinaryOperator(false);
+geometry = wktReaderWriter.Read(&quot;POINT(1 1)&quot;);
+queryOptions.SetSpatialFilter(&quot;geometry&quot;, geometry, MgFeatureSpatialOperations::Intersects);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process $featureReader
+featureReader.Close();
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;featId&quot;);
+$queryOptions-&gt;SetFilter(&quot;(featId = 1) OR (geometry INTERSECTS GEOMFROMTEXT ( 'POINT(1 1)' )&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;featId&quot;);
+geometry = wktReaderWriter.Read(&quot;POINT(1 1)&quot;);
+queryOptions.SetFilter(&quot;(featId = 1) OR (geometry INTERSECTS GEOMFROMTEXT ( 'POINT(1 1)' )&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process $featureReader
+featureReader.Close();
+</code></pre>
+<h3 id="distance-filter">Distance Filter</h3>
+<p>featId is an identity property, and geometry is a geometry
+property. The feature whose featId value is 0 has a geometry
+value of POINT(1 1). The distance filter requests features
+whose geometry is within a distance of 1 from POINT(2 1). The
+following select operation returns the feature whose featId
+is 0.</p>
+<pre><code>sqlplus&gt; select a.featId from featclass a where sdo_within_distance(a.geometry, MDSYS SDO_GEOMETRY(2001, NULL, MDSYS.SDO_POINT_TYPE(2,1 NULL), NULL, NULL), 'distance=1') = 'TRUE';
+</code></pre>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+$queryOptions-&gt;AddFeatureProperty(&quot;featId&quot;);
+$queryOptions-&gt;SetFilter(&quot;geometry WITHINDISTANCE GEOMFROMTEXT ('POINT(2 1)') 1&quot;);
+$featureReader = $featureService-&gt;SelectFeatures($featureSrcResourceId, $featClassName, $queryOptions);
+# process $featureReader
+$featureReader-&gt;Close();
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">queryOptions.AddFeatureProperty(&quot;featId&quot;);
+queryOptions.SetFilter(&quot;geometry WITHINDISTANCE GEOMFROMTEXT ('POINT(2 1)') 1&quot;);
+featureReader = featureService.SelectFeatures(featureSrcResourceId, featClassName, queryOptions);
+// process $featureReader
+featureReader.Close();
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

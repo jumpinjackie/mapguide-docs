@@ -1,0 +1,1367 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgPackageStatusInformation
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgPackageStatusInformation
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgPackageStatusInformation">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgPackageStatusInformation" data-uid="OSGeo.MapGuide.MgPackageStatusInformation" class="text-break">
+    Class MgPackageStatusInformation
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class manages resource package status information.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgPackageStatusInformation : MgSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgPackageStatusInformation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation__ctor_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation__ctor" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.#ctor">
+  MgPackageStatusInformation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Constructs the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPackageStatusInformation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_Dispose_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetApiName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetApiName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetApiName" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetApiName">
+  GetApiName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the name of the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetApiName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The package API name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetAverageOperationTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetAverageOperationTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetAverageOperationTime" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetAverageOperationTime">
+  GetAverageOperationTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the average time (in milliseconds) per operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetAverageOperationTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The average operation time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetEndTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetEndTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetEndTime" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetEndTime">
+  GetEndTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the end time of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDateTime GetEndTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>The package's end time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetErrorMessage_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetErrorMessage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetErrorMessage" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetErrorMessage">
+  GetErrorMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the error message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetErrorMessage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The error message.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetOperationsFailed_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetOperationsFailed*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetOperationsFailed" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetOperationsFailed">
+  GetOperationsFailed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the number of failed operations encountered by the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetOperationsFailed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of failed operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetOperationsReceived_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetOperationsReceived*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetOperationsReceived" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetOperationsReceived">
+  GetOperationsReceived()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the number of operations received from the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetOperationsReceived()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The total number of operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageDate_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageDate*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageDate" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageDate">
+  GetPackageDate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the modification date of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDateTime GetPackageDate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>The package's modification date.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageDescription_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageDescription" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageDescription">
+  GetPackageDescription()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the description of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPackageDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The package description.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageName" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageName">
+  GetPackageName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the name of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPackageName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The package name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageSize_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageSize*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetPackageSize" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetPackageSize">
+  GetPackageSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the size (in bytes) of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetPackageSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The package size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetServerAddress_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetServerAddress*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetServerAddress" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetServerAddress">
+  GetServerAddress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the IP address of the Site server on which the package API is performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetServerAddress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The server name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetServerName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetServerName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetServerName" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetServerName">
+  GetServerName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the name of the Site server on which the package API is performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetServerName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The server name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetStackTrace_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStackTrace*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetStackTrace" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStackTrace">
+  GetStackTrace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the stack trace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStackTrace()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The stack trace.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetStartTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStartTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetStartTime" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStartTime">
+  GetStartTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the start time of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDateTime GetStartTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>The package's start time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetStatusCode_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStatusCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetStatusCode" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStatusCode">
+  GetStatusCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the status code of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStatusCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The package status code</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetStatusMessage_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStatusMessage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetStatusMessage" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetStatusMessage">
+  GetStatusMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the package status message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStatusMessage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The package status message.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_GetUserName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetUserName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_GetUserName" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.GetUserName">
+  GetUserName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the name of the user who performed the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetUserName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The user name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetApiName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetApiName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetApiName_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetApiName(System.String)">
+  SetApiName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the name of the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetApiName(string apiName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the package API.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetEndTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetEndTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetEndTime_OSGeo_MapGuide_MgDateTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetEndTime(OSGeo.MapGuide.MgDateTime)">
+  SetEndTime(MgDateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the end time of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEndTime(MgDateTime endTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endTime</code> <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>End time of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetErrorMessage_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetErrorMessage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetErrorMessage_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetErrorMessage(System.String)">
+  SetErrorMessage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the error message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetErrorMessage(string errorMessage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Error message.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetOperationsFailed_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetOperationsFailed*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetOperationsFailed_System_Int32_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetOperationsFailed(System.Int32)">
+  SetOperationsFailed(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the number of failed operations encountered by the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOperationsFailed(int opsFailed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opsFailed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of failed operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetOperationsReceived_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetOperationsReceived*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetOperationsReceived_System_Int32_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetOperationsReceived(System.Int32)">
+  SetOperationsReceived(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the number of operations received by the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOperationsReceived(int opsReceived)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opsReceived</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Total number of operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageDate_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageDate*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageDate_OSGeo_MapGuide_MgDateTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageDate(OSGeo.MapGuide.MgDateTime)">
+  SetPackageDate(MgDateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the modification date of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPackageDate(MgDateTime packageDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageDate</code> <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>Modification date of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageDescription_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageDescription_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageDescription(System.String)">
+  SetPackageDescription(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the description of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPackageDescription(string packageDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Description of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageName_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageName(System.String)">
+  SetPackageName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the name of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPackageName(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageSize_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageSize*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetPackageSize_System_Int64_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetPackageSize(System.Int64)">
+  SetPackageSize(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the size (in bytes) of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPackageSize(long packageSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Size of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetServerAddress_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetServerAddress*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetServerAddress_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetServerAddress(System.String)">
+  SetServerAddress(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the IP address of the Site server on which the package API is performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetServerAddress(string serverAddress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>IP address of the server.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetServerName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetServerName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetServerName_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetServerName(System.String)">
+  SetServerName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the name of the Site server on which the package API is performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetServerName(string serverName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the server.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetStackTrace_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetStackTrace*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetStackTrace_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetStackTrace(System.String)">
+  SetStackTrace(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the stack trace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStackTrace(string stackTrace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stackTrace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Stack trace.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetStartTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetStartTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetStartTime_OSGeo_MapGuide_MgDateTime_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetStartTime(OSGeo.MapGuide.MgDateTime)">
+  SetStartTime(MgDateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the start time of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStartTime(MgDateTime startTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startTime</code> <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>Start time of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetStatusCode_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetStatusCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetStatusCode_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetStatusCode(System.String)">
+  SetStatusCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the status code of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStatusCode(string statusCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>statusCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Status code of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPackageStatusInformation_SetUserName_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetUserName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPackageStatusInformation_SetUserName_System_String_" data-uid="OSGeo.MapGuide.MgPackageStatusInformation.SetUserName(System.String)">
+  SetUserName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the name of the user who performed the package API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUserName(string userName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the user.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

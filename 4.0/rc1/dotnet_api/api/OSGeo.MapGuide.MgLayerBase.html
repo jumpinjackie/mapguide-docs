@@ -1,0 +1,2221 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgLayerBase
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgLayerBase
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgLayerBase">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgLayerBase" data-uid="OSGeo.MapGuide.MgLayerBase" class="text-break">
+    Class MgLayerBase
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Gets and sets properties of a layer.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgLayerBase : MgNamedSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html">MgNamedSerializable</a></div>
+      <div><span class="xref">MgLayerBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="OSGeo.MapGuide.MgLayer.html">MgLayer</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgPortableLayer.html">MgPortableLayer</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_getCPtr_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.getCPtr(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_swigRelease_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.swigRelease(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase__ctor_" data-uid="OSGeo.MapGuide.MgLayerBase.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase__ctor_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgResourceService_" data-uid="OSGeo.MapGuide.MgLayerBase.#ctor(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgResourceService)">
+  MgLayerBase(MgResourceIdentifier, MgResourceService)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> object from a layer definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayerBase(MgResourceIdentifier layerDefinition, MgResourceService resourceService)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerDefinition</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Identifier of the layer definition in a repository.</p>
+</dd>
+    <dt><code>resourceService</code> <a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a>) An <a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a> that can be used to retrieve the layer definition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_DisplayInLegend_" data-uid="OSGeo.MapGuide.MgLayerBase.DisplayInLegend*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_DisplayInLegend" data-uid="OSGeo.MapGuide.MgLayerBase.DisplayInLegend">
+  DisplayInLegend
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisplayInLegend { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_ExpandInLegend_" data-uid="OSGeo.MapGuide.MgLayerBase.ExpandInLegend*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_ExpandInLegend" data-uid="OSGeo.MapGuide.MgLayerBase.ExpandInLegend">
+  ExpandInLegend
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExpandInLegend { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_FeatureClassName_" data-uid="OSGeo.MapGuide.MgLayerBase.FeatureClassName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_FeatureClassName" data-uid="OSGeo.MapGuide.MgLayerBase.FeatureClassName">
+  FeatureClassName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FeatureClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_FeatureGeometryName_" data-uid="OSGeo.MapGuide.MgLayerBase.FeatureGeometryName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_FeatureGeometryName" data-uid="OSGeo.MapGuide.MgLayerBase.FeatureGeometryName">
+  FeatureGeometryName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FeatureGeometryName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_FeatureSourceId_" data-uid="OSGeo.MapGuide.MgLayerBase.FeatureSourceId*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_FeatureSourceId" data-uid="OSGeo.MapGuide.MgLayerBase.FeatureSourceId">
+  FeatureSourceId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FeatureSourceId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_Filter_" data-uid="OSGeo.MapGuide.MgLayerBase.Filter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_Filter" data-uid="OSGeo.MapGuide.MgLayerBase.Filter">
+  Filter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Filter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_Group_" data-uid="OSGeo.MapGuide.MgLayerBase.Group*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_Group" data-uid="OSGeo.MapGuide.MgLayerBase.Group">
+  Group
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayerGroup Group { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_LayerDefinition_" data-uid="OSGeo.MapGuide.MgLayerBase.LayerDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_LayerDefinition" data-uid="OSGeo.MapGuide.MgLayerBase.LayerDefinition">
+  LayerDefinition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgResourceIdentifier LayerDefinition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_LayerType_" data-uid="OSGeo.MapGuide.MgLayerBase.LayerType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_LayerType" data-uid="OSGeo.MapGuide.MgLayerBase.LayerType">
+  LayerType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LayerType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_LegendLabel_" data-uid="OSGeo.MapGuide.MgLayerBase.LegendLabel*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_LegendLabel" data-uid="OSGeo.MapGuide.MgLayerBase.LegendLabel">
+  LegendLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LegendLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_Name_" data-uid="OSGeo.MapGuide.MgLayerBase.Name*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_Name" data-uid="OSGeo.MapGuide.MgLayerBase.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_Selectable_" data-uid="OSGeo.MapGuide.MgLayerBase.Selectable*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_Selectable" data-uid="OSGeo.MapGuide.MgLayerBase.Selectable">
+  Selectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Selectable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_Visible_" data-uid="OSGeo.MapGuide.MgLayerBase.Visible*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_Visible" data-uid="OSGeo.MapGuide.MgLayerBase.Visible">
+  Visible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_BeginTransaction_" data-uid="OSGeo.MapGuide.MgLayerBase.BeginTransaction*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_BeginTransaction" data-uid="OSGeo.MapGuide.MgLayerBase.BeginTransaction">
+  BeginTransaction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a transaction on the this layer. The FDO provider indicated by the layer's
+Feature Source must support transactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgTransaction BeginTransaction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a> instance (or NULL).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_DeleteFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.DeleteFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_DeleteFeatures_System_String_OSGeo_MapGuide_MgTransaction_" data-uid="OSGeo.MapGuide.MgLayerBase.DeleteFeatures(System.String,OSGeo.MapGuide.MgTransaction)">
+  DeleteFeatures(string, MgTransaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes all features that match the given filter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeleteFeatures(string filter, MgTransaction transaction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The FDO filter string that detemines what features will be deleted</p>
+</dd>
+    <dt><code>transaction</code> <a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a>) An optional transaction to execute this operation under</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the number of features deleted by this operation</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_Dispose_" data-uid="OSGeo.MapGuide.MgLayerBase.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgLayerBase.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_ForceRefresh_" data-uid="OSGeo.MapGuide.MgLayerBase.ForceRefresh*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_ForceRefresh" data-uid="OSGeo.MapGuide.MgLayerBase.ForceRefresh">
+  ForceRefresh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Forces the data for this layer to be refreshed during the
+next map update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceRefresh()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetClassDefinition_" data-uid="OSGeo.MapGuide.MgLayerBase.GetClassDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetClassDefinition" data-uid="OSGeo.MapGuide.MgLayerBase.GetClassDefinition">
+  GetClassDefinition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the class definition for the feature class of the layer.  If the
+feature class of the layer is extended with properties from other feature
+classes, then all those properties are also contained in the returned</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgClassDefinition GetClassDefinition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a> instance for the feature class of the layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetDisplayInLegend_" data-uid="OSGeo.MapGuide.MgLayerBase.GetDisplayInLegend*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetDisplayInLegend" data-uid="OSGeo.MapGuide.MgLayerBase.GetDisplayInLegend">
+  GetDisplayInLegend()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether an entry for the layer should appear in
+the legend.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDisplayInLegend()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the layer should appear in the legend, or
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetExpandInLegend_" data-uid="OSGeo.MapGuide.MgLayerBase.GetExpandInLegend*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetExpandInLegend" data-uid="OSGeo.MapGuide.MgLayerBase.GetExpandInLegend">
+  GetExpandInLegend()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the entry for the layer should initially
+be expanded in the legend, if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetExpandInLegend()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the layer should initially be expanded in the legend, or
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetFeatureClassName_" data-uid="OSGeo.MapGuide.MgLayerBase.GetFeatureClassName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetFeatureClassName" data-uid="OSGeo.MapGuide.MgLayerBase.GetFeatureClassName">
+  GetFeatureClassName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the feature class name associated with this layer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFeatureClassName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the feature class name or an empty string if this layer is not a feature layer
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetFeatureGeometryName_" data-uid="OSGeo.MapGuide.MgLayerBase.GetFeatureGeometryName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetFeatureGeometryName" data-uid="OSGeo.MapGuide.MgLayerBase.GetFeatureGeometryName">
+  GetFeatureGeometryName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the geometry name associated with this layer which is part of
+class definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFeatureGeometryName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the feature geometry name or an empty string if this layer is not a feature layer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetFeatureSourceId_" data-uid="OSGeo.MapGuide.MgLayerBase.GetFeatureSourceId*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetFeatureSourceId" data-uid="OSGeo.MapGuide.MgLayerBase.GetFeatureSourceId">
+  GetFeatureSourceId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the feature source associated with this layer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFeatureSourceId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the feature source or an empty string if this layer is not a feature layer
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetFilter_" data-uid="OSGeo.MapGuide.MgLayerBase.GetFilter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetFilter" data-uid="OSGeo.MapGuide.MgLayerBase.GetFilter">
+  GetFilter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the filter associated with this layer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the filter or an empty string if this layer is not a feature layer or doesn't have filter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetGroup_" data-uid="OSGeo.MapGuide.MgLayerBase.GetGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetGroup" data-uid="OSGeo.MapGuide.MgLayerBase.GetGroup">
+  GetGroup()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the group this layer is organized within.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayerGroup GetGroup()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a> representing the parent group, or
+NULL if the layer does not belong to a group.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetLayerDefinition_" data-uid="OSGeo.MapGuide.MgLayerBase.GetLayerDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetLayerDefinition" data-uid="OSGeo.MapGuide.MgLayerBase.GetLayerDefinition">
+  GetLayerDefinition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the layer's definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgResourceIdentifier GetLayerDefinition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>Returns the resource identifier of the layer's definition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetLayerType_" data-uid="OSGeo.MapGuide.MgLayerBase.GetLayerType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetLayerType" data-uid="OSGeo.MapGuide.MgLayerBase.GetLayerType">
+  GetLayerType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of the layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the type of the layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetLegendLabel_" data-uid="OSGeo.MapGuide.MgLayerBase.GetLegendLabel*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetLegendLabel" data-uid="OSGeo.MapGuide.MgLayerBase.GetLegendLabel">
+  GetLegendLabel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the label to be displayed for the layer in the legend.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLegendLabel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the legend label as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetName_" data-uid="OSGeo.MapGuide.MgLayerBase.GetName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetName" data-uid="OSGeo.MapGuide.MgLayerBase.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the name of the layer as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetObjectId_" data-uid="OSGeo.MapGuide.MgLayerBase.GetObjectId*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetObjectId" data-uid="OSGeo.MapGuide.MgLayerBase.GetObjectId">
+  GetObjectId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a unique identifier for this layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetObjectId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the unique identifier of this map as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetSelectable_" data-uid="OSGeo.MapGuide.MgLayerBase.GetSelectable*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetSelectable" data-uid="OSGeo.MapGuide.MgLayerBase.GetSelectable">
+  GetSelectable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether features on the layer are selectable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSelectable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if features are selectable on this layer, or
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetSpatialContexts_" data-uid="OSGeo.MapGuide.MgLayerBase.GetSpatialContexts*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetSpatialContexts_System_Boolean_" data-uid="OSGeo.MapGuide.MgLayerBase.GetSpatialContexts(System.Boolean)">
+  GetSpatialContexts(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all of the spatial contexts available in the layer or just the active one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgSpatialContextReader GetSpatialContexts(bool bActiveOnly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bActiveOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) This flag is obsolete and no longer used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgSpatialContextReader.html">MgSpatialContextReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgSpatialContextReader.html">MgSpatialContextReader</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_GetVisible_" data-uid="OSGeo.MapGuide.MgLayerBase.GetVisible*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_GetVisible" data-uid="OSGeo.MapGuide.MgLayerBase.GetVisible">
+  GetVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the layer is potentially visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the layer is potentially visible, or false
+otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_InsertFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.InsertFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_InsertFeatures_OSGeo_MapGuide_MgBatchPropertyCollection_OSGeo_MapGuide_MgTransaction_" data-uid="OSGeo.MapGuide.MgLayerBase.InsertFeatures(OSGeo.MapGuide.MgBatchPropertyCollection,OSGeo.MapGuide.MgTransaction)">
+  InsertFeatures(MgBatchPropertyCollection, MgTransaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a set of new features into the specified feature class of the specified Feature Source</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureReader InsertFeatures(MgBatchPropertyCollection properties, MgTransaction transaction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>properties</code> <a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a>) The collection of property values to insert. Each <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a> within this collection represents property values for a single feature to insert</p>
+</dd>
+    <dt><code>transaction</code> <a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a>) An optional transaction to execute this operation under</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a></dt>
+    <dd><p>Returns a feature reader object that contains the set of properties
+inserted into the datastore by the insert command.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_InsertFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.InsertFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_InsertFeatures_OSGeo_MapGuide_MgPropertyCollection_OSGeo_MapGuide_MgTransaction_" data-uid="OSGeo.MapGuide.MgLayerBase.InsertFeatures(OSGeo.MapGuide.MgPropertyCollection,OSGeo.MapGuide.MgTransaction)">
+  InsertFeatures(MgPropertyCollection, MgTransaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a new feature into the specified feature class of the specified Feature Source</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureReader InsertFeatures(MgPropertyCollection properties, MgTransaction transaction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>properties</code> <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a>) The collection of property values to insert</p>
+</dd>
+    <dt><code>transaction</code> <a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a>) An optional transaction to execute this operation under</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a></dt>
+    <dd><p>Returns a feature reader object that contains the set of properties
+inserted into the datastore by the insert command.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_IsVisible_" data-uid="OSGeo.MapGuide.MgLayerBase.IsVisible*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_IsVisible" data-uid="OSGeo.MapGuide.MgLayerBase.IsVisible">
+  IsVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the actual visibility of the layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the layer is actually visible, or false
+otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_NeedsRefresh_" data-uid="OSGeo.MapGuide.MgLayerBase.NeedsRefresh*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_NeedsRefresh" data-uid="OSGeo.MapGuide.MgLayerBase.NeedsRefresh">
+  NeedsRefresh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the data for this layer will be refreshed
+during the next map update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NeedsRefresh()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the layer will be refreshed, or false
+otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SelectAggregate_" data-uid="OSGeo.MapGuide.MgLayerBase.SelectAggregate*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SelectAggregate_OSGeo_MapGuide_MgFeatureAggregateOptions_" data-uid="OSGeo.MapGuide.MgLayerBase.SelectAggregate(OSGeo.MapGuide.MgFeatureAggregateOptions)">
+  SelectAggregate(MgFeatureAggregateOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects groups of features from a feature source and applies
+filters to each of the groups according to the criteria set
+in the <a class="xref" href="OSGeo.MapGuide.MgFeatureAggregateOptions.html">MgFeatureAggregateOptions</a> argument. If you want to
+apply the criteria to all features without grouping them, use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDataReader SelectAggregate(MgFeatureAggregateOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="OSGeo.MapGuide.MgFeatureAggregateOptions.html">MgFeatureAggregateOptions</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgFeatureAggregateOptions.html">MgFeatureAggregateOptions</a>) An <a class="xref" href="OSGeo.MapGuide.MgFeatureAggregateOptions.html">MgFeatureAggregateOptions</a> instance containing all the criteria and filters required for this select operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDataReader.html">MgDataReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgDataReader.html">MgDataReader</a> containing the group values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SelectFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.SelectFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SelectFeatures_OSGeo_MapGuide_MgFeatureQueryOptions_" data-uid="OSGeo.MapGuide.MgLayerBase.SelectFeatures(OSGeo.MapGuide.MgFeatureQueryOptions)">
+  SelectFeatures(MgFeatureQueryOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects features from a feature source according to the
+criteria set in the <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a> argument The
+criteria are applied to all of the features in the feature
+source. If you want to apply the criteria to a subset of the</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureReader SelectFeatures(MgFeatureQueryOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a>) <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a> instance containing all required filters for this select operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a> containing the set of selected
+features.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SelectFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.SelectFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SelectFeatures_OSGeo_MapGuide_MgFeatureQueryOptions_System_String_" data-uid="OSGeo.MapGuide.MgLayerBase.SelectFeatures(OSGeo.MapGuide.MgFeatureQueryOptions,System.String)">
+  SelectFeatures(MgFeatureQueryOptions, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects features from a feature source according to the
+criteria set in the <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a> argument The
+criteria are applied to all of the features in the feature
+source. If you want to apply the criteria to a subset of the</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureReader SelectFeatures(MgFeatureQueryOptions options, string coordinateSystem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a>) <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a> instance containing all required filters for this select operation.</p>
+</dd>
+    <dt><code>coordinateSystem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The WKT string of the coordinate system to transform features to</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a> containing the set of selected
+features.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetDisplayInLegend_" data-uid="OSGeo.MapGuide.MgLayerBase.SetDisplayInLegend*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetDisplayInLegend_System_Boolean_" data-uid="OSGeo.MapGuide.MgLayerBase.SetDisplayInLegend(System.Boolean)">
+  SetDisplayInLegend(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies whether an entry for the layer should appear in the
+legend.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisplayInLegend(bool displayInLegend)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayInLegend</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) True if the layer should appear in the legend, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetGroup_" data-uid="OSGeo.MapGuide.MgLayerBase.SetGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetGroup_OSGeo_MapGuide_MgLayerGroup_" data-uid="OSGeo.MapGuide.MgLayerBase.SetGroup(OSGeo.MapGuide.MgLayerGroup)">
+  SetGroup(MgLayerGroup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies which group this layer is organized within.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroup(MgLayerGroup group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a>) Group this layer is organized within, or NULL to have the layer not belong to any group.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetLayerDefinition_" data-uid="OSGeo.MapGuide.MgLayerBase.SetLayerDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetLayerDefinition_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgResourceService_" data-uid="OSGeo.MapGuide.MgLayerBase.SetLayerDefinition(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgResourceService)">
+  SetLayerDefinition(MgResourceIdentifier, MgResourceService)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the the layer definition for this layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerDefinition(MgResourceIdentifier layerDefinition, MgResourceService resourceService)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerDefinition</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Identifier of the layer definition in a resource repository</p>
+</dd>
+    <dt><code>resourceService</code> <a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a>) An <a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a> that can be used to retrieve the layer definition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetLegendLabel_" data-uid="OSGeo.MapGuide.MgLayerBase.SetLegendLabel*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetLegendLabel_System_String_" data-uid="OSGeo.MapGuide.MgLayerBase.SetLegendLabel(System.String)">
+  SetLegendLabel(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the label to be displayed for the layer in the legend.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLegendLabel(string legendLabel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>legendLabel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Legend label string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetName_" data-uid="OSGeo.MapGuide.MgLayerBase.SetName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetName_System_String_" data-uid="OSGeo.MapGuide.MgLayerBase.SetName(System.String)">
+  SetName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the name of the layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Layer name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetSelectable_" data-uid="OSGeo.MapGuide.MgLayerBase.SetSelectable*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetSelectable_System_Boolean_" data-uid="OSGeo.MapGuide.MgLayerBase.SetSelectable(System.Boolean)">
+  SetSelectable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies whether features on the layer are selectable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectable(bool selectable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) True if features should be selectable on this layer, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_SetVisible_" data-uid="OSGeo.MapGuide.MgLayerBase.SetVisible*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_SetVisible_System_Boolean_" data-uid="OSGeo.MapGuide.MgLayerBase.SetVisible(System.Boolean)">
+  SetVisible(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the layer's potential visibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisible(bool visible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>visible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) True if the layer should be visible, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_UpdateFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.UpdateFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_UpdateFeatures_OSGeo_MapGuide_MgFeatureCommandCollection_" data-uid="OSGeo.MapGuide.MgLayerBase.UpdateFeatures(OSGeo.MapGuide.MgFeatureCommandCollection)">
+  UpdateFeatures(MgFeatureCommandCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the <a class="xref" href="OSGeo.MapGuide.MgDeleteFeatures.html">MgDeleteFeatures</a>, <a class="xref" href="OSGeo.MapGuide.MgInsertFeatures.html">MgInsertFeatures</a>,
+<a class="xref" href="OSGeo.MapGuide.MgUpdateFeatures.html">MgUpdateFeatures</a>, OSGeo.MapGuide.MgLockFeatures or OSGeo.MapGuide.MgUnlockFeatures commands
+contained in the given <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPropertyCollection UpdateFeatures(MgFeatureCommandCollection commands)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>commands</code> <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a>) A collection of feature commands to be executed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a> object. Each property in the
+collection corresponds to a command in the
+<a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> argument. The property name is the
+index of the command in the feature command collection.
+&lt;ul&gt;
+&lt;li&gt;If the command is of type <a class="xref" href="OSGeo.MapGuide.MgDeleteFeatures.html">MgDeleteFeatures</a>, the property
+type is an <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Int32, and its value is the number
+of features deleted.&lt;/li&gt;
+&lt;li&gt;If the command is of type <a class="xref" href="OSGeo.MapGuide.MgInsertFeatures.html">MgInsertFeatures</a>, the property
+type is an <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Feature, and its value is a
+<a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a> object. The feature reader object contains
+the set of properties inserted into the datastore by the
+insert command.&lt;/li&gt;
+&lt;li&gt;If the command is of type <a class="xref" href="OSGeo.MapGuide.MgUpdateFeatures.html">MgUpdateFeatures</a>, the property
+type is <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Int32, and its value is the number of
+features updated.&lt;/li&gt;
+&lt;li&gt;If the command is of type OSGeo.MapGuide.MgLockFeatures, the property
+type is <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Feature, and its value is the number
+of features locked.&lt;/li&gt;
+&lt;li&gt;If the command is of type OSGeo.MapGuide.MgUnLockFeatures, the property
+type is <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Int32, and its value is the number of
+features unlocked.&lt;/li&gt;
+&lt;/ul&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_UpdateFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.UpdateFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_UpdateFeatures_OSGeo_MapGuide_MgFeatureCommandCollection_OSGeo_MapGuide_MgTransaction_" data-uid="OSGeo.MapGuide.MgLayerBase.UpdateFeatures(OSGeo.MapGuide.MgFeatureCommandCollection,OSGeo.MapGuide.MgTransaction)">
+  UpdateFeatures(MgFeatureCommandCollection, MgTransaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the <a class="xref" href="OSGeo.MapGuide.MgDeleteFeatures.html">MgDeleteFeatures</a>, <a class="xref" href="OSGeo.MapGuide.MgInsertFeatures.html">MgInsertFeatures</a>,
+<a class="xref" href="OSGeo.MapGuide.MgUpdateFeatures.html">MgUpdateFeatures</a>, OSGeo.MapGuide.MgLockFeatures or OSGeo.MapGuide.MgUnlockFeatures commands
+contained in the given <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPropertyCollection UpdateFeatures(MgFeatureCommandCollection commands, MgTransaction transaction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>commands</code> <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a>) A collection of feature commands to be executed.</p>
+</dd>
+    <dt><code>transaction</code> <a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a>) An optional transaction to execute this operation under</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a> object. Each property in the
+collection corresponds to a command in the
+<a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> argument. The property name is the
+index of the command in the feature command collection.
+&lt;ul&gt;
+&lt;li&gt;If the command is of type <a class="xref" href="OSGeo.MapGuide.MgDeleteFeatures.html">MgDeleteFeatures</a>, the property
+type is an <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Int32, and its value is the number
+of features deleted.&lt;/li&gt;
+&lt;li&gt;If the command is of type <a class="xref" href="OSGeo.MapGuide.MgInsertFeatures.html">MgInsertFeatures</a>, the property
+type is an <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Feature, and its value is a
+<a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a> object. The feature reader object contains
+the set of properties inserted into the datastore by the
+insert command.&lt;/li&gt;
+&lt;li&gt;If the command is of type <a class="xref" href="OSGeo.MapGuide.MgUpdateFeatures.html">MgUpdateFeatures</a>, the property
+type is <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Int32, and its value is the number of
+features updated.&lt;/li&gt;
+&lt;li&gt;If the command is of type OSGeo.MapGuide.MgLockFeatures, the property
+type is <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Feature, and its value is the number
+of features locked.&lt;/li&gt;
+&lt;li&gt;If the command is of type OSGeo.MapGuide.MgUnLockFeatures, the property
+type is <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>::Int32, and its value is the number of
+features unlocked.&lt;/li&gt;
+&lt;/ul&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerBase_UpdateMatchingFeatures_" data-uid="OSGeo.MapGuide.MgLayerBase.UpdateMatchingFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerBase_UpdateMatchingFeatures_OSGeo_MapGuide_MgPropertyCollection_System_String_OSGeo_MapGuide_MgTransaction_" data-uid="OSGeo.MapGuide.MgLayerBase.UpdateMatchingFeatures(OSGeo.MapGuide.MgPropertyCollection,System.String,OSGeo.MapGuide.MgTransaction)">
+  UpdateMatchingFeatures(MgPropertyCollection, string, MgTransaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates all features that match the given filter with the specified property values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateMatchingFeatures(MgPropertyCollection properties, string filter, MgTransaction transaction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>properties</code> <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a>) The property values to update matching features with</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The FDO filter string that detemines what features will be updated</p>
+</dd>
+    <dt><code>transaction</code> <a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a>) An optional transaction to execute this operation under</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the number of features updated by this operation</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFeatureServiceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidOperationException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFdoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgMapPlot
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgMapPlot
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgMapPlot">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgMapPlot" data-uid="OSGeo.MapGuide.MgMapPlot" class="text-break">
+    Class MgMapPlot
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> class allows the developer to specify the map,
+the view of the map, the plot specification, and the layout
+for one sheet within a call to GenerateMultiPlot.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgMapPlot : MgNamedSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html">MgNamedSerializable</a></div>
+      <div><span class="xref">MgMapPlot</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_getCPtr_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.getCPtr(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_swigRelease_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.swigRelease(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot__ctor_" data-uid="OSGeo.MapGuide.MgMapPlot.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot__ctor_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgCoordinate_System_Double_OSGeo_MapGuide_MgPlotSpecification_OSGeo_MapGuide_MgLayout_" data-uid="OSGeo.MapGuide.MgMapPlot.#ctor(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgCoordinate,System.Double,OSGeo.MapGuide.MgPlotSpecification,OSGeo.MapGuide.MgLayout)">
+  MgMapPlot(MgMap, MgCoordinate, double, MgPlotSpecification, MgLayout)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create and initialize an <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> instance using
+the specified center and scale.  Sets the MapPlotInstruction value
+appropriately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlot(MgMap map, MgCoordinate center, double scale, MgPlotSpecification plotSpec, MgLayout layout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd></dd>
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd></dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot__ctor_" data-uid="OSGeo.MapGuide.MgMapPlot.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot__ctor_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgEnvelope_System_Boolean_OSGeo_MapGuide_MgPlotSpecification_OSGeo_MapGuide_MgLayout_" data-uid="OSGeo.MapGuide.MgMapPlot.#ctor(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgEnvelope,System.Boolean,OSGeo.MapGuide.MgPlotSpecification,OSGeo.MapGuide.MgLayout)">
+  MgMapPlot(MgMap, MgEnvelope, bool, MgPlotSpecification, MgLayout)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create and initialize an <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> instance using
+the specified extents  Sets the MapPlotInstruction value
+appropriately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlot(MgMap map, MgEnvelope extent, bool expandToFit, MgPlotSpecification plotSpec, MgLayout layout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd></dd>
+    <dt><code>extent</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>expandToFit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd></dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot__ctor_" data-uid="OSGeo.MapGuide.MgMapPlot.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot__ctor_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgPlotSpecification_OSGeo_MapGuide_MgLayout_" data-uid="OSGeo.MapGuide.MgMapPlot.#ctor(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgPlotSpecification,OSGeo.MapGuide.MgLayout)">
+  MgMapPlot(MgMap, MgPlotSpecification, MgLayout)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create and initialize an <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> instance using
+the map center and scale. Sets the MapPlotInstruction value
+appropriately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlot(MgMap map, MgPlotSpecification plotSpec, MgLayout layout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd></dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd></dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_Dispose_" data-uid="OSGeo.MapGuide.MgMapPlot.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgMapPlot.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetCenter_" data-uid="OSGeo.MapGuide.MgMapPlot.GetCenter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetCenter" data-uid="OSGeo.MapGuide.MgMapPlot.GetCenter">
+  GetCenter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get view center</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate GetCenter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>The coordinates of the center of the view of map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetExpandToFit_" data-uid="OSGeo.MapGuide.MgMapPlot.GetExpandToFit*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetExpandToFit" data-uid="OSGeo.MapGuide.MgMapPlot.GetExpandToFit">
+  GetExpandToFit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets flag indicating whether extents of the view of the map
+should be expanded to fill the space within the page margins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetExpandToFit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The expand to fit flag.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetExtent_" data-uid="OSGeo.MapGuide.MgMapPlot.GetExtent*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetExtent" data-uid="OSGeo.MapGuide.MgMapPlot.GetExtent">
+  GetExtent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get extents of the view of the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgEnvelope GetExtent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>The extents of the view of the map.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetLayout_" data-uid="OSGeo.MapGuide.MgMapPlot.GetLayout*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetLayout" data-uid="OSGeo.MapGuide.MgMapPlot.GetLayout">
+  GetLayout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the layout.  This value is optional; if null the map will fill
+the entire page area within the margins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayout GetLayout()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetMap_" data-uid="OSGeo.MapGuide.MgMapPlot.GetMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetMap" data-uid="OSGeo.MapGuide.MgMapPlot.GetMap">
+  GetMap()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object to plot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMap GetMap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetMapPlotInstruction_" data-uid="OSGeo.MapGuide.MgMapPlot.GetMapPlotInstruction*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetMapPlotInstruction" data-uid="OSGeo.MapGuide.MgMapPlot.GetMapPlotInstruction">
+  GetMapPlotInstruction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the MapPlotInstruction, which defines how the view of the map
+to be plotted is defined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMapPlotInstruction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The MapPlotInstruction value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetPlotSpecification_" data-uid="OSGeo.MapGuide.MgMapPlot.GetPlotSpecification*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetPlotSpecification" data-uid="OSGeo.MapGuide.MgMapPlot.GetPlotSpecification">
+  GetPlotSpecification()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the plot specification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPlotSpecification GetPlotSpecification()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_GetScale_" data-uid="OSGeo.MapGuide.MgMapPlot.GetScale*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_GetScale" data-uid="OSGeo.MapGuide.MgMapPlot.GetScale">
+  GetScale()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get view scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetScale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The scale of the view of map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_SetCenterAndScale_" data-uid="OSGeo.MapGuide.MgMapPlot.SetCenterAndScale*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_SetCenterAndScale_OSGeo_MapGuide_MgCoordinate_System_Double_" data-uid="OSGeo.MapGuide.MgMapPlot.SetCenterAndScale(OSGeo.MapGuide.MgCoordinate,System.Double)">
+  SetCenterAndScale(MgCoordinate, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the view center and scale of the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCenterAndScale(MgCoordinate center, double scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) The coordinates of the center of the view of the map.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The scale of the view of the map.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_SetExtent_" data-uid="OSGeo.MapGuide.MgMapPlot.SetExtent*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_SetExtent_OSGeo_MapGuide_MgEnvelope_System_Boolean_" data-uid="OSGeo.MapGuide.MgMapPlot.SetExtent(OSGeo.MapGuide.MgEnvelope,System.Boolean)">
+  SetExtent(MgEnvelope, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the extents of the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExtent(MgEnvelope extent, bool expandToFit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extent</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a>) The extents of the map.</p>
+</dd>
+    <dt><code>expandToFit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag indicating whether the extents should be expanded to fill the space within the page margins.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_SetLayout_" data-uid="OSGeo.MapGuide.MgMapPlot.SetLayout*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_SetLayout_OSGeo_MapGuide_MgLayout_" data-uid="OSGeo.MapGuide.MgMapPlot.SetLayout(OSGeo.MapGuide.MgLayout)">
+  SetLayout(MgLayout)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayout(MgLayout layout)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a>) The object defining the layout for the plot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_SetMap_" data-uid="OSGeo.MapGuide.MgMapPlot.SetMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_SetMap_OSGeo_MapGuide_MgMap_" data-uid="OSGeo.MapGuide.MgMapPlot.SetMap(OSGeo.MapGuide.MgMap)">
+  SetMap(MgMap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object to plot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMap(MgMap map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a>) The <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object to plot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_SetMapPlotInstruction_" data-uid="OSGeo.MapGuide.MgMapPlot.SetMapPlotInstruction*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_SetMapPlotInstruction_System_Int32_" data-uid="OSGeo.MapGuide.MgMapPlot.SetMapPlotInstruction(System.Int32)">
+  SetMapPlotInstruction(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the MapPlotInstruction, which defines how the view of the map
+to be plotted is defined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMapPlotInstruction(int plotInstruction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plotInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The enumeration value defining how the view of the map is defined.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlot_SetPlotSpecification_" data-uid="OSGeo.MapGuide.MgMapPlot.SetPlotSpecification*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlot_SetPlotSpecification_OSGeo_MapGuide_MgPlotSpecification_" data-uid="OSGeo.MapGuide.MgMapPlot.SetPlotSpecification(OSGeo.MapGuide.MgPlotSpecification)">
+  SetPlotSpecification(MgPlotSpecification)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the plot specification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlotSpecification(MgPlotSpecification plotSpec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a>) The plot specification.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

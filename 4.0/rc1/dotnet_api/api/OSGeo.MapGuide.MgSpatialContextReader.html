@@ -1,0 +1,932 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgSpatialContextReader
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgSpatialContextReader
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgSpatialContextReader">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgSpatialContextReader" data-uid="OSGeo.MapGuide.MgSpatialContextReader" class="text-break">
+    Class MgSpatialContextReader
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides forward-only, read-only functionality for
+enumerating spatial context information retrieved from a
+feature source.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgSpatialContextReader : MgSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgSpatialContextReader</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_CoordinateSystem_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.CoordinateSystem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_CoordinateSystem" data-uid="OSGeo.MapGuide.MgSpatialContextReader.CoordinateSystem">
+  CoordinateSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CoordinateSystem { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_CoordinateSystemWkt_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.CoordinateSystemWkt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_CoordinateSystemWkt" data-uid="OSGeo.MapGuide.MgSpatialContextReader.CoordinateSystemWkt">
+  CoordinateSystemWkt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CoordinateSystemWkt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_Description_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Description*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_Description" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_Extent_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Extent*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_Extent" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Extent">
+  Extent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader Extent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_ExtentType_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ExtentType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_ExtentType" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ExtentType">
+  ExtentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExtentType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_Name_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Name*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_Name" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_XYTolerance_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.XYTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_XYTolerance" data-uid="OSGeo.MapGuide.MgSpatialContextReader.XYTolerance">
+  XYTolerance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double XYTolerance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_ZTolerance_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ZTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_ZTolerance" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ZTolerance">
+  ZTolerance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZTolerance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_Close_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Close*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_Close" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the SpatialContextReader object, freeing any resources
+it may be holding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_Dispose_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetCoordinateSystem_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetCoordinateSystem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetCoordinateSystem" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetCoordinateSystem">
+  GetCoordinateSystem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the coordinate system of the spatial context
+currently being read. If the result is a null string, the
+coordinate system is unknown to the spatial context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCoordinateSystem()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the coordinate system name or NULL if unknown.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetCoordinateSystemWkt_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetCoordinateSystemWkt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetCoordinateSystemWkt" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetCoordinateSystemWkt">
+  GetCoordinateSystemWkt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the coordinate system currently being read
+in well-known text format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCoordinateSystemWkt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the coordinate system name in OGC WKT format or NULL
+if unknown.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetDescription_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetDescription" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetDescription">
+  GetDescription()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the description of the spatial context currently being read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the description of the spatial context.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetExtent_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetExtent*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetExtent" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetExtent">
+  GetExtent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetExtent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a geometry in AGF</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetExtentType_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetExtentType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetExtentType" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetExtentType">
+  GetExtentType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the extent type of the spatial context currently being
+read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetExtentType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the extent type as an <a class="xref" href="OSGeo.MapGuide.MgSpatialContextExtentType.html">MgSpatialContextExtentType</a>
+value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetName_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetName" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the spatial context currently being read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the name of the spatial context.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetXYTolerance_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetXYTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetXYTolerance" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetXYTolerance">
+  GetXYTolerance()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetXYTolerance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the tolerance value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_GetZTolerance_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetZTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_GetZTolerance" data-uid="OSGeo.MapGuide.MgSpatialContextReader.GetZTolerance">
+  GetZTolerance()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the tolerance value for Z ordinates for the spatial
+context currently being read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetZTolerance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the tolerance value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_IsActive_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.IsActive*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_IsActive" data-uid="OSGeo.MapGuide.MgSpatialContextReader.IsActive">
+  IsActive()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the spatial context currently being read
+is the active spatial context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is deprecated&quot;)]
+public bool IsActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the current spatial context is the active
+one; otherwise returns false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_ReadNext_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ReadNext*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_ReadNext" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ReadNext">
+  ReadNext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Advances the reader to the next spatial context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadNext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if there is a next item; otherwise returns
+false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_Reset_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Reset*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_Reset" data-uid="OSGeo.MapGuide.MgSpatialContextReader.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the SpatialContextReader object to the beginning just</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgSpatialContextReader_ToXml_" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ToXml*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgSpatialContextReader_ToXml" data-uid="OSGeo.MapGuide.MgSpatialContextReader.ToXml">
+  ToXml()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Serializes the spatial context information to XML according</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader ToXml()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the XML
+serialization of the spatial context information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

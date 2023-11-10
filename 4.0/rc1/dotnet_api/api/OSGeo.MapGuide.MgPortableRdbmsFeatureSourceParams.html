@@ -1,0 +1,1207 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgPortableRdbmsFeatureSourceParams
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgPortableRdbmsFeatureSourceParams
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams" class="text-break">
+    Class MgPortableRdbmsFeatureSourceParams
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Portable.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains the parameters used to create a relational feature source. This is the relational
+analogue to the <a class="xref" href="OSGeo.MapGuide.MgFileFeatureSourceParams.html">MgFileFeatureSourceParams</a> class</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgPortableRdbmsFeatureSourceParams : MgFeatureSourceParams, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgFeatureSourceParams.html">MgFeatureSourceParams</a></div>
+      <div><span class="xref">MgPortableRdbmsFeatureSourceParams</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams__ctor_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams__ctor" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.#ctor">
+  MgPortableRdbmsFeatureSourceParams()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an empty <a class="xref" href="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.html">MgPortableRdbmsFeatureSourceParams</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPortableRdbmsFeatureSourceParams()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_Dispose_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetCoordinateSystemName_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetCoordinateSystemName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetCoordinateSystemName" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetCoordinateSystemName">
+  GetCoordinateSystemName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the coordinate system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCoordinateSystemName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the name of the coordinate system</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetCoordinateSystemWkt_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetCoordinateSystemWkt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetCoordinateSystemWkt" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetCoordinateSystemWkt">
+  GetCoordinateSystemWkt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the well-known text description of the coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCoordinateSystemWkt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the OGC WKT description of the coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetDataStore_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetDataStore*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetDataStore" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetDataStore">
+  GetDataStore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the data store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDataStore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the name of the data store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetFeatureSchema_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetFeatureSchema*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetFeatureSchema" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetFeatureSchema">
+  GetFeatureSchema()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the feature schema definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureSchema GetFeatureSchema()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureSchema.html">MgFeatureSchema</a></dt>
+    <dd><p>Returns a feature schema definition object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetIsFdoEnabled_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetIsFdoEnabled*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetIsFdoEnabled" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetIsFdoEnabled">
+  GetIsFdoEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether this data store will be created with FDO metaschema
+tables. These tables have a f_ prefix when the data store is
+inspected by non-FDO tools.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetIsFdoEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The data store extents</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetPassword_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetPassword*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetPassword" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetPassword">
+  GetPassword()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the password connection parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPassword()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the password connection parameter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetProviderName_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetProviderName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetProviderName" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetProviderName">
+  GetProviderName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the FDO provider name of the feature source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetProviderName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the FDO provider name of the feature source.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetService_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetService*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetService" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetService">
+  GetService()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the service name to create the relational data store in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetService()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the service name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetSpatialContextDescription_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetSpatialContextDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetSpatialContextDescription" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetSpatialContextDescription">
+  GetSpatialContextDescription()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the spatial context description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSpatialContextDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the spatial context description.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetSpatialContextExtents_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetSpatialContextExtents*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetSpatialContextExtents" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetSpatialContextExtents">
+  GetSpatialContextExtents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the envelope that all features in this data store will encompass</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgEnvelope GetSpatialContextExtents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>The data store extents</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetSpatialContextName_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetSpatialContextName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetSpatialContextName" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetSpatialContextName">
+  GetSpatialContextName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the user-defined spatial context name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSpatialContextName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the name of the spatial context.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetUsername_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetUsername*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetUsername" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetUsername">
+  GetUsername()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the username connection parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetUsername()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the username connection parameter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetXYTolerance_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetXYTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetXYTolerance" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetXYTolerance">
+  GetXYTolerance()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetXYTolerance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the tolerance used for the X and Y ordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetZTolerance_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetZTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_GetZTolerance" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.GetZTolerance">
+  GetZTolerance()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetZTolerance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the tolerance for the Z ordinate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetCoordinateSystemName_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetCoordinateSystemName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetCoordinateSystemName_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetCoordinateSystemName(System.String)">
+  SetCoordinateSystemName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the name of the coordinate system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCoordinateSystemName(string csName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>csName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetCoordinateSystemWkt_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetCoordinateSystemWkt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetCoordinateSystemWkt_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetCoordinateSystemWkt(System.String)">
+  SetCoordinateSystemWkt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the well-know text string representing the coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCoordinateSystemWkt(string srsWkt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>srsWkt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The OGC WKT string representing the coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetDataStore_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetDataStore*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetDataStore_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetDataStore(System.String)">
+  SetDataStore(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the name of the data store to create</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataStore(string dataStore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataStore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the data store to create</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetFeatureSchema_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetFeatureSchema*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetFeatureSchema_OSGeo_MapGuide_MgFeatureSchema_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetFeatureSchema(OSGeo.MapGuide.MgFeatureSchema)">
+  SetFeatureSchema(MgFeatureSchema)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the feature schema definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFeatureSchema(MgFeatureSchema featureSchema)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>featureSchema</code> <a class="xref" href="OSGeo.MapGuide.MgFeatureSchema.html">MgFeatureSchema</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgFeatureSchema.html">MgFeatureSchema</a>) The feature schema definition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetIsFdoEnabled_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetIsFdoEnabled*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetIsFdoEnabled_System_Boolean_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetIsFdoEnabled(System.Boolean)">
+  SetIsFdoEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets whether the data store will be created with FDO metaschema
+tables. These tables have a f_ prefix when the data store is
+inspected by non-FDO tools.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsFdoEnabled(bool useFdoMetadata)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>useFdoMetadata</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(bool) true to create FDO metaschema tables. false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetPassword_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetPassword*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetPassword_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetPassword(System.String)">
+  SetPassword(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the password connection parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPassword(string pwd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pwd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The password connection parameter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetProviderName_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetProviderName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetProviderName_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetProviderName(System.String)">
+  SetProviderName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the FDO provider name of the feature source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProviderName(string providerName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>providerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The FDO provider name of the feature source without version number. For example, OSGeo.SDF.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetService_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetService*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetService_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetService(System.String)">
+  SetService(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the name of the service to create the relational data store in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetService(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The service name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetSpatialContextDescription_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetSpatialContextDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetSpatialContextDescription_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetSpatialContextDescription(System.String)">
+  SetSpatialContextDescription(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the spatial context description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpatialContextDescription(string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The description of the spatial context.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetSpatialContextExtents_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetSpatialContextExtents*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetSpatialContextExtents_OSGeo_MapGuide_MgEnvelope_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetSpatialContextExtents(OSGeo.MapGuide.MgEnvelope)">
+  SetSpatialContextExtents(MgEnvelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the envelope that all features in this data store will encompass</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpatialContextExtents(MgEnvelope extents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extents</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a>) The data store extents</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetSpatialContextName_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetSpatialContextName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetSpatialContextName_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetSpatialContextName(System.String)">
+  SetSpatialContextName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the user-defined spatial context name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpatialContextName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the spatial context</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetUsername_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetUsername*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetUsername_System_String_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetUsername(System.String)">
+  SetUsername(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the username connection parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUsername(string username)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>username</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The username connection parameter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetXYTolerance_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetXYTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetXYTolerance_System_Double_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetXYTolerance(System.Double)">
+  SetXYTolerance(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetXYTolerance(double tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The tolerance for the X and Y ordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetZTolerance_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetZTolerance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableRdbmsFeatureSourceParams_SetZTolerance_System_Double_" data-uid="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.SetZTolerance(System.Double)">
+  SetZTolerance(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the tolerance for the Z ordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZTolerance(double tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The tolerance for the Z ordinate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

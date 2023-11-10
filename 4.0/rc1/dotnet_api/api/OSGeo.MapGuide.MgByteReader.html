@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgByteReader
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgByteReader
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgByteReader">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgByteReader" data-uid="OSGeo.MapGuide.MgByteReader" class="text-break">
+    Class MgByteReader
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Foundation.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Reads data from a byte source. Once read, the data in the
+reader cannot be reread.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgByteReader : MgSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgByteReader</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgByteReader__ctor_" data-uid="OSGeo.MapGuide.MgByteReader.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader__ctor_System_Byte___System_Int32_System_String_" data-uid="OSGeo.MapGuide.MgByteReader.#ctor(System.Byte[],System.Int32,System.String)">
+  MgByteReader(byte[], int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a byte reader from an array of bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader(byte[] contents, int length, string mimeType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>(Byte[]/byte[]/string) Binary contents for byte reader.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int/int/int) Length of contents.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(string/String/string) Mime type for content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader__ctor_" data-uid="OSGeo.MapGuide.MgByteReader.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader__ctor_System_String_System_String_" data-uid="OSGeo.MapGuide.MgByteReader.#ctor(System.String,System.String)">
+  MgByteReader(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a byte reader from a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader(string contents, string mimeType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(string/String/string) String contents for byte reader.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(string/String/string) Mime type for content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader__ctor_" data-uid="OSGeo.MapGuide.MgByteReader.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader__ctor_System_String_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgByteReader.#ctor(System.String,System.String,System.Boolean)">
+  MgByteReader(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a byte reader from a file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader(string fileName, string mimeType, bool removeFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(string/String/string) Name of file on disk.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(string/String/string) Mime type for content</p>
+</dd>
+    <dt><code>removeFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(bool) Remove file when byte reader is deleted</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_MimeType_" data-uid="OSGeo.MapGuide.MgByteReader.MimeType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_MimeType" data-uid="OSGeo.MapGuide.MgByteReader.MimeType">
+  MimeType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MimeType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_Dispose_" data-uid="OSGeo.MapGuide.MgByteReader.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgByteReader.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_GetLength_" data-uid="OSGeo.MapGuide.MgByteReader.GetLength*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_GetLength" data-uid="OSGeo.MapGuide.MgByteReader.GetLength">
+  GetLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the remaining length of the underlying byte source.
+This length is adjusted for previous reads.  If the returned length is zero
+then the underlying source may be a streaming format and the length
+is not known.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Remaining length of underlying byte source</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_GetMimeType_" data-uid="OSGeo.MapGuide.MgByteReader.GetMimeType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_GetMimeType" data-uid="OSGeo.MapGuide.MgByteReader.GetMimeType">
+  GetMimeType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the mime type of the data in this reader.  See <a class="xref" href="OSGeo.MapGuide.MgMimeType.html">MgMimeType</a>
+for list of possible mime types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetMimeType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string representing the type, for example text/xml</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_IsRewindable_" data-uid="OSGeo.MapGuide.MgByteReader.IsRewindable*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_IsRewindable" data-uid="OSGeo.MapGuide.MgByteReader.IsRewindable">
+  IsRewindable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the reader is rewindable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRewindable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the source is rewindable, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_Read_" data-uid="OSGeo.MapGuide.MgByteReader.Read*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_Read_System_Byte___System_Int32_" data-uid="OSGeo.MapGuide.MgByteReader.Read(System.Byte[],System.Int32)">
+  Read(byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads a buffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Read(byte[] buffer, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>(byte[]/Byte[]/string) A buffer receiving the data.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Maximum number of bytes to read</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Actual number of bytes put in the buffer. 0 means end of bytes</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_Rewind_" data-uid="OSGeo.MapGuide.MgByteReader.Rewind*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_Rewind" data-uid="OSGeo.MapGuide.MgByteReader.Rewind">
+  Rewind()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rewinds to the start of the reader.  Depending on the source of
+the reader, Rewind may not be supported.  Readers sourced from
+true streams cannot be rewound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rewind()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgIoException">MgIoException</a>)  if reader cannot be rewound</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_ToFile_" data-uid="OSGeo.MapGuide.MgByteReader.ToFile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_ToFile_System_String_" data-uid="OSGeo.MapGuide.MgByteReader.ToFile(System.String)">
+  ToFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes the the contents of the reader to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToFile(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgFileIoException">MgFileIoException</a>)  is thrown if file cannot be written</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_ToString_" data-uid="OSGeo.MapGuide.MgByteReader.ToString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_ToString" data-uid="OSGeo.MapGuide.MgByteReader.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the contents of the reader as a string.  The mime
+type must be a text type, for example text/xml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text string of reader contents</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgInvalidArgumentException">MgInvalidArgumentException</a>)  is thrown if the reader does not contain text</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_getCPtr_" data-uid="OSGeo.MapGuide.MgByteReader.getCPtr*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_getCPtr_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgByteReader.getCPtr(OSGeo.MapGuide.MgByteReader)">
+  getCPtr(MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HandleRef getCPtr(MgByteReader obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.handleref">HandleRef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgByteReader_swigRelease_" data-uid="OSGeo.MapGuide.MgByteReader.swigRelease*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgByteReader_swigRelease_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgByteReader.swigRelease(OSGeo.MapGuide.MgByteReader)">
+  swigRelease(MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HandleRef swigRelease(MgByteReader obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.handleref">HandleRef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

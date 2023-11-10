@@ -1,0 +1,954 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgMapPlotCollection
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgMapPlotCollection
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgMapPlotCollection">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgMapPlotCollection" data-uid="OSGeo.MapGuide.MgMapPlotCollection" class="text-break">
+    Class MgMapPlotCollection
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> objects.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgMapPlotCollection : MgSerializable, IDisposable, IList&lt;MgMapPlot&gt;, ICollection&lt;MgMapPlot&gt;, IEnumerable&lt;MgMapPlot&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgMapPlotCollection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection__ctor_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection__ctor" data-uid="OSGeo.MapGuide.MgMapPlotCollection.#ctor">
+  MgMapPlotCollection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an empty <a class="xref" href="OSGeo.MapGuide.MgMapPlotCollection.html">MgMapPlotCollection</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlotCollection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Count_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Count*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Count" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_IsReadOnly_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.IsReadOnly*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_IsReadOnly" data-uid="OSGeo.MapGuide.MgMapPlotCollection.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Item_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Item*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Item_System_Int32_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlot this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Add_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Add*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Add_OSGeo_MapGuide_MgMapPlot_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Add(OSGeo.MapGuide.MgMapPlot)">
+  Add(MgMapPlot)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the specified MapPlot to the end of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(MgMapPlot value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>) <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> to be added to the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Clear_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Clear*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Clear" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all MapPlots from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Contains_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Contains*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Contains_OSGeo_MapGuide_MgMapPlot_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Contains(OSGeo.MapGuide.MgMapPlot)">
+  Contains(MgMapPlot)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the collection contains the specified MapPlot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(MgMapPlot value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>) The <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> to look for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the collection contains the specified MapPlot,
+or false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Contains_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Contains*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Contains_System_String_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Contains(System.String)">
+  Contains(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the collection contains the specified MapPlot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name of the MapPlot.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the collection contains the specified map,
+or false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_CopyTo_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.CopyTo*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_CopyTo_OSGeo_MapGuide_MgMapPlot___System_Int32_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.CopyTo(OSGeo.MapGuide.MgMapPlot[],System.Int32)">
+  CopyTo(MgMapPlot[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(MgMapPlot[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>[]</dt>
+    <dd></dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Dispose_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_GetCount_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetCount*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_GetCount" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetCount">
+  GetCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of MapPlots in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the number of MapPlots.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_GetEnumerator_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetEnumerator*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_GetEnumerator" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;MgMapPlot&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_GetItem_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetItem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_GetItem_System_Int32_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetItem(System.Int32)">
+  GetItem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the MapPlot at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlot GetItem(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Index of the map to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>Returns the specified <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgOutOfRangeException">MgOutOfRangeException</a>)  if the index is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_GetItem_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetItem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_GetItem_System_String_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.GetItem(System.String)">
+  GetItem(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the MapPlot with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMapPlot GetItem(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name of the MapPlot to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>Returns the specified <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgInvalidArgumentException">MgInvalidArgumentException</a>)  if the name does not exist in</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_IndexOf_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.IndexOf*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_IndexOf_OSGeo_MapGuide_MgMapPlot_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.IndexOf(OSGeo.MapGuide.MgMapPlot)">
+  IndexOf(MgMapPlot)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index of the specified MapPlot in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(MgMapPlot value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>) Value of the item to get the index of.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the MapPlot's index if the collection contains the
+specified MapPlot, or false (-1) otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_IndexOf_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.IndexOf*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_IndexOf_System_String_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.IndexOf(System.String)">
+  IndexOf(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index of the specified MapPlot in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name of the MapPlot to get the index of.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the MapPlot's index if the collection contains the
+specified MapPlot, or false (-1) otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Insert_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Insert*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Insert_System_Int32_OSGeo_MapGuide_MgMapPlot_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Insert(System.Int32,OSGeo.MapGuide.MgMapPlot)">
+  Insert(int, MgMapPlot)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a MapPlot at a specified index within the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, MgMapPlot value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Position in the collection to insert the <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>) <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> to be inserted in the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgOutOfRangeException">MgOutOfRangeException</a>)  if the specified index is out of</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_Remove_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Remove*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_Remove_OSGeo_MapGuide_MgMapPlot_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.Remove(OSGeo.MapGuide.MgMapPlot)">
+  Remove(MgMapPlot)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a MapPlot from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(MgMapPlot value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>) <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> to be removed</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if removal was successful.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_RemoveAt_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.RemoveAt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_RemoveAt_System_Int32_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a MapPlot from the collection at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Index of the map to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgOutOfRangeException">MgOutOfRangeException</a>)  if the MapPlot does not exist in the</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMapPlotCollection_SetItem_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.SetItem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMapPlotCollection_SetItem_System_Int32_OSGeo_MapGuide_MgMapPlot_" data-uid="OSGeo.MapGuide.MgMapPlotCollection.SetItem(System.Int32,OSGeo.MapGuide.MgMapPlot)">
+  SetItem(int, MgMapPlot)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the MapPlot in the collection at the specified index to a
+specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetItem(int index, MgMapPlot value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Position in the collection to set the OSGeo.MapGuide.MgMapPot.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a>) <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> to be set in the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgOutOfRangeException">MgOutOfRangeException</a>)  if the index is out of range.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

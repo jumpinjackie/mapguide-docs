@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgFeatureQueryOptions
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgFeatureQueryOptions
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgFeatureQueryOptions">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgFeatureQueryOptions" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions" class="text-break">
+    Class MgFeatureQueryOptions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Use this class to set filter criteria for selecting features</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgFeatureQueryOptions : MgSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgFeatureQueryOptions</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="OSGeo.MapGuide.MgFeatureAggregateOptions.html">MgFeatureAggregateOptions</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions__ctor_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions__ctor" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.#ctor">
+  MgFeatureQueryOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureQueryOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_AddComputedProperty_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.AddComputedProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_AddComputedProperty_System_String_System_String_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.AddComputedProperty(System.String,System.String)">
+  AddComputedProperty(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Define an alias for a computed property and an expression for
+what is to be computed. In this SQL example, &quot;select
+min(aDouble + aSingle) as minF, min(anInt16 + anInt16) as
+minI from featclass;&quot;, minF and minI are computed properties.
+Call this method for each computed property that you add.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddComputedProperty(string aliasName, string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aliasName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the computed property.</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The expression to be associated with the name of the computed property.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the total number of properties added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgInvalidArgumentException">MgInvalidArgumentException</a>)  if aliasName or expression is empty</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_AddFeatureProperty_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.AddFeatureProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_AddFeatureProperty_System_String_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.AddFeatureProperty(System.String)">
+  AddFeatureProperty(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Call this method for each class property whose value you want
+retrieved by the <a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::SelectFeatures() call. Not
+calling this method results in the retrieval of all property
+values for each feature selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFeatureProperty(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the class property to be added.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the total number of properties added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgInvalidArgumentException">MgInvalidArgumentException</a>)  if property name is empty</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_Dispose_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_RemoveComputedProperty_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.RemoveComputedProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_RemoveComputedProperty_System_String_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.RemoveComputedProperty(System.String)">
+  RemoveComputedProperty(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a computed property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveComputedProperty(string aliasName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aliasName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the computed property to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_RemoveFeatureProperty_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.RemoveFeatureProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_RemoveFeatureProperty_System_String_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.RemoveFeatureProperty(System.String)">
+  RemoveFeatureProperty(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a class property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFeatureProperty(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the class property to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_SetBinaryOperator_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetBinaryOperator*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_SetBinaryOperator_System_Boolean_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetBinaryOperator(System.Boolean)">
+  SetBinaryOperator(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this method to join a regular filter with a spatial
+filter An argument of TRUE results in an AND join, and an
+argument of FALSE results in an OR join. The binary operator
+applies only when both the SetFilter() and SetSpatialFilter()
+methods have been called. If both have been called and
+SetBinaryOperator() has not been called, an AND join is
+applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBinaryOperator(bool andOr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>andOr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) If true, apply an AND join; otherwise apply an OR join.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_SetFetchSize_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetFetchSize*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_SetFetchSize_System_Int32_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetFetchSize(System.Int32)">
+  SetFetchSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>For queries that return a large number of objects
+some feature sources support improving performance by setting
+fetch size in order to reduce the number of database server
+round trips required to satisfy the selection criteria.
+Providers that do not use a fetch size will ignore the fetch
+size parameter. This does not affect the actual results of
+queries as it is a performance tuning parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFetchSize(int fetchSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fetchSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The fetch size of query. The query returns all of query results if setting the fetch size to 0.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_SetFilter_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetFilter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_SetFilter_System_String_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetFilter(System.String)">
+  SetFilter(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the filter for this select operation. The filter acts
+like the where clause in an SQL Select statement. Not calling
+this method causes all instances of the feature class to be</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFilter(string filterText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The filter text to be applied.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_SetOrderingFilter_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetOrderingFilter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_SetOrderingFilter_OSGeo_MapGuide_MgStringCollection_System_Int32_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetOrderingFilter(OSGeo.MapGuide.MgStringCollection,System.Int32)">
+  SetOrderingFilter(MgStringCollection, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this method to specify the order (ascending or
+descending) in which the selected features are returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrderingFilter(MgStringCollection orderByProperties, int orderOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>orderByProperties</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a>) The collection of properties to which the ordering option specified in the second parameter is applied.</p>
+</dd>
+    <dt><code>orderOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The ordering option, <a class="xref" href="OSGeo.MapGuide.MgOrderingOption.html">MgOrderingOption</a>::Ascending or <a class="xref" href="OSGeo.MapGuide.MgOrderingOption.html">MgOrderingOption</a>::Descending.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgFeatureQueryOptions_SetSpatialFilter_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetSpatialFilter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgFeatureQueryOptions_SetSpatialFilter_System_String_OSGeo_MapGuide_MgGeometry_System_Int32_" data-uid="OSGeo.MapGuide.MgFeatureQueryOptions.SetSpatialFilter(System.String,OSGeo.MapGuide.MgGeometry,System.Int32)">
+  SetSpatialFilter(string, MgGeometry, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this method to select features whose geometry property
+satisfies the relationship argument to the geometry argument.
+The effect is geometryProperty.spatialOperation(geometryArg).
+By default this filter is joined by the AND operator with the</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpatialFilter(string geometryProperty, MgGeometry geometry, int spatialOperation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>geometryProperty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the geometry property belonging the features selected from the datastore</p>
+</dd>
+    <dt><code>geometry</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The geometry object set in relation to the geometry property.</p>
+</dd>
+    <dt><code>spatialOperation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The spatial operation to perform between the lefthand operand (the geometry property) and the righthand operand (the geometry object). The spatial operation value of is one of the <a class="xref" href="OSGeo.MapGuide.MgFeatureSpatialOperations.html">MgFeatureSpatialOperations</a> types.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

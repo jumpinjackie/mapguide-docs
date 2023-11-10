@@ -1,0 +1,1830 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgRenderingService
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgRenderingService
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgRenderingService">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgRenderingService" data-uid="OSGeo.MapGuide.MgRenderingService" class="text-break">
+    Class MgRenderingService
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class provides services to render a map into an image</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgRenderingService : MgService, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgService.html">MgService</a></div>
+      <div><span class="xref">MgRenderingService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_HasWarnings">MgService.HasWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_GetWarningsObject">MgService.GetWarningsObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_Dispose_" data-uid="OSGeo.MapGuide.MgRenderingService.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgRenderingService.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_QueryFeatureProperties_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatureProperties*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_QueryFeatureProperties_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgStringCollection_OSGeo_MapGuide_MgGeometry_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatureProperties(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgStringCollection,OSGeo.MapGuide.MgGeometry,System.Int32,System.Int32)">
+  QueryFeatureProperties(MgMap, MgStringCollection, MgGeometry, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The QueryFeatureProeprties operation identifies those features that
+meet the specified spatial selection criteria. This operation
+is used to implement WMS feature info and returns property values
+for all features which match the spatial query</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgBatchPropertyCollection QueryFeatureProperties(MgMap map, MgStringCollection layerNames, MgGeometry filterGeometry, int selectionVariant, int maxFeatures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>layerNames</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>Input Active layer names for which to query features</p>
+</dd>
+    <dt><code>filterGeometry</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>Input geometry object specifying the selection area</p>
+</dd>
+    <dt><code>selectionVariant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input selection criterion - integer value corresponding to one of the <a class="xref" href="OSGeo.MapGuide.MgFeatureSpatialOperations.html">MgFeatureSpatialOperations</a> values</p>
+</dd>
+    <dt><code>maxFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input the maximum number of features to return</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a> instance identifying the features that meet the
+selection criteria. Returns null if no features are identified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_QueryFeatureProperties_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatureProperties*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_QueryFeatureProperties_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgStringCollection_OSGeo_MapGuide_MgGeometry_System_Int32_System_String_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatureProperties(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgStringCollection,OSGeo.MapGuide.MgGeometry,System.Int32,System.String,System.Int32,System.Int32)">
+  QueryFeatureProperties(MgMap, MgStringCollection, MgGeometry, int, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The QueryFeatureProperties operation identifies those features that
+meet the specified spatial selection criteria. This operation
+is used to implement WMS feature info and returns property values
+for all features which match the spatial query</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgBatchPropertyCollection QueryFeatureProperties(MgMap map, MgStringCollection layerNames, MgGeometry filterGeometry, int selectionVariant, string featureFilter, int maxFeatures, int layerAttributeFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>layerNames</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>Input Active layer names for which to query features</p>
+</dd>
+    <dt><code>filterGeometry</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>Input geometry object specifying the selection area</p>
+</dd>
+    <dt><code>selectionVariant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input selection criterion - integer value corresponding to one of the <a class="xref" href="OSGeo.MapGuide.MgFeatureSpatialOperations.html">MgFeatureSpatialOperations</a> values</p>
+</dd>
+    <dt><code>featureFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input an XML selection string containing the required feature IDs</p>
+</dd>
+    <dt><code>maxFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input the maximum number of features to return</p>
+</dd>
+    <dt><code>layerAttributeFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input bitmask values - 1=Visible, 2=Selectable, 4=HasTooltips</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a> instance identifying the features that meet the
+selection criteria. Returns null if no features are identified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_QueryFeatures_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_QueryFeatures_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgStringCollection_OSGeo_MapGuide_MgGeometry_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatures(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgStringCollection,OSGeo.MapGuide.MgGeometry,System.Int32,System.Int32)">
+  QueryFeatures(MgMap, MgStringCollection, MgGeometry, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The QueryFeatures operation identifies those features that
+meet the specified spatial selection criteria. This operation
+is used to implement server-side selection. In addition to
+a selection set, this operation returns attribute information
+in case only one feature is selected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureInformation QueryFeatures(MgMap map, MgStringCollection layerNames, MgGeometry filterGeometry, int selectionVariant, int maxFeatures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>layerNames</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>Input Active layer names for which to query features</p>
+</dd>
+    <dt><code>filterGeometry</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>Input geometry object specifying the selection area</p>
+</dd>
+    <dt><code>selectionVariant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input selection criterion - integer value corresponding to one of the <a class="xref" href="OSGeo.MapGuide.MgFeatureSpatialOperations.html">MgFeatureSpatialOperations</a> values</p>
+</dd>
+    <dt><code>maxFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input the maximum number of features to return</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureInformation.html">MgFeatureInformation</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a> instance identifying the features that meet the
+selection criteria. Returns null if no features are identified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_QueryFeatures_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_QueryFeatures_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgStringCollection_OSGeo_MapGuide_MgGeometry_System_Int32_System_String_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.QueryFeatures(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgStringCollection,OSGeo.MapGuide.MgGeometry,System.Int32,System.String,System.Int32,System.Int32)">
+  QueryFeatures(MgMap, MgStringCollection, MgGeometry, int, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The QueryFeatures operation identifies those features that
+meet the specified spatial selection criteria. This operation
+is used to implement server-side selection. In addition to
+a selection set, this operation returns attribute information
+in case only one feature is selected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgFeatureInformation QueryFeatures(MgMap map, MgStringCollection layerNames, MgGeometry filterGeometry, int selectionVariant, string featureFilter, int maxFeatures, int layerAttributeFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>layerNames</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>Input Active layer names for which to query features</p>
+</dd>
+    <dt><code>filterGeometry</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>Input geometry object specifying the selection area</p>
+</dd>
+    <dt><code>selectionVariant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input selection criterion - integer value corresponding to one of the <a class="xref" href="OSGeo.MapGuide.MgFeatureSpatialOperations.html">MgFeatureSpatialOperations</a> values</p>
+</dd>
+    <dt><code>featureFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input an XML selection string containing the required feature IDs</p>
+</dd>
+    <dt><code>maxFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input the maximum number of features to return</p>
+</dd>
+    <dt><code>layerAttributeFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input bitmask values - 1=Visible, 2=Selectable, 4=HasTooltips</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureInformation.html">MgFeatureInformation</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a> instance identifying the features that meet the
+selection criteria. Returns null if no features are identified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderDynamicOverlay_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderDynamicOverlay*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderDynamicOverlay_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_OSGeo_MapGuide_MgRenderingOptions_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderDynamicOverlay(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,OSGeo.MapGuide.MgRenderingOptions)">
+  RenderDynamicOverlay(MgMap, MgSelection, MgRenderingOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders all dynamic layers in the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to a dynamic overlay image
+with a transparent background. The center, scale, size, and layers to be
+rendered are defined by the specified map instance.  The format parameter
+must be set to an image format that supports transparency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderDynamicOverlay(MgMap map, MgSelection selection, MgRenderingOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="OSGeo.MapGuide.MgRenderingOptions.html">MgRenderingOptions</a></dt>
+    <dd><p>Input rendering options</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderDynamicOverlay_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderDynamicOverlay*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderDynamicOverlay_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderDynamicOverlay(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,System.String)">
+  RenderDynamicOverlay(MgMap, MgSelection, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders all dynamic layers in the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to a dynamic overlay image
+with a transparent background. The center, scale, size, and layers to be
+rendered are defined by the specified map instance.  The format parameter
+must be set to an image format that supports transparency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderDynamicOverlay(MgMap map, MgSelection selection, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderDynamicOverlay_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderDynamicOverlay*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderDynamicOverlay_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderDynamicOverlay(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,System.String,System.Boolean)">
+  RenderDynamicOverlay(MgMap, MgSelection, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders all dynamic layers in the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to a dynamic overlay image
+with a transparent background. The center, scale, size, and layers to be
+rendered are defined by the specified map instance.  The format parameter
+must be set to an image format that supports transparency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderDynamicOverlay(MgMap map, MgSelection selection, string format, bool bKeepSelection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_OSGeo_MapGuide_MgCoordinate_System_Double_System_Int32_System_Int32_OSGeo_MapGuide_MgColor_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,OSGeo.MapGuide.MgCoordinate,System.Double,System.Int32,System.Int32,OSGeo.MapGuide.MgColor,System.String)">
+  RenderMap(MgMap, MgSelection, MgCoordinate, double, int, int, MgColor, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, MgCoordinate center, double scale, int width, int height, MgColor backgroundColor, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>Input map center point. Specifies the center point for the map</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input map scale. Specifies the scale for the map</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image width. Specifies the image width in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image height. Specifies the image height in pixels</p>
+</dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input background color. Specifies the map background color</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_OSGeo_MapGuide_MgCoordinate_System_Double_System_Int32_System_Int32_OSGeo_MapGuide_MgColor_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,OSGeo.MapGuide.MgCoordinate,System.Double,System.Int32,System.Int32,OSGeo.MapGuide.MgColor,System.String,System.Boolean)">
+  RenderMap(MgMap, MgSelection, MgCoordinate, double, int, int, MgColor, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, MgCoordinate center, double scale, int width, int height, MgColor backgroundColor, string format, bool bKeepSelection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>Input map center point. Specifies the center point for the map</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input map scale. Specifies the scale for the map</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image width. Specifies the image width in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image height. Specifies the image height in pixels</p>
+</dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input background color. Specifies the map background color</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_OSGeo_MapGuide_MgCoordinate_System_Double_System_Int32_System_Int32_OSGeo_MapGuide_MgColor_System_String_System_Boolean_OSGeo_MapGuide_MgColor_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,OSGeo.MapGuide.MgCoordinate,System.Double,System.Int32,System.Int32,OSGeo.MapGuide.MgColor,System.String,System.Boolean,OSGeo.MapGuide.MgColor)">
+  RenderMap(MgMap, MgSelection, MgCoordinate, double, int, int, MgColor, string, bool, MgColor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, MgCoordinate center, double scale, int width, int height, MgColor backgroundColor, string format, bool bKeepSelection, MgColor selectionColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>Input map center point. Specifies the center point for the map</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input map scale. Specifies the scale for the map</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image width. Specifies the image width in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image height. Specifies the image height in pixels</p>
+</dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input background color. Specifies the map background color</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+    <dt><code>selectionColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input The color to use for rendered selections</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_OSGeo_MapGuide_MgEnvelope_System_Int32_System_Int32_OSGeo_MapGuide_MgColor_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,OSGeo.MapGuide.MgEnvelope,System.Int32,System.Int32,OSGeo.MapGuide.MgColor,System.String)">
+  RenderMap(MgMap, MgSelection, MgEnvelope, int, int, MgColor, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, MgEnvelope extents, int width, int height, MgColor backgroundColor, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>extents</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>Input map extents. Specifies the extents for the map</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image width. Specifies the image width in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image height. Specifies the image height in pixels</p>
+</dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input background color. Specifies the map background color</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_OSGeo_MapGuide_MgEnvelope_System_Int32_System_Int32_OSGeo_MapGuide_MgColor_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,OSGeo.MapGuide.MgEnvelope,System.Int32,System.Int32,OSGeo.MapGuide.MgColor,System.String,System.Boolean)">
+  RenderMap(MgMap, MgSelection, MgEnvelope, int, int, MgColor, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, MgEnvelope extents, int width, int height, MgColor backgroundColor, string format, bool bKeepSelection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>extents</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>Input map extents. Specifies the extents for the map</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image width. Specifies the image width in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input image height. Specifies the image height in pixels</p>
+</dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input background color. Specifies the map background color</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,System.String)">
+  RenderMap(MgMap, MgSelection, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,System.String,System.Boolean)">
+  RenderMap(MgMap, MgSelection, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, string format, bool bKeepSelection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_System_String_System_Boolean_System_Boolean_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,System.String,System.Boolean,System.Boolean)">
+  RenderMap(MgMap, MgSelection, string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, string format, bool bKeepSelection, bool bClip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+    <dt><code>bClip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to clip feature geometry</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMap_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMap_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgSelection_System_String_System_Boolean_System_Boolean_OSGeo_MapGuide_MgColor_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMap(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgSelection,System.String,System.Boolean,System.Boolean,OSGeo.MapGuide.MgColor)">
+  RenderMap(MgMap, MgSelection, string, bool, bool, MgColor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested image format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMap(MgMap map, MgSelection selection, string format, bool bKeepSelection, bool bClip, MgColor selectionColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>selection</code> <a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+    <dd><p>Input map feature selection. Specifies the selected features on the map</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+    <dt><code>bKeepSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to keep the selection</p>
+</dd>
+    <dt><code>bClip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Input true if you want to clip feature geometry</p>
+</dd>
+    <dt><code>selectionColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMapLegend_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMapLegend*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMapLegend_OSGeo_MapGuide_MgMap_System_Int32_System_Int32_OSGeo_MapGuide_MgColor_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMapLegend(OSGeo.MapGuide.MgMap,System.Int32,System.Int32,OSGeo.MapGuide.MgColor,System.String)">
+  RenderMapLegend(MgMap, int, int, MgColor, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the legend for the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> to the requested size and format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderMapLegend(MgMap map, int width, int height, MgColor backgroundColor, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input width of legend image in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input height of legend image in pixels</p>
+</dd>
+    <dt><code>backgroundColor</code> <a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+    <dd><p>Input background color. Specifies the map legend background color</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input image format. Defines the format of the resulting image</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMetatile_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMetatile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMetatile_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_Double_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMetatile(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Double,System.Int32)">
+  RenderMetatile(MgMap, string, int, int, int, int, int, string, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Returns the specified base map tile for the given map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMetatile RenderMetatile(MgMap map, string baseMapLayerGroupName, int tileColumn, int tileRow, int tileWidth, int tileHeight, int tileDpi, string tileImageFormat, double tileExtentOffset, int metaTilingFactor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>tileColumn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>tileRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>tileWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the width of the tile to return.</p>
+</dd>
+    <dt><code>tileHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the height of the tile to return.</p>
+</dd>
+    <dt><code>tileDpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi the tile to return.</p>
+</dd>
+    <dt><code>tileImageFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input</p>
+</dd>
+    <dt><code>tileExtentOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input Specifies the ratio by which the tile to be rendered should be &amp;quot;buffered out&quot;. The tile will be rendered at the specified width multiplied by the given ratio, which will be cropped back to the original requested size after rendering. This is to improve label placement on rendered tiles by giving extra &quot;breathing space&quot; to label placement algorithms.</p>
+</dd>
+    <dt><code>metaTilingFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input The meta-tiling factor. If less than or equal to 1, no meta-tiling is done and the returned meta-tile can be extracted as the orignally requested tile image. If greater than 1, a tile that is m times bigger than the requested tile is rendered (where m is the specified tiling factor) and the raw image frame buffer of this meta-tile is returned instead.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMetatile.html">MgMetatile</a></dt>
+    <dd><p>A meta-tile with sufficient information for the consumer to properly sub-divide this back into sub-tiles of the
+originally requested size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderMetatileXYZ_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMetatileXYZ*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderMetatileXYZ_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_Double_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderMetatileXYZ(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Double,System.Int32,System.Int32)">
+  RenderMetatileXYZ(MgMap, string, int, int, int, int, string, double, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Returns the specified map tile for the given map. Tile structure is
+based on the XYZ tiling scheme used by Google Maps, OpenStreetMap, and
+others</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMetatile RenderMetatileXYZ(MgMap map, string baseMapLayerGroupName, int x, int y, int z, int dpi, string tileImageFormat, double tileExtentOffset, int metaTilingFactor, int retinaScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the zoom level of the tile to return.</p>
+</dd>
+    <dt><code>dpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi of the tile to return.</p>
+</dd>
+    <dt><code>tileImageFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the image format of the tile to return.</p>
+</dd>
+    <dt><code>tileExtentOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input Specifies the ratio by which the tile to be rendered should be &amp;quot;buffered out&quot;. The tile will be rendered at the specified width multiplied by the given ratio, which will be cropped back to the original requested size after rendering. This is to improve label placement on rendered tiles by giving extra &quot;breathing space&quot; to label placement algorithms.</p>
+</dd>
+    <dt><code>metaTilingFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input The meta-tiling factor. If less than or equal to 1, no meta-tiling is done and the returned meta-tile can be extracted as the orignally requested tile image. If greater than 1, a tile that is m times bigger than the requested tile is rendered (where m is the specified tiling factor) and the raw image frame buffer of this meta-tile is returned instead.</p>
+</dd>
+    <dt><code>retinaScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input The scaling factor to apply for &amp;quot;retina&quot; tiles</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMetatile.html">MgMetatile</a></dt>
+    <dd><p>A meta-tile with sufficient information for the consumer to properly sub-divide this back into sub-tiles of the
+originally requested size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTile_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTile_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTile(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32)">
+  RenderTile(MgMap, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified base map tile for the given map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is deprecated&quot;)]
+public MgByteReader RenderTile(MgMap map, string baseMapLayerGroupName, int tileColumn, int tileRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>tileColumn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>tileRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTile_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTile_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTile(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+  RenderTile(MgMap, string, int, int, int, int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified base map tile for the given map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTile(MgMap map, string baseMapLayerGroupName, int tileColumn, int tileRow, int tileWidth, int tileHeight, int tileDpi, string tileImageFormat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>tileColumn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>tileRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>tileWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the width of the tile to return.</p>
+</dd>
+    <dt><code>tileHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the height of the tile to return.</p>
+</dd>
+    <dt><code>tileDpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi the tile to return.</p>
+</dd>
+    <dt><code>tileImageFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTile_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTile_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_Double_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTile(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Double)">
+  RenderTile(MgMap, string, int, int, int, int, int, string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified base map tile for the given map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTile(MgMap map, string baseMapLayerGroupName, int tileColumn, int tileRow, int tileWidth, int tileHeight, int tileDpi, string tileImageFormat, double tileExtentOffset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>tileColumn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>tileRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>tileWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the width of the tile to return.</p>
+</dd>
+    <dt><code>tileHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the height of the tile to return.</p>
+</dd>
+    <dt><code>tileDpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi the tile to return.</p>
+</dd>
+    <dt><code>tileImageFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input</p>
+</dd>
+    <dt><code>tileExtentOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Specifies the ratio by which the tile to be rendered should be &amp;quot;buffered out&quot;. The tile will be rendered at the specified width multiplied by the given ration, which will be cropped back to the original requested size after rendering. This is to improve label placement on rendered tiles by giving extra &quot;breathing space&quot; to label placement algorithms.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTileFromMetaTile_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileFromMetaTile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTileFromMetaTile_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgMetatile_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileFromMetaTile(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgMetatile,System.Int32,System.Int32)">
+  RenderTileFromMetaTile(MgMap, MgMetatile, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Returns the requested sub-tile from the given metatile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTileFromMetaTile(MgMap map, MgMetatile metaTile, int subTileX, int subTileY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>metaTile</code> <a class="xref" href="OSGeo.MapGuide.MgMetatile.html">MgMetatile</a></dt>
+    <dd><p>Input The meta-tile from which a subtile is being requested for</p>
+</dd>
+    <dt><code>subTileX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input The x sub-tile coordinate of the meta-tile to request</p>
+</dd>
+    <dt><code>subTileY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input The y sub-tile coordinate of the meta-tile to request</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The requested sub-tile</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTileMVT_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileMVT*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTileMVT_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileMVT(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+  RenderTileMVT(MgMap, string, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified MVT (Mapbox Vector Tile) for the given map. Tile structure is
+based on the XYZ tiling scheme used by Google Maps, OpenStreetMap, and
+others</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTileMVT(MgMap map, string baseMapLayerGroupName, int x, int y, int z, int dpi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the zoom level of the tile to return.</p>
+</dd>
+    <dt><code>dpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi of the tile to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTileUTFGrid_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileUTFGrid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTileUTFGrid_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileUTFGrid(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+  RenderTileUTFGrid(MgMap, string, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified UTFGrid tile for the given map. Tile structure is
+based on the XYZ tiling scheme used by Google Maps, OpenStreetMap, and
+others</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTileUTFGrid(MgMap map, string baseMapLayerGroupName, int x, int y, int z, int dpi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the zoom level of the tile to return.</p>
+</dd>
+    <dt><code>dpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi of the tile to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTileXYZ_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileXYZ*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTileXYZ_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileXYZ(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32)">
+  RenderTileXYZ(MgMap, string, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified map tile for the given map. Tile structure is
+based on the XYZ tiling scheme used by Google Maps, OpenStreetMap, and
+others</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTileXYZ(MgMap map, string baseMapLayerGroupName, int x, int y, int z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the zoom level of the tile to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTileXYZ_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileXYZ*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTileXYZ_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_String_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileXYZ(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+  RenderTileXYZ(MgMap, string, int, int, int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified map tile for the given map. Tile structure is
+based on the XYZ tiling scheme used by Google Maps, OpenStreetMap, and
+others</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTileXYZ(MgMap map, string baseMapLayerGroupName, int x, int y, int z, int dpi, string tileImageFormat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the zoom level of the tile to return.</p>
+</dd>
+    <dt><code>dpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi of the tile to return.</p>
+</dd>
+    <dt><code>tileImageFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the image format of the tile to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgRenderingService_RenderTileXYZ_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileXYZ*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgRenderingService_RenderTileXYZ_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_Double_System_Int32_" data-uid="OSGeo.MapGuide.MgRenderingService.RenderTileXYZ(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Double,System.Int32)">
+  RenderTileXYZ(MgMap, string, int, int, int, int, string, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the specified map tile for the given map. Tile structure is
+based on the XYZ tiling scheme used by Google Maps, OpenStreetMap, and
+others</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader RenderTileXYZ(MgMap map, string baseMapLayerGroupName, int x, int y, int z, int dpi, string tileImageFormat, double tileExtentOffset, int retinaScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current state of map.</p>
+</dd>
+    <dt><code>baseMapLayerGroupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the name of the baseMapLayerGroup for which to render the tile.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the row index of the tile to return.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the column index of the tile to return.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the zoom level of the tile to return.</p>
+</dd>
+    <dt><code>dpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input Specifies the dpi of the tile to return.</p>
+</dd>
+    <dt><code>tileImageFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input Specifies the image format of the tile to return.</p>
+</dd>
+    <dt><code>tileExtentOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Specifies the ratio by which the tile to be rendered should be &amp;quot;buffered out&quot;. The tile will be rendered at the specified width multiplied by the given ration, which will be cropped back to the original requested size after rendering. This is to improve label placement on rendered tiles by giving extra &quot;breathing space&quot; to label placement algorithms.</p>
+</dd>
+    <dt><code>retinaScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The scaling factor to apply for &amp;quot;retina&quot; tiles</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing the rendered tile image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

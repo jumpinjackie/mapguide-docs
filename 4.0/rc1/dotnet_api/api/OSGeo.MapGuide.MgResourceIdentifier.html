@@ -1,0 +1,877 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgResourceIdentifier
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgResourceIdentifier
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgResourceIdentifier">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgResourceIdentifier" data-uid="OSGeo.MapGuide.MgResourceIdentifier" class="text-break">
+    Class MgResourceIdentifier
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Creates and manipulates resource identifiers.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgResourceIdentifier : MgSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgResourceIdentifier</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier__ctor_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier__ctor_System_String_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.#ctor(System.String)">
+  MgResourceIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize and validate a resource identifier from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgResourceIdentifier(string resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_Name_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Name*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_Name" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_Path_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Path*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_Path" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Path">
+  Path
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Path { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_RepositoryName_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.RepositoryName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_RepositoryName" data-uid="OSGeo.MapGuide.MgResourceIdentifier.RepositoryName">
+  RepositoryName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_RepositoryType_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.RepositoryType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_RepositoryType" data-uid="OSGeo.MapGuide.MgResourceIdentifier.RepositoryType">
+  RepositoryType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RepositoryType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_ResourceType_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.ResourceType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_ResourceType" data-uid="OSGeo.MapGuide.MgResourceIdentifier.ResourceType">
+  ResourceType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResourceType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_Dispose_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_GetName_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_GetName" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts the resource's name from the resource identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the resource name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_GetPath_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetPath*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_GetPath" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetPath">
+  GetPath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts the resource's path from the resource identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the resource's path.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_GetRepositoryName_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetRepositoryName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_GetRepositoryName" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetRepositoryName">
+  GetRepositoryName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts the repository name from a resource's identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetRepositoryName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the repository name. For session repositories, the
+name is the session ID. For library repositories, the name is
+an empty string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_GetRepositoryType_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetRepositoryType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_GetRepositoryType" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetRepositoryType">
+  GetRepositoryType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts the repository type from a resource's identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetRepositoryType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the repository type. Legal repository types are</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_GetResourceType_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetResourceType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_GetResourceType" data-uid="OSGeo.MapGuide.MgResourceIdentifier.GetResourceType">
+  GetResourceType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts the resource's type from the resource identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetResourceType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the resource's type string, as defined in
+<a class="xref" href="OSGeo.MapGuide.MgResourceType.html">MgResourceType</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_SetName_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_SetName_System_String_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetName(System.String)">
+  SetName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the resource name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Resource name. It can contain spaces but cannot contain any of the characters %*:|?&amp;lt;'&amp;&quot;&gt;=</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_SetPath_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetPath*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_SetPath_System_String_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetPath(System.String)">
+  SetPath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the resource path within the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Resource path within the repository. It can contain spaces but cannot contain any of the characters</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_SetRepositoryName_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetRepositoryName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_SetRepositoryName_System_String_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetRepositoryName(System.String)">
+  SetRepositoryName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the repository name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRepositoryName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Repository name. &amp;lt;ul&gt; &lt;li&gt;If the repository is the library, the name must be an empty string.&lt;/li&gt; &lt;li&gt;If the repository is a session repository, the name cannot be empty.&lt;/li&gt; &lt;/ul&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_SetRepositoryType_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetRepositoryType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_SetRepositoryType_System_String_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetRepositoryType(System.String)">
+  SetRepositoryType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the repository type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRepositoryType(string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Repository type string. Legal repository</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_SetResourceType_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetResourceType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_SetResourceType_System_String_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.SetResourceType(System.String)">
+  SetResourceType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the resource type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResourceType(string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_ToString_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.ToString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_ToString" data-uid="OSGeo.MapGuide.MgResourceIdentifier.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the resource identifier into a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns a fully qualified resource specifier string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceIdentifier_Validate_" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Validate*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceIdentifier_Validate" data-uid="OSGeo.MapGuide.MgResourceIdentifier.Validate">
+  Validate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the resource identifier.  This method should be called
+after the identifier has been fully specified by constructor and/or
+Set methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

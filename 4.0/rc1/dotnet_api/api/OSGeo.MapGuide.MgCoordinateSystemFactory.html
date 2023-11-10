@@ -1,0 +1,1340 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgCoordinateSystemFactory
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgCoordinateSystemFactory
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgCoordinateSystemFactory" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory" class="text-break">
+    Class MgCoordinateSystemFactory
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Supports the creation of <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a> objects based on
+a OpenGIS Well-Known Text (WKT) definition of the coordinate
+system. This class is the main entry point for accessing assorted classes
+and functionalities of the Coordinate System API</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgCoordinateSystemFactory : MgGuardDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgCoordinateSystemFactory</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory__ctor_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory__ctor" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.#ctor">
+  MgCoordinateSystemFactory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemFactory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertCoordinateSystemCodeToWkt_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertCoordinateSystemCodeToWkt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertCoordinateSystemCodeToWkt_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertCoordinateSystemCodeToWkt(System.String)">
+  ConvertCoordinateSystemCodeToWkt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the matching coordinate system WKT based on the specified CS-Map
+coordinate system code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConvertCoordinateSystemCodeToWkt(string code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The CS-Map coordinate system code</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The coordinate system WKT string that corresponds to the specified CS-Map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertEpsgCodeToWkt_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertEpsgCodeToWkt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertEpsgCodeToWkt_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertEpsgCodeToWkt(System.Int32)">
+  ConvertEpsgCodeToWkt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the matching coordinate system WKT based on the specified EPSG code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConvertEpsgCodeToWkt(int code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The EPSG code</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The coordinate system WKT string that corresponds to the specified EPSG code</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertWktToCoordinateSystemCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertWktToCoordinateSystemCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertWktToCoordinateSystemCode_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertWktToCoordinateSystemCode(System.String)">
+  ConvertWktToCoordinateSystemCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the matching CS-Map coordinate system code based on the specified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConvertWktToCoordinateSystemCode(string wkt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wkt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The coordinate system WKT string</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The CS-Map coordinate system code that corresponds to the specified WKT</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertWktToEpsgCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertWktToEpsgCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_ConvertWktToEpsgCode_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.ConvertWktToEpsgCode(System.String)">
+  ConvertWktToEpsgCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the matching EPSG code based on the specified coordinate system WKT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConvertWktToEpsgCode(string wkt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wkt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The EPSG code that corresponds to the specified coordinate system WKT string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_Create_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.Create*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_Create_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.Create(System.String)">
+  Create(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a> instance given a definition of
+the coordinate system in OpenGIS Well-Known Text (WKT)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystem Create(string wkt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wkt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) A string defining the coordinate system in OpenGIS WKT format.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a> instance that corresponds to
+the specified WKT definition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_CreateFromCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.CreateFromCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_CreateFromCode_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.CreateFromCode(System.String)">
+  CreateFromCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a> object from the specified CS-Map coordinate
+system code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystem CreateFromCode(string code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The CS-Map coordinate system code</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>The coordinate system</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_Dispose_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_EnumerateCategories_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.EnumerateCategories*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_EnumerateCategories" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.EnumerateCategories">
+  EnumerateCategories()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a list of the available coordinate system categories</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgStringCollection EnumerateCategories()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>A <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a> containing the names of the available coordinate
+system categories</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_EnumerateCoordinateSystems_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.EnumerateCoordinateSystems*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_EnumerateCoordinateSystems_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.EnumerateCoordinateSystems(System.String)">
+  EnumerateCoordinateSystems(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a> containing the properties of each
+coordinate system under the specified category</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgBatchPropertyCollection EnumerateCoordinateSystems(string category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The coordinate system category to enumerate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a></dt>
+    <dd><p>A <a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a> containing the properties of each coordinate system
+under the specified category</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GenericGrid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GenericGrid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GenericGrid_OSGeo_MapGuide_MgCoordinateSystem_OSGeo_MapGuide_MgCoordinateSystem_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GenericGrid(OSGeo.MapGuide.MgCoordinateSystem,OSGeo.MapGuide.MgCoordinateSystem,System.Boolean)">
+  GenericGrid(MgCoordinateSystem, MgCoordinateSystem, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures generic grid object.  A generic grid is one which simply
+draws isolines of one coordinate system (the Grid coordinate system)
+into the drawing space of another (the frame system).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridBase GenericGrid(MgCoordinateSystem pGridCs, MgCoordinateSystem pFrameCs, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pGridCs</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>The grid coordinate system.</p>
+</dd>
+    <dt><code>pFrameCs</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>The frame coordinate system.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on all exceptional conditions.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a></dt>
+    <dd><p>Returns a disposable pointer to the abstract interface class from which the
+generic grid object (and all other grid objects) derive.
+object derive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GenericGrid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GenericGrid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GenericGrid_System_String_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GenericGrid(System.String,System.String,System.Boolean)">
+  GenericGrid(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures generic grid object.  A generic grid is one which simply
+draws isolines of one coordinate system (the Grid coordinate system)
+into the drawing space of another (the frame system).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridBase GenericGrid(string sGridCs, string sFrameCs, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sGridCs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The coordinate system code name of the grid coordinate system.</p>
+</dd>
+    <dt><code>sFrameCs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The coordinate system code name of the frame coordinate system.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on all exceptional conditions.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a></dt>
+    <dd><p>Returns a disposable pointer to the abstract interface class from which the
+generic grid object (and all other grid objects) derive.
+object derive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetBaseLibrary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetBaseLibrary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetBaseLibrary" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetBaseLibrary">
+  GetBaseLibrary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets name of the underlying coordinate system library</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBaseLibrary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the name of the underlying coordinate system library</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetCatalog_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetCatalog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetCatalog" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetCatalog">
+  GetCatalog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system catalog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemCatalog GetCatalog()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCatalog.html">MgCoordinateSystemCatalog</a></dt>
+    <dd><p>Returns the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCatalog.html">MgCoordinateSystemCatalog</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetMgrs_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetMgrs*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetMgrs_System_Double_System_Double_System_Int16_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetMgrs(System.Double,System.Double,System.Int16,System.Boolean)">
+  GetMgrs(double, double, short, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures an MGRS grid object.  The returned object is suitable only
+for use in simple coordinate &lt;-&gt; MGRS string calculations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemMgrs GetMgrs(double dEquatorialRadius, double dEccentricity, short nLetteringScheme, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dEquatorialRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Equatorial radius of the ellipsod upon which conversions to and from MGRS strings are to be based.</p>
+</dd>
+    <dt><code>dEccentricity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Eccentricity of the ellipsod upon which conversions to and from MGRS strings are to be based.</p>
+</dd>
+    <dt><code>nLetteringScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value as defined in the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a> object which specifies the lettering scheme to be used on MGRS string conversions.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on coordinate conversions which fail for any reason.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a></dt>
+    <dd><p>Returns a disposable pointer to an <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a>
+object which is suitable only for MGRS string conversions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetMgrsDatum_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetMgrsDatum*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetMgrsDatum_System_String_System_Int16_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetMgrsDatum(System.String,System.Int16,System.Boolean)">
+  GetMgrsDatum(string, short, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures an MGRS grid object.  The returned object is suitable only
+for use in simple coordinate &lt;-&gt; MGRS string calculations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemMgrs GetMgrsDatum(string sDatumCode, short nLetteringScheme, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sDatumCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Dictionary code name of the datum whose referenced ellipsoid is to be used for all conversions to and from MGRS strings.</p>
+</dd>
+    <dt><code>nLetteringScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value as defined in the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a> object which specifies the lettering scheme to be used on MGRS string conversions.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on coordinate conversions which fail for any reason.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a></dt>
+    <dd><p>Returns a disposable pointer to an <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a>
+object which is suitable only for MGRS string conversions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetMgrsEllipsoid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetMgrsEllipsoid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetMgrsEllipsoid_System_String_System_Int16_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetMgrsEllipsoid(System.String,System.Int16,System.Boolean)">
+  GetMgrsEllipsoid(string, short, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures an MGRS grid object.  The returned object is suitable only
+for use in simple coordinate &lt;-&gt; MGRS string calculations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemMgrs GetMgrsEllipsoid(string sEllipsoidCode, short nLetteringScheme, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sEllipsoidCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Dictionary code name of the ellipsoid upon which conversions to and from MGRS strings are to be based.</p>
+</dd>
+    <dt><code>nLetteringScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value as defined in the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a> object which specifies the lettering scheme to be used on MGRS string conversions.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on coordinate conversions which fail for any reason.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a></dt>
+    <dd><p>Returns a disposable pointer to an <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a>
+object which is suitable only for MGRS string conversions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetTransform_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetTransform*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GetTransform_OSGeo_MapGuide_MgCoordinateSystem_OSGeo_MapGuide_MgCoordinateSystem_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GetTransform(OSGeo.MapGuide.MgCoordinateSystem,OSGeo.MapGuide.MgCoordinateSystem)">
+  GetTransform(MgCoordinateSystem, MgCoordinateSystem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemTransform.html">MgCoordinateSystemTransform</a> that can be used to transform
+coordinates from the source coordinate system to the target coordinate
+system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemTransform GetTransform(MgCoordinateSystem pSource, MgCoordinateSystem pTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pSource</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a>) The source coordinate system</p>
+</dd>
+    <dt><code>pTarget</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a>) The target coordinate system</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemTransform.html">MgCoordinateSystemTransform</a></dt>
+    <dd><p>The coordinate system transform that can be used to transform coordinates</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridBoundary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridBoundary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridBoundary_OSGeo_MapGuide_MgCoordinate_OSGeo_MapGuide_MgCoordinate_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridBoundary(OSGeo.MapGuide.MgCoordinate,OSGeo.MapGuide.MgCoordinate)">
+  GridBoundary(MgCoordinate, MgCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a grid boundary object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridBoundary GridBoundary(MgCoordinate southwest, MgCoordinate northeast)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>southwest</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>The coordinates of the the southwest corner of a rectangular region which represents the grid region. This point MUST indeed be southwest of the coordinate provided by the northeast parameter.</p>
+</dd>
+    <dt><code>northeast</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>The coordinates of the the northeast corner of a rectangular region which represents the grid region. This point MUST indeed be northeast of the coordinate provided by the southwest parameter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBoundary.html">MgCoordinateSystemGridBoundary</a></dt>
+    <dd><p>Returns the grid boundary in the form used by the grid/graticule
+sub-system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridBoundary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridBoundary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridBoundary_OSGeo_MapGuide_MgPolygon_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridBoundary(OSGeo.MapGuide.MgPolygon)">
+  GridBoundary(MgPolygon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a grid boundary object.  Externally, grid objects are in
+viewport coordinates and define the extents of the region within
+which a grid is to be drawn.  Such objects are often simple
+rectangles, but his is not a requirement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridBoundary GridBoundary(MgPolygon boundary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundary</code> <a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a></dt>
+    <dd><p>The grid boundary in the form of a <a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a> with no interior rings.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBoundary.html">MgCoordinateSystemGridBoundary</a></dt>
+    <dd><p>Returns the boundary in the form used by the grid/graticule sub-system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridSpecification_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridSpecification*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridSpecification" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridSpecification">
+  GridSpecification()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MgCoordinateSystemGridSpecification GridSpecification()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridSpecification_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridSpecification*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridSpecification_System_Double_System_Double_System_Int32_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridSpecification(System.Double,System.Double,System.Int32,System.Double)">
+  GridSpecification(double, double, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a grid specification object with all specifications set to
+the values indicated by the supplied parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridSpecification GridSpecification(double increment, double tickIncrement, int unitCode, double curvePrecision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>increment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The distance between grid lines of a grid or graticule. This value is used for both the easting and northing grid lines; and the value must be in the units specified by the unitCode parameter.</p>
+</dd>
+    <dt><code>tickIncrement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The distance between tick marks of a grid or graticule. This value is used for both the easting and northing tick marks; and the value must be in the units specified by the unitCode parameter.</p>
+</dd>
+    <dt><code>unitCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>One of the values defined by the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemUnitCode.html">MgCoordinateSystemUnitCode</a> object which indicates the units in which the increment, &amp;lt;c&gt;tickIncrement, and curvePrecision parameters are specified.</p>
+</dd>
+    <dt><code>curvePrecision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>In the units indicated by the unitCode parameter, the desired maximum distance between the true complex curve and the multi-segment approximation of the complex curve of any grid or graticule line generated using this specification.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a></dt>
+    <dd><p>A fully initialized grid specification object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridSpecification_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridSpecification*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_GridSpecification_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.GridSpecification(System.Int32,System.Int32)">
+  GridSpecification(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a grid specification object with all specifications set to
+the values indicated by the supplied parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridSpecification GridSpecification(int gridType, int gridLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value defined by the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecializationType.html">MgCoordinateSystemGridSpecializationType</a> object which indicates the Type of specialized grid desired.</p>
+</dd>
+    <dt><code>gridLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value which indicates the density of the grid desired. The exact value of this parameter is dependent upon the value of the gridType argument. See Remarks below.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a></dt>
+    <dd><p>Returns a fully initialized grid specification structure.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_IsValid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.IsValid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_IsValid_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.IsValid(System.String)">
+  IsValid(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether the specified coordinate system WKT string is a valid one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid(string wkt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wkt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the specified WKT is valid. Returns false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_MgrsGrid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.MgrsGrid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_MgrsGrid_OSGeo_MapGuide_MgCoordinateSystem_System_Boolean_System_Int16_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.MgrsGrid(OSGeo.MapGuide.MgCoordinateSystem,System.Boolean,System.Int16,System.Boolean)">
+  MgrsGrid(MgCoordinateSystem, bool, short, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures an MGRS grid object which is suitable for generating an
+actual MGRS grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridBase MgrsGrid(MgCoordinateSystem pFrameCs, bool bUseFrameDatum, short nLetteringScheme, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pFrameCs</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+    <dd><p>The frame coordinate system.</p>
+</dd>
+    <dt><code>bUseFrameDatum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true causes the frame datum to be used for all geodetic calculations neccessary to generate the grid; otherwise WGS84 is assumed.</p>
+</dd>
+    <dt><code>nLetteringScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value as defined in the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a> object which specifies the lettering scheme to be used on MGRS string conversions.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on coordinate conversions which fail for any reason. This applies only to MGRS string conversions.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a></dt>
+    <dd><p>Returns a disposable pointer to the abstract interface class from which the
+MGRS grid object (and all other grid objects) derive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemFactory_MgrsGrid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.MgrsGrid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemFactory_MgrsGrid_System_String_System_Boolean_System_Int16_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemFactory.MgrsGrid(System.String,System.Boolean,System.Int16,System.Boolean)">
+  MgrsGrid(string, bool, short, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manufactures an MGRS grid object which is suitable for generating an
+actual MGRS grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGridBase MgrsGrid(string sFrameCs, bool bUseFrameDatum, short nLetteringScheme, bool bSetExceptionsOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sFrameCs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The dictionary code name of the frame coordinate system.</p>
+</dd>
+    <dt><code>bUseFrameDatum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true causes the frame datum to be used for all geodetic calculations neccessary to generate the grid; otherwise WGS84 is assumed.</p>
+</dd>
+    <dt><code>nLetteringScheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value as defined in the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a> object which specifies the lettering scheme to be used on MGRS string conversions.</p>
+</dd>
+    <dt><code>bSetExceptionsOn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true indicates that exceptions are to be thrown on coordinate conversions which fail for any reason. This applies only to MGRS string conversions.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a></dt>
+    <dd><p>Returns a disposable pointer to the abstract interface class from which the
+MGRS grid object (and all other grid objects) derive.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3418 @@
+{
+  "source_base_path": "C:/Workspace/mg-4.0/MgDev/Doc/dotnet_api",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.GetByteReaderMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.GetByteReaderMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.ManagedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.ManagedException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MapGuideApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MapGuideApi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgAgfReaderWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgAgfReaderWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgAggregateGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgAggregateGeometry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgArcSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgArcSegment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgBatchPropertyCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgBatchPropertyCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgBlobProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgBlobProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgBooleanProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgBooleanProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgByteProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgByteProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgByteReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgByteReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgByteSink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgByteSink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgByteSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgByteSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgClassDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgClassDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgClassDefinitionCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgClassDefinitionCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgClobProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgClobProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgConfigProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgConfigProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateDimension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateDimension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateIterator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSpace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSpace.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCatalog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCatalog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCategory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCategoryDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCategoryDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCodeFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemCodeFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDatum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDatum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDatumDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDatumDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDictionaryBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDictionaryBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDictionaryUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemDictionaryUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEllipsoid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEllipsoid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEllipsoidDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEllipsoidDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEnumInteger32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemEnumInteger32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemErrorCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFilterInteger32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFilterInteger32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFormatConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemFormatConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticAnalyticalTransformDefParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticAnalyticalTransformDefParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticAnalyticalTransformationMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticAnalyticalTransformationMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticInterpolationTransformDefParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticInterpolationTransformDefParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticMultipleRegressionTransformDefParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticMultipleRegressionTransformDefParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticMultipleRegressionTransformationMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticMultipleRegressionTransformationMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticPath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticPathDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticPathDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticPathElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticPathElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticStandaloneTransformDefParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticStandaloneTransformDefParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticStandaloneTransformationMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticStandaloneTransformationMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFileFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFileFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformationMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformationMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridBoundary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridBoundary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridLineCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridLineCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridOrientation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridOrientation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridRegion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridRegionCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridRegionCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridSpecializationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridSpecializationType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridSpecification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridTick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridTick.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridTickCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemGridTickCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMathComparator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMathComparator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMeasure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMeasure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrsGridLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrsGridLevel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrsGridSquarePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrsGridSquarePosition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionFormatType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionFormatType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionLogicalType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionLogicalType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionParameterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemProjectionParameterType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemUnitCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemUnitCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemUnitInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemUnitInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemUnitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemUnitType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemWktFlavor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateSystemWktFlavor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateXY.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateXY.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateXYM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateXYM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateXYZ.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateXYZ.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCoordinateXYZM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCoordinateXYZM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurvePolygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurvePolygon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurvePolygonCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurvePolygonCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurveRing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurveRing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurveRingCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurveRingCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurveSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurveSegment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurveSegmentCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurveSegmentCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurveString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurveString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgCurveStringCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgCurveStringCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDataPropertyDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDataPropertyDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDataReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDataReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDateTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDateTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDateTimeProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDateTimeProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDeleteFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDeleteFeatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDisposable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDisposableCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDisposableCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDoubleProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDoubleProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDrawingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDrawingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgDwfVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgDwfVersion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgEnvelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgEnvelope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgExceptionCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgExceptionCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureAggregateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureAggregateOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureCommandCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureCommandCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureCommandType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureCommandType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureGeometricType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureGeometricType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeaturePropertyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeaturePropertyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureQueryOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureQueryOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureSchema.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureSchemaCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureSchemaCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureSourceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureSourceParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFeatureSpatialOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFeatureSpatialOperations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgFileFeatureSourceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgFileFeatureSourceParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeoJsonWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeoJsonWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometricEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometricEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometricPathInstructionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometricPathInstructionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometricPropertyDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometricPropertyDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryComponentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryComponentType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryEntityType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryEntityType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometrySimplificationAlgorithmType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometrySimplificationAlgorithmType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometrySimplifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometrySimplifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGeometryTypeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGeometryTypeInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGuardDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGuardDisposable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgGwsFeatureReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgGwsFeatureReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpHeader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpPrimitiveValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpPrimitiveValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpRequestMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpRequestMetadata.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpRequestParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpRequestParam.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgHttpResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgHttpResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgImageFormats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgImageFormats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgInsertFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgInsertFeatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgInt16Property.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgInt16Property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgInt32Property.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgInt32Property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgInt64Property.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgInt64Property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgIntCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgIntCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgKmlService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgKmlService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayerBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayerCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayerCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayerGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayerGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayerGroupCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayerGroupCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayerGroupType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayerGroupType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLineString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLineString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLineStringCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLineStringCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLinearRing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLinearRing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLinearRingCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLinearRingCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLinearSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLinearSegment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLocalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLocalizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLogFileType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLogFileType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgLongTransactionReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgLongTransactionReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMap.WatermarkUsageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMap.WatermarkUsageType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMapBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMapBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMapCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMapCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMapPlot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMapPlot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMapPlotCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMapPlotCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMapPlotInstruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMapPlotInstruction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMappingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMappingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMeasure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMeasure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMetatile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMetatile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMimeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMimeType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMultiCurvePolygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMultiCurvePolygon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMultiCurveString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMultiCurveString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMultiGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMultiGeometry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMultiLineString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMultiLineString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMultiPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMultiPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgMultiPolygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgMultiPolygon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgNamedSerializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgNamedSerializable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgNullableProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgNullableProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgObjectPropertyDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgObjectPropertyDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgObjectPropertyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgObjectPropertyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgOrderingOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgOrderingOption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPackageStatusInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPackageStatusInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPageUnitsType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPageUnitsType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgParameterCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgParameterCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgParameterDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgParameterDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPlotSpecification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPlotSpecification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPointCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPointCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPolygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPolygon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPolygonCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPolygonCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableDrawingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableDrawingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableDwfVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableDwfVersion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableExceptionCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableExceptionCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableFeatureInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableFeatureInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableFeatureService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableFeatureService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableImageFormats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableImageFormats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableLayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableMap.WatermarkUsageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableMap.WatermarkUsageType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableMapPlot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableMapPlot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableMapPlotCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableMapPlotCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableMapPlotInstruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableMapPlotInstruction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableMappingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableMappingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortablePageUnitsType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortablePageUnitsType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortablePlatform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortablePlatform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortablePlotSpecification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortablePlotSpecification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableProfilingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableProfilingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableRenderingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableRenderingOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableRenderingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableRenderingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableResourceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableResourceService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableScrollableFeatureReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableScrollableFeatureReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableSelection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableServiceFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableServiceFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableTileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableTileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPortableUnitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPortableUnitType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPreparedGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPreparedGeometry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgProfilingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgProfilingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPropertyCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPropertyCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPropertyDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPropertyDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPropertyDefinitionCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPropertyDefinitionCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgPropertyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgPropertyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRasterDataModelType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRasterDataModelType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRasterProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRasterProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRasterPropertyDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRasterPropertyDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgReadOnlyLayerCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgReadOnlyLayerCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgReadOnlyStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgReadOnlyStream.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgReaderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgReaderType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRegion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRenderingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRenderingOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRenderingService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRenderingService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRepositoryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRepositoryType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceDataName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceDataName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceDataType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceHeaderProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceHeaderProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceIdentifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourcePermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourcePermission.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceTag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgResourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgResourceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgRole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSelection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSelectionBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSelectionBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSerializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSerializable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgServerAdmin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgServerAdmin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgServerInformationProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgServerInformationProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgServiceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgServiceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSingleProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSingleProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSiteConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSiteConnection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSiteInfo.MgPortType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSiteInfo.MgPortType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSiteInfo.MgSiteStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSiteInfo.MgSiteStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSiteInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSiteInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSpatialContextExtentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSpatialContextExtentType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSpatialContextReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSpatialContextReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgSqlDataReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgSqlDataReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgStringCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgStringCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgStringProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgStringProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgStringPropertyCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgStringPropertyCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgTileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgTileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgTransaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgUnitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgUnitType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgUpdateFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgUpdateFeatures.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgUser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgUserInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgUserInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWarnings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWarnings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebBufferCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebBufferCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebCommandCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebCommandCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebCommandWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebCommandWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebContextMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebContextMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebFlyoutWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebFlyoutWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebGetPrintablePageCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebGetPrintablePageCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebHelpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebHelpCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebInformationPane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebInformationPane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebInvokeScriptCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebInvokeScriptCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebInvokeUrlCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebInvokeUrlCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebMeasureCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebMeasureCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebPrintCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebPrintCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebSearchCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebSearchCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebSelectWithinCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebSelectWithinCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebSeparatorWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebSeparatorWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebTargetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebTargetType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebTargetViewerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebTargetViewerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebTaskBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebTaskBar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebTaskBarWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebTaskBarWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebTaskButtonType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebTaskButtonType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebTaskPane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebTaskPane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebToolBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebToolBar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebUiPane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebUiPane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebUiSizablePane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebUiSizablePane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebUiTargetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebUiTargetCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebViewOptionsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebViewOptionsCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebWidgetCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebWidgetCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWebWidgetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWebWidgetType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.MgWktReaderWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.MgWktReaderWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.ReadOnlyRewindableStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.ReadOnlyRewindableStream.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OSGeo.MapGuide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OSGeo.MapGuide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unique-features.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unique-features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

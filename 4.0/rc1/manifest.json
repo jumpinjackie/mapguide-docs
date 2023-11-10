@@ -1,0 +1,259 @@
+{
+  "source_base_path": "C:/Workspace/mg-4.0/MgDev/Doc/landing",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/TODO.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/TODO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-dana99.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-dana99.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-egenhofer91.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-egenhofer91.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-jts14.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-jts14.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-ogc96-015r1.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-ogc96-015r1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-ogc99-049.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-ogc99-049.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-osugr.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-osugr.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/bib-peat.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/bib-peat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/collections.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/collections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/cs-testvalues.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/cs-testvalues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/cs-wkttosrs.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/cs-wkttosrs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-connection.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-connection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-filters.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-filters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-properties.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-properties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-provider-registry.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-provider-registry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-provider.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-provider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/feature-schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/feature-schema.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "topics/geom-collections.md",
+      "output": {
+        ".html": {
+          "relative_path": "topics/geom-collections.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

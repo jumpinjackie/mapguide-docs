@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Feature Schema | MapGuide API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Feature Schema | MapGuide API Reference ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide API Reference">
+            MapGuide API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="feature-schema">Feature Schema</h1>
+
+<p>A feature schema is a class or set of classes that define the
+structure of data contained in a feature source (datastore),
+for example, an Oracle database. A feature class consists of
+a set of properties. Each property has a set of attributes
+appropriate to the type of information it contains. Class and
+property here correspond roughly to table and column in a
+relational database.</p>
+<p>The class and property definition classes have methods for
+both getting and setting attributes. In general, however, the
+set methods are of no use except in the case of the FDO
+Provider for SDF. <code>MgFeatureService::CreateFeatureSource</code>
+permits you to create an SDF schema, that is, an SDF file
+containing a schema. The intent is that this method be used
+as part of a mechanism for caching feature data locally.
+The schema used for this SDF cache file would typically be
+the schema extracted by <code>MgFeatureService::DescribeSchema</code>
+from the feature source whose features are being cached.
+It is possible to create a schema from scratch; see the sample code below.</p>
+<p>Five property types are distinguished, and there is a
+property definition class for each type. The five types are:</p>
+<ul>
+<li>Simple data. The MgDataPropertyDefinition (<a href="../dotnet_api/api/OSGeo.MapGuide.MgDataPropertyDefinition.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgDataPropertyDefinition.html">Java</a>, <a href="TODO.html">PHP</a>) class is used
+to define the attributes of simple data properties. The
+simple data types are BLOB, boolean, byte, CLOB, MgDateTime,
+double, Int16, Int32, Int64, single, and string.</li>
+<li>Geometry data. The MgGeometricPropertyDefinition (<a href="../dotnet_api/api/OSGeo.MapGuide.MgGeometricPropertyDefinition.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgGeometricPropertyDefinition.html">Java</a>, <a href="TODO.html">PHP</a>) class is
+used to define the attributes of geometry data. The geometry
+data type is MgGeometry.</li>
+<li>Association data. The MgAssociationPropertyDefinition (<a href="../dotnet_api/api/OSGeo.MapGuide.MgAssociationPropertyDefinition.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgAssociationPropertyDefinition.html">Java</a>, <a href="TODO.html">PHP</a>)
+class is used to define the attributes of association
+properties. This is not currently used.</li>
+<li>Object data. The MgObjectPropertyDefinition (<a href="../dotnet_api/api/OSGeo.MapGuide.MgObjectPropertyDefinition.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgObjectPropertyDefinition.html">Java</a>, <a href="TODO.html">PHP</a>) class is used
+to define the attributes of object data. This allows us to
+model information using object composition. The type of
+object data is user-defined.</li>
+<li>Raster data. The MgRasterPropertyDefinition (<a href="../dotnet_api/api/OSGeo.MapGuide.MgRasterPropertyDefinition.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgRasterPropertyDefinition.html">Java</a>, <a href="TODO.html">PHP</a>) class is used
+to define the attributes of raster data. The type of raster
+data is MgRaster (<a href="../dotnet_api/api/OSGeo.MapGuide.MgRaster.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgRaster.html">Java</a>, <a href="TODO.html">PHP</a>).</li>
+</ul>
+<pre><code class="lang-C#">using OSGeo.MapGuide;
+MgDataPropertyDefinition dataProperty;
+MgGeometricPropertyDefinition geometricProperty;
+MgClassDefinition classDef = new MgClassDefinition();
+
+className = &quot;SdfFeatureClass&quot;;
+
+classDef.SetName(className);
+classDef.SetDefaultGeometryPropertyName(&quot;theFeatureGeometry&quot;);
+
+// feature geometry property that takes 2D XY geometries
+geometricProperty = new MgGeometricPropertyDefinition(&quot;theFeatureGeometry&quot;);
+geometricProperty.SetGeometryTypes(MgFeatureGeometricType.Point |
+   MgFeatureGeometricType.Curve | MgFeatureGeometricType.Surface);
+geometricProperty.SetHasElevation(false);
+geometricProperty.SetHasMeasure(false);
+geometricProperty.SetReadOnly(false);
+geometricProperty.SetSpatialContextAssociation(spatialContextName);
+classDef.GetProperties().Add(geometricProperty);
+
+// non-feature geometry
+geometricProperty = new MgGeometricPropertyDefinition(&quot;aNonFeatureGeometry&quot;);
+geometricProperty.SetGeometryTypes(MgFeatureGeometricType.Point |
+  MgFeatureGeometricType.Curve | MgFeatureGeometricType.Surface);
+geometricProperty.SetHasElevation(false);
+geometricProperty.SetHasMeasure(false);
+geometricProperty.SetReadOnly(false);
+geometricProperty.SetSpatialContextAssociation(spatialContextName);
+classDef.GetProperties().Add(geometricProperty);
+
+// identity property
+dataProperty = new MgDataPropertyDefinition(&quot;FeatId&quot;);
+dataProperty.SetDataType(MgPropertyType.Int32);
+dataProperty.SetAutoGeneration(false);
+dataProperty.SetNullable(false);
+dataProperty.SetReadOnly(true);
+classDef.GetIdentityProperties().Add(dataProperty);
+classDef.GetProperties().Add(dataProperty);
+
+// boolean property
+dataProperty = new MgDataPropertyDefinition(&quot;aBoolean&quot;);
+dataProperty.SetDataType(MgPropertyType.Boolean);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// byte property
+dataProperty = new MgDataPropertyDefinition(&quot;aByte&quot;);
+dataProperty.SetDataType(MgPropertyType.Byte);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// DataTime property
+dataProperty = new MgDataPropertyDefinition(&quot;aDateTime&quot;);
+dataProperty.SetDataType(MgPropertyType.DateTime);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// cannot create Decimal property because MgPropertyType.Decimal doesn't exist
+// even though SDF schema capabilities says that Decimal property is supported
+
+// double property
+dataProperty = new MgDataPropertyDefinition(&quot;aDouble&quot;);
+dataProperty.SetDataType(MgPropertyType.Double);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// Int16 property
+dataProperty = new MgDataPropertyDefinition(&quot;anInt16&quot;);
+dataProperty.SetDataType(MgPropertyType.Int16);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// Int32 property
+dataProperty = new MgDataPropertyDefinition(&quot;anInt32&quot;);
+dataProperty.SetDataType(MgPropertyType.Int32);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// Int64 property
+dataProperty = new MgDataPropertyDefinition(&quot;anInt64&quot;);
+dataProperty.SetDataType(MgPropertyType.Int64);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// Single property
+dataProperty = new MgDataPropertyDefinition(&quot;aSingle&quot;);
+dataProperty.SetDataType(MgPropertyType.Single);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+// String property
+dataProperty = new MgDataPropertyDefinition(&quot;aString&quot;);
+dataProperty.SetDataType(MgPropertyType.String);
+dataProperty.SetNullable(true);
+dataProperty.SetReadOnly(false);
+classDef.GetProperties().Add(dataProperty);
+
+schema = new MgFeatureSchema();
+schemaName = &quot;SdfFeatureClassSchema&quot;;
+schema.SetName(schemaName);
+schema.GetClasses().Add(classDef);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

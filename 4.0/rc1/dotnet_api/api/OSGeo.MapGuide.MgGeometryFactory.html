@@ -1,0 +1,1059 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgGeometryFactory
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgGeometryFactory
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgGeometryFactory">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgGeometryFactory" data-uid="OSGeo.MapGuide.MgGeometryFactory" class="text-break">
+    Class MgGeometryFactory
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The <a class="xref" href="OSGeo.MapGuide.MgGeometryFactory.html">MgGeometryFactory</a> class is used to construct objects
+whose classes are derived from <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgGeometryFactory : MgGuardDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgGeometryFactory</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory__ctor_" data-uid="OSGeo.MapGuide.MgGeometryFactory.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory__ctor" data-uid="OSGeo.MapGuide.MgGeometryFactory.#ctor">
+  MgGeometryFactory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgGeometryFactory.html">MgGeometryFactory</a> object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometryFactory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateArcSegment_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateArcSegment*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateArcSegment_OSGeo_MapGuide_MgCoordinate_OSGeo_MapGuide_MgCoordinate_OSGeo_MapGuide_MgCoordinate_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateArcSegment(OSGeo.MapGuide.MgCoordinate,OSGeo.MapGuide.MgCoordinate,OSGeo.MapGuide.MgCoordinate)">
+  CreateArcSegment(MgCoordinate, MgCoordinate, MgCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an arc segment from start, end, and control
+coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgArcSegment CreateArcSegment(MgCoordinate start, MgCoordinate end, MgCoordinate control)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) The <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> that specifies the start point of the arc.</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) The <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> that specifies the end point of the arc.</p>
+</dd>
+    <dt><code>control</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) The <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> that specifies the control point of the arc.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgArcSegment.html">MgArcSegment</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgArcSegment.html">MgArcSegment</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXY_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXY*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXY_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXY(System.Double,System.Double)">
+  CreateCoordinateXY(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> object with Dimension = XY, X = x, Y
+= y.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate CreateCoordinateXY(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) X value for the coordinate.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Y value for the coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>An initialized <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXYM_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXYM*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXYM_System_Double_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXYM(System.Double,System.Double,System.Double)">
+  CreateCoordinateXYM(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> object with Dimension = XYM, X = x, Y
+= y, M = m.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate CreateCoordinateXYM(double x, double y, double m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) X value for the coordinate.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Y value for the coordinate.</p>
+</dd>
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) M value for the coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>An initialized <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXYZ_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXYZ*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXYZ_System_Double_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXYZ(System.Double,System.Double,System.Double)">
+  CreateCoordinateXYZ(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> object with Dimension = XYZ, X = x, Y
+= y, Z = z.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate CreateCoordinateXYZ(double x, double y, double z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) X value for the coordinate.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Y value for the coordinate.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Z value for the coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>An initialized <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXYZM_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXYZM*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCoordinateXYZM_System_Double_System_Double_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCoordinateXYZM(System.Double,System.Double,System.Double,System.Double)">
+  CreateCoordinateXYZM(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> object with Dimension = XYZM, X = x,
+Y = y, Z = z, M = m.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate CreateCoordinateXYZM(double x, double y, double z, double m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) X value for the coordinate.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Y value for the coordinate.</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Z value for the coordinate.</p>
+</dd>
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) M value for the coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>An initialized <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCurvePolygon_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCurvePolygon*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCurvePolygon_OSGeo_MapGuide_MgCurveRing_OSGeo_MapGuide_MgCurveRingCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCurvePolygon(OSGeo.MapGuide.MgCurveRing,OSGeo.MapGuide.MgCurveRingCollection)">
+  CreateCurvePolygon(MgCurveRing, MgCurveRingCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a curve polygon from an outer ring and a collection of inner
+rings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCurvePolygon CreateCurvePolygon(MgCurveRing outerRing, MgCurveRingCollection innerRings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outerRing</code> <a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a>) An <a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a> that specifies the polygons outer boundary.</p>
+</dd>
+    <dt><code>innerRings</code> <a class="xref" href="OSGeo.MapGuide.MgCurveRingCollection.html">MgCurveRingCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCurveRingCollection.html">MgCurveRingCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgCurveRingCollection.html">MgCurveRingCollection</a> that specifies the polygons holes. This parameter may be null.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCurveRing_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCurveRing*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCurveRing_OSGeo_MapGuide_MgCurveSegmentCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCurveRing(OSGeo.MapGuide.MgCurveSegmentCollection)">
+  CreateCurveRing(MgCurveSegmentCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a curve ring from a collection of curve segments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCurveRing CreateCurveRing(MgCurveSegmentCollection curveSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curveSegments</code> <a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a> that specifies the segments of the curve ring. The segments in the collection must form a closed shape. See the example php code for details about the construction of the segments so that the resulting shape is closed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateCurveString_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCurveString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateCurveString_OSGeo_MapGuide_MgCurveSegmentCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateCurveString(OSGeo.MapGuide.MgCurveSegmentCollection)">
+  CreateCurveString(MgCurveSegmentCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a curve string from a collection of curve segments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCurveString CreateCurveString(MgCurveSegmentCollection curveSegments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curveSegments</code> <a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a> that specifies the segments of the curve string. The collection must contain at least one segment.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateLineString_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateLineString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateLineString_OSGeo_MapGuide_MgCoordinateCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateLineString(OSGeo.MapGuide.MgCoordinateCollection)">
+  CreateLineString(MgCoordinateCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a line string from a collection of coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLineString CreateLineString(MgCoordinateCollection coordinates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coordinates</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a> that specifies the coordinates of the line string. The collection must contain at least two coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateLinearRing_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateLinearRing*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateLinearRing_OSGeo_MapGuide_MgCoordinateCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateLinearRing(OSGeo.MapGuide.MgCoordinateCollection)">
+  CreateLinearRing(MgCoordinateCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a linear ring from a collection of coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLinearRing CreateLinearRing(MgCoordinateCollection coordinates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coordinates</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a> that specifies the coordinates of the linear ring. The collection must contain at least three coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateLinearSegment_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateLinearSegment*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateLinearSegment_OSGeo_MapGuide_MgCoordinateCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateLinearSegment(OSGeo.MapGuide.MgCoordinateCollection)">
+  CreateLinearSegment(MgCoordinateCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a linear segment from a collection of coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLinearSegment CreateLinearSegment(MgCoordinateCollection coordinates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coordinates</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a> that specifies the coordinates of the linear segment. The collection must contain at least two coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLinearSegment.html">MgLinearSegment</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgLinearSegment.html">MgLinearSegment</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiCurvePolygon_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiCurvePolygon*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiCurvePolygon_OSGeo_MapGuide_MgCurvePolygonCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiCurvePolygon(OSGeo.MapGuide.MgCurvePolygonCollection)">
+  CreateMultiCurvePolygon(MgCurvePolygonCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a multi curve polygon aggregate geometry from a collection of
+curve polygons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMultiCurvePolygon CreateMultiCurvePolygon(MgCurvePolygonCollection polygons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygons</code> <a class="xref" href="OSGeo.MapGuide.MgCurvePolygonCollection.html">MgCurvePolygonCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCurvePolygonCollection.html">MgCurvePolygonCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> that specifies the curve polygons. All geometry objects in this collection must be of type <a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMultiCurvePolygon.html">MgMultiCurvePolygon</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgMultiCurvePolygon.html">MgMultiCurvePolygon</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiCurveString_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiCurveString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiCurveString_OSGeo_MapGuide_MgCurveStringCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiCurveString(OSGeo.MapGuide.MgCurveStringCollection)">
+  CreateMultiCurveString(MgCurveStringCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a multi curve string aggregate geometry from a collection of
+curve strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMultiCurveString CreateMultiCurveString(MgCurveStringCollection curveStrings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curveStrings</code> <a class="xref" href="OSGeo.MapGuide.MgCurveStringCollection.html">MgCurveStringCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCurveStringCollection.html">MgCurveStringCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> that specifies the curve strings. All geometry objects in this collection must be of type <a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMultiCurveString.html">MgMultiCurveString</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgMultiCurveString.html">MgMultiCurveString</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiGeometry_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiGeometry*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiGeometry_OSGeo_MapGuide_MgGeometryCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiGeometry(OSGeo.MapGuide.MgGeometryCollection)">
+  CreateMultiGeometry(MgGeometryCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an aggregate geometry from a collection of geometry objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMultiGeometry CreateMultiGeometry(MgGeometryCollection geometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>geometries</code> <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> that specifies the geometries.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMultiGeometry.html">MgMultiGeometry</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgMultiGeometry.html">MgMultiGeometry</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiLineString_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiLineString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiLineString_OSGeo_MapGuide_MgLineStringCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiLineString(OSGeo.MapGuide.MgLineStringCollection)">
+  CreateMultiLineString(MgLineStringCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a multi line string aggregate geometry from a collection of
+line strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMultiLineString CreateMultiLineString(MgLineStringCollection lineStrings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lineStrings</code> <a class="xref" href="OSGeo.MapGuide.MgLineStringCollection.html">MgLineStringCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLineStringCollection.html">MgLineStringCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> that specifies the line strings. All geometry objects in this collection must be of type <a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMultiLineString.html">MgMultiLineString</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgMultiLineString.html">MgMultiLineString</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiPoint_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiPoint*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiPoint_OSGeo_MapGuide_MgPointCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiPoint(OSGeo.MapGuide.MgPointCollection)">
+  CreateMultiPoint(MgPointCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a multi point aggregate geometry from a collection of points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMultiPoint CreateMultiPoint(MgPointCollection points)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>points</code> <a class="xref" href="OSGeo.MapGuide.MgPointCollection.html">MgPointCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPointCollection.html">MgPointCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> that specifies the points. All geometry objects in this collection must be of type <a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMultiPoint.html">MgMultiPoint</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgMultiPoint.html">MgMultiPoint</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiPolygon_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiPolygon*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreateMultiPolygon_OSGeo_MapGuide_MgPolygonCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreateMultiPolygon(OSGeo.MapGuide.MgPolygonCollection)">
+  CreateMultiPolygon(MgPolygonCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a multi polygon aggregate geometry from a collection of
+polygons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMultiPolygon CreateMultiPolygon(MgPolygonCollection polygons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>polygons</code> <a class="xref" href="OSGeo.MapGuide.MgPolygonCollection.html">MgPolygonCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPolygonCollection.html">MgPolygonCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> that specifies the polygons. All geometry objects in this collection must be of type <a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgMultiPolygon.html">MgMultiPolygon</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgMultiPolygon.html">MgMultiPolygon</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreatePoint_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreatePoint*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreatePoint_OSGeo_MapGuide_MgCoordinate_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreatePoint(OSGeo.MapGuide.MgCoordinate)">
+  CreatePoint(MgCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a point from a coordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPoint CreatePoint(MgCoordinate coordinate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coordinate</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) An <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> that specifies the location of this point.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_CreatePolygon_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreatePolygon*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_CreatePolygon_OSGeo_MapGuide_MgLinearRing_OSGeo_MapGuide_MgLinearRingCollection_" data-uid="OSGeo.MapGuide.MgGeometryFactory.CreatePolygon(OSGeo.MapGuide.MgLinearRing,OSGeo.MapGuide.MgLinearRingCollection)">
+  CreatePolygon(MgLinearRing, MgLinearRingCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a polygon from an outer ring and a collection of inner rings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPolygon CreatePolygon(MgLinearRing outerRing, MgLinearRingCollection innerRings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outerRing</code> <a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a>) An <a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a> that specifies the polygons outer boundary.</p>
+</dd>
+    <dt><code>innerRings</code> <a class="xref" href="OSGeo.MapGuide.MgLinearRingCollection.html">MgLinearRingCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLinearRingCollection.html">MgLinearRingCollection</a>) An <a class="xref" href="OSGeo.MapGuide.MgLinearRingCollection.html">MgLinearRingCollection</a> that specifies the polygons holes. This parameter may be null.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a></dt>
+    <dd><p>An instance of <a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometryFactory_Dispose_" data-uid="OSGeo.MapGuide.MgGeometryFactory.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometryFactory_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgGeometryFactory.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

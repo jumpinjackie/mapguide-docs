@@ -1,0 +1,1846 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgReader
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgReader
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgReader">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgReader" data-uid="OSGeo.MapGuide.MgReader" class="text-break">
+    Class MgReader
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides a forward-only, read-only iterator for reading data.
+You must call ReadNext before you can access any data. This
+is a base class for <a class="xref" href="OSGeo.MapGuide.MgDataReader.html">MgDataReader</a>, <a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a>, and
+<a class="xref" href="OSGeo.MapGuide.MgSqlDataReader.html">MgSqlDataReader</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgReader : MgSerializable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><span class="xref">MgReader</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDataReader.html">MgDataReader</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSqlDataReader.html">MgSqlDataReader</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgReader_Close_" data-uid="OSGeo.MapGuide.MgReader.Close*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_Close" data-uid="OSGeo.MapGuide.MgReader.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the object, freeing any resources it may be holding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_Dispose_" data-uid="OSGeo.MapGuide.MgReader.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgReader.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetBLOB_" data-uid="OSGeo.MapGuide.MgReader.GetBLOB*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetBLOB_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetBLOB(System.Int32)">
+  GetBLOB(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetBLOB(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns the BLOB value in an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetBLOB_" data-uid="OSGeo.MapGuide.MgReader.GetBLOB*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetBLOB_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetBLOB(System.String)">
+  GetBLOB(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetBLOB(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns the BLOB value in an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetBoolean_" data-uid="OSGeo.MapGuide.MgReader.GetBoolean*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetBoolean_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetBoolean(System.Int32)">
+  GetBoolean(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Boolean value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolean(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the Boolean value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetBoolean_" data-uid="OSGeo.MapGuide.MgReader.GetBoolean*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetBoolean_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetBoolean(System.String)">
+  GetBoolean(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Boolean value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolean(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns the Boolean value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetByte_" data-uid="OSGeo.MapGuide.MgReader.GetByte*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetByte_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetByte(System.Int32)">
+  GetByte(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Byte value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetByte(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Returns the Byte value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetByte_" data-uid="OSGeo.MapGuide.MgReader.GetByte*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetByte_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetByte(System.String)">
+  GetByte(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Byte value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetByte(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Returns the Byte value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetCLOB_" data-uid="OSGeo.MapGuide.MgReader.GetCLOB*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetCLOB_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetCLOB(System.Int32)">
+  GetCLOB(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the CLOB value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetCLOB(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns the CLOB value in an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetCLOB_" data-uid="OSGeo.MapGuide.MgReader.GetCLOB*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetCLOB_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetCLOB(System.String)">
+  GetCLOB(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the CLOB value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetCLOB(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns the CLOB value in an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetDateTime_" data-uid="OSGeo.MapGuide.MgReader.GetDateTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetDateTime_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetDateTime(System.Int32)">
+  GetDateTime(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDateTime GetDateTime(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetDateTime_" data-uid="OSGeo.MapGuide.MgReader.GetDateTime*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetDateTime_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetDateTime(System.String)">
+  GetDateTime(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDateTime GetDateTime(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetDouble_" data-uid="OSGeo.MapGuide.MgReader.GetDouble*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetDouble_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetDouble(System.Int32)">
+  GetDouble(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Double value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDouble(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetDouble_" data-uid="OSGeo.MapGuide.MgReader.GetDouble*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetDouble_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetDouble(System.String)">
+  GetDouble(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Double value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDouble(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetGeometry_" data-uid="OSGeo.MapGuide.MgReader.GetGeometry*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetGeometry_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetGeometry(System.Int32)">
+  GetGeometry(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Geometry for the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetGeometry(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns a geometry in AGF binary format in an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>
+object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetGeometry_" data-uid="OSGeo.MapGuide.MgReader.GetGeometry*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetGeometry_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetGeometry(System.String)">
+  GetGeometry(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Geometry for the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetGeometry(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns a geometry in AGF binary format in an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>
+object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetInt16_" data-uid="OSGeo.MapGuide.MgReader.GetInt16*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetInt16_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetInt16(System.Int32)">
+  GetInt16(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the 16 bit integer value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetInt16(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>Returns the 16 bit integer value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetInt16_" data-uid="OSGeo.MapGuide.MgReader.GetInt16*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetInt16_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetInt16(System.String)">
+  GetInt16(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the 16 bit integer value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetInt16(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>Returns the 16 bit integer value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetInt32_" data-uid="OSGeo.MapGuide.MgReader.GetInt32*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetInt32_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetInt32(System.Int32)">
+  GetInt32(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the 32 bit integer value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt32(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the integer 32 bits value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetInt32_" data-uid="OSGeo.MapGuide.MgReader.GetInt32*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetInt32_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetInt32(System.String)">
+  GetInt32(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the 32 bit integer value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt32(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the integer 32 bits value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetInt64_" data-uid="OSGeo.MapGuide.MgReader.GetInt64*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetInt64_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetInt64(System.Int32)">
+  GetInt64(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the 64 bit integer value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetInt64(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Returns the integer 64 bits value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetInt64_" data-uid="OSGeo.MapGuide.MgReader.GetInt64*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetInt64_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetInt64(System.String)">
+  GetInt64(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the 64 bit integer value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetInt64(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Returns the integer 64 bits value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetPropertyCount_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyCount*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetPropertyCount" data-uid="OSGeo.MapGuide.MgReader.GetPropertyCount">
+  GetPropertyCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of properties in the feature currently being
+read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPropertyCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the number of properties.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetPropertyIndex_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyIndex*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetPropertyIndex_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyIndex(System.String)">
+  GetPropertyIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index of the property with the specified property name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPropertyIndex(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the property index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetPropertyName_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetPropertyName_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyName(System.Int32)">
+  GetPropertyName(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the property at the given ordinal position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPropertyName(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the property name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetPropertyType_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetPropertyType_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyType(System.Int32)">
+  GetPropertyType(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of the property at the specified index. See
+<a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a> for the list of possible values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPropertyType(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(index) The property index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetPropertyType_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetPropertyType_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetPropertyType(System.String)">
+  GetPropertyType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of the property with the specified name. See
+<a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a> for the list of possible values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPropertyType(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetRaster_" data-uid="OSGeo.MapGuide.MgReader.GetRaster*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetRaster_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetRaster(System.Int32)">
+  GetRaster(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the raster object of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgRaster GetRaster(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgRaster.html">MgRaster</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgRaster.html">MgRaster</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgConnectionNotOpenException">MgConnectionNotOpenException</a>)  MgNullPropertyValueException</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgFdoException">MgFdoException</a>)  MgInvalidPropertyTypeException</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetRaster_" data-uid="OSGeo.MapGuide.MgReader.GetRaster*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetRaster_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetRaster(System.String)">
+  GetRaster(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the raster object of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgRaster GetRaster(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgRaster.html">MgRaster</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgRaster.html">MgRaster</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgConnectionNotOpenException">MgConnectionNotOpenException</a>)  MgNullPropertyValueException</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgFdoException">MgFdoException</a>)  MgInvalidPropertyTypeException</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetReaderType_" data-uid="OSGeo.MapGuide.MgReader.GetReaderType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetReaderType" data-uid="OSGeo.MapGuide.MgReader.GetReaderType">
+  GetReaderType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the type of this reader. See <a class="xref" href="OSGeo.MapGuide.MgReaderType.html">MgReaderType</a> for a list of
+the possible values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetReaderType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgReaderType.html">MgReaderType</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetSingle_" data-uid="OSGeo.MapGuide.MgReader.GetSingle*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetSingle_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetSingle(System.Int32)">
+  GetSingle(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Single value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSingle(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Returns the single value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetSingle_" data-uid="OSGeo.MapGuide.MgReader.GetSingle*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetSingle_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetSingle(System.String)">
+  GetSingle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Single value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSingle(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Returns the single value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetString_" data-uid="OSGeo.MapGuide.MgReader.GetString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetString_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.GetString(System.Int32)">
+  GetString(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the string value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the string value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_GetString_" data-uid="OSGeo.MapGuide.MgReader.GetString*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_GetString_System_String_" data-uid="OSGeo.MapGuide.MgReader.GetString(System.String)">
+  GetString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the string value of the specified property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the string value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_IsNull_" data-uid="OSGeo.MapGuide.MgReader.IsNull*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_IsNull_System_Int32_" data-uid="OSGeo.MapGuide.MgReader.IsNull(System.Int32)">
+  IsNull(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the value of the specified property is
+null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNull(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The position of the property in the list of properties belonging to the feature currently being read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the value is null; otherwise returns false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_IsNull_" data-uid="OSGeo.MapGuide.MgReader.IsNull*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_IsNull_System_String_" data-uid="OSGeo.MapGuide.MgReader.IsNull(System.String)">
+  IsNull(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the value of the specified property is
+null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNull(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the value is null; otherwise returns false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_ReadNext_" data-uid="OSGeo.MapGuide.MgReader.ReadNext*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_ReadNext" data-uid="OSGeo.MapGuide.MgReader.ReadNext">
+  ReadNext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Advances the reader to the next item and determines whether
+there is another object to read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadNext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if there is a next item; otherwise returns
+false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgReader_ToXml_" data-uid="OSGeo.MapGuide.MgReader.ToXml*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgReader_ToXml" data-uid="OSGeo.MapGuide.MgReader.ToXml">
+  ToXml()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Serializes the unread features in the reader into an XML format.
+The XML format of the output is governed by the OSGeo.MapGuide.MgFeatureSet
+schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader ToXml()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> holding XML.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

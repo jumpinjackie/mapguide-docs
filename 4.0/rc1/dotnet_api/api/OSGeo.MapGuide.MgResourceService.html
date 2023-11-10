@@ -1,0 +1,1743 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgResourceService
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgResourceService
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgResourceService">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgResourceService" data-uid="OSGeo.MapGuide.MgResourceService" class="text-break">
+    Class MgResourceService
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Enables you to manipulate repositories and resources.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgResourceService : MgService, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgService.html">MgService</a></div>
+      <div><span class="xref">MgResourceService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="OSGeo.MapGuide.MgPortableResourceService.html">MgPortableResourceService</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_HasWarnings">MgService.HasWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_GetWarningsObject">MgService.GetWarningsObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_ApplyResourcePackage_" data-uid="OSGeo.MapGuide.MgResourceService.ApplyResourcePackage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_ApplyResourcePackage_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgResourceService.ApplyResourcePackage(OSGeo.MapGuide.MgByteReader)">
+  ApplyResourcePackage(MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a package of resource changes to the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyResourcePackage(MgByteReader resourcePackage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resourcePackage</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>) The package containing resources to update.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_ChangeResourceOwner_" data-uid="OSGeo.MapGuide.MgResourceService.ChangeResourceOwner*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_ChangeResourceOwner_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.ChangeResourceOwner(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.Boolean)">
+  ChangeResourceOwner(MgResourceIdentifier, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeResourceOwner(MgResourceIdentifier resource, string owner, bool includeDescendants)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource whose owner is to be changed. This</p>
+</dd>
+    <dt><code>owner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The User ID of the new owner. (The User ID must already exist. You can create User IDs through the Site Administrator tool.)</p>
+</dd>
+    <dt><code>includeDescendants</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the owners of descendant resources should be also be changed. This flag is applicable only if the resource is a folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPermissionDeniedException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_CopyResource_" data-uid="OSGeo.MapGuide.MgResourceService.CopyResource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_CopyResource_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgResourceIdentifier_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.CopyResource(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgResourceIdentifier,System.Boolean)">
+  CopyResource(MgResourceIdentifier, MgResourceIdentifier, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies an existing resource to another location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyResource(MgResourceIdentifier sourceResource, MgResourceIdentifier destResource, bool overwrite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceResource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to be copied from. This can be a document or folder.</p>
+</dd>
+    <dt><code>destResource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Where the resource should be copied to.</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the destination resource should be overwritten if it exists.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgDuplicateResourceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_DeleteResource_" data-uid="OSGeo.MapGuide.MgResourceService.DeleteResource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_DeleteResource_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.DeleteResource(OSGeo.MapGuide.MgResourceIdentifier)">
+  DeleteResource(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes an existing resource and its associated data from the
+repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteResource(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource identifier specifying the resource to</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_DeleteResourceData_" data-uid="OSGeo.MapGuide.MgResourceService.DeleteResourceData*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_DeleteResourceData_OSGeo_MapGuide_MgResourceIdentifier_System_String_" data-uid="OSGeo.MapGuide.MgResourceService.DeleteResourceData(OSGeo.MapGuide.MgResourceIdentifier,System.String)">
+  DeleteResourceData(MgResourceIdentifier, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteResourceData(MgResourceIdentifier resource, string dataName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) The resource for which the resource data will be deleted.</p>
+</dd>
+    <dt><code>dataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name for data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_Dispose_" data-uid="OSGeo.MapGuide.MgResourceService.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_EnumerateReferences_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateReferences*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_EnumerateReferences_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateReferences(OSGeo.MapGuide.MgResourceIdentifier)">
+  EnumerateReferences(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates all the resources which reference the specified
+resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader EnumerateReferences(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to get references for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the list of all
+resources which reference the specified resource. The list is</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_EnumerateResourceData_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResourceData*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_EnumerateResourceData_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResourceData(OSGeo.MapGuide.MgResourceIdentifier)">
+  EnumerateResourceData(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader EnumerateResourceData(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) The resource for which the resource data will be listed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object representing the description</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_EnumerateResourceDocuments_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResourceDocuments*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_EnumerateResourceDocuments_OSGeo_MapGuide_MgStringCollection_System_String_System_Int32_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResourceDocuments(OSGeo.MapGuide.MgStringCollection,System.String,System.Int32)">
+  EnumerateResourceDocuments(MgStringCollection, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Enumerate the resource documents in the specified repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EnumerateResourceDocuments(MgStringCollection resources, string type, int properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resources</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>Resource identifiers specifying the resources to enumerate.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type of the resource to be enumerated. See <a class="xref" href="OSGeo.MapGuide.MgResourceType.html">MgResourceType</a> for valid types. No folder type is allowed.</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Flag to specify which properties of the resource header should be filtered. It may be set to 0 or by bitwise inclusively OR&amp;apos;ing together one or more of the <a class="xref" href="OSGeo.MapGuide.MgResourceHeaderProperties.html">MgResourceHeaderProperties</a> values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns a string containing a description of the WMS layer definitions</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_EnumerateResources_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResources*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_EnumerateResources_OSGeo_MapGuide_MgResourceIdentifier_System_Int32_System_String_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResources(OSGeo.MapGuide.MgResourceIdentifier,System.Int32,System.String)">
+  EnumerateResources(MgResourceIdentifier, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates the resources in the specified repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader EnumerateResources(MgResourceIdentifier resource, int depth, string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource identifier specifying the resource to enumerate. This can be a document or a folder.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Recursion depth, relative to the specified resource. &amp;lt;ul&gt; &lt;li&gt;If the resource is a document, depth must be set to 0. &lt;/li&gt; &lt;li&gt;If the resource is a folder: &lt;/li&gt; &lt;ul&gt; &lt;li&gt;If the depth is equal to 0, only information about the specified folder is returned. &lt;/li&gt; &lt;li&gt;If the depth is greater than 0, information about the folder and its descendants up to the specified depth are returned. &lt;/li&gt; &lt;/ul&gt; &lt;li&gt;If the depth is -1, information about the folder and all its descendants is returned. &lt;/li&gt; &lt;/ul&gt;</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Type of the resource to be enumerated. (Case</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a description of</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_EnumerateResources_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResources*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_EnumerateResources_OSGeo_MapGuide_MgResourceIdentifier_System_Int32_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateResources(OSGeo.MapGuide.MgResourceIdentifier,System.Int32,System.String,System.Boolean)">
+  EnumerateResources(MgResourceIdentifier, int, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates the resources in the specified repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader EnumerateResources(MgResourceIdentifier resource, int depth, string type, bool computeChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource identifier specifying the resource to enumerate. This can be a document or a folder.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Recursion depth, relative to the specified resource. &amp;lt;ul&gt; &lt;li&gt;If the resource is a document, depth must be set to 0. &lt;/li&gt; &lt;li&gt;If the resource is a folder: &lt;/li&gt; &lt;ul&gt; &lt;li&gt;If the depth is equal to 0, only information about the specified folder is returned. &lt;/li&gt; &lt;li&gt;If the depth is greater than 0, information about the folder and its descendants up to the specified depth are returned. &lt;/li&gt; &lt;/ul&gt; &lt;li&gt;If the depth is -1, information about the folder and all its descendants is returned. &lt;/li&gt; &lt;/ul&gt;</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Type of the resource to be enumerated. (Case</p>
+</dd>
+    <dt><code>computeChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the number of children of the leaf folder resource at the specified depth should be computed. &amp;lt;ul&gt; &lt;li&gt;If it is true, then the number of children of the leaf folder resource at the specified depth will be set to a computed value (&gt;= 0). &lt;/li&gt; &lt;li&gt;If it is false, then the number of children of the leaf folder resource at the specified depth will be set to -1. &lt;/li&gt; &lt;/ul&gt;</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a description of</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_EnumerateUnmanagedData_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateUnmanagedData*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_EnumerateUnmanagedData_System_String_System_Boolean_System_String_System_String_" data-uid="OSGeo.MapGuide.MgResourceService.EnumerateUnmanagedData(System.String,System.Boolean,System.String,System.String)">
+  EnumerateUnmanagedData(string, bool, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerate unmanaged data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader EnumerateUnmanagedData(string path, bool recursive, string type, string filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Unmanaged data path</p>
+</dd>
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether to recurse subfolders or not</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Folders, Files, or Both</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) file filter to be used on returned files</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the unmanaged data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetRepositoryContent_" data-uid="OSGeo.MapGuide.MgResourceService.GetRepositoryContent*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetRepositoryContent_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.GetRepositoryContent(OSGeo.MapGuide.MgResourceIdentifier)">
+  GetRepositoryContent(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetRepositoryContent(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Repository to get the content for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the repository</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgRepositoryNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetRepositoryHeader_" data-uid="OSGeo.MapGuide.MgResourceService.GetRepositoryHeader*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetRepositoryHeader_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.GetRepositoryHeader(OSGeo.MapGuide.MgResourceIdentifier)">
+  GetRepositoryHeader(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetRepositoryHeader(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Repository to get the header for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the repository</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgRepositoryNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetResourceContent_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceContent*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetResourceContent_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceContent(OSGeo.MapGuide.MgResourceIdentifier)">
+  GetResourceContent(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the content of the specified resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetResourceContent(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource identifier specifying the resource.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the resource
+content in XML format. The XML uses the schema appropriate</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetResourceContents_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceContents*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetResourceContents_OSGeo_MapGuide_MgStringCollection_OSGeo_MapGuide_MgStringCollection_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceContents(OSGeo.MapGuide.MgStringCollection,OSGeo.MapGuide.MgStringCollection)">
+  GetResourceContents(MgStringCollection, MgStringCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the contents of the specified resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgStringCollection GetResourceContents(MgStringCollection resources, MgStringCollection preProcessTags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resources</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>A collection of resource identifiers describing the resources.</p>
+</dd>
+    <dt><code>preProcessTags</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>Pre-processing to apply to resource before returning content. If this parameter is NULL, it means no pre-processing. If this parameter is not NULL, it must be a collection of pre-processing types, and it should be one to one matching the collection of parameter resources. See OSGeo.MapGuide.MgResourcePreProcessingType for a list of supported pre-processing tags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p><a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a> object representing the collection of corresponding resource contents.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetResourceData_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceData*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetResourceData_OSGeo_MapGuide_MgResourceIdentifier_System_String_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceData(OSGeo.MapGuide.MgResourceIdentifier,System.String)">
+  GetResourceData(MgResourceIdentifier, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetResourceData(MgResourceIdentifier resource, string dataName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) The resource for which the resource data will be obtained.</p>
+</dd>
+    <dt><code>dataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name for data (as specified when the data was</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the resource data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceDataNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetResourceHeader_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceHeader*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetResourceHeader_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceHeader(OSGeo.MapGuide.MgResourceIdentifier)">
+  GetResourceHeader(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetResourceHeader(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to get the header for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing the resource</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetResourceMetadata_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceMetadata*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetResourceMetadata_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceMetadata(OSGeo.MapGuide.MgResourceIdentifier)">
+  GetResourceMetadata(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the Metadata content of a resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetResourceMetadata(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) The resource in the repository which has metadata attached to it. Note the resource has to exist else this method fails.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The metadata content in XML format. This can null in which case the resource has no metadata attached.
+The schema of the Content is user driven and not given. Most people will use it for FGDC or ISO Metadata.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_GetResourceModifiedDate_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceModifiedDate*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_GetResourceModifiedDate_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.GetResourceModifiedDate(OSGeo.MapGuide.MgResourceIdentifier)">
+  GetResourceModifiedDate(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Returns the modified date of the specified resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDateTime GetResourceModifiedDate(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to get the modified date for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> object containing the modified date of the resource.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_InheritPermissionsFrom_" data-uid="OSGeo.MapGuide.MgResourceService.InheritPermissionsFrom*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_InheritPermissionsFrom_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.InheritPermissionsFrom(OSGeo.MapGuide.MgResourceIdentifier)">
+  InheritPermissionsFrom(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the permissions for all descendants of a specified
+folder to be inherited from the folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InheritPermissionsFrom(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Folder that permissions are to be inherited from. You must include the trailing slash in the identifier.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPermissionDeniedException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_MoveResource_" data-uid="OSGeo.MapGuide.MgResourceService.MoveResource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_MoveResource_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgResourceIdentifier_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.MoveResource(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgResourceIdentifier,System.Boolean)">
+  MoveResource(MgResourceIdentifier, MgResourceIdentifier, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves an existing resource to another location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveResource(MgResourceIdentifier sourceResource, MgResourceIdentifier destResource, bool overwrite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceResource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to be moved. This can be a document or folder. &amp;lt;ul&gt; &lt;li&gt;If it is a folder, this method also moves the contents of the folder and all folders below it.&lt;/li&gt; &lt;li&gt;If it is a folder, you must include the trailing slash in the identifier.&lt;/li&gt; &lt;/ul&gt;</p>
+</dd>
+    <dt><code>destResource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Where the resource should be moved to.</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the destination resource should be overwritten if it exists.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgDuplicateResourceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_MoveResource_" data-uid="OSGeo.MapGuide.MgResourceService.MoveResource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_MoveResource_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgResourceIdentifier_System_Boolean_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.MoveResource(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgResourceIdentifier,System.Boolean,System.Boolean)">
+  MoveResource(MgResourceIdentifier, MgResourceIdentifier, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves an existing resource to another location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveResource(MgResourceIdentifier sourceResource, MgResourceIdentifier destResource, bool overwrite, bool cascade)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceResource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to be moved. This can be a document or folder. &amp;lt;ul&gt; &lt;li&gt;If it is a folder, this method also moves the contents of the folder and all folders below it.&lt;/li&gt; &lt;li&gt;If it is a folder, you must include the trailing slash in the identifier.&lt;/li&gt; &lt;/ul&gt;</p>
+</dd>
+    <dt><code>destResource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Where the resource should be moved to.</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the destination resource should be overwritten if it exists.</p>
+</dd>
+    <dt><code>cascade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the referencing resources should be updated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgDuplicateResourceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_RenameResourceData_" data-uid="OSGeo.MapGuide.MgResourceService.RenameResourceData*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_RenameResourceData_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_String_System_Boolean_" data-uid="OSGeo.MapGuide.MgResourceService.RenameResourceData(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.String,System.Boolean)">
+  RenameResourceData(MgResourceIdentifier, string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameResourceData(MgResourceIdentifier resource, string oldDataName, string newDataName, bool overwrite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) The resource for which the resource data will be renamed.</p>
+</dd>
+    <dt><code>oldDataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Old data name.</p>
+</dd>
+    <dt><code>newDataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) New data name.</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag to determine whether or not the destination resource data should be overwritten if it exists.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceDataTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgResourceDataNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgDuplicateResourceDataException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_ResourceExists_" data-uid="OSGeo.MapGuide.MgResourceService.ResourceExists*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_ResourceExists_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgResourceService.ResourceExists(OSGeo.MapGuide.MgResourceIdentifier)">
+  ResourceExists(MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks to see if the specified resource exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResourceExists(MgResourceIdentifier resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource identifier specifying the resource to be checked for existence.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the resource exists, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_SetResource_" data-uid="OSGeo.MapGuide.MgResourceService.SetResource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_SetResource_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgByteReader_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgResourceService.SetResource(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgByteReader,OSGeo.MapGuide.MgByteReader)">
+  SetResource(MgResourceIdentifier, MgByteReader, MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new resource to a resource repository, or updates an
+existing resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResource(MgResourceIdentifier resource, MgByteReader content, MgByteReader header)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Location where the resource will be placed in the repository.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>) The resource content in XML format using the schema</p>
+</dd>
+    <dt><code>header</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_SetResourceData_" data-uid="OSGeo.MapGuide.MgResourceService.SetResourceData*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_SetResourceData_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_String_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgResourceService.SetResourceData(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.String,OSGeo.MapGuide.MgByteReader)">
+  SetResourceData(MgResourceIdentifier, string, string, MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResourceData(MgResourceIdentifier resource, string dataName, string dataType, MgByteReader data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Resource to which this data is to be associated.</p>
+</dd>
+    <dt><code>dataName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name for the data.</p>
+</dd>
+    <dt><code>dataType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Data type for the resource data. It must match one of the types defined in <a class="xref" href="OSGeo.MapGuide.MgResourceDataType.html">MgResourceDataType</a> and is case sensitive. Data names must be unique.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>) Data to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgInvalidResourceTypeException">MgInvalidResourceTypeException</a>)  if resource is a folder type</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgInvalidResourceDataTypeException">MgInvalidResourceDataTypeException</a>)  if the specified</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_SetResourceMetadata_" data-uid="OSGeo.MapGuide.MgResourceService.SetResourceMetadata*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_SetResourceMetadata_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgResourceService.SetResourceMetadata(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgByteReader)">
+  SetResourceMetadata(MgResourceIdentifier, MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the Metadata content for an existing resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResourceMetadata(MgResourceIdentifier resource, MgByteReader content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) The resource in the repository that gets metadata attached to. Note the resource has to exist else this method fails</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>) The metadata content in XML format. This can be set to null, in which case the content is cleared. The schema of the Content is user driven and not given. Most people will use it for FGDC or ISO Metadata.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgResourceService_UpdateRepository_" data-uid="OSGeo.MapGuide.MgResourceService.UpdateRepository*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgResourceService_UpdateRepository_OSGeo_MapGuide_MgResourceIdentifier_OSGeo_MapGuide_MgByteReader_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgResourceService.UpdateRepository(OSGeo.MapGuide.MgResourceIdentifier,OSGeo.MapGuide.MgByteReader,OSGeo.MapGuide.MgByteReader)">
+  UpdateRepository(MgResourceIdentifier, MgByteReader, MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateRepository(MgResourceIdentifier resource, MgByteReader content, MgByteReader header)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Repository to update.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>)</p>
+</dd>
+    <dt><code>header</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>) &amp;lt;ul&gt; &lt;li&gt;If the repository is the library, this is the</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgRepositoryNotFoundException">MgRepositoryNotFoundException</a>)  if repository does not</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

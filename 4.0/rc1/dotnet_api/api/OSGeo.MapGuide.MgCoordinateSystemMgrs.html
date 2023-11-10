@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgCoordinateSystemMgrs
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgCoordinateSystemMgrs
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgCoordinateSystemMgrs" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs" class="text-break">
+    Class MgCoordinateSystemMgrs
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This object carries most, if not all, intelligence specific to the MGRS
+(Military Grid Reference System) grid standard.  It can be used at two
+distinct levels, depending upon how it is manufactured.
+When manufactured with an ellipsoid/datum specification, this object is
+suitable only for conversion of geographic coordinates to MGRS strings and
+vice-versa.
+WHen manufactured with a frame coordinate system with a grid boundary
+subsequently supplied, the resulting object is capable of NGRS string
+conversions AND the generation of MGRS grids.
+When manufactured using a frame coordinate system and subsequent
+provision of a frame boundary (see base class <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a>)
+the members derived from the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a> base class
+can be used for MGRS grid drawing purposes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgCoordinateSystemMgrs : MgCoordinateSystemGridBase, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a></div>
+      <div><span class="xref">MgCoordinateSystemMgrs</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetSpecializationType">MgCoordinateSystemGridBase.GetSpecializationType()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_SetBoundary_OSGeo_MapGuide_MgCoordinateSystemGridBoundary_">MgCoordinateSystemGridBase.SetBoundary(MgCoordinateSystemGridBoundary)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetBoundary">MgCoordinateSystemGridBase.GetBoundary()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetGridLines_OSGeo_MapGuide_MgCoordinateSystemGridSpecification_">MgCoordinateSystemGridBase.GetGridLines(MgCoordinateSystemGridSpecification)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetGridRegions_OSGeo_MapGuide_MgCoordinateSystemGridSpecification_">MgCoordinateSystemGridBase.GetGridRegions(MgCoordinateSystemGridSpecification)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetGridTicks_OSGeo_MapGuide_MgCoordinateSystemGridSpecification_">MgCoordinateSystemGridBase.GetGridTicks(MgCoordinateSystemGridSpecification)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetConvergenceAngle_OSGeo_MapGuide_MgCoordinate_">MgCoordinateSystemGridBase.GetConvergenceAngle(MgCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetProjectiveGridScale_OSGeo_MapGuide_MgCoordinate_">MgCoordinateSystemGridBase.GetProjectiveGridScale(MgCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_ApproxGridLineMemoryUsage_OSGeo_MapGuide_MgCoordinateSystemGridSpecification_">MgCoordinateSystemGridBase.ApproxGridLineMemoryUsage(MgCoordinateSystemGridSpecification)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_ApproxGridRegionMemoryUsage_OSGeo_MapGuide_MgCoordinateSystemGridSpecification_">MgCoordinateSystemGridBase.ApproxGridRegionMemoryUsage(MgCoordinateSystemGridSpecification)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_ApproxGridTickMemoryUsage_OSGeo_MapGuide_MgCoordinateSystemGridSpecification_">MgCoordinateSystemGridBase.ApproxGridTickMemoryUsage(MgCoordinateSystemGridSpecification)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_SetGridLineExceptionLevel_System_Int32_">MgCoordinateSystemGridBase.SetGridLineExceptionLevel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_SetGridRegionExceptionLevel_System_Int32_">MgCoordinateSystemGridBase.SetGridRegionExceptionLevel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_SetGridTickExceptionLevel_System_Int32_">MgCoordinateSystemGridBase.SetGridTickExceptionLevel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_GetLastError">MgCoordinateSystemGridBase.GetLastError()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_ResetLastError">MgCoordinateSystemGridBase.ResetLastError()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_AreExceptionsOn">MgCoordinateSystemGridBase.AreExceptionsOn()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html#OSGeo_MapGuide_MgCoordinateSystemGridBase_SetExceptionsOn_System_Boolean_">MgCoordinateSystemGridBase.SetExceptionsOn(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertFromLonLat_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertFromLonLat*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertFromLonLat_OSGeo_MapGuide_MgCoordinate_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertFromLonLat(OSGeo.MapGuide.MgCoordinate,System.Int32)">
+  ConvertFromLonLat(MgCoordinate, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a geographic coordinate to MGRS string form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConvertFromLonLat(MgCoordinate pLonLat, int nPrecision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pLonLat</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(String/string) The geographic position to be converted. X coordinate is the longitude in degrees relative to Greenwich, negative indicating west longitude. Y coordinate is latitude in degrees, negative indicating south latitude.</p>
+</dd>
+    <dt><code>nPrecision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) A value between zero and five, indicates the precision of the numeric portion of the returned MGRS designation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MGRs representation for the given point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertFromLonLat_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertFromLonLat*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertFromLonLat_System_Double_System_Double_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertFromLonLat(System.Double,System.Double,System.Int32)">
+  ConvertFromLonLat(double, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a geographic coordinate to MGRS string form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConvertFromLonLat(double dLongitude, double dLatitude, int nPrecision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dLongitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Longitude of the geographic position to be converted, in degrees relative to Greenwich. Use negative value for west longitude.</p>
+</dd>
+    <dt><code>dLatitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Latitude of the geographic position to be converted, in degrees. Use negative value for south latitude.</p>
+</dd>
+    <dt><code>nPrecision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) A value between zero and five, indicates the precision of the numeric portion of the returned MGRS designation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MGRs representation for the given point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertToLonLat_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertToLonLat*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertToLonLat_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertToLonLat(System.String)">
+  ConvertToLonLat(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate ConvertToLonLat(string sMgrs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sMgrs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertToLonLat_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertToLonLat*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemMgrs_ConvertToLonLat_System_String_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.ConvertToLonLat(System.String,System.Int32)">
+  ConvertToLonLat(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinate ConvertToLonLat(string sMgrs, int grdSqrPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sMgrs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>grdSqrPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemMgrs_Dispose_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemMgrs_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemMgrs_GetLetteringScheme_" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.GetLetteringScheme*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemMgrs_GetLetteringScheme" data-uid="OSGeo.MapGuide.MgCoordinateSystemMgrs.GetLetteringScheme">
+  GetLetteringScheme()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a value as defined by the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a>
+object indicating which lettering scheme is currently active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetLetteringScheme()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>Either <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a>::Normal or
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a>::Alternative</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

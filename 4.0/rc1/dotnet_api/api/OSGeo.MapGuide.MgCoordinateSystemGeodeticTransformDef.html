@@ -1,0 +1,1612 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgCoordinateSystemGeodeticTransformDef
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgCoordinateSystemGeodeticTransformDef
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef" class="text-break">
+    Class MgCoordinateSystemGeodeticTransformDef
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An instance of this class describes a geodetic transformation with all its parameters
+as it is defined in the dictionary file. The actual transformation operation
+is performed by the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> objects
+that's being returned by the CreateTransformation method.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgCoordinateSystemGeodeticTransformDef : MgGuardDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgCoordinateSystemGeodeticTransformDef</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_CreateClone_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.CreateClone*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_CreateClone" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.CreateClone">
+  CreateClone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a deep clone of this geodetic transformation. That is, the cloned object
+will also have its extended parameters cloned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGeodeticTransformDef CreateClone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a></dt>
+    <dd><p>Returns a new <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a> object that is an exact clone
+of this <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a> instance. The caller is responsible for
+disposing the object being returned.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_CreateTransformation_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.CreateTransformation*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_CreateTransformation_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.CreateTransformation(System.Boolean)">
+  CreateTransformation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> object that
+can be used to perform the actual transformation this transformation
+definition describes. This method will fail with an exception,
+if this is the NONE transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGeodeticTransformation CreateTransformation(bool createInverse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>createInverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> being returned will perform the inverse of the transformation as defined in the dictionary file. That is, it will convert from the actual target datum to the source datum. Note, that not all transformations are invertible. This method will fail with an exception then. If false, this method will return a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> instance that performs the default forward datum transformation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a></dt>
+    <dd><p>Returns the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> that performs the actual
+datum transformation as described by this definition instance. The caller
+is reponsible for disposing the object being returned.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_Dispose_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetAccuracy_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetAccuracy*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetAccuracy" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetAccuracy">
+  GetAccuracy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the accuracy value of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetAccuracy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The accuracy value of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetConvergenceValue_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetConvergenceValue*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetConvergenceValue" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetConvergenceValue">
+  GetConvergenceValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the convergence value of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetConvergenceValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The convergence value of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetDescription_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetDescription" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetDescription">
+  GetDescription()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the description of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The description of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetEpsgCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetEpsgCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetEpsgCode" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetEpsgCode">
+  GetEpsgCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the EPSG code of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEpsgCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The EPSG code of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetEpsgVariation_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetEpsgVariation*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetEpsgVariation" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetEpsgVariation">
+  GetEpsgVariation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the EPSG variation of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEpsgVariation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The EPSG variation of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetErrorValue_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetErrorValue*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetErrorValue" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetErrorValue">
+  GetErrorValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the error value of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetErrorValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The error value of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetGroup_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetGroup" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetGroup">
+  GetGroup()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the group of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetGroup()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The group of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetInverseSupported_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetInverseSupported*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetInverseSupported" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetInverseSupported">
+  GetInverseSupported()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether the inverse is supported</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetInverseSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this inverse is supported. false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetMaxIterations_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetMaxIterations*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetMaxIterations" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetMaxIterations">
+  GetMaxIterations()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the maximum iterations of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxIterations()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum iterations of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetParameters_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetParameters*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetParameters" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetParameters">
+  GetParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the extended parameters object valid for this transformation definition. See remarks.
+Depending on the type returned by GetTransformDefType(), this method returns one of the following:</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGeodeticTransformDefParams GetParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefParams.html">MgCoordinateSystemGeodeticTransformDefParams</a></dt>
+    <dd><p>Returns the extended parameters (or NULL) object for this transformation object. The
+caller is responsible for disposing the object being returned. See remarks.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMaxLatitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMaxLatitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMaxLatitude" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMaxLatitude">
+  GetRangeMaxLatitude()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the maximum range latitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRangeMaxLatitude()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The maximum range latitude of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMaxLongitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMaxLongitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMaxLongitude" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMaxLongitude">
+  GetRangeMaxLongitude()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the maximum range longitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRangeMaxLongitude()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The maximum range longitude of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMinLatitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMinLatitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMinLatitude" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMinLatitude">
+  GetRangeMinLatitude()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the minimum range latitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRangeMinLatitude()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The minimum range latitude of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMinLongitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMinLongitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetRangeMinLongitude" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetRangeMinLongitude">
+  GetRangeMinLongitude()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the minimum range longitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRangeMinLongitude()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The minimum range longitude of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetSource_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetSource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetSource" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetSource">
+  GetSource()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the source of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSource()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The source of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetSourceDatum_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetSourceDatum*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetSourceDatum" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetSourceDatum">
+  GetSourceDatum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the source datum of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSourceDatum()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The source datum of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetTargetDatum_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetTargetDatum*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetTargetDatum" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetTargetDatum">
+  GetTargetDatum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the target datum of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTargetDatum()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The target datum of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetTransformDefType_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetTransformDefType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetTransformDefType" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetTransformDefType">
+  GetTransformDefType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the type of this geodetic transformation (as defined by <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.html">MgCoordinateSystemGeodeticTransformDefType</a>).
+The type defines the parameters that are being returned by the GetParameters method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTransformDefType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetTransformName_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetTransformName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_GetTransformName" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.GetTransformName">
+  GetTransformName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the transform name of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTransformName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The transform name of this instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_IsProtected_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.IsProtected*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_IsProtected" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.IsProtected">
+  IsProtected()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether this instance is protected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProtected()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance is protected. false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_IsValid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.IsValid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_IsValid" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.IsValid">
+  IsValid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether this instance is valid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if this instance is valid. false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetAccuracy_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetAccuracy*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetAccuracy_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetAccuracy(System.Double)">
+  SetAccuracy(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the accuracy value of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAccuracy(double accuracy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accuracy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The accuracy value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetConvergenceValue_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetConvergenceValue*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetConvergenceValue_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetConvergenceValue(System.Double)">
+  SetConvergenceValue(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the convergence value of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConvergenceValue(double convergenceValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convergenceValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The convergence value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetDescription_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetDescription_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetDescription(System.String)">
+  SetDescription(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the description of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDescription(string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The description</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetEpsgCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetEpsgCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetEpsgCode_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetEpsgCode(System.Int32)">
+  SetEpsgCode(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the EPSG code of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEpsgCode(int epsgCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>epsgCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The EPSG code</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetEpsgVariation_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetEpsgVariation*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetEpsgVariation_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetEpsgVariation(System.Int32)">
+  SetEpsgVariation(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the EPSG variation of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEpsgVariation(int epsgVariation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>epsgVariation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The EPSG variation</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetErrorValue_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetErrorValue*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetErrorValue_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetErrorValue(System.Double)">
+  SetErrorValue(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the error value of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetErrorValue(double errorValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The error value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetGroup_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetGroup_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetGroup(System.String)">
+  SetGroup(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the group of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroup(string group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The group</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetInverseSupported_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetInverseSupported*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetInverseSupported_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetInverseSupported(System.Boolean)">
+  SetInverseSupported(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets whether the inverse is supported</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInverseSupported(bool inverseSupported)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inverseSupported</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) true if the inverse is supported. false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetMaxIterations_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetMaxIterations*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetMaxIterations_System_Int32_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetMaxIterations(System.Int32)">
+  SetMaxIterations(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the maximum iterations of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxIterations(int maxIterations)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxIterations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The maximum iterations</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetParameters_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetParameters*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetParameters_OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDefParams_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetParameters(OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefParams)">
+  SetParameters(MgCoordinateSystemGeodeticTransformDefParams)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the extended parameters for this transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParameters(MgCoordinateSystemGeodeticTransformDefParams parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefParams.html">MgCoordinateSystemGeodeticTransformDefParams</a></dt>
+    <dd><p>The parameters to set for this transformation. The object passed in, has to be of the same type as it has been returned by GetParameters. Otherwise, an exception will be thrown. This parameter must not be NULL. Creating a transformation that is supposed to do nothing except for allowing to switch from one datum to another (that is considered to be equal), requires to create standalone transformation of type NullX.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMaxLatitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMaxLatitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMaxLatitude_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMaxLatitude(System.Double)">
+  SetRangeMaxLatitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the maximum range latitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRangeMaxLatitude(double maxLat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxLat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The maximum range latitude</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMaxLongitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMaxLongitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMaxLongitude_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMaxLongitude(System.Double)">
+  SetRangeMaxLongitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the maximum range longitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRangeMaxLongitude(double maxLong)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxLong</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The maximum range longitude</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMinLatitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMinLatitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMinLatitude_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMinLatitude(System.Double)">
+  SetRangeMinLatitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the minimum range latitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRangeMinLatitude(double minLat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minLat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The minimum range latitude</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMinLongitude_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMinLongitude*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetRangeMinLongitude_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetRangeMinLongitude(System.Double)">
+  SetRangeMinLongitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the minimum range longitude of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRangeMinLongitude(double minLong)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minLong</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The minimum range longitude</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetSource_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetSource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetSource_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetSource(System.String)">
+  SetSource(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the source of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSource(string source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The source</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetSourceDatum_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetSourceDatum*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetSourceDatum_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetSourceDatum(System.String)">
+  SetSourceDatum(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the source datum of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSourceDatum(string datumKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>datumKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The source datum</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetTargetDatum_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetTargetDatum*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetTargetDatum_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetTargetDatum(System.String)">
+  SetTargetDatum(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the target datum of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargetDatum(string datumKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>datumKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The target datum</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetTransformName_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetTransformName*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemGeodeticTransformDef_SetTransformName_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.SetTransformName(System.String)">
+  SetTransformName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the transform name of this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTransformName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The transform name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

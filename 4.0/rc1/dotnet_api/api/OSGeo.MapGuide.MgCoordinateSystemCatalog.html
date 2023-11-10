@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgCoordinateSystemCatalog
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgCoordinateSystemCatalog
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgCoordinateSystemCatalog" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog" class="text-break">
+    Class MgCoordinateSystemCatalog
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines and manages the physical location of coordinate system data files</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgCoordinateSystemCatalog : MgGuardDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgCoordinateSystemCatalog</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_AreDictionaryFilesWritable_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.AreDictionaryFilesWritable*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_AreDictionaryFilesWritable" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.AreDictionaryFilesWritable">
+  AreDictionaryFilesWritable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether any kind of definition supported by this catalog can be updated in the dictionary files currently in use.
+Depending on whether this catalog uses a specific directory to store user-provided definitions in, this method
+will perform the following checks:</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreDictionaryFilesWritable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_Dispose_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetCategoryDictionary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetCategoryDictionary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetCategoryDictionary" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetCategoryDictionary">
+  GetCategoryDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system category dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemCategoryDictionary GetCategoryDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCategoryDictionary.html">MgCoordinateSystemCategoryDictionary</a></dt>
+    <dd><p>The coordinate system category dictionary</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetCoordinateSystemDictionary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetCoordinateSystemDictionary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetCoordinateSystemDictionary" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetCoordinateSystemDictionary">
+  GetCoordinateSystemDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemDictionary GetCoordinateSystemDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDictionary.html">MgCoordinateSystemDictionary</a></dt>
+    <dd><p>The coordinate system dictionary</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDatumDictionary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDatumDictionary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDatumDictionary" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDatumDictionary">
+  GetDatumDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system datum dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemDatumDictionary GetDatumDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatumDictionary.html">MgCoordinateSystemDatumDictionary</a></dt>
+    <dd><p>The coordinate system datum dictionary</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDefaultDictionaryDir_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDefaultDictionaryDir*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDefaultDictionaryDir" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDefaultDictionaryDir">
+  GetDefaultDictionaryDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the default dictionary path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDefaultDictionaryDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The default dictionary path</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDefaultUserDictionaryDir_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDefaultUserDictionaryDir*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDefaultUserDictionaryDir" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDefaultUserDictionaryDir">
+  GetDefaultUserDictionaryDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the default directory path where user defined coordinate system
+definitions can be found or can be written into, respectively.
+If set, this method returns the value of the MENTOR_USER_DICTIONARY_PATH</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDefaultUserDictionaryDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDictionaryDir_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDictionaryDir*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDictionaryDir" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDictionaryDir">
+  GetDictionaryDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current dictionary path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDictionaryDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current dictionary path</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDictionaryUtility_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDictionaryUtility*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetDictionaryUtility" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetDictionaryUtility">
+  GetDictionaryUtility()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system dictionary utility</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemDictionaryUtility GetDictionaryUtility()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDictionaryUtility.html">MgCoordinateSystemDictionaryUtility</a></dt>
+    <dd><p>The coordinate system dictionary utility</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetEllipsoidDictionary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetEllipsoidDictionary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetEllipsoidDictionary" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetEllipsoidDictionary">
+  GetEllipsoidDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system ellipsoid dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemEllipsoidDictionary GetEllipsoidDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemEllipsoidDictionary.html">MgCoordinateSystemEllipsoidDictionary</a></dt>
+    <dd><p>The coordinate system ellipsoid dictionary</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetFormatConverter_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetFormatConverter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetFormatConverter" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetFormatConverter">
+  GetFormatConverter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system format converter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemFormatConverter GetFormatConverter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFormatConverter.html">MgCoordinateSystemFormatConverter</a></dt>
+    <dd><p>The coordinate system format converter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetGeodeticPathDictionary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetGeodeticPathDictionary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetGeodeticPathDictionary" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetGeodeticPathDictionary">
+  GetGeodeticPathDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system geodetic path dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGeodeticPathDictionary GetGeodeticPathDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticPathDictionary.html">MgCoordinateSystemGeodeticPathDictionary</a></dt>
+    <dd><p>The coordinate system geodetic path dictionary</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetGeodeticTransformDefDictionary_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetGeodeticTransformDefDictionary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetGeodeticTransformDefDictionary" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetGeodeticTransformDefDictionary">
+  GetGeodeticTransformDefDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system geodetic transform definition dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemGeodeticTransformDefDictionary GetGeodeticTransformDefDictionary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.html">MgCoordinateSystemGeodeticTransformDefDictionary</a></dt>
+    <dd><p>The coordinate system geodetic transform definition dictionary</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetGeodeticTransformations_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetGeodeticTransformations*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetGeodeticTransformations_OSGeo_MapGuide_MgCoordinateSystemDatum_OSGeo_MapGuide_MgCoordinateSystemDatum_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetGeodeticTransformations(OSGeo.MapGuide.MgCoordinateSystemDatum,OSGeo.MapGuide.MgCoordinateSystemDatum)">
+  GetGeodeticTransformations(MgCoordinateSystemDatum, MgCoordinateSystemDatum)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the geodetic transformations for the source and target coordinate system datums</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDisposableCollection GetGeodeticTransformations(MgCoordinateSystemDatum pSource, MgCoordinateSystemDatum pTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pSource</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatum.html">MgCoordinateSystemDatum</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatum.html">MgCoordinateSystemDatum</a>) The source coordinate system datum</p>
+</dd>
+    <dt><code>pTarget</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatum.html">MgCoordinateSystemDatum</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatum.html">MgCoordinateSystemDatum</a>) The target coordinate system datum</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDisposableCollection.html">MgDisposableCollection</a></dt>
+    <dd><p>The collection of <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> objects</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetMathComparator_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetMathComparator*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetMathComparator" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetMathComparator">
+  GetMathComparator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system math comparator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemMathComparator GetMathComparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMathComparator.html">MgCoordinateSystemMathComparator</a></dt>
+    <dd><p>The coordinate system math comparator</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetProjectionInformation_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetProjectionInformation*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetProjectionInformation" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetProjectionInformation">
+  GetProjectionInformation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system projection information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemProjectionInformation GetProjectionInformation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemProjectionInformation.html">MgCoordinateSystemProjectionInformation</a></dt>
+    <dd><p>The coordinate system projection information</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetProtectionMode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetProtectionMode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetProtectionMode" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetProtectionMode">
+  GetProtectionMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the protection mode of this catalog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetProtectionMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>The protection mode of this catalog</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetUnitInformation_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetUnitInformation*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetUnitInformation" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetUnitInformation">
+  GetUnitInformation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the coordinate system unit information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemUnitInformation GetUnitInformation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemUnitInformation.html">MgCoordinateSystemUnitInformation</a></dt>
+    <dd><p>The coordinate system unit information</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetUserDictionaryDir_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetUserDictionaryDir*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_GetUserDictionaryDir" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.GetUserDictionaryDir">
+  GetUserDictionaryDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current directory where user defined coordinate system
+definitions is obtained from or is written into. Returns an empty string
+if no such directory is currently configured for this catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetUserDictionaryDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetDefaultDictionaryDirAndFileNames_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetDefaultDictionaryDirAndFileNames*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetDefaultDictionaryDirAndFileNames" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetDefaultDictionaryDirAndFileNames">
+  SetDefaultDictionaryDirAndFileNames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the default dictionary path and file names</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultDictionaryDirAndFileNames()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetDictionaryDir_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetDictionaryDir*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetDictionaryDir_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetDictionaryDir(System.String)">
+  SetDictionaryDir(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the path where the dictionary files are located</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDictionaryDir(string sDirPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sDirPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetProtectionMode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetProtectionMode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetProtectionMode_System_Int16_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetProtectionMode(System.Int16)">
+  SetProtectionMode(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the protection mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProtectionMode(short nMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>(short/int) The protection mode</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetUserDictionaryDir_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetUserDictionaryDir*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemCatalog_SetUserDictionaryDir_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemCatalog.SetUserDictionaryDir(System.String)">
+  SetUserDictionaryDir(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the actual directory where user defined coordinate system
+definitions can be found or can be written into. The directory set through this method must exist
+and writeable. If set to an empty string, the catalog's 'user defined coordinate system' directory
+will be unset and any updates will again happen only inside the directory
+as returned by GetDictionaryDir().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUserDictionaryDir(string sDirPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sDirPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

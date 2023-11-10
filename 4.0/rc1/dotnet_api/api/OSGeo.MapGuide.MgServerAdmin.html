@@ -1,0 +1,1908 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgServerAdmin
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgServerAdmin
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgServerAdmin">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgServerAdmin" data-uid="OSGeo.MapGuide.MgServerAdmin" class="text-break">
+    Class MgServerAdmin
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class contains methods to allow MapGuide clients to perform administration related
+operations:</p>
+<ul>
+<li>Server Configuration</li>
+<li>Logging</li>
+<li>Online/Offline</li>
+<li>Server Health</li>
+</ul>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgServerAdmin : MgGuardDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgServerAdmin</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin__ctor_" data-uid="OSGeo.MapGuide.MgServerAdmin.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin__ctor" data-uid="OSGeo.MapGuide.MgServerAdmin.#ctor">
+  MgServerAdmin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Default Constructor for an <a class="xref" href="OSGeo.MapGuide.MgServerAdmin.html">MgServerAdmin</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgServerAdmin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_BringOnline_" data-uid="OSGeo.MapGuide.MgServerAdmin.BringOnline*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_BringOnline" data-uid="OSGeo.MapGuide.MgServerAdmin.BringOnline">
+  BringOnline()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Allows the server to process client operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BringOnline()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_ClearLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.ClearLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_ClearLog_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.ClearLog(System.String)">
+  ClearLog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Clears the specified log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClearLog(string log)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log to be cleared. (AccessLog, AdminLog, AuthenticationLog, ErrorLog, SessionLog, TraceLog)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the log was successfully cleared, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_Close_" data-uid="OSGeo.MapGuide.MgServerAdmin.Close*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_Close" data-uid="OSGeo.MapGuide.MgServerAdmin.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Closes the current Server connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_DeleteLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.DeleteLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_DeleteLog_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.DeleteLog(System.String)">
+  DeleteLog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Deletes the specified log if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteLog(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the log to be deleted from the logs directory (does not include path)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_DeletePackage_" data-uid="OSGeo.MapGuide.MgServerAdmin.DeletePackage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_DeletePackage_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.DeletePackage(System.String)">
+  DeletePackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Delete the specified package, if able.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeletePackage(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the package to be deleted. Available packages can be found by using EnumeratePackages().</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileNotFoundException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_Dispose_" data-uid="OSGeo.MapGuide.MgServerAdmin.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgServerAdmin.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_EnableMaximumLogSize_" data-uid="OSGeo.MapGuide.MgServerAdmin.EnableMaximumLogSize*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_EnableMaximumLogSize_System_Boolean_" data-uid="OSGeo.MapGuide.MgServerAdmin.EnableMaximumLogSize(System.Boolean)">
+  EnableMaximumLogSize(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Enables/disables maximum log file size restriction.  Maximum log file size is
+set with <a class="xref" href="OSGeo.MapGuide.MgServerAdmin.html">MgServerAdmin</a>::SetMaximumLogSize().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableMaximumLogSize(bool useMaxSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>useMaxSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Log file size restriction is enforced if useMaxSize = true. using EnumeratePackages().</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_EnumerateLogs_" data-uid="OSGeo.MapGuide.MgServerAdmin.EnumerateLogs*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_EnumerateLogs" data-uid="OSGeo.MapGuide.MgServerAdmin.EnumerateLogs">
+  EnumerateLogs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Returns a string collection listing the contents of the logs directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPropertyCollection EnumerateLogs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>A string collection listing the contents of the logs directory.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_EnumeratePackages_" data-uid="OSGeo.MapGuide.MgServerAdmin.EnumeratePackages*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_EnumeratePackages" data-uid="OSGeo.MapGuide.MgServerAdmin.EnumeratePackages">
+  EnumeratePackages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Enumerates the packages available in the package directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgStringCollection EnumeratePackages()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a> containing a list of packages in the packages directory</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetConfigurationProperties_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetConfigurationProperties*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetConfigurationProperties_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetConfigurationProperties(System.String)">
+  GetConfigurationProperties(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the configuration properties for the specified property section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPropertyCollection GetConfigurationProperties(string propertySection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertySection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The property section to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>The collection of configuration properties associated with the specified property section.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertySectionException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPropertySectionNotAvailableException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetDocument_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetDocument*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetDocument_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetDocument(System.String)">
+  GetDocument(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the contents of the specified document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetDocument(string identifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The document to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The document contents in a ByteReader.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetInformationProperties_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetInformationProperties*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetInformationProperties" data-uid="OSGeo.MapGuide.MgServerAdmin.GetInformationProperties">
+  GetInformationProperties()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the information properties for the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPropertyCollection GetInformationProperties()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>The collection of information properties.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetLog_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLog(System.String)">
+  GetLog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the contents of the specified log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetLog(string log)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log to retrieve. (AccessLog, AdminLog, AuthenticationLog, ErrorLog, SessionLog, TraceLog)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The log contents in a ByteReader.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetLog_System_String_OSGeo_MapGuide_MgDateTime_OSGeo_MapGuide_MgDateTime_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLog(System.String,OSGeo.MapGuide.MgDateTime,OSGeo.MapGuide.MgDateTime)">
+  GetLog(string, MgDateTime, MgDateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the contents of the specified log between two dates.  A maximum 24 hour
+period is allowed to be retrieved.  This will use the current file name convention
+for the log so if the filename was changed it will be unable to find entries
+located previous files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetLog(string log, MgDateTime fromDate, MgDateTime toDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log to retrieve. (AccessLog, AdminLog, AuthenticationLog, ErrorLog, MapLayerAccessLog, SessionLog, TraceLog)</p>
+</dd>
+    <dt><code>fromDate</code> <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>Date and time to start pulling entries from</p>
+</dd>
+    <dt><code>toDate</code> <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+    <dd><p>Last date and time to pull entries for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The log contents in a ByteReader.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidLogTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetLog_System_String_System_Int32_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLog(System.String,System.Int32)">
+  GetLog(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the specified number of entries from the specified log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetLog(string log, int numEntries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log to retrieve. (AccessLog, AdminLog, AuthenticationLog, ErrorLog, SessionLog, TraceLog)</p>
+</dd>
+    <dt><code>numEntries</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of entries to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The log contents in a ByteReader.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgArgumentOutOfRangeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetLogFile_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLogFile*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetLogFile_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetLogFile(System.String)">
+  GetLogFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the contents of the specified log file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetLogFile(string logFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log file to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The log contents in a ByteReader.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetPackageLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetPackageLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetPackageLog_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetPackageLog(System.String)">
+  GetPackageLog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets current log of the specified package</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GetPackageLog(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the package to get the status for. Available packages can be found by using EnumeratePackages().</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> containing the contents of the package's log.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetPackageStatus_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetPackageStatus*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetPackageStatus_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetPackageStatus(System.String)">
+  GetPackageStatus(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Retrieves the current status of the specified package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPackageStatusInformation GetPackageStatus(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the package to get the status for. Available packages can be found by using EnumeratePackages().</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPackageStatusInformation.html">MgPackageStatusInformation</a></dt>
+    <dd><p>The status of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetSiteStatus_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetSiteStatus*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetSiteStatus" data-uid="OSGeo.MapGuide.MgServerAdmin.GetSiteStatus">
+  GetSiteStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the status properties for the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPropertyCollection GetSiteStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>The collection of status properties.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetSiteVersion_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetSiteVersion*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetSiteVersion" data-uid="OSGeo.MapGuide.MgServerAdmin.GetSiteVersion">
+  GetSiteVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the site version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSiteVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The site version.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_GetWarningsObject_" data-uid="OSGeo.MapGuide.MgServerAdmin.GetWarningsObject*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_GetWarningsObject" data-uid="OSGeo.MapGuide.MgServerAdmin.GetWarningsObject">
+  GetWarningsObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+GetWarningsObject() method returns all the current warning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgWarnings GetWarningsObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgWarnings.html">MgWarnings</a></dt>
+    <dd><p>Returns a pointer to the <a class="xref" href="OSGeo.MapGuide.MgWarnings.html">MgWarnings</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_HasWarning_" data-uid="OSGeo.MapGuide.MgServerAdmin.HasWarning*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_HasWarning" data-uid="OSGeo.MapGuide.MgServerAdmin.HasWarning">
+  HasWarning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+HasWarning() method reports if there is a current warning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasWarning()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true or false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_IsMaximumLogSizeEnabled_" data-uid="OSGeo.MapGuide.MgServerAdmin.IsMaximumLogSizeEnabled*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_IsMaximumLogSizeEnabled" data-uid="OSGeo.MapGuide.MgServerAdmin.IsMaximumLogSizeEnabled">
+  IsMaximumLogSizeEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Determines if log file size is restricted to the maximum size
+set with <a class="xref" href="OSGeo.MapGuide.MgServerAdmin.html">MgServerAdmin</a>::SetMaximumLogSize().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMaximumLogSizeEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The status of the use of the maximum log size restriction</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_IsOnline_" data-uid="OSGeo.MapGuide.MgServerAdmin.IsOnline*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_IsOnline" data-uid="OSGeo.MapGuide.MgServerAdmin.IsOnline">
+  IsOnline()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Gets the online status of the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnline()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True for online, False for offline.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_LoadPackage_" data-uid="OSGeo.MapGuide.MgServerAdmin.LoadPackage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_LoadPackage_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.LoadPackage(System.String)">
+  LoadPackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Loads the specified resource package into the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadPackage(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the package to be loaded. Available packages can be found by using EnumeratePackages().</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPathTooLongException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_MakePackage_" data-uid="OSGeo.MapGuide.MgServerAdmin.MakePackage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_MakePackage_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.MakePackage(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.String)">
+  MakePackage(MgResourceIdentifier, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Creates a package from the specified resource, and then saves it into
+the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakePackage(MgResourceIdentifier resource, string packageName, string packageDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>Resource identifier of a folder containing permissible resources to be packaged.</p>
+</dd>
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the package to be made. The serverconfig.ini file has the &amp;quot;PackagesPath&quot; property which will be used for path. The file name will automatically be appended with the &quot;.mgp&quot; extension (case sensitive) if it is not specified.</p>
+</dd>
+    <dt><code>packageDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The description of the package.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgDuplicateFileException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPathTooLongException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidRepositoryNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourcePathException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceNameException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_Open_" data-uid="OSGeo.MapGuide.MgServerAdmin.Open*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_Open_OSGeo_MapGuide_MgUserInformation_" data-uid="OSGeo.MapGuide.MgServerAdmin.Open(OSGeo.MapGuide.MgUserInformation)">
+  Open(MgUserInformation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Opens a connection to a Server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open(MgUserInformation userInformation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userInformation</code> <a class="xref" href="OSGeo.MapGuide.MgUserInformation.html">MgUserInformation</a></dt>
+    <dd><p>User information - credentials, locale, session identifier</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgServerNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionFailedException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_Open_" data-uid="OSGeo.MapGuide.MgServerAdmin.Open*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_Open_System_String_OSGeo_MapGuide_MgUserInformation_" data-uid="OSGeo.MapGuide.MgServerAdmin.Open(System.String,OSGeo.MapGuide.MgUserInformation)">
+  Open(string, MgUserInformation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Opens a connection to a specified Server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open(string server, MgUserInformation userInformation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Server IP address or DNS name.</p>
+</dd>
+    <dt><code>userInformation</code> <a class="xref" href="OSGeo.MapGuide.MgUserInformation.html">MgUserInformation</a></dt>
+    <dd><p>User information - credentials, locale, session identifier</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgServerNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionFailedException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_RemoveConfigurationProperties_" data-uid="OSGeo.MapGuide.MgServerAdmin.RemoveConfigurationProperties*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_RemoveConfigurationProperties_System_String_OSGeo_MapGuide_MgPropertyCollection_" data-uid="OSGeo.MapGuide.MgServerAdmin.RemoveConfigurationProperties(System.String,OSGeo.MapGuide.MgPropertyCollection)">
+  RemoveConfigurationProperties(string, MgPropertyCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Removes the configuration properties for the specified property section.
+If the properties are not specified, then the entire section will be removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveConfigurationProperties(string propertySection, MgPropertyCollection properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertySection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The property section to remove.</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>The collection of configuration properties associated with the specified property section that you want to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertySectionException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPropertySectionNotAvailableException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPropertySectionReadOnlyException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_RenameLog_" data-uid="OSGeo.MapGuide.MgServerAdmin.RenameLog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_RenameLog_System_String_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.RenameLog(System.String,System.String)">
+  RenameLog(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Renames the specified log to the new name given</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameLog(string oldFileName, string newFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current name of the log file</p>
+</dd>
+    <dt><code>newFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new name to give the log file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgDuplicateFileException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileNotFoundException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgFileIoException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_SetConfigurationProperties_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetConfigurationProperties*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_SetConfigurationProperties_System_String_OSGeo_MapGuide_MgPropertyCollection_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetConfigurationProperties(System.String,OSGeo.MapGuide.MgPropertyCollection)">
+  SetConfigurationProperties(string, MgPropertyCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the configuration properties for the specified property section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConfigurationProperties(string propertySection, MgPropertyCollection properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertySection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The property section to set.</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+    <dd><p>The collection of configuration properties associated with the specified property section that you want to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertySectionException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPropertySectionNotAvailableException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgPropertySectionReadOnlyException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidPropertyException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_SetDocument_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetDocument*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_SetDocument_System_String_OSGeo_MapGuide_MgByteReader_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetDocument(System.String,OSGeo.MapGuide.MgByteReader)">
+  SetDocument(string, MgByteReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Sets the contents of the specified document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDocument(string identifier, MgByteReader data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The document to set.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>The data to set the document contents to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullReferenceException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgOutOfMemoryException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_SetLogDelimiter_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetLogDelimiter*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_SetLogDelimiter_System_String_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetLogDelimiter(System.String)">
+  SetLogDelimiter(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Specifies the delimiter to use for separating the data fields in the logs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLogDelimiter(string delimiter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delimiter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_SetMaximumLogSize_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetMaximumLogSize*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_SetMaximumLogSize_System_Int32_" data-uid="OSGeo.MapGuide.MgServerAdmin.SetMaximumLogSize(System.Int32)">
+  SetMaximumLogSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Specifies the maximum size in kilobytes for the log files.  When the maximum
+size is exceeded, the current log will be archived, and a new log will be created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaximumLogSize(int size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgServerAdmin_TakeOffline_" data-uid="OSGeo.MapGuide.MgServerAdmin.TakeOffline*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgServerAdmin_TakeOffline" data-uid="OSGeo.MapGuide.MgServerAdmin.TakeOffline">
+  TakeOffline()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Prevents the server from processing client operations.  When offline, the
+adminstrator can access the server via &quot;Admin&quot; operations without worrying
+about MapGuide clients using the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TakeOffline()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgConnectionNotOpenException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

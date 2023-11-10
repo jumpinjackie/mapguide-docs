@@ -1,0 +1,916 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgLayerCollection
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgLayerCollection
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgLayerCollection">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgLayerCollection" data-uid="OSGeo.MapGuide.MgLayerCollection" class="text-break">
+    Class MgLayerCollection
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> objects.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgLayerCollection : MgGuardDisposable, IDisposable, IList&lt;MgLayerBase&gt;, ICollection&lt;MgLayerBase&gt;, IEnumerable&lt;MgLayerBase&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgLayerCollection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Count_" data-uid="OSGeo.MapGuide.MgLayerCollection.Count*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Count" data-uid="OSGeo.MapGuide.MgLayerCollection.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_IsReadOnly_" data-uid="OSGeo.MapGuide.MgLayerCollection.IsReadOnly*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_IsReadOnly" data-uid="OSGeo.MapGuide.MgLayerCollection.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Item_" data-uid="OSGeo.MapGuide.MgLayerCollection.Item*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Item_System_Int32_" data-uid="OSGeo.MapGuide.MgLayerCollection.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayerBase this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Add_" data-uid="OSGeo.MapGuide.MgLayerCollection.Add*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Add_OSGeo_MapGuide_MgLayerBase_" data-uid="OSGeo.MapGuide.MgLayerCollection.Add(OSGeo.MapGuide.MgLayerBase)">
+  Add(MgLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a layer to the end of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(MgLayerBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>) Layer to be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Clear_" data-uid="OSGeo.MapGuide.MgLayerCollection.Clear*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Clear" data-uid="OSGeo.MapGuide.MgLayerCollection.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all layers from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Contains_" data-uid="OSGeo.MapGuide.MgLayerCollection.Contains*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Contains_OSGeo_MapGuide_MgLayerBase_" data-uid="OSGeo.MapGuide.MgLayerCollection.Contains(OSGeo.MapGuide.MgLayerBase)">
+  Contains(MgLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the collection contains the specified layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(MgLayerBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>) <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the collection contains the specified item,
+or false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Contains_" data-uid="OSGeo.MapGuide.MgLayerCollection.Contains*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Contains_System_String_" data-uid="OSGeo.MapGuide.MgLayerCollection.Contains(System.String)">
+  Contains(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the collection contains the specified layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name of the layer to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the collection contains the specified item,
+or false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_CopyTo_" data-uid="OSGeo.MapGuide.MgLayerCollection.CopyTo*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_CopyTo_OSGeo_MapGuide_MgLayerBase___System_Int32_" data-uid="OSGeo.MapGuide.MgLayerCollection.CopyTo(OSGeo.MapGuide.MgLayerBase[],System.Int32)">
+  CopyTo(MgLayerBase[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(MgLayerBase[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>[]</dt>
+    <dd></dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Dispose_" data-uid="OSGeo.MapGuide.MgLayerCollection.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgLayerCollection.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_GetCount_" data-uid="OSGeo.MapGuide.MgLayerCollection.GetCount*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_GetCount" data-uid="OSGeo.MapGuide.MgLayerCollection.GetCount">
+  GetCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of layers in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the number of layers.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_GetEnumerator_" data-uid="OSGeo.MapGuide.MgLayerCollection.GetEnumerator*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_GetEnumerator" data-uid="OSGeo.MapGuide.MgLayerCollection.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;MgLayerBase&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_GetItem_" data-uid="OSGeo.MapGuide.MgLayerCollection.GetItem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_GetItem_System_Int32_" data-uid="OSGeo.MapGuide.MgLayerCollection.GetItem(System.Int32)">
+  GetItem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the layer at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayerBase GetItem(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Index of the layer to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>Returns the layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgIndexOutOfRangeException">MgIndexOutOfRangeException</a>)  if the specified index is out of range.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_GetItem_" data-uid="OSGeo.MapGuide.MgLayerCollection.GetItem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_GetItem_System_String_" data-uid="OSGeo.MapGuide.MgLayerCollection.GetItem(System.String)">
+  GetItem(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the layer with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgLayerBase GetItem(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name of the layer to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>Returns the layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgObjectNotFoundException">MgObjectNotFoundException</a>)  if the name does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_IndexOf_" data-uid="OSGeo.MapGuide.MgLayerCollection.IndexOf*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_IndexOf_OSGeo_MapGuide_MgLayerBase_" data-uid="OSGeo.MapGuide.MgLayerCollection.IndexOf(OSGeo.MapGuide.MgLayerBase)">
+  IndexOf(MgLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index of the specified layer in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(MgLayerBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>) <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the layer's index if the collection contains the
+specified layer, or false (-1) otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_IndexOf_" data-uid="OSGeo.MapGuide.MgLayerCollection.IndexOf*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_IndexOf_System_String_" data-uid="OSGeo.MapGuide.MgLayerCollection.IndexOf(System.String)">
+  IndexOf(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index of the specified layer in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Name of the layer to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the layer's index if the collection contains the
+specified layer, or false (-1) otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Insert_" data-uid="OSGeo.MapGuide.MgLayerCollection.Insert*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Insert_System_Int32_OSGeo_MapGuide_MgLayerBase_" data-uid="OSGeo.MapGuide.MgLayerCollection.Insert(System.Int32,OSGeo.MapGuide.MgLayerBase)">
+  Insert(int, MgLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a layer at a specified location in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, MgLayerBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Position in the collection to insert the layer.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>) Layer to be inserted in the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgIndexOutOfRangeException">MgIndexOutOfRangeException</a>)  if the specified index is out of range.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_Remove_" data-uid="OSGeo.MapGuide.MgLayerCollection.Remove*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_Remove_OSGeo_MapGuide_MgLayerBase_" data-uid="OSGeo.MapGuide.MgLayerCollection.Remove(OSGeo.MapGuide.MgLayerBase)">
+  Remove(MgLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a layer from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(MgLayerBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>) Layer to be removed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if removal was successful.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_RemoveAt_" data-uid="OSGeo.MapGuide.MgLayerCollection.RemoveAt*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_RemoveAt_System_Int32_" data-uid="OSGeo.MapGuide.MgLayerCollection.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a layer from the collection at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Index of the layer to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgIndexOutOfRangeException">MgIndexOutOfRangeException</a>)  if the specified index is out of range.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgLayerCollection_SetItem_" data-uid="OSGeo.MapGuide.MgLayerCollection.SetItem*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgLayerCollection_SetItem_System_Int32_OSGeo_MapGuide_MgLayerBase_" data-uid="OSGeo.MapGuide.MgLayerCollection.SetItem(System.Int32,OSGeo.MapGuide.MgLayerBase)">
+  SetItem(int, MgLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the layer in the collection at the specified index to
+the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetItem(int index, MgLayerBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Position in the collection to set the layer.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a>) <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> to be set in the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>with code (<a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html#OSGeo_MapGuide_MgExceptionCodes_MgIndexOutOfRangeException">MgIndexOutOfRangeException</a>)  if the specified index is out of range.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

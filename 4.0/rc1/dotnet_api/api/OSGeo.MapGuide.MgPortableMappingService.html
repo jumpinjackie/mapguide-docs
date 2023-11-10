@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgPortableMappingService
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgPortableMappingService
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgPortableMappingService">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgPortableMappingService" data-uid="OSGeo.MapGuide.MgPortableMappingService" class="text-break">
+    Class MgPortableMappingService
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Portable.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Performs map related operations such as getting an eMap DWF
+representing a map or updates to a map, or querying features
+from maps or layers of a map.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgPortableMappingService : MgService, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgService.html">MgService</a></div>
+      <div><span class="xref">MgPortableMappingService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_HasWarnings">MgService.HasWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_GetWarningsObject">MgService.GetWarningsObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgPortableMappingService_Dispose_" data-uid="OSGeo.MapGuide.MgPortableMappingService.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableMappingService_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgPortableMappingService.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableMappingService_GenerateLegendImage_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GenerateLegendImage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableMappingService_GenerateLegendImage_OSGeo_MapGuide_MgResourceIdentifier_System_Double_System_Int32_System_Int32_System_String_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GenerateLegendImage(OSGeo.MapGuide.MgResourceIdentifier,System.Double,System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+  GenerateLegendImage(MgResourceIdentifier, double, int, int, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>GenerateLegendImage() returns the legend image for the specified layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GenerateLegendImage(MgResourceIdentifier resource, double scale, int width, int height, string format, int geomType, int themeCategory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Input <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a> object identifying the layer definition resource.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Input The scale at which the symbolization is requested.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The requested image width in pixels.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The requested image height in pixels.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Input Image format, from OSGeo.MapGuide.MgImageFormats. Example: PNG, JPG, PNG8, etc</p>
+</dd>
+    <dt><code>geomType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The type of symbolization required: 1=Point, 2=Line, 3=Area, 4=Composite</p>
+</dd>
+    <dt><code>themeCategory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The value indicating which theme category swatch to return. Used when there is a theme defined at this scale. An exception will be thrown if a requested them category doesn&amp;apos;t exist.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns a stream representing the legend image.
+The default returned image format will be PNG8 unless a different supported
+format is requested. An exception will be thrown if an unsupported image
+format is requested.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgArgumentOutOfRangeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidImageFormatException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableMappingService_GenerateMultiPlot_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GenerateMultiPlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableMappingService_GenerateMultiPlot_OSGeo_MapGuide_MgPortableMapPlotCollection_OSGeo_MapGuide_MgPortableDwfVersion_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GenerateMultiPlot(OSGeo.MapGuide.MgPortableMapPlotCollection,OSGeo.MapGuide.MgPortableDwfVersion)">
+  GenerateMultiPlot(MgPortableMapPlotCollection, MgPortableDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GenerateMultiPlot(MgPortableMapPlotCollection mapPlots, MgPortableDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapPlots</code> <a class="xref" href="OSGeo.MapGuide.MgPortableMapPlotCollection.html">MgPortableMapPlotCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableMapPlotCollection.html">MgPortableMapPlotCollection</a>) A collection of MapPlot objects.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a>) DWF specification required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF
+in ePlot format with multiple sheets, one for each
+map.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableMappingService_GeneratePlot_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GeneratePlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableMappingService_GeneratePlot_OSGeo_MapGuide_MgPortableMap_OSGeo_MapGuide_MgCoordinate_System_Double_OSGeo_MapGuide_MgPortablePlotSpecification_OSGeo_MapGuide_MgPortableLayout_OSGeo_MapGuide_MgPortableDwfVersion_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GeneratePlot(OSGeo.MapGuide.MgPortableMap,OSGeo.MapGuide.MgCoordinate,System.Double,OSGeo.MapGuide.MgPortablePlotSpecification,OSGeo.MapGuide.MgPortableLayout,OSGeo.MapGuide.MgPortableDwfVersion)">
+  GeneratePlot(MgPortableMap, MgCoordinate, double, MgPortablePlotSpecification, MgPortableLayout, MgPortableDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plot the map to an EPlot DWF using the specified center and scale.  The extents
+will be computed to fill the space within the page margins.  If the layout
+paramter is null, no adornments will be added to the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GeneratePlot(MgPortableMap map, MgCoordinate center, double scale, MgPortablePlotSpecification plotSpec, MgPortableLayout layout, MgPortableDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a>) Map object describing current state of map.</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) The coordinates of the center of the map for the plot.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The scale to use for the plot.</p>
+</dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a>) Plotting specifications for the generated plot.</p>
+</dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a>) Layout specifications to use for the generated plot.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a>) DWF version required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF in ePlot format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableMappingService_GeneratePlot_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GeneratePlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableMappingService_GeneratePlot_OSGeo_MapGuide_MgPortableMap_OSGeo_MapGuide_MgEnvelope_System_Boolean_OSGeo_MapGuide_MgPortablePlotSpecification_OSGeo_MapGuide_MgPortableLayout_OSGeo_MapGuide_MgPortableDwfVersion_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GeneratePlot(OSGeo.MapGuide.MgPortableMap,OSGeo.MapGuide.MgEnvelope,System.Boolean,OSGeo.MapGuide.MgPortablePlotSpecification,OSGeo.MapGuide.MgPortableLayout,OSGeo.MapGuide.MgPortableDwfVersion)">
+  GeneratePlot(MgPortableMap, MgEnvelope, bool, MgPortablePlotSpecification, MgPortableLayout, MgPortableDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plot the map to an EPlot DWF using the extent specified in the mapping
+coordinate space.  The center and scale will be computed based on the extent
+specified.  If expandToFit is true, then the extent specified will be expanded
+in the X or Y direction to fill the space within the page margins.  If the
+layout paramter is null, no adornments will be added to the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GeneratePlot(MgPortableMap map, MgEnvelope extents, bool expandToFit, MgPortablePlotSpecification plotSpec, MgPortableLayout layout, MgPortableDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a>) Map object describing current state of map.</p>
+</dd>
+    <dt><code>extents</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a>) The extents of the map to be plotted..</p>
+</dd>
+    <dt><code>expandToFit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag indicating whether the extents should be expanded to fill the space withing the page margins.</p>
+</dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a>) Plotting specifications for the generated plot.</p>
+</dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a>) Layout specifications to use for the generated plot.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a>) DWF version required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF in ePlot format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgPortableMappingService_GeneratePlot_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GeneratePlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgPortableMappingService_GeneratePlot_OSGeo_MapGuide_MgPortableMap_OSGeo_MapGuide_MgPortablePlotSpecification_OSGeo_MapGuide_MgPortableLayout_OSGeo_MapGuide_MgPortableDwfVersion_" data-uid="OSGeo.MapGuide.MgPortableMappingService.GeneratePlot(OSGeo.MapGuide.MgPortableMap,OSGeo.MapGuide.MgPortablePlotSpecification,OSGeo.MapGuide.MgPortableLayout,OSGeo.MapGuide.MgPortableDwfVersion)">
+  GeneratePlot(MgPortableMap, MgPortablePlotSpecification, MgPortableLayout, MgPortableDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plot The map to an EPlot DWF using the center and scale from the map.  The
+extents will be computed to fill the space within the page margins.  If the
+layout paramter is null, no adornments will be added to the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GeneratePlot(MgPortableMap map, MgPortablePlotSpecification plotSpec, MgPortableLayout layout, MgPortableDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a>) Map object describing current state of map.</p>
+</dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a>) Plotting specifications for the generated plot.</p>
+</dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a>) Layout specifications to use for the generated plot.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a>) DWF version required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF in ePlot format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

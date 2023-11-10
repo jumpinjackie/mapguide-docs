@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CSTestValues | MapGuide API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CSTestValues | MapGuide API Reference ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide API Reference">
+            MapGuide API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="cstestvalues">CSTestValues</h1>
+
+<p>
+  These values are used for testing the coordinate system API.
+</p>
+<h2>Geodetic Coordinate System </h2>
+<h3>Used in the PHP Sample Code</h3>
+<p>
+  The following well-known text represents a coordinate system
+  based on longitude and latitude whose name is "Longitude /
+  Latitude (NAD 83)". The horizontal datum used to measure
+  positions on the surface of the earth is named "NAD 83". The
+  earth's surface is modeled as a squashed sphere. The name of
+  the model is "GRS 80". The "GRS 80" model has a semi-major
+  axis value of 6378137 and an inverse flattening value of
+  298.257222101. The longitudinal measurement is taken from the
+  Greenwich prime meridian. The Greenwich prime meridian is at
+  an angle of 0.000000 degrees relative to the reference
+  (Greenwich) prime meridian. The unit of measurement is an
+  angular type whose name is "Decimal Degree", which can be
+  converted to radians by applying the scalar factor of
+  0.01745329251994330.
+</p>
+<pre><code>SQL\&gt; select cs_name,srid, wktext from mdsys.cs_srs where srid = 8265;
+cs_name = Longitude / Latitude (NAD 83)
+ srid=8265
+wktext=
+GEOGCS [
+   &quot;Longitude / Latitude (NAD 83)&quot;,
+   DATUM
+      &quot;NAD 83&quot;,
+      SPHEROID [
+         &quot;GRS 80&quot;,
+         6378137,
+         298.257222101
+      ]
+   ],
+   PRIMEM [
+      &quot;Greenwich&quot;,
+      0.000000
+   ],
+   UNIT [
+      &quot;Decimal Degree&quot;,
+      0.01745329251994330
+   ]
+]
+</code></pre>
+<h3>Used in the C# Sample Code</h3>
+<p>
+  The following well-known text represents a coordinate system
+  based on longitude and latitude whose name is "LL83".
+  The horizontal datum used to measure
+  positions on the surface of the earth is named "NAD83". The
+  earth's surface is modeled as a squashed sphere. The name of
+  the model is "GRS 80". The "GRS 80" model has a semi-major
+  axis value of 6378137 and an inverse flattening value of
+  298.257222101. The longitudinal measurement is taken from the
+  Greenwich prime meridian. The Greenwich prime meridian is at
+  an angle of 0.000000 degrees relative to the reference
+  (Greenwich) prime meridian. The unit of measurement is an
+  angular type whose name is "Decimal Degree", which can be
+  converted to radians by applying the scalar factor of
+  0.01745329251994330.
+</p>
+<pre><code>GEOGCS [
+   &quot;LL83&quot;,
+   DATUM [
+      &quot;NAD83&quot;,
+      SPHEROID [
+         &quot;GRS1980&quot;,
+	 6378137.000,
+	 298.25722210
+      ]
+   ],
+   PRIMEM [
+      &quot;Greenwich&quot;,
+      0
+   ],
+   UNIT [
+      &quot;Degree&quot;,
+      0.01745329251994
+   ]
+]
+</code></pre>
+<h2>Projected Coordinate System </h2>
+<h3>Used in the PHP Sample Code</h3>
+<p>
+  The following well-known text represents a projected
+  coordinate system whose name is "UTM Zone 18 (NAD 83)". It
+  uses a parameterized transform called "Transverse Mercator"
+  to transform geographic coordinates into the projected
+  coordinates. The source coordinates are expressed in terms of
+  a geographic coordinate system whose name is "NAD 83
+  (Continental US)." based on longitude and latitude whose name
+  is "Longitude / Latitude (NAD 83)". The "Transverse Mercator"
+  transform takes three parameters. The name of the first
+  parameter is "Scale_Factor", and its value is 0.999600. The
+  name of the second parameter is "Central_Meridian", and its
+  value is -117.000000. The name of the third parameter is
+  "False_Easting", and its value is 500000.000000. The unit of
+  measurement is a linear type whose name is "Meter", which can
+  be converted to meters by applying the scalar factor of
+  1.000000000000.
+</p>
+<pre><code>SQL\&gt; select cs_name,srid, wktext from mdsys.cs_srs where srid = 82217;
+cs_name=UTM Zone 11 (NAD 83)
+srid=82254
+wktext=
+PROJCS[
+   &quot;UTM Zone 18 (NAD 83)&quot;,
+   GEOGCS [
+      &quot;NAD 83 (Continental US)&quot;,
+      DATUM [
+         &quot;NAD 83 (Continental US)&quot;,
+         SPHEROID [
+            &quot;GRS 80&quot;,
+            6378137,
+            298.257222101
+         ]
+      ],
+      PRIMEM [
+         &quot;Greenwich&quot;, 0.000000
+      ],
+      UNIT [
+         &quot;Decimal Degree&quot;,
+         0.01745329251994330
+      ]
+   ],
+   PROJECTION [
+      &quot;Transverse Mercator&quot;
+   ],
+   PARAMETER [
+      &quot;Scale_Factor&quot;,
+      0.999600
+   ],
+   PARAMETER [
+      &quot;Central_Meridian&quot;,
+      \-75.000000
+   ],
+   PARAMETER [
+      &quot;False_Easting&quot;,
+      500000.000000
+   ],
+   UNIT [
+      &quot;Meter&quot;,
+      1.000000000000
+   ]
+]
+</code></pre>
+<h3>Used in the C# Sample Code</h3>
+<p>
+  The following well-known text represents a projected
+  coordinate system whose name is "UTM83-4". It
+  uses a parameterized transform called "Transverse Mercator"
+  to transform geographic coordinates into the projected
+  coordinates. The source coordinates are expressed in terms of
+  a geographic coordinate system whose name is "LL83".
+  The "Transverse Mercator" transform takes five parameters.
+  The name of the first parameter is "false_easting", and its value is 500000.000.
+  The name of the second parameter is "false_northing", and its value is 0.000.
+  The name of the third parameter is "central_meridian", and its value is -159.00000000000000.
+  The name of the fourth parameter is "scale_factor", and its value is 0.9996.
+  The name of the fifth parameter is "latitude_of_origin", and its value is 0.000.
+  The unit of measurement is a linear type whose name is "Meter", which can
+  be converted to meters by applying the scalar factor of 1.000000000000.
+</p>
+<pre><code>PROJCS[
+  &quot;UTM83-4&quot;,
+  GEOGCS[
+    &quot;LL83&quot;,
+    DATUM[
+      &quot;NAD83&quot;,
+      SPHEROID[
+        &quot;GRS1980&quot;,
+	6378137.000,
+	298.25722210
+      ]
+    ],
+    PRIMEM[
+      &quot;Greenwich&quot;,
+      0
+    ],
+    UNIT[
+      &quot;Degree&quot;,
+      0.017453292519943295
+    ]
+  ],
+  PROJECTION[
+    &quot;Transverse_Mercator&quot;
+  ],
+  PARAMETER[
+    &quot;false_easting&quot;,
+    500000.000
+  ],
+  PARAMETER[
+    &quot;false_northing&quot;,
+    0.000
+  ],
+  PARAMETER[
+    &quot;central_meridian&quot;,
+    -159.00000000000000
+  ],
+  PARAMETER[
+    &quot;scale_factor&quot;,
+    0.9996
+  ],
+  PARAMETER[
+    &quot;latitude_of_origin&quot;,
+    0.000
+  ],
+  UNIT[
+    &quot;Meter&quot;,
+    1.00000000000000
+  ]
+]
+</code></pre>
+<h2> Arbitrary Coordinate System </h2>
+<p>
+  The following well-known text represents a local,
+  ungeoreferenced coordinate system whose name is "Non-Earth
+  (Mile)." The horizontal datum used to measure positions in
+  the coordinate system is named "Local Datum". The type of the
+  horizontal datum is 0. The unit of measurement is a linear
+  type whose name is "Mile", which can be converted to meters
+  by applying the scalar factor of 1.609344e+03. The system has
+  two AXIS values indicating that it is two-dimensional. The
+  directional value associated with the "X" AXIS signifies that
+  "X" increases positively in value moving east from the
+  origin. The directional value associated with the "Y" AXIS
+  signifies that "Y" increases positively in value moving north
+  from the origin.
+</p>
+<pre><code>select cs_name, srid, wktext from mdsys.cs_srs where wktext like '%LOCAL_CS%';
+cs_name=Non-Earth (Mile)
+srid=262156
+wktext=
+LOCAL_CS [
+   &quot;Non-Earth (Mile)&quot;,
+   LOCAL_DATUM [
+      &quot;Local Datum&quot;,
+      0
+   ]
+    UNIT [
+      &quot;Mile&quot;,
+      1.609344e+03
+   ],
+   AXIS [
+      &quot;X&quot;,
+      EAST
+   ],
+   AXIS[
+      &quot;Y&quot;,
+      NORTH
+   ]
+]
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

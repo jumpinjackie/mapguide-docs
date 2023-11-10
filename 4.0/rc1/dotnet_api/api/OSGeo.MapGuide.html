@@ -1,0 +1,2173 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace OSGeo.MapGuide
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace OSGeo.MapGuide
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide">
+
+  <h1 id="OSGeo_MapGuide" data-uid="OSGeo.MapGuide" class="text-break">Namespace OSGeo.MapGuide
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.ManagedException.html">ManagedException</a></dt>
+      <dd><p>ManagedException is the exception class from which the root of unmanaged exception derive
+This class, deriving from .NET Exception, allows to use the most common properties of
+the Exception class on exceptions wrapping unmanaged MgException classes. The implementation
+of these properties relies on the equivalent MgException methods.</p>
+<p>Although this class does not wrap any unmanaged class, it still holds a C++ pointer to
+the MgException that derives from it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MapGuideApi.html">MapGuideApi</a></dt>
+      <dd><p>This is the entry point of the MapGuide API</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgAgfReaderWriter.html">MgAgfReaderWriter</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgAgfReaderWriter.html">MgAgfReaderWriter</a> class is used to translate an
+<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> object into into an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object and to do
+the reverse translation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgAggregateGeometry.html">MgAggregateGeometry</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgAggregateGeometry.html">MgAggregateGeometry</a> is an abstract base class for all of the
+geometry types that are composed of a set of aggregated
+geometry objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgArcSegment.html">MgArcSegment</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgArcSegment.html">MgArcSegment</a> is a curve segment defined in terms of a start
+point, end point, and a control point.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgBatchPropertyCollection.html">MgBatchPropertyCollection</a> represents a collection of properties. Properties
+are name/value pairs used for specifying the values of properties.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgBlobProperty.html">MgBlobProperty</a></dt>
+      <dd><p>Stores BLOB (Binary Large Object) data with an associated key
+name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgBooleanProperty.html">MgBooleanProperty</a></dt>
+      <dd><p>Stores boolean data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgByteProperty.html">MgByteProperty</a></dt>
+      <dd><p>Stores a single BYTE of data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+      <dd><p>Reads data from a byte source. Once read, the data in the
+reader cannot be reread.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgByteSink.html">MgByteSink</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgByteSink.html">MgByteSink</a> is a used to write the content of a <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object to a file.
+<a class="xref" href="OSGeo.MapGuide.MgByteSink.html">MgByteSink</a> is, like <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>, inherently read-only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgByteSource.html">MgByteSource</a></dt>
+      <dd><p>Represents a source of byte data with a specific content type.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a></dt>
+      <dd><p>Defines a feature class belonging to a schema.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgClassDefinitionCollection.html">MgClassDefinitionCollection</a></dt>
+      <dd><p>ClassDefinitionCollection represents a collection of class definitions in a feature schema.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgClobProperty.html">MgClobProperty</a></dt>
+      <dd><p>Stores CLOB (Character Large Object) data with an associated
+key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCollection.html">MgCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCollection.html">MgCollection</a> is an abstract class for defining standard collection access
+for all collection classes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgColor.html">MgColor</a></dt>
+      <dd><p>This class stores Alpha, Red, Green and Blue component of a Color.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgConfigProperties.html">MgConfigProperties</a></dt>
+      <dd><p>Properties stored in an OSGeo.MapGuide.MgConfiguration object.  Note that the properties are
+organized into Property Sections.  These sections may be used in the API to
+set/get groups of configuration properties.
+INTERNAL_ONLY:</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> is an abstract base class used to represent the
+Cartesian coordinates of a geometry.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateCollection.html">MgCoordinateCollection</a> provides support for defining an ordered set of
+coordinates.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateDimension.html">MgCoordinateDimension</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateDimension.html">MgCoordinateDimension</a> defines a set of integer constants
+which can be OR'd together to specify the dimensionality of
+an <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a> instance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateIterator.html">MgCoordinateIterator</a></dt>
+      <dd><p>The class <a class="xref" href="OSGeo.MapGuide.MgCoordinateIterator.html">MgCoordinateIterator</a> supports iteration over the
+coordinates of a geometry or path instruction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSpace.html">MgCoordinateSpace</a></dt>
+      <dd><p>Specifies the coordinate space for feature geometry returned from QueryFeatures.
+Can also specify that only non-geometric data should be returned by QueryFeature.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCatalog.html">MgCoordinateSystemCatalog</a></dt>
+      <dd><p>Defines and manages the physical location of coordinate system data files</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCategory.html">MgCoordinateSystemCategory</a></dt>
+      <dd><p>Defines a category of coordinate systems</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCategoryDictionary.html">MgCoordinateSystemCategoryDictionary</a></dt>
+      <dd><p>Basic functionality for the coordinate system category dictionary</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCodeFormat.html">MgCoordinateSystemCodeFormat</a></dt>
+      <dd><p>Defines constants used to indicate the WKT flavor</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatum.html">MgCoordinateSystemDatum</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDatumDictionary.html">MgCoordinateSystemDatumDictionary</a></dt>
+      <dd><p>Basic functionality for the datum dictionary</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDictionary.html">MgCoordinateSystemDictionary</a></dt>
+      <dd><p>Basic functionality for the coordinate system dictionary</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDictionaryBase.html">MgCoordinateSystemDictionaryBase</a></dt>
+      <dd><p>Basic functionality for all kinds of dictionaries</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemDictionaryUtility.html">MgCoordinateSystemDictionaryUtility</a></dt>
+      <dd><p>Basic functionality for all kinds of dictionaries</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.html">MgCoordinateSystemEllipsoid</a></dt>
+      <dd><p>Defines a coordinate system ellipsoid</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemEllipsoidDictionary.html">MgCoordinateSystemEllipsoidDictionary</a></dt>
+      <dd><p>Basic functionality for the ellipsoid dictionary</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemEnum.html">MgCoordinateSystemEnum</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemEnumInteger32.html">MgCoordinateSystemEnumInteger32</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemErrorCode.html">MgCoordinateSystemErrorCode</a></dt>
+      <dd><p>Defines various error codes returned by the Coordinate System API</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a></dt>
+      <dd><p>Supports the creation of <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystem.html">MgCoordinateSystem</a> objects based on
+a OpenGIS Well-Known Text (WKT) definition of the coordinate
+system. This class is the main entry point for accessing assorted classes
+and functionalities of the Coordinate System API</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFilter.html">MgCoordinateSystemFilter</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFilterInteger32.html">MgCoordinateSystemFilterInteger32</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFormatConverter.html">MgCoordinateSystemFormatConverter</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticAnalyticalTransformDefParams.html">MgCoordinateSystemGeodeticAnalyticalTransformDefParams</a></dt>
+      <dd><p>This class holds all parameters that are specific to analytical geodetic transformation methods, e.g.
+geocentric transformation, molodensky etc.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticAnalyticalTransformationMethod.html">MgCoordinateSystemGeodeticAnalyticalTransformationMethod</a></dt>
+      <dd><p>This class defines the currently supported transformation methods for
+analytical geodetic transformations as they can be read via the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.html">MgCoordinateSystemGeodeticTransformDefDictionary</a>. That is, the constants
+defined below are only valid for <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a> instances
+of type <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.html">MgCoordinateSystemGeodeticTransformDefType</a>.Analytical.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticDirection.html">MgCoordinateSystemGeodeticDirection</a></dt>
+      <dd><p>This class contains the constants for all current transformation definition types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticInterpolationTransformDefParams.html">MgCoordinateSystemGeodeticInterpolationTransformDefParams</a></dt>
+      <dd><p>This class holds all parameters that are specific to grid-file based transformation. That is,
+where the actual datum shift value for a coordinate is determined by interpolating between grid point values
+as defined in the respective grid file(s).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticMultipleRegressionTransformDefParams.html">MgCoordinateSystemGeodeticMultipleRegressionTransformDefParams</a></dt>
+      <dd><p>This class holds all parameters that are specific to the multiple regression transformation method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticMultipleRegressionTransformationMethod.html">MgCoordinateSystemGeodeticMultipleRegressionTransformationMethod</a></dt>
+      <dd><p>This class defines the currently supported transformation methods for
+multiple regression geodetic transformations as they can be read via the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.html">MgCoordinateSystemGeodeticTransformDefDictionary</a>. That is, the constants
+defined below are only valid for <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a> instances
+of type <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.html">MgCoordinateSystemGeodeticTransformDefType</a>.MultipleRegression.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticPath.html">MgCoordinateSystemGeodeticPath</a></dt>
+      <dd><p>A geodetic (transformation) path allows to concatenate multiple
+geodetic transformations. For example, converting between 2 datums
+cannot be achieved by doing 1 datum shift only but requires to
+do 1 or more datums shifts in between.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticPathDictionary.html">MgCoordinateSystemGeodeticPathDictionary</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticPathDictionary.html">MgCoordinateSystemGeodeticPathDictionary</a> provides access to all geodetic transformation path
+definitions as defined in the dictionary file this instance reads from / writes to.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticPathElement.html">MgCoordinateSystemGeodeticPathElement</a></dt>
+      <dd><p>A geodetic transformation path element describes a single transformation step within a series
+of concatenated steps that eventually form a geodetic (transformation) path.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticStandaloneTransformDefParams.html">MgCoordinateSystemGeodeticStandaloneTransformDefParams</a></dt>
+      <dd><p>This class (indirectly) describes the parameters of a geodetic transformation method that's built into the
+transformation engine. Hence, it does not allow for setting any parameters. Only the well known code
+can be set/get via (Set/Get)TransformationMethod.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticStandaloneTransformationMethod.html">MgCoordinateSystemGeodeticStandaloneTransformationMethod</a></dt>
+      <dd><p>This class defines all transformation methods that are built into
+the transformation engine. That is, when creating such a geodetic transformation
+the API client cannot specify any parameters because they are well known
+and are available to the engine already.
+The constants defined below are only valid for <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a> instances
+of type <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.html">MgCoordinateSystemGeodeticTransformDefType</a>.Standalone.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDef.html">MgCoordinateSystemGeodeticTransformDef</a></dt>
+      <dd><p>An instance of this class describes a geodetic transformation with all its parameters
+as it is defined in the dictionary file. The actual transformation operation
+is performed by the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a> objects
+that's being returned by the CreateTransformation method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.html">MgCoordinateSystemGeodeticTransformDefDictionary</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefDictionary.html">MgCoordinateSystemGeodeticTransformDefDictionary</a> provides access to all geodetic transformation
+definitions as defined in the dictionary file this instance reads from / writes to.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefParams.html">MgCoordinateSystemGeodeticTransformDefParams</a></dt>
+      <dd><p>Common base class for all geodetic transformation parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformDefType.html">MgCoordinateSystemGeodeticTransformDefType</a></dt>
+      <dd><p>This class contains the constants for all current transformation definition types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFile.html">MgCoordinateSystemGeodeticTransformGridFile</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticInterpolationTransformDefParams.html">MgCoordinateSystemGeodeticInterpolationTransformDefParams</a> parameter class requires
+instances of <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFile.html">MgCoordinateSystemGeodeticTransformGridFile</a> to be set via its
+SetGridFiles method. An <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFile.html">MgCoordinateSystemGeodeticTransformGridFile</a> object simply describes
+the grid file rather than containing the (grid file) information itself.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformGridFileFormat.html">MgCoordinateSystemGeodeticTransformGridFileFormat</a></dt>
+      <dd><p>This class contains the constants for all currently supported grid file formats.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformation.html">MgCoordinateSystemGeodeticTransformation</a></dt>
+      <dd><p>An instance of this class allow a caller do perform a geodetic transformation (datum shift).
+That is, this class does not operate on coordinate system level, but rather on
+datum level.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGeodeticTransformationMethod.html">MgCoordinateSystemGeodeticTransformationMethod</a></dt>
+      <dd><p>Defines the type of a geodetic transformation method</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBoundary.html">MgCoordinateSystemGridBoundary</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridLine.html">MgCoordinateSystemGridLine</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridLineCollection.html">MgCoordinateSystemGridLineCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridOrientation.html">MgCoordinateSystemGridOrientation</a></dt>
+      <dd><p>An enumeration of the supported values for the m_Orientation member
+of several objects related to grids and graticules.
+This value is used to qualify objects which are of the &quot;iso&quot; type.  I.e. a
+grid line is referred to as an isoline as it is the locus of points which
+have a specific value for either the easting or the northing.  It is this
+value which indicates which.  Thus, a grid line which is classified as
+having an &quot;EastWest&quot; orientation will be a isoline which is the locus of
+points which share a common easting value, and the &quot;m_Value&quot; element
+of that object will be an easting value.  Note that in this example,
+the line is typically a vertical line.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridRegion.html">MgCoordinateSystemGridRegion</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridRegionCollection.html">MgCoordinateSystemGridRegionCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecializationType.html">MgCoordinateSystemGridSpecializationType</a></dt>
+      <dd><p>An enumeration of the various types of specialized grids/graticules
+currently supported.  A specialized grid is one for which specific
+standards exist to which the results of this feature are compliant with.
+A generic grid is a simple non-standardized grid of a coordinate system
+drawn in a viewport based on another coordinate system.
+The values assigned are intended to support grouping standardized grids
+with similar features and is currently entirely arbitrary.  Using a
+numeric literal instead of thes names of the defined constants is a sure
+way to write code that will get broken in the future.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridTick.html">MgCoordinateSystemGridTick</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridTickCollection.html">MgCoordinateSystemGridTickCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> is an object that is used to
+convey all the parameters necessary for the generation of a grid/graticule
+lumped into a single object for convenience.  Thus, adding a parameter
+determined to be necessary at a later time does not alter a lot of calling
+sequences.
+Note that this interface is an abstract interface.  There is code
+associated with the implementation of this interface which is used to
+handle the conversion of parameters between the various unit systems.
+Thus, one obtains a <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridSpecification.html">MgCoordinateSystemGridSpecification</a> from the
+<a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemFactory.html">MgCoordinateSystemFactory</a> object.
+Note that all values are provided in the units specified within the object.
+The units used in this object do not need to be the same as any
+coordinate system involved in the generation of a grid, although the
+type of unit must be consistent with the type of grid being drawn.
+That is, specifying a Angular unit type when drawing a UTM grid will cause
+an exception at the time the request for (say) grid lines is issued.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMathComparator.html">MgCoordinateSystemMathComparator</a></dt>
+      <dd><p>A mathematical comparator used to detemerine equality between
+two different coordinate systems, datums or ellipsoids</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMeasure.html">MgCoordinateSystemMeasure</a></dt>
+      <dd><p>Provides operations for measuring the distance between 2
+coordinates and the azimuth of 2 coordinates as well as
+calculating a coordinate position given an initial
+coordinate, an azimuth, and a distance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrs.html">MgCoordinateSystemMgrs</a></dt>
+      <dd><p>This object carries most, if not all, intelligence specific to the MGRS
+(Military Grid Reference System) grid standard.  It can be used at two
+distinct levels, depending upon how it is manufactured.
+When manufactured with an ellipsoid/datum specification, this object is
+suitable only for conversion of geographic coordinates to MGRS strings and
+vice-versa.
+WHen manufactured with a frame coordinate system with a grid boundary
+subsequently supplied, the resulting object is capable of NGRS string
+conversions AND the generation of MGRS grids.
+When manufactured using a frame coordinate system and subsequent
+provision of a frame boundary (see base class <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a>)
+the members derived from the <a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemGridBase.html">MgCoordinateSystemGridBase</a> base class
+can be used for MGRS grid drawing purposes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsGridLevel.html">MgCoordinateSystemMgrsGridLevel</a></dt>
+      <dd><p>Defines constants used to indicate the MGRS grid level</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsGridSquarePosition.html">MgCoordinateSystemMgrsGridSquarePosition</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsGridSquarePosition.html">MgCoordinateSystemMgrsGridSquarePosition</a> defines enumerated values used to
+specify the the location desired relative to the subject MGRS grid sqaure
+when evaluating an MGRS string.
+Note that the values used in this enumeration match those used by the
+CS-MAP interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemMgrsLetteringScheme.html">MgCoordinateSystemMgrsLetteringScheme</a></dt>
+      <dd><p>Defines constants used to indicate the MGRS lettering scheme</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemProjectionCode.html">MgCoordinateSystemProjectionCode</a></dt>
+      <dd><p>Defines coordinate system projection codes</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemProjectionFormatType.html">MgCoordinateSystemProjectionFormatType</a></dt>
+      <dd><p>Defines the type of projection format</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemProjectionInformation.html">MgCoordinateSystemProjectionInformation</a></dt>
+      <dd><p>Represents information about a coordinate system projection</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemProjectionLogicalType.html">MgCoordinateSystemProjectionLogicalType</a></dt>
+      <dd><p>Defines the logical types of a coordinate system projection</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemProjectionParameterType.html">MgCoordinateSystemProjectionParameterType</a></dt>
+      <dd><p>Defines the types of coordinate system projection parameters</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemTransform.html">MgCoordinateSystemTransform</a></dt>
+      <dd><p>Provides operations for transforming coordinates from one
+coordinate system to another.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemType.html">MgCoordinateSystemType</a></dt>
+      <dd><p>Defines constants used to indicate the type of a coordinate
+system.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemUnitCode.html">MgCoordinateSystemUnitCode</a></dt>
+      <dd><p>Defines the various coordinate system unit codes</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemUnitInformation.html">MgCoordinateSystemUnitInformation</a></dt>
+      <dd><p>Represents information about a coordinate system unit</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemUnitType.html">MgCoordinateSystemUnitType</a></dt>
+      <dd><p>Defines the types of coordinate system units</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemWktFlavor.html">MgCoordinateSystemWktFlavor</a></dt>
+      <dd><p>Defines constants used to indicate the WKT flavor</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateXY.html">MgCoordinateXY</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateXY.html">MgCoordinateXY</a> is a concrete class derived from the abstract
+class <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateXYM.html">MgCoordinateXYM</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateXYM.html">MgCoordinateXYM</a> is a concrete class derived from the abstract
+class <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateXYZ.html">MgCoordinateXYZ</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateXYZ.html">MgCoordinateXYZ</a> is a concrete class derived from the abstract
+class <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateXYZM.html">MgCoordinateXYZM</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCoordinateXYZM.html">MgCoordinateXYZM</a> is a concrete class derived from the
+abstract class <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurve.html">MgCurve</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurve.html">MgCurve</a> is an abstract base class. <a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a> and
+<a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a> are concrete classes derived from <a class="xref" href="OSGeo.MapGuide.MgCurve.html">MgCurve</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a> is a region, defined by 1 exterior boundary
+and 0 or more interior boundaries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurvePolygonCollection.html">MgCurvePolygonCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurvePolygonCollection.html">MgCurvePolygonCollection</a> provides support for defining an ordered set of
+curve polygons.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a> is a geometry component used in the construction
+of <a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurveRingCollection.html">MgCurveRingCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurveRingCollection.html">MgCurveRingCollection</a> provides support for defining an ordered set of
+curve rings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurveSegment.html">MgCurveSegment</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurveSegment.html">MgCurveSegment</a> is an abstract base class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurveSegmentCollection.html">MgCurveSegmentCollection</a> provides support for defining an ordered set of
+curve segments.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a> is composed of one or more curve segments.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgCurveStringCollection.html">MgCurveStringCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgCurveStringCollection.html">MgCurveStringCollection</a> provides support for defining an ordered set of
+curve strings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a></dt>
+      <dd><p>Defines a data property belonging to a feature class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDataReader.html">MgDataReader</a></dt>
+      <dd><p>Provides a forward-only, read-only iterator for reading
+computed data retrieved from a datastore.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> is used to store dates, times, or both.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDateTimeProperty.html">MgDateTimeProperty</a></dt>
+      <dd><p>Stores <a class="xref" href="OSGeo.MapGuide.MgDateTime.html">MgDateTime</a> data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDeleteFeatures.html">MgDeleteFeatures</a></dt>
+      <dd><p>A feature command that features from a datastore. The feature
+class name and filter text define feature(s) to delete. This
+class is added to an <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> object, which
+is then passed in a call to the
+<a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::UpdateFeatures method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a> is the base interface for all classes that implement this
+standard interface for reference counting and object destruction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDisposableCollection.html">MgDisposableCollection</a></dt>
+      <dd><p>This class represents a collection of <a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a> objects.  The objects
+are owned and managed by the collection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDoubleProperty.html">MgDoubleProperty</a></dt>
+      <dd><p>Stores double precision floating point data with an
+associated key name. An instance of this class can be stored
+in an <a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a> object. The key name can be used
+to retrieve the instance from the property collection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDrawingService.html">MgDrawingService</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a> represents a bounding box defined in terms of a
+lower left coordinate and an upper right coordinate.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+      <dd><p>Base class for exceptions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgExceptionCodes.html">MgExceptionCodes</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureAggregateOptions.html">MgFeatureAggregateOptions</a></dt>
+      <dd><p>Use this class to set the filter criteria used to select
+groups of features from a datastore or for restricting the
+values returned to be unique.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureCommand.html">MgFeatureCommand</a></dt>
+      <dd><p>Is the abstract base class for feature command classes:
+<a class="xref" href="OSGeo.MapGuide.MgDeleteFeatures.html">MgDeleteFeatures</a>, <a class="xref" href="OSGeo.MapGuide.MgInsertFeatures.html">MgInsertFeatures</a>, and <a class="xref" href="OSGeo.MapGuide.MgUpdateFeatures.html">MgUpdateFeatures</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a></dt>
+      <dd><p>Represents a collection of feature commands.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureCommandType.html">MgFeatureCommandType</a></dt>
+      <dd><p>Is a set of constants used to specify the type of an
+<a class="xref" href="OSGeo.MapGuide.MgFeatureCommand.html">MgFeatureCommand</a> object.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureGeometricType.html">MgFeatureGeometricType</a></dt>
+      <dd><p>Is a set of constants specifying the dimensions of geometries
+which can be stored in a geometry property.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureInformation.html">MgFeatureInformation</a></dt>
+      <dd><p>Information about features.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureProperty.html">MgFeatureProperty</a></dt>
+      <dd><p>Stores <a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a> data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeaturePropertyType.html">MgFeaturePropertyType</a></dt>
+      <dd><p>Defines names for the different types of property
+definitions. See <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html">MgPropertyDefinition</a>::GetPropertyType.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a></dt>
+      <dd><p>Use this class to set filter criteria for selecting features</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a></dt>
+      <dd><p>Provides a forward-only, read-only iterator for reading
+features selected from the FDO Provider by the
+<a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::SelectFeatures() method call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureSchema.html">MgFeatureSchema</a></dt>
+      <dd><p>Contains one or more feature class definitions, which specify
+the structure of feature data in a datastore.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureSchemaCollection.html">MgFeatureSchemaCollection</a></dt>
+      <dd><p>FeatureSchemaCollection represents a collection of feature schemas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a></dt>
+      <dd><p>Provides an abstraction layer for the storage and retrieval
+of feature data in a technology-independent way. The API
+lets you determine what storage technologies are available
+and what capabilities they have. Access to the storage
+technology is modeled as a connection. For example, you can
+connect to a file and do simple insertions or connect to a
+relational database and do transaction-based operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureSourceParams.html">MgFeatureSourceParams</a></dt>
+      <dd><p>Is a virtual base class for feature source parameters used
+with OSGeo.MapGuide.MgFeatureSource::CreateFeatureSource. This class cannot
+be instantiated directly.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFeatureSpatialOperations.html">MgFeatureSpatialOperations</a></dt>
+      <dd><p>Is a set of constants used to type spatial operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgFileFeatureSourceParams.html">MgFileFeatureSourceParams</a></dt>
+      <dd><p>Contains the parameters used to create a file-based
+feature source.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeoJsonWriter.html">MgGeoJsonWriter</a></dt>
+      <dd><p>A helper class to output GeoJSON from feature readers</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html">MgGeometricEntity</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html">MgGeometricEntity</a> is an abstract base class that is the root
+of all geometry and geometry component classes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometricPathInstructionType.html">MgGeometricPathInstructionType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometricPathInstructionType.html">MgGeometricPathInstructionType</a> defines enumerated values used to specify
+the instructions contained in a geometric path. See OSGeo.MapGuide.MgGeometricPathIterator
+for a definition of a geometric path.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometricPropertyDefinition.html">MgGeometricPropertyDefinition</a></dt>
+      <dd><p>Defines a geometric property belonging to a feature class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> is an abstract base class for all of the geometry
+types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometryCollection.html">MgGeometryCollection</a> provides support for defining an ordered set of
+geometry objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryComponent.html">MgGeometryComponent</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometryComponent.html">MgGeometryComponent</a> is the base class for all of the geometry
+component types, namely, <a class="xref" href="OSGeo.MapGuide.MgArcSegment.html">MgArcSegment</a>, <a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a>,
+<a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a>, and <a class="xref" href="OSGeo.MapGuide.MgLinearSegment.html">MgLinearSegment</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryComponentType.html">MgGeometryComponentType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometryComponentType.html">MgGeometryComponentType</a> defines a set of integer constants
+used to signify the type of a geometry component instance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryEntityType.html">MgGeometryEntityType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometryEntityType.html">MgGeometryEntityType</a> defines two integer constants which
+signify whether an <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html">MgGeometricEntity</a> is a geometry or a
+geometry component.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryFactory.html">MgGeometryFactory</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgGeometryFactory.html">MgGeometryFactory</a> class is used to construct objects
+whose classes are derived from <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryProperty.html">MgGeometryProperty</a></dt>
+      <dd><p>Stores <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometrySimplificationAlgorithmType.html">MgGeometrySimplificationAlgorithmType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometrySimplificationAlgorithmType.html">MgGeometrySimplificationAlgorithmType</a> defines constants indicating
+the various simplification algorithms available for simplifying
+geometry instances</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometrySimplifier.html">MgGeometrySimplifier</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgGeometrySimplifier.html">MgGeometrySimplifier</a> class provides the ability to simplify <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> instances.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryType.html">MgGeometryType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGeometryType.html">MgGeometryType</a> defines integer constants used to signify the
+derived type of an <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> instance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGeometryTypeInfo.html">MgGeometryTypeInfo</a></dt>
+      <dd><p>Defines a list of geometric types.  This is typically used for geometric property description.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGroup.html">MgGroup</a></dt>
+      <dd><p>MapGuide groups.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a> is the base interface for all classes that implement this
+standard interface for thread-safe reference counting and object destruction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgGwsFeatureReader.html">MgGwsFeatureReader</a></dt>
+      <dd><p>Provides a forward-only, read-only iterator for reading data
+returned by a call to GwsQueryEngine.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpHeader.html">MgHttpHeader</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpPrimitiveValue.html">MgHttpPrimitiveValue</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpRequest.html">MgHttpRequest</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpRequestMetadata.html">MgHttpRequestMetadata</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpRequestParam.html">MgHttpRequestParam</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpResponse.html">MgHttpResponse</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgHttpResult.html">MgHttpResult</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgImageFormats.html">MgImageFormats</a></dt>
+      <dd><p>Image formats supported by the rendering service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgInsertFeatures.html">MgInsertFeatures</a></dt>
+      <dd><p>Creates an insert feature data command. You must add this
+command to an <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> object and pass the
+latter in a call to <a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::UpdateFeatures.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgInt16Property.html">MgInt16Property</a></dt>
+      <dd><p>Stores Int16 data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgInt32Property.html">MgInt32Property</a></dt>
+      <dd><p>Stores Int32 data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgInt64Property.html">MgInt64Property</a></dt>
+      <dd><p>Stores Int64 data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgIntCollection.html">MgIntCollection</a></dt>
+      <dd><p>This class represents a collection of integers.  The integers are owned and managed by the collection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgKmlService.html">MgKmlService</a></dt>
+      <dd><p>This class provides services to retrieve KML documents</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayer.html">MgLayer</a></dt>
+      <dd><p>Gets and sets properties of a layer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a></dt>
+      <dd><p>Gets and sets properties of a layer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayerCollection.html">MgLayerCollection</a></dt>
+      <dd><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a></dt>
+      <dd><p>Manipulates the properties of a layer group.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayerGroupCollection.html">MgLayerGroupCollection</a></dt>
+      <dd><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgLayerGroup.html">MgLayerGroup</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayerGroupType.html">MgLayerGroupType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgLayerGroupType.html">MgLayerGroupType</a> defines integer constants used to identify
+the type of a layer group.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayerType.html">MgLayerType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgLayerType.html">MgLayerType</a> defines integer constants used to identify the
+type of a layer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+      <dd><p>Specifies the ResourceId of the PrintLayout to use for a particular
+map, the title and the type of units to use in the layout.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a> is a curve with linear interpolation between
+points.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLineStringCollection.html">MgLineStringCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgLineStringCollection.html">MgLineStringCollection</a> provides support for defining an ordered set of
+line strings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgLinearRing.html">MgLinearRing</a> is a geometry component.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLinearRingCollection.html">MgLinearRingCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgLinearRingCollection.html">MgLinearRingCollection</a> provides support for defining an ordered set of
+linear rings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLinearSegment.html">MgLinearSegment</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgLinearSegment.html">MgLinearSegment</a> is a geometry component used in the
+construction of <a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a> geometries and <a class="xref" href="OSGeo.MapGuide.MgCurveRing.html">MgCurveRing</a>
+geometry components.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLocalizer.html">MgLocalizer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLogFileType.html">MgLogFileType</a></dt>
+      <dd><p>Types of log files</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgLongTransactionReader.html">MgLongTransactionReader</a></dt>
+      <dd><p>Provides forward-only, read-only functionality for describing
+a set of long transactions that exist in the feature source.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+      <dd><p>Defines the runtime state of a map.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMapBase.html">MgMapBase</a></dt>
+      <dd><p>Defines the runtime state of a map.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMapCollection.html">MgMapCollection</a></dt>
+      <dd><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgMapBase.html">MgMapBase</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> class allows the developer to specify the map,
+the view of the map, the plot specification, and the layout
+for one sheet within a call to GenerateMultiPlot.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMapPlotCollection.html">MgMapPlotCollection</a></dt>
+      <dd><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgMapPlot.html">MgMapPlot</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMapPlotInstruction.html">MgMapPlotInstruction</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgMapPlotInstruction.html">MgMapPlotInstruction</a> defines enumerated values used to indicate whether the plot
+should be based on the center and scale of the map,
+an overridden center and scale, or an overridden extent.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMappingService.html">MgMappingService</a></dt>
+      <dd><p>Performs map related operations such as getting an eMap DWF
+representing a map or updates to a map, or querying features
+from maps or layers of a map.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a> is an abstract class that can be implemented to
+provide non-linear measurement for geometry operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMetatile.html">MgMetatile</a></dt>
+      <dd><p>Defines a raw image frame buffer from the result of a meta-tile
+rendering operation</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMimeType.html">MgMimeType</a></dt>
+      <dd><p>Mime types for data to be sent to clients.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMultiCurvePolygon.html">MgMultiCurvePolygon</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgMultiCurvePolygon.html">MgMultiCurvePolygon</a> is a two-dimensional aggregate
+geometry whose elements are <a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a> geometries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMultiCurveString.html">MgMultiCurveString</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgMultiCurveString.html">MgMultiCurveString</a> is a one-dimensional aggregate geometry
+whose elements are <a class="xref" href="OSGeo.MapGuide.MgCurveString.html">MgCurveString</a> geometries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMultiGeometry.html">MgMultiGeometry</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgMultiGeometry.html">MgMultiGeometry</a> is a heterogeneous aggregate of one or
+more <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMultiLineString.html">MgMultiLineString</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgMultiLineString.html">MgMultiLineString</a> is a one-dimensional aggregate geometry
+whose elements are <a class="xref" href="OSGeo.MapGuide.MgLineString.html">MgLineString</a> geometries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMultiPoint.html">MgMultiPoint</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgMultiPoint.html">MgMultiPoint</a> is a 0 dimensional aggregate geometry whose
+elements are <a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a> geometries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMultiPolygon.html">MgMultiPolygon</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgMultiPolygon.html">MgMultiPolygon</a> is a two-dimensional aggregate geometry
+whose elements are <a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a> geometries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html">MgNamedSerializable</a></dt>
+      <dd><p>Root class for all named serializable objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgNullableProperty.html">MgNullableProperty</a></dt>
+      <dd><p>This is the base class for all properties which can have NULL
+values. If a property value is NULL, there is no value, and a
+call to the GetValue() method throws an exception.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></dt>
+      <dd><p>Root class of all non-exception objects</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgObjectPropertyDefinition.html">MgObjectPropertyDefinition</a></dt>
+      <dd><p>Defines a feature property which contains one or more objects
+whose type is a feature class. If there is more than one
+object, an identity property is defined that is used to
+select an object from the collection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgObjectPropertyType.html">MgObjectPropertyType</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgOrderingOption.html">MgOrderingOption</a></dt>
+      <dd><p>Defines a type used to specify the order in which features
+are returned by <a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::SelectFeatures. This type
+is used as an argument to the <a class="xref" href="OSGeo.MapGuide.MgFeatureQueryOptions.html">MgFeatureQueryOptions</a>::SetOrderingFilter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPackageStatusInformation.html">MgPackageStatusInformation</a></dt>
+      <dd><p>This class manages resource package status information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPageUnitsType.html">MgPageUnitsType</a></dt>
+      <dd><p>Defines page size units for the Mapping Service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgParameter.html">MgParameter</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgParameter.html">MgParameter</a> class specifies a value for a particular parameter.
+Instances of this class are used to specify a value to bind to a
+parameter when a command is executed. Typically, it is used to bind
+parameters to the SQL command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgParameterCollection.html">MgParameterCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgParameterCollection.html">MgParameterCollection</a> represents a collection of parameters.
+All parameters contained in an instance of a parameter
+collection are objects whose base class is <a class="xref" href="OSGeo.MapGuide.MgParameter.html">MgParameter</a>.
+A call to a parameter object's GetType() method returns one
+of the integer constants defined in class <a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a>.
+This collection does not allow duplicate key names.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgParameterDirection.html">MgParameterDirection</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgParameterDirection.html">MgParameterDirection</a> defines integer constants used to signify the
+direction in which a parameter value will be used within the context of a
+FDO Command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a> is a 0-dimensional geometry and represents a
+single location in coordinate space.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPointCollection.html">MgPointCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgPointCollection.html">MgPointCollection</a> provides support for defining an ordered set of
+points.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a></dt>
+      <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a> is a region, defined by 1 exterior boundary and
+0 or more interior boundaries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPolygonCollection.html">MgPolygonCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgPolygonCollection.html">MgPolygonCollection</a> provides support for defining an ordered set of
+polygons.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableDrawingService.html">MgPortableDrawingService</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableDwfVersion.html">MgPortableDwfVersion</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableExceptionCodes.html">MgPortableExceptionCodes</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableFeatureInformation.html">MgPortableFeatureInformation</a></dt>
+      <dd><p>Information about features.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableFeatureService.html">MgPortableFeatureService</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableImageFormats.html">MgPortableImageFormats</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableLayer.html">MgPortableLayer</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableLayout.html">MgPortableLayout</a></dt>
+      <dd><p>Specifies the ResourceId of the PrintLayout to use for a particular
+map, the title and the type of units to use in the layout.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableMap.html">MgPortableMap</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableMapPlot.html">MgPortableMapPlot</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgPortableMapPlot.html">MgPortableMapPlot</a> class allows the developer to specify the map,
+the view of the map, the plot specification, and the layout
+for one sheet within a call to GenerateMultiPlot.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableMapPlotCollection.html">MgPortableMapPlotCollection</a></dt>
+      <dd><p>Manipulates collections of <a class="xref" href="OSGeo.MapGuide.MgPortableMapPlot.html">MgPortableMapPlot</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableMapPlotInstruction.html">MgPortableMapPlotInstruction</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgPortableMapPlotInstruction.html">MgPortableMapPlotInstruction</a> defines enumerated values used to indicate whether the plot
+should be based on the center and scale of the map,
+an overridden center and scale, or an overridden extent.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableMappingService.html">MgPortableMappingService</a></dt>
+      <dd><p>Performs map related operations such as getting an eMap DWF
+representing a map or updates to a map, or querying features
+from maps or layers of a map.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortablePageUnitsType.html">MgPortablePageUnitsType</a></dt>
+      <dd><p>Defines page size units for the Mapping Service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortablePlatform.html">MgPortablePlatform</a></dt>
+      <dd><p>A static utility class that provides the means for initializing and tearing down
+the MapGuide Platform. You must initialize the platform before you can use any
+service classes or the Coordinate System API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortablePlotSpecification.html">MgPortablePlotSpecification</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableProfilingService.html">MgPortableProfilingService</a></dt>
+      <dd><p>This class provides services to profile existing MapGuide APIs</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableRdbmsFeatureSourceParams.html">MgPortableRdbmsFeatureSourceParams</a></dt>
+      <dd><p>Contains the parameters used to create a relational feature source. This is the relational
+analogue to the <a class="xref" href="OSGeo.MapGuide.MgFileFeatureSourceParams.html">MgFileFeatureSourceParams</a> class</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableRenderingOptions.html">MgPortableRenderingOptions</a></dt>
+      <dd><p>Options for Rendering Service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableRenderingService.html">MgPortableRenderingService</a></dt>
+      <dd><p>This class provides services to render a map into an image</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableResourceService.html">MgPortableResourceService</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableScrollableFeatureReader.html">MgPortableScrollableFeatureReader</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableSelection.html">MgPortableSelection</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableServiceFactory.html">MgPortableServiceFactory</a></dt>
+      <dd><p>The <a class="xref" href="OSGeo.MapGuide.MgPortableServiceFactory.html">MgPortableServiceFactory</a> class allows you to create instances of service
+classes</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableTileService.html">MgPortableTileService</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableTransaction.html">MgPortableTransaction</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableUnitType.html">MgPortableUnitType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgPortableUnitType.html">MgPortableUnitType</a> defines enumerated values used to determine the type
+of units for plot decorations (scale bar).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPreparedGeometry.html">MgPreparedGeometry</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgPreparedGeometry.html">MgPreparedGeometry</a> is an prepared form of <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> optimized for the case of
+repeated evaluation of spatial predicates against it and any other geometry</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgProfilingService.html">MgProfilingService</a></dt>
+      <dd><p>This class provides services to profile exsiting MapGuide APIs</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgProperty.html">MgProperty</a></dt>
+      <dd><p>A base class for <a class="xref" href="OSGeo.MapGuide.MgNullableProperty.html">MgNullableProperty</a>, which is the base class
+for all of the concrete property classes, for example,
+OSGeo.MapGuide.MgBooleanProperty and a base class for <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html">MgPropertyDefinition</a>,
+which is the base class for all of the concrete property
+definition classes, for example, OSGeo.MapGuide.MgDataPropertyDefinition.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgPropertyCollection.html">MgPropertyCollection</a> represents a collection of properties.
+All properties contained in an instance of a property
+collection are objects whose base class is <a class="xref" href="OSGeo.MapGuide.MgProperty.html">MgProperty</a> and
+whose derived class is one of the classes referenced in the</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html">MgPropertyDefinition</a></dt>
+      <dd><p>Defines the base class for the concrete property definition
+classes which are used to create data, geometric, object, and
+raster property definitions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyDefinitionCollection.html">MgPropertyDefinitionCollection</a></dt>
+      <dd><p>This class contains property definitions for a feature class and makes up a
+portion of the complete feature class definition.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPropertyType.html">MgPropertyType</a></dt>
+      <dd><p>Defines the names for the various property types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRaster.html">MgRaster</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRasterDataModelType.html">MgRasterDataModelType</a></dt>
+      <dd><p>Enumerated values used to determine the type
+of units for plot decorations (scale bar).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRasterProperty.html">MgRasterProperty</a></dt>
+      <dd><p>Stores <a class="xref" href="OSGeo.MapGuide.MgRaster.html">MgRaster</a> data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRasterPropertyDefinition.html">MgRasterPropertyDefinition</a></dt>
+      <dd><p>Defines a feature property which contains a raster image.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgReadOnlyLayerCollection.html">MgReadOnlyLayerCollection</a></dt>
+      <dd><p>Provides read only access to a collection of <a class="xref" href="OSGeo.MapGuide.MgLayerBase.html">MgLayerBase</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgReadOnlyStream.html">MgReadOnlyStream</a></dt>
+      <dd><p>A read-only <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> adapter for the <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a>
+class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgReader.html">MgReader</a></dt>
+      <dd><p>Provides a forward-only, read-only iterator for reading data.
+You must call ReadNext before you can access any data. This
+is a base class for <a class="xref" href="OSGeo.MapGuide.MgDataReader.html">MgDataReader</a>, <a class="xref" href="OSGeo.MapGuide.MgFeatureReader.html">MgFeatureReader</a>, and
+<a class="xref" href="OSGeo.MapGuide.MgSqlDataReader.html">MgSqlDataReader</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgReaderType.html">MgReaderType</a></dt>
+      <dd><p>Type of reader represented by an <a class="xref" href="OSGeo.MapGuide.MgReader.html">MgReader</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRegion.html">MgRegion</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgRegion.html">MgRegion</a> is an abstract base class The concrete classes are
+<a class="xref" href="OSGeo.MapGuide.MgPolygon.html">MgPolygon</a> and <a class="xref" href="OSGeo.MapGuide.MgCurvePolygon.html">MgCurvePolygon</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRenderingOptions.html">MgRenderingOptions</a></dt>
+      <dd><p>Options for Rendering Service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRenderingService.html">MgRenderingService</a></dt>
+      <dd><p>This class provides services to render a map into an image</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRepositoryType.html">MgRepositoryType</a></dt>
+      <dd><p>Defines names for the different types of repositories.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResource.html">MgResource</a></dt>
+      <dd><p>The abstract base class for all resource types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceDataName.html">MgResourceDataName</a></dt>
+      <dd><p>Defines reserved names for resource data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceDataType.html">MgResourceDataType</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceHeaderProperties.html">MgResourceHeaderProperties</a></dt>
+      <dd><p>Properties of the resource header.
+INTERNAL - Do not document.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+      <dd><p>Creates and manipulates resource identifiers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourcePermission.html">MgResourcePermission</a></dt>
+      <dd><p>Types of resource permissions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a></dt>
+      <dd><p>Enables you to manipulate repositories and resources.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceTag.html">MgResourceTag</a></dt>
+      <dd><p>Substitution tags used within the XML file for a resource.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgResourceType.html">MgResourceType</a></dt>
+      <dd><p>Defines names for the different types of resources.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRing.html">MgRing</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgRole.html">MgRole</a></dt>
+      <dd><p>MapGuide roles.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSelection.html">MgSelection</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSelectionBase.html">MgSelectionBase</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></dt>
+      <dd><p>Root class of all serializable objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgServerAdmin.html">MgServerAdmin</a></dt>
+      <dd><p>This class contains methods to allow MapGuide clients to perform administration related
+operations:</p>
+<ul>
+<li>Server Configuration</li>
+<li>Logging</li>
+<li>Online/Offline</li>
+<li>Server Health</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgServerInformationProperties.html">MgServerInformationProperties</a></dt>
+      <dd><p>ServerAdmin properties.  Note that this is not a complete list of the properties which may be set
+for a server.  Values stored in the server's config file are also properties of the server.  These
+properties are defined in <a class="xref" href="OSGeo.MapGuide.MgConfigProperties.html">MgConfigProperties</a>.h.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgService.html">MgService</a></dt>
+      <dd><p>class Service
+Base class for all services APIs</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgServiceType.html">MgServiceType</a></dt>
+      <dd><p>Service types for Platform services.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSingleProperty.html">MgSingleProperty</a></dt>
+      <dd><p>Stores single precision floating point data with an
+associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSite.html">MgSite</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSiteConnection.html">MgSiteConnection</a></dt>
+      <dd><p>Site connection.  Provides basic authentication and Service access
+capabilities for the site.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSiteInfo.html">MgSiteInfo</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSpatialContextExtentType.html">MgSpatialContextExtentType</a></dt>
+      <dd><p>The SpatialContextExtentType enumeration defines how the extent of
+a context should be handled by the provider.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSpatialContextReader.html">MgSpatialContextReader</a></dt>
+      <dd><p>Provides forward-only, read-only functionality for
+enumerating spatial context information retrieved from a
+feature source.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSqlDataReader.html">MgSqlDataReader</a></dt>
+      <dd><p>Provides a forward-only, read-only iterator for reading data
+returned by a call to <a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::ExecuteSqlQuery.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+      <dd><p>This class represents a collection of strings.  The collection maintains its own copy of strings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgStringProperty.html">MgStringProperty</a></dt>
+      <dd><p>Stores string data with an associated key name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgStringPropertyCollection.html">MgStringPropertyCollection</a></dt>
+      <dd><p>This class collects key-value pairs in Strings. The key name should be unique.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgTileService.html">MgTileService</a></dt>
+      <dd><p>This class provides services to render a map into an image</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgTransaction.html">MgTransaction</a> represents a transaction to be performed in a DataStore.
+If the transaction is time out, commit or rollback a transaction will
+result in one exception OSGeo.MapGuide.MgFeatureServiceException thrown.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgTransform.html">MgTransform</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgTransform.html">MgTransform</a> is an abstract class that can be implemented to
+provide linear or projected coordinate transformations. There
+are currently no concrete classes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgUnitType.html">MgUnitType</a></dt>
+      <dd><p><a class="xref" href="OSGeo.MapGuide.MgUnitType.html">MgUnitType</a> defines enumerated values used to determine the type
+of units for plot decorations (scale bar).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgUpdateFeatures.html">MgUpdateFeatures</a></dt>
+      <dd><p>Creates an update feature data command. You must add this
+command to an <a class="xref" href="OSGeo.MapGuide.MgFeatureCommandCollection.html">MgFeatureCommandCollection</a> object and pass the
+latter in a call to <a class="xref" href="OSGeo.MapGuide.MgFeatureService.html">MgFeatureService</a>::UpdateFeatures.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgUser.html">MgUser</a></dt>
+      <dd><p>MapGuide users.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgUserInformation.html">MgUserInformation</a></dt>
+      <dd><p>Type of user information
+INTERNAL API: Do not document</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWarnings.html">MgWarnings</a></dt>
+      <dd><p>Exposes non-critical warning messages from services.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebActions.html">MgWebActions</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebBufferCommand.html">MgWebBufferCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebCommand.html">MgWebCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebCommandCollection.html">MgWebCommandCollection</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebCommandWidget.html">MgWebCommandWidget</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebContextMenu.html">MgWebContextMenu</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebFlyoutWidget.html">MgWebFlyoutWidget</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebGetPrintablePageCommand.html">MgWebGetPrintablePageCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebHelpCommand.html">MgWebHelpCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebInformationPane.html">MgWebInformationPane</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebInvokeScriptCommand.html">MgWebInvokeScriptCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebInvokeUrlCommand.html">MgWebInvokeUrlCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebLayout.html">MgWebLayout</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebMeasureCommand.html">MgWebMeasureCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebPrintCommand.html">MgWebPrintCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebSearchCommand.html">MgWebSearchCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebSelectWithinCommand.html">MgWebSelectWithinCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebSeparatorWidget.html">MgWebSeparatorWidget</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebTargetType.html">MgWebTargetType</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebTargetViewerType.html">MgWebTargetViewerType</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebTaskBar.html">MgWebTaskBar</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebTaskBarWidget.html">MgWebTaskBarWidget</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebTaskButtonType.html">MgWebTaskButtonType</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebTaskPane.html">MgWebTaskPane</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebToolBar.html">MgWebToolBar</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebUiPane.html">MgWebUiPane</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebUiSizablePane.html">MgWebUiSizablePane</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebUiTargetCommand.html">MgWebUiTargetCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebViewOptionsCommand.html">MgWebViewOptionsCommand</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebWidget.html">MgWebWidget</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebWidgetCollection.html">MgWebWidgetCollection</a></dt>
+      <dd><p>TODO: This class has no class documentation (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWebWidgetType.html">MgWebWidgetType</a></dt>
+      <dd><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgWktReaderWriter.html">MgWktReaderWriter</a></dt>
+      <dd><p>Translates a string in AGF (Autodesk Geometry Format) Text</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.ReadOnlyRewindableStream.html">ReadOnlyRewindableStream</a></dt>
+      <dd><p>A read-only, rewindable stream</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgMap.WatermarkUsageType.html">MgMap.WatermarkUsageType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgPortableMap.WatermarkUsageType.html">MgPortableMap.WatermarkUsageType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSiteInfo.MgPortType.html">MgSiteInfo.MgPortType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.MgSiteInfo.MgSiteStatus.html">MgSiteInfo.MgSiteStatus</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="OSGeo.MapGuide.GetByteReaderMethod.html">GetByteReaderMethod</a></dt>
+      <dd><p>Represents a method that returns a <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> instance</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

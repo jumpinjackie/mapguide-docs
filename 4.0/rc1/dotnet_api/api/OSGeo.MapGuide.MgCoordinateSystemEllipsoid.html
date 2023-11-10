@@ -1,0 +1,1743 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgCoordinateSystemEllipsoid
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgCoordinateSystemEllipsoid
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid" class="text-break">
+    Class MgCoordinateSystemEllipsoid
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines a coordinate system ellipsoid</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgCoordinateSystemEllipsoid : MgGuardDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><span class="xref">MgCoordinateSystemEllipsoid</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_Description_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.Description*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_Description" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_ElCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.ElCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_ElCode" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.ElCode">
+  ElCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ElCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_CreateClone_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.CreateClone*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_CreateClone" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.CreateClone">
+  CreateClone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemEllipsoid CreateClone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.html">MgCoordinateSystemEllipsoid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_Dispose_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_EccentricityToFlatteningRatio_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.EccentricityToFlatteningRatio*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_EccentricityToFlatteningRatio_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.EccentricityToFlatteningRatio(System.Double)">
+  EccentricityToFlatteningRatio(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double EccentricityToFlatteningRatio(double dEccent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dEccent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_EquatorialRadiusFromPolarRadiusFlatteningRatio_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.EquatorialRadiusFromPolarRadiusFlatteningRatio*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_EquatorialRadiusFromPolarRadiusFlatteningRatio_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.EquatorialRadiusFromPolarRadiusFlatteningRatio(System.Double,System.Double)">
+  EquatorialRadiusFromPolarRadiusFlatteningRatio(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double EquatorialRadiusFromPolarRadiusFlatteningRatio(double dPolarRadius, double dFlatteningRatio)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dPolarRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dFlatteningRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_FlatteningRatioFromRadii_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.FlatteningRatioFromRadii*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_FlatteningRatioFromRadii_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.FlatteningRatioFromRadii(System.Double,System.Double)">
+  FlatteningRatioFromRadii(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double FlatteningRatioFromRadii(double dEquatorialRadius, double dPolarRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dEquatorialRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dPolarRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_FlatteningRatioToEccentricity_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.FlatteningRatioToEccentricity*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_FlatteningRatioToEccentricity_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.FlatteningRatioToEccentricity(System.Double)">
+  FlatteningRatioToEccentricity(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double FlatteningRatioToEccentricity(double dFlat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dFlat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetAge_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetAge*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetAge" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetAge">
+  GetAge()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetAge()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetCatalog_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetCatalog*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetCatalog" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetCatalog">
+  GetCatalog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgCoordinateSystemCatalog GetCatalog()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgCoordinateSystemCatalog.html">MgCoordinateSystemCatalog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetDescription_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetDescription" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetDescription">
+  GetDescription()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetEccentricity_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetEccentricity*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetEccentricity" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetEccentricity">
+  GetEccentricity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetEccentricity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetElCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetElCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetElCode" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetElCode">
+  GetElCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the CS-Map coordinate system ellipsoid code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetElCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The CS-Map coordinate system ellipsoid code</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetEpsgCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetEpsgCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetEpsgCode" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetEpsgCode">
+  GetEpsgCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetEpsgCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetEquatorialRadius_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetEquatorialRadius*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetEquatorialRadius" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetEquatorialRadius">
+  GetEquatorialRadius()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetEquatorialRadius()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetFlatteningRatio_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetFlatteningRatio*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetFlatteningRatio" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetFlatteningRatio">
+  GetFlatteningRatio()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetFlatteningRatio()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetFlatteningRatioMax_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetFlatteningRatioMax*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetFlatteningRatioMax" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetFlatteningRatioMax">
+  GetFlatteningRatioMax()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetFlatteningRatioMax()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetFlatteningRatioMin_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetFlatteningRatioMin*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetFlatteningRatioMin" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetFlatteningRatioMin">
+  GetFlatteningRatioMin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetFlatteningRatioMin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetGreatCircleAzimuth_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetGreatCircleAzimuth*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetGreatCircleAzimuth_System_Double_System_Double_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetGreatCircleAzimuth(System.Double,System.Double,System.Double,System.Double)">
+  GetGreatCircleAzimuth(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetGreatCircleAzimuth(double dLongitude1, double dLatitude1, double dLongitude2, double dLatitude2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dLongitude1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dLatitude1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dLongitude2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dLatitude2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetGreatCircleDistance_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetGreatCircleDistance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetGreatCircleDistance_System_Double_System_Double_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetGreatCircleDistance(System.Double,System.Double,System.Double,System.Double)">
+  GetGreatCircleDistance(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetGreatCircleDistance(double dLongitude1, double dLatitude1, double dLongitude2, double dLatitude2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dLongitude1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dLatitude1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dLongitude2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dLatitude2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetGroup_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetGroup" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetGroup">
+  GetGroup()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetGroup()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetPolarRadius_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetPolarRadius*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetPolarRadius" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetPolarRadius">
+  GetPolarRadius()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetPolarRadius()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetRadiusMax_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetRadiusMax*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetRadiusMax" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetRadiusMax">
+  GetRadiusMax()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRadiusMax()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetRadiusMin_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetRadiusMin*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetRadiusMin" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetRadiusMin">
+  GetRadiusMin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRadiusMin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetSource_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetSource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_GetSource" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.GetSource">
+  GetSource()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSource()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsEncrypted_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsEncrypted*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsEncrypted" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsEncrypted">
+  IsEncrypted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEncrypted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalDescription_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalDescription_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalDescription(System.String)">
+  IsLegalDescription(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLegalDescription(string sDesc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sDesc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalElCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalElCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalElCode_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalElCode(System.String)">
+  IsLegalElCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether the specified CS-Map coordinate system ellipsoid code is a legal one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLegalElCode(string sCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the given code is a legal one, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalFlatteningRatio_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalFlatteningRatio*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalFlatteningRatio_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalFlatteningRatio(System.Double)">
+  IsLegalFlatteningRatio(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLegalFlatteningRatio(double dFlat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dFlat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalGroup_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalGroup_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalGroup(System.String)">
+  IsLegalGroup(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLegalGroup(string sGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalRadius_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalRadius*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalRadius_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalRadius(System.Double)">
+  IsLegalRadius(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLegalRadius(double dRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalSource_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalSource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsLegalSource_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsLegalSource(System.String)">
+  IsLegalSource(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLegalSource(string sSource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsProtected_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsProtected*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsProtected" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsProtected">
+  IsProtected()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProtected()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsSameAs_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsSameAs*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsSameAs_OSGeo_MapGuide_MgGuardDisposable_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsSameAs(OSGeo.MapGuide.MgGuardDisposable)">
+  IsSameAs(MgGuardDisposable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSameAs(MgGuardDisposable pDef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pDef</code> <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsUsable_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsUsable*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsUsable" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsUsable">
+  IsUsable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUsable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsValid_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsValid*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_IsValid" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.IsValid">
+  IsValid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_PolarRadiusFromEquatorialRadiusFlatteningRatio_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.PolarRadiusFromEquatorialRadiusFlatteningRatio*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_PolarRadiusFromEquatorialRadiusFlatteningRatio_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.PolarRadiusFromEquatorialRadiusFlatteningRatio(System.Double,System.Double)">
+  PolarRadiusFromEquatorialRadiusFlatteningRatio(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PolarRadiusFromEquatorialRadiusFlatteningRatio(double dEquatorialRadius, double dFlatteningRatio)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dEquatorialRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dFlatteningRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetDescription_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetDescription*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetDescription_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetDescription(System.String)">
+  SetDescription(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDescription(string sDesc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sDesc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetElCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetElCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetElCode_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetElCode(System.String)">
+  SetElCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the CS-Map coordinate system ellipsoid code for this ellipsoid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetElCode(string sCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The CS-Map coordinate system ellipsoid code</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetEncryptMode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetEncryptMode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetEncryptMode_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetEncryptMode(System.Boolean)">
+  SetEncryptMode(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEncryptMode(bool bIsEncrypted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bIsEncrypted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetEpsgCode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetEpsgCode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetEpsgCode_System_Int16_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetEpsgCode(System.Int16)">
+  SetEpsgCode(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEpsgCode(short epsgCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>epsgCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetGroup_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetGroup*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetGroup_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetGroup(System.String)">
+  SetGroup(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroup(string sGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetProtectMode_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetProtectMode*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetProtectMode_System_Boolean_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetProtectMode(System.Boolean)">
+  SetProtectMode(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProtectMode(bool bIsProtected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bIsProtected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetRadii_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetRadii*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetRadii_System_Double_System_Double_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetRadii(System.Double,System.Double)">
+  SetRadii(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRadii(double dEquatorialRadius, double dPolarRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dEquatorialRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dPolarRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetSource_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetSource*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgCoordinateSystemEllipsoid_SetSource_System_String_" data-uid="OSGeo.MapGuide.MgCoordinateSystemEllipsoid.SetSource(System.String)">
+  SetSource(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSource(string sSource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

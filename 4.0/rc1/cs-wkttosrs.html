@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>WKT of SRS | MapGuide API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="WKT of SRS | MapGuide API Reference ">
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="MapGuide API Reference">
+            MapGuide API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="wkt-of-srs">WKT of SRS</h1>
+
+<p>This extended BNF grammar represents the syntax of a
+Well-Known Text (WKT) specification of a Spatial Reference
+System (SRS), also known as a coordinate system. The grammar
+is taken verbatim from OGC01009 and is
+reproduced here for convenience.</p>
+<pre><code>&lt;math transform&gt; = &lt;param mt&gt; | &lt;concat mt&gt; | &lt;inv mt&gt; | &lt;passthrough mt&gt;
+&lt;param mt&gt; = PARAM_MT[&quot;&lt;classification name&gt;&quot; {,&lt;parameter&gt;}* ]
+&lt;parameter&gt; = PARAMETER[&quot;&lt;name&gt;&quot;, &lt;value&gt;]
+&lt;value&gt; = &lt;number&gt;
+&lt;concat mt&gt; = CONCAT_MT[&lt;math transform&gt; {,&lt;math transform&gt;}* ]
+&lt;inv mt&gt; = INVERSE_MT[&lt;math transform&gt;]
+&lt;passthrough mt&gt; = PASSTHROUGH_MT[&lt;integer&gt;, &lt;math transform&gt;]
+&lt;coordinate system&gt; = &lt;horz cs&gt; | &lt;geocentric cs&gt; | &lt;vert cs&gt; | &lt;compd cs&gt; | &lt;fitted cs&gt; | &lt;local cs&gt;
+&lt;horz cs&gt; = &lt;geographic cs&gt; | &lt;projected cs&gt;
+&lt;projected cs&gt; = PROJCS[&quot;&lt;name&gt;&quot;, &lt;geographic cs&gt;, &lt;projection&gt;, {&lt;parameter&gt;,}* &lt;linear unit&gt; {,&lt;twin axes&gt;}{,&lt;authority&gt;}]
+&lt;projection&gt; = PROJECTION[&quot;&lt;name&gt;&quot; {,&lt;authority&gt;}]
+&lt;geographic cs&gt; = GEOGCS[&quot;&lt;name&gt;&quot;, &lt;datum&gt;, &lt;prime meridian&gt;, &lt;angular unit&gt; {,&lt;twin axes&gt;} {,&lt;authority&gt;}]
+&lt;datum&gt; = DATUM[&quot;&lt;name&gt;&quot;, &lt;spheroid&gt; {,&lt;to wgs84&gt;} {,&lt;authority&gt;}]
+&lt;spheroid&gt; = SPHEROID[&quot;&lt;name&gt;&quot;, &lt;semi-major axis&gt;, &lt;inverse flattening&gt; {,&lt;authority&gt;}]
+&lt;semi-major axis&gt; = &lt;number&gt;
+&lt;inverse flattening&gt; = &lt;number&gt;
+&lt;prime meridian&gt; = PRIMEM[&quot;&lt;name&gt;&quot;, &lt;longitude&gt; {,&lt;authority&gt;}]
+&lt;longitude&gt; = &lt;number&gt;
+&lt;angular unit&gt; = &lt;unit&gt;
+&lt;linear unit&gt; = &lt;unit&gt;
+&lt;unit&gt; = UNIT[&quot;&lt;name&gt;&quot;, &lt;conversion factor&gt; {,&lt;authority&gt;}]
+&lt;conversion factor&gt; = &lt;number&gt;
+&lt;geocentric cs&gt; = GEOCCS[&quot;&lt;name&gt;&quot;, &lt;datum&gt;, &lt;prime meridian&gt;, &lt;linear unit&gt; {,&lt;axis&gt;, &lt;axis&gt;, &lt;axis&gt;} {,&lt;authority&gt;}]
+&lt;authority&gt; = AUTHORITY[&quot;&lt;name&gt;&quot;, &quot;&lt;code&gt;&quot;]
+&lt;vert cs&gt; = VERT_CS[&quot;&lt;name&gt;&quot;, &lt;vert datum&gt;, &lt;linear unit&gt;, {&lt;axis&gt;,} {,&lt;authority&gt;}]
+&lt;vert datum&gt; = VERT_DATUM[&quot;&lt;name&gt;&quot;, &lt;datum type&gt; {,&lt;authority&gt;}]
+&lt;datum type&gt; = &lt;number&gt;
+&lt;compd cs&gt; = COMPD_CS[&quot;&lt;name&gt;&quot;, &lt;head cs&gt;, &lt;tail cs&gt; {,&lt;authority&gt;}]
+&lt;head cs&gt; = &lt;coordinate system&gt;
+&lt;tail cs&gt; = &lt;coordinate system&gt;
+&lt;twin axes&gt; = &lt;axis&gt;, &lt;axis&gt;
+&lt;axis&gt; = AXIS[&quot;&lt;name&gt;&quot;, NORTH | SOUTH | EAST | WEST | UP | DOWN | OTHER]
+&lt;to wgs84s&gt; = TOWGS84[&lt;seven param&gt;]
+&lt;seven param&gt; = &lt;dx&gt;, &lt;dy&gt;, &lt;dz&gt;, &lt;ex&gt;, &lt;ey&gt;, &lt;ez&gt;, &lt;ppm&gt;
+&lt;dx&gt; = &lt;number&gt;
+&lt;dy&gt; = &lt;number&gt;
+&lt;dz&gt; = &lt;number&gt;
+&lt;ex&gt; = &lt;number&gt;
+&lt;ey&gt; = &lt;number&gt;
+&lt;ez&gt; = &lt;number&gt;
+&lt;ppm&gt; = &lt;number&gt;
+&lt;fitted cs&gt; = FITTED_CS[&quot;&lt;name&gt;&quot;, &lt;to base&gt;, &lt;base cs&gt;]
+&lt;to base&gt; = &lt;math transform&gt;
+&lt;base cs&gt; = &lt;coordinate system&gt;
+&lt;local cs&gt; = LOCAL_CS[&quot;&lt;name&gt;&quot;, &lt;local datum&gt;, &lt;unit&gt;, &lt;axis&gt;, {,&lt;axis&gt;}* {,&lt;authority&gt;}]
+&lt;local datum&gt; = LOCAL_DATUM[&quot;&lt;name&gt;&quot;, &lt;datum type&gt; {,&lt;authority&gt;}]
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

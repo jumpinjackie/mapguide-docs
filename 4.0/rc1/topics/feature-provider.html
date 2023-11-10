@@ -1,0 +1,2271 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Feature Providers | MapGuide API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Feature Providers | MapGuide API Reference ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide API Reference">
+            MapGuide API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="feature-providers">Feature Providers</h1>
+
+<h2 id="provider-capabilities">Provider Capabilities</h2>
+<p>The MgFeatureService API delegates much of its functionality
+to FDO providers. The providers implement the storage and
+retrieval of feature data from a variety of RDBMS and
+file-based datastore technologies.</p>
+<p>A set of provider capabilities has been defined, and each
+provider has been characterized according to what
+capabilities it supports. For example, the FDO Provider for
+Oracle supports the creation, description, and destruction of
+a schema definition, but the FDO Provider for ArcSDE supports
+only the description of a schema definition.</p>
+<p>The capabilities are grouped in the following categories:</p>
+<ul>
+<li>Connection</li>
+<li>Schema</li>
+<li>Commands</li>
+<li>Expressions</li>
+<li>Filters</li>
+<li>Raster</li>
+<li>Topology</li>
+</ul>
+<p>The MgFeatureService::GetCapabilities method returns an XML
+representation of a provider's capabilities. See \link FdoProviderCapabilities_schema FdoProviderCapabilities \endlink
+for the definition of the XML representation.</p>
+<p>The capability characterization can be used to execute code
+conditionally depending on the provider being used and what
+capability is being executed.</p>
+<h2 id="example-c">Example (C#)</h2>
+<p>The GetFeatureProviders method cyles through the list of provider names and
+creates a FeatureProvider object for each one.</p>
+<p>The FeatureProvider constructor uses the MgFeatureService object to get the
+capabilities for the provider.
+The capabilities are in xml and the Extract methods use xpath
+expressions to extract the capability values from the xml.</p>
+<p>The utility methods show the use of System Xml classes to extract values
+from the xml.</p>
+<p>Here are a few of the capability strings generated by this code for the SDF provider.</p>
+<ul>
+	<li>ConnectionCapabilities:ThreadCapability=PerConnectionThreaded;SpatialContextExtentType=Dynamic;</li>
+	<li>CommandCapabilities:Commands=+Select+Insert+Delete+Update+DescribeSchema+ApplySchema+CreateSpatialContext+GetSpatialContexts+SelectAggregates;SelectExpressions;SelectFunctions;SelectDistinct;</li>
+	<li>SchemaCapabilities:ClassType=+Class+FeatureClass;DataType=+Boolean+Byte+DateTime+Decimal+Double+Int16+Int32+Int64+Single+String;Inheritance;AssociationProperties;AutoIdGeneration;SupportedAutoGeneratedTypes=+Int32;SchemaModification;</li>
+	<li>GeometryCapabilities:GeometryTypes=+Point+LineString+Polygon+MultiPoint+MultiLineString+MultiPolygon+MultiGeometry+CurveString+CurvePolygon+MultiCurveString+MultiCurvePolygon;ComponentType=+LinearRing+ArcSegment+LinearSegment+CurveRing;Dimensionality=XYZM;</li>
+	<li>FilterCapabilities:ConditionType=+Comparison+Like+In+Null+Spatial;SpatialOperation=+Contains+Disjoint+Intersects+Within+Inside+EnvelopeIntersects;DistanceOperation=;</li>
+	<li>ExpressionCapabilities:ExpressionType=+Basic+Function;FunctionDefinitions=+Concat+SpatialExtents+Ceil+Floor+Lower+Upper+Sum+Count+Min+Avg+Max;</li>
+</ul>
+<p>C# code</p>
+<pre><code class="lang-C#">using OSGeo.MapGuide;
+// The MgFeatureService example code shows how the MgFeatureService object is created.
+private MgFeatureService featureService;
+private String providerNamesActual;
+private ListDictionary featureProviders;
+
+private void GetProviderNames()
+{
+	System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo(0x0409);
+	String[] names;
+	MgByteReader byteReader = featureService.GetFeatureProviders();
+	String xmlContent = byteReader.ToString();
+	names = GetXpathValuesRtnStrArr(xmlContent,
+		&quot;//FeatureProviderRegistry/FeatureProvider/Name&quot;);
+	providerCountActual = names.GetLength(0);
+	Array.Sort(names, StringComparer.Create(culture, false));
+	providerNamesActual = StringArrayToString(names);
+}
+
+private void GetFeatureProviders()
+{
+	featureProviders = new ListDictionary();
+	FeatureProvider featureProvider;
+	String providerName;
+	string[] names = providerNamesActual.Split();
+	for (int i = 0; i &lt; providerCountActual; i++)
+	{
+		providerName = names[i];
+		featureProvider = new FeatureProvider(logger, providerName,
+			featureService, utilities, timings);
+		featureProviders.Add(providerName, featureProvider);
+	}
+}
+
+class FeatureProvider
+{
+	public FeatureProvider(...
+		MgFeatureService featureService,
+		Utilities utilities,
+		...)
+	{
+		...
+		MgByteReader byteReader = featureService.GetCapabilities(providerName);
+        xmlContent = byteReader.ToString();
+        ExtractConnectionCapabilities();
+        ExtractSchemaCapabilities();
+        ExtractCommandCapabilities();
+        ExtractFilterCapabilities();
+        ExtractExpressionCapabilities();
+        ExtractRasterCapabilities();
+        ExtractTopologyCapabilities();
+        ExtractGeometryCapabilities();
+    }
+    private MgFeatureService featureService;
+    private String xmlContent;
+    private String connectionCapabilitiesToStr;
+    private String schemaCapabilitiesToStr;
+    private String commandCapabilitiesToStr;
+    private String filterCapabilitiesToStr;
+    private String expressionCapabilitiesToStr;
+    private String rasterCapabilitiesToStr;
+    private String topologyCapabilitiesToStr;
+    private String geometryCapabilitiesToStr;
+    private StringBuilder sb;
+    private const int sblength = 640;
+    private Boolean multipleSchema;
+
+	// public property declarations to expose capability strings
+
+	private void ExtractConnectionCapabilities()
+	{
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;ConnectionCapabilities:&quot;);
+		String ThreadCapability = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/ThreadCapability&quot;);
+		sb.Append(&quot;ThreadCapability=&quot; + ThreadCapability + ';');
+		String SpatialContextExtentType = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SpatialContextExtent/Type&quot;);
+		sb.Append(&quot;SpatialContextExtentType=&quot; + SpatialContextExtentType + ';');
+		String SupportsLocking = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SupportsLocking&quot;);
+		if (SupportsLocking.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Locking;&quot;);
+		}
+		String SupportsTimeout = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SupportsTimeout&quot;);
+		if (SupportsTimeout.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Timeout;&quot;);
+		}
+		String SupportsTransactions = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SupportsTransactions&quot;);
+		if (SupportsTransactions.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Transactions;&quot;);
+		}
+		String SupportsLongTransactions = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SupportsLongTransactions&quot;);
+		if (SupportsLongTransactions.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;LongTransactions;&quot;);
+		}
+		String SupportsSQL = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SupportsSQL&quot;);
+		if (SupportsSQL.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SQL;&quot;);
+		}
+		String SupportsConfiguration = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Connection/SupportsConfiguration&quot;);
+		if (SupportsConfiguration.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Configuration;&quot;);
+		}
+		connectionCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractSchemaCapabilities()
+	{
+		String value;
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;SchemaCapabilities:&quot;);
+		MgStringCollection ClassType = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Schema/Class/Type&quot;);
+		sb.Append(&quot;ClassType=&quot;);
+		int classCount = ClassType.GetCount();
+		for (int i = 0; i &lt; classCount; i++)
+		{
+			sb.Append(&quot;+&quot; + ClassType.GetItem(i));
+		}
+		sb.Append(&quot;;&quot;);
+		MgStringCollection DataType = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Schema/Data/Type&quot;);
+		sb.Append(&quot;DataType=&quot;);
+		int dataCount = DataType.GetCount();
+		for (int i = 0; i &lt; dataCount; i++)
+		{
+			sb.Append(&quot;+&quot; + DataType.GetItem(i));
+		}
+		sb.Append(&quot;;&quot;);
+		String SupportsInheritance = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsInheritance&quot;);
+		if (SupportsInheritance.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Inheritance;&quot;);
+		}
+		String SupportsMultipleSchemas = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsMultipleSchemas&quot;);
+		if (SupportsMultipleSchemas.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;MultipleSchemas;&quot;);
+			multipleSchema = true;
+		}
+		else
+		{
+			multipleSchema = false;
+		}
+		String SupportsObjectProperties = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsObjectProperties&quot;);
+		if (SupportsObjectProperties.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;ObjectProperties;&quot;);
+		}
+		String SupportsAssociationProperties = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsAssociationProperties&quot;);
+		if (SupportsAssociationProperties.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;AssociationProperties;&quot;);
+		}
+		String SupportsSchemaOverrides = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsSchemaOverrides&quot;);
+		if (SupportsSchemaOverrides.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SchemaOverrides;&quot;);
+		}
+		String SupportsNetworkModel = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsNetworkModel&quot;);
+		if (SupportsNetworkModel.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;NetworkModel;&quot;);
+		}
+		String SupportsAutoIdGeneration = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsAutoIdGeneration&quot;);
+		if (SupportsAutoIdGeneration.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;AutoIdGeneration;&quot;);
+		}
+		String SupportsDataStoreUniqueIdGeneration = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsDataStoreUniqueIdGeneration&quot;);
+		if (SupportsDataStoreUniqueIdGeneration.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;DataStoreUniqueIdGeneration;&quot;);
+		}
+		MgStringCollection SupportedAutoGeneratedTypes = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Schema/SupportedAutoGeneratedTypes/Type&quot;);
+		sb.Append(&quot;SupportedAutoGeneratedTypes=&quot;);
+		int autoGenTypeCount = SupportedAutoGeneratedTypes.GetCount();
+		for (int i = 0; i &lt; autoGenTypeCount; i++)
+		{
+			value = SupportedAutoGeneratedTypes.GetItem(i);
+			if (value != &quot;&quot;)
+			{
+				sb.Append(&quot;+&quot; + value);
+			}
+		}
+		sb.Append(&quot;;&quot;);
+		String SupportsSchemaModification = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Schema/SupportsSchemaModification&quot;);
+		if (SupportsSchemaModification.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SchemaModification;&quot;);
+		}
+		schemaCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractCommandCapabilities()
+	{
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;CommandCapabilities:&quot;);
+		MgStringCollection Commands = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Command/SupportedCommands/Name&quot;);
+		sb.Append(&quot;Commands=&quot;);
+		int cmdCount = Commands.GetCount();
+		for (int i = 0; i &lt; cmdCount; i++)
+		{
+			sb.Append(&quot;+&quot; + Commands.GetItem(i));
+		}
+		sb.Append(&quot;;&quot;);
+		String SupportsParameters = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsParameters&quot;);
+		if (SupportsParameters.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Parameters;&quot;);
+		}
+		String SupportsTimeout = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsTimeout&quot;);
+		if (SupportsTimeout.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Timeout;&quot;);
+		}
+		String SupportsSelectExpressions = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsSelectExpressions&quot;);
+		if (SupportsSelectExpressions.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SelectExpressions;&quot;);
+		}
+		String SupportsSelectFunctions = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsSelectFunctions&quot;);
+		if (SupportsSelectFunctions.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SelectFunctions;&quot;);
+		}
+		String SupportsSelectDistinct = GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsSelectDistinct&quot;);
+		if (SupportsSelectDistinct.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SelectDistinct;&quot;);
+		}
+		String SupportsSelectOrdering = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsSelectOrdering&quot;);
+		if (SupportsSelectOrdering.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SelectOrdering;&quot;);
+		}
+		String SupportsSelectGrouping = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Command/SupportsSelectGrouping&quot;);
+		if (SupportsSelectGrouping.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;SelectGrouping;&quot;);
+		}
+		commandCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractFilterCapabilities()
+	{
+		String value;
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;FilterCapabilities:&quot;);
+		MgStringCollection ConditionType = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Filter/Condition/Type&quot;);
+		sb.Append(&quot;ConditionType=&quot;);
+		int conditionCount = ConditionType.GetCount();
+		for (int i = 0; i &lt; conditionCount; i++)
+		{
+			value = ConditionType.GetItem(i);
+			if (value != &quot;&quot;)
+			{
+				sb.Append(&quot;+&quot; + value);
+			}
+		}
+		sb.Append(&quot;;&quot;);
+		MgStringCollection SpatialOperation = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Filter/Spatial/Operation&quot;);
+		sb.Append(&quot;SpatialOperation=&quot;);
+		int spatialOpCount = SpatialOperation.GetCount();
+		for (int i = 0; i &lt; spatialOpCount; i++)
+		{
+			value = SpatialOperation.GetItem(i);
+			if (value != &quot;&quot;)
+			{
+				sb.Append(&quot;+&quot; + value);
+			}
+		}
+		sb.Append(&quot;;&quot;);
+		MgStringCollection DistanceOperation = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Filter/Distance/Operation&quot;);
+		sb.Append(&quot;DistanceOperation=&quot;);
+		int distanceOpCount = DistanceOperation.GetCount();
+		for (int i = 0; i &lt; distanceOpCount; i++)
+		{
+			value = DistanceOperation.GetItem(i);
+			if (value != &quot;&quot;)
+			{
+				sb.Append(&quot;+&quot; + value);
+			}
+		}
+		sb.Append(&quot;;&quot;);
+		String SupportsGeodesicDistance = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Filter/SupportsGeodesicDistance&quot;);
+		if (SupportsGeodesicDistance.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;GeodesicDistance;&quot;);
+		}
+		String SupportsNonLinearGeometricOperations = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Filter/SupportsNonLinearGeometricOperations&quot;);
+		if (SupportsNonLinearGeometricOperations.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;NonLinearGeometricOperations;&quot;);
+		}
+		filterCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractExpressionCapabilities()
+	{
+		String value;
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;ExpressionCapabilities:&quot;);
+		MgStringCollection ExpressionType = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Expression/Type/Name&quot;);
+		sb.Append(&quot;ExpressionType=&quot;);
+		int typeCount = ExpressionType.GetCount();
+		for (int i = 0; i &lt; typeCount; i++)
+		{
+			sb.Append(&quot;+&quot; + ExpressionType.GetItem(i));
+		}
+		sb.Append(&quot;;&quot;);
+		MgStringCollection FunctionDefinitions = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Expression/FunctionDefinitionCollection/FunctionDefinition/Name&quot;);
+		sb.Append(&quot;FunctionDefinitions=&quot;);
+		int functionCount = FunctionDefinitions.GetCount();
+		for (int i = 0; i &lt; functionCount; i++)
+		{
+			value = FunctionDefinitions.GetItem(i);
+			if (value != &quot;&quot;)
+			{
+				sb.Append(&quot;+&quot; + value);
+			}
+		}
+		sb.Append(&quot;;&quot;);
+		expressionCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractRasterCapabilities()
+	{
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;RasterCapabilities:&quot;);
+		String SupportsRaster = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Raster/SupportsRaster&quot;);
+		if (SupportsRaster.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Raster;&quot;);
+		}
+		String SupportsStitching = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Raster/SupportsStitching&quot;);
+		if (SupportsStitching.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Stitching;&quot;);
+		}
+		String SupportsSubsmpling = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Raster/SupportsSubsmpling&quot;);
+		if (SupportsSubsmpling.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Subsmpling;&quot;);
+		}
+		rasterCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractTopologyCapabilities()
+	{
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;TopologyCapabilities:&quot;);
+		String SupportsTopology = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Topology/SupportsTopology&quot;);
+		if (SupportsTopology.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;Topology;&quot;);
+		}
+		String SupportsTopologicalHierarchy = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Topology/SupportsTopologicalHierarchy&quot;);
+		if (SupportsTopologicalHierarchy.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;TopologicalHierarchy;&quot;);
+		}
+		String BreaksCurveCrossingsAutomatically = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Topology/BreaksCurveCrossingsAutomatically&quot;);
+		if (BreaksCurveCrossingsAutomatically.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;BreaksCurveCrossingsAutomatically;&quot;);
+		}
+		String ActivatesTopologyByArea = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Topology/ActivatesTopologyByArea&quot;);
+		if (ActivatesTopologyByArea.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;ActivatesTopologyByArea;&quot;);
+		}
+		String ConstrainsFeatureMovements = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Topology/ConstrainsFeatureMovements&quot;);
+		if (ConstrainsFeatureMovements.Equals(&quot;true&quot;))
+		{
+			sb.Append(&quot;ConstrainsFeatureMovements;&quot;);
+		}
+		topologyCapabilitiesToStr = sb.ToString();
+	}
+	private void ExtractGeometryCapabilities()
+	{
+		sb = new StringBuilder(sblength);
+		sb.Append(&quot;GeometryCapabilities:&quot;);
+		MgStringCollection GeometryTypes = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Geometry/Types/Type&quot;);
+		sb.Append(&quot;GeometryTypes=&quot;);
+		int geomTypeCount = GeometryTypes.GetCount();
+		for (int i = 0; i &lt; geomTypeCount; i++)
+		{
+			sb.Append(&quot;+&quot; + GeometryTypes.GetItem(i));
+		}
+		sb.Append(&quot;;&quot;);
+		MgStringCollection ComponentType = utilities.GetXpathValuesRtnMgStrColl(xmlContent, &quot;Geometry/Components/Type&quot;);
+		sb.Append(&quot;ComponentType=&quot;);
+		int compTypeCount = ComponentType.GetCount();
+		for (int i = 0; i &lt; compTypeCount; i++)
+		{
+			sb.Append(&quot;+&quot; + ComponentType.GetItem(i));
+		}
+		sb.Append(&quot;;&quot;);
+		String Dimensionality = utilities.GetXpathValuesRtnStr(xmlContent, &quot;Geometry/Dimensionality&quot;);
+		sb.Append(&quot;Dimensionality=&quot; + MgCoordinateDimensionToStr(Convert.ToInt32(Dimensionality)) + ';');
+		geometryCapabilitiesToStr = sb.ToString();
+	}
+}
+
+public String[] GetXpathValuesRtnStrArr(String xmlContent, String xpath)
+{
+	System.Collections.ArrayList strList = new System.Collections.ArrayList(10);
+	String[] strArr;
+	System.Xml.XmlDocument xmlDocument = new XmlDocument();
+	xmlDocument.LoadXml(xmlContent);
+	XmlNodeList nodeList;
+	XmlElement root = xmlDocument.DocumentElement;
+	nodeList = root.SelectNodes(xpath);
+	int count = nodeList.Count;
+	if (count == 0)
+	{
+		strArr = new String[] { &quot;&quot; };
+		return strArr;
+	}
+	XmlNode node;
+	for (int i = 0; i &lt; count; i++)
+	{
+		node = nodeList.Item(i);
+		strList.Add(node.FirstChild.Value);
+	}
+	strArr = (String[])strList.ToArray(typeof(string));
+	return strArr;
+}
+
+public String GetXpathValuesRtnStr(String xmlContent, String xpath)
+{
+	String value;
+	System.Xml.XmlDocument xmlDocument = new XmlDocument();
+	xmlDocument.LoadXml(xmlContent);
+	XmlElement root = xmlDocument.DocumentElement;
+	XmlNode node;
+	node = root.SelectSingleNode(xpath);
+	if (node == null)
+	{
+		value = &quot;&quot;;
+		return value;
+	}
+	value = node.FirstChild.Value;
+	return value;
+}
+
+public MgStringCollection GetXpathValuesRtnMgStrColl(String xmlContent, String xpath)
+{
+	MgStringCollection strings = new MgStringCollection();
+	System.Xml.XmlDocument xmlDocument = new XmlDocument();
+	xmlDocument.LoadXml(xmlContent);
+	XmlNodeList nodeList;
+	XmlElement root = xmlDocument.DocumentElement;
+	nodeList = root.SelectNodes(xpath);
+	int count = nodeList.Count;
+	if (count == 0)
+	{
+		strings.Add(&quot;&quot;);
+		return strings;
+	}
+	XmlNode node;
+	for (int i = 0; i &lt; count; i++)
+	{
+		node = nodeList.Item(i);
+		strings.Add(node.FirstChild.Value);
+	}
+	return strings;
+}
+
+</code></pre>
+<h2 id="capabilities-for-autodeskoracle20">Capabilities for Autodesk.Oracle.2.0</h2>
+<p>What follows is a sample output from a PHP program used to get the
+capabilities for the Oracle provider. The program code follows the sample output.
+This program does the following:</p>
+<ul>
+	<li>parses the XML returned by MgFeatureService::GetCapabilities()</li>
+	<li>implements a set of boolean capability functions</li>
+	<li>prints the values of the functions</li>
+</ul>
+<pre><code>Connection
+    ThreadCapability
+        supportsSingleThreaded(): false
+        supportsPerConnectionThreaded(): true
+        supportsPerCommandThreaded(): false
+        supportsMultiThreaded(): false
+    SpatialContextExtent
+        Type
+            supportsDynamic(): false
+            supportsStatic(): true
+    supportsLocking(): true
+    supportsConnectionTimeout(): false
+    supportsTransactions(): true
+    supportsLongTransactions(): true
+    supportsSQL(): true
+    supportsConfiguration(): false
+Schema
+    Class
+        Type
+            supportsClass(): true
+            supportsFeatureClass(): true
+    Data
+        Type
+            supportsBoolean(): true
+            supportsByte(): true
+            supportsDateTime(): true
+            supportsDecimal(): true
+            supportsDouble(): true
+            supportsInt16(): true
+            supportsInt32(): true
+            supportsInt64(): true
+            supportsSingle(): true
+            supportsString(): true
+            supportsBLOB(): true
+            supportsCLOB(): true
+            supportsUniqueID(): false
+    supportsInheritance(): true
+    supportsMultipleSchemas(): true
+    supportsObjectProperties(): true
+    supportsAssociationProperties(): true
+    supportsSchemaOverrides(): true
+    supportsNetworkModel(): false
+    supportsAutoIdGeneration(): true
+    supportsDataStoreScopeUniqueIdGeneration(): true
+    supportsSchemaModification(): true
+Command
+    SupportedCommands
+        Name
+            supportsSelect(): true
+            supportsInsert(): true
+            supportsDelete(): true
+            supportsUpdate(): true
+            supportsSelectAggregates(): true
+            supportsDescribeSchema(): true
+            supportsDescribeSchemaMapping(): false
+            supportsDestroySchema(): true
+            supportsApplySchema(): true
+            supportsActivateSpatialContext(): true
+            supportsCreateSpatialContext(): true
+            supportsDestroySpatialContext(): true
+            supportsDestroySpatialContext(): true
+            supportsCreateMeasureUnit(): false
+            supportsDestroyMeasureUnit()t: false
+            supportsGetMeasureUnits(): false
+            supportsSQLCommand(): true
+            supportsAcquireLock(): true
+            supportsGetLockInfo(): true
+            supportsGetLockedObjects(): true
+            supportsGetLockOwners(): true
+            supportsReleaseLock(): true
+            supportsActivateLongTransaction(): true
+            supportsCommitLongTransaction(): true
+            supportsCreateLongTransaction(): true
+            supportsGetLongTransactions(): true
+            supportsFreezeLongTransaction(): false
+            supportsRollbackLongTransaction(): true
+            supportsActivateLongTransactionCheckpoint(): false
+            supportsCreateLongTransactionCheckpoint(): false
+            supportsGetLongTransactionCheckpoints(): false
+            supportsRollbackLongTransactionCheckpoint(): false
+            supportsChangeLongTransactionPrivileges(): false
+            supportsGetLongTransactionPrivileges(): false
+            supportsChangeLongTransactionSet(): false
+            supportsGetLongTransactionsInSet(): false
+            supportsFirstProviderCommand(): false
+            supportsDeactivateLongTransaction(): true
+    supportsParameters(): false
+    supportsCommandTimeout(): false
+    supportsSelectExpressions(): true
+    supportsSelectFunctions(): true
+    supportsSelectDistinct(): true
+    supportsSelectOrdering(): true
+    supportsSelectGrouping(): true
+Filter
+    Condition
+        Type
+            supportsComparison(): true
+            supportsLike(): true
+            supportsIn(): true
+            supportsNull(): true
+            supportsSpatial(): true
+            supportsDistance(): true
+    Spatial
+        Operation
+            supportsContains(): false
+            supportsCrosses(): false
+            supportsDisjoint(): false
+            supportsEquals(): false
+            supportsIntersects(): true
+            supportsOverlaps()s: false
+            supportsTouches(): false
+            supportsSpatialWithin(): false
+            supportsCoveredBy(): true
+            supportsInside(): true
+            supportsEnvelopeIntersects(): true
+    Distance
+        Operation
+            supportsDistanceWithin(): true
+            supportsBeyond(): false
+    supportsGeodesicDistance(): false
+    supportsNonLiteralGeometricOperations(): false
+Expression
+    Type
+        Name
+            supportsBasic(): true
+            supportsFunction(): true
+            supportsParameter(): true
+    FunctionDefinitionCollection
+        FunctionDefinition
+            Name
+                supportsAvg(): true
+                supportsCeil(): true
+                supportsCLIP(): false
+                supportsConcat(): true
+                supportsCount(): true
+                supportsFloor(): true
+                supportsLower(): true
+                supportsMax(): true
+                supportsMin(): true
+                supportsMOSAIC(): false
+                supportsStdDev(): false
+                supportsSum(): true
+                supportsUpper(): true
+Raster
+    supportsRaster(): false
+    supportsStitching(): false
+    supportsSubsampling(): false
+Topology
+    supportsTopology(): false
+    supportsTopologicalHierarchy(): false
+    supportsBreaksCurveCrossingsAutomatically(): false
+    supportsActivatesTopologyByArea(): false
+    supportsConstrainsFeatureMovements(): false
+Geometry
+    Type
+        supportsPoint(): true
+        supportsMultiPoint(): true
+        supportsLineString(): true
+        supportsMultiLineString(): true
+        supportsPolygon(): true
+        supportsMultiPolygon(): true
+        supportsCurveString(): true
+        supportsMultiCurveString(): true
+        supportsCurvePolygon(): true
+        supportsMultiCurvePolygon(): true
+        supportsMultiGeometry(): false
+    Components
+        Type
+            supportsLinearRing(): true
+            supportsLinearSegment(): true
+            supportsArcSegment(): true
+            supportsCurveRing(): true
+    dimensionality(): 3
+</code></pre>
+<p>PHP Example Code</p>
+<p>This code does the following:</p>
+<ul>
+	<li>parses the XML returned by MgFeatureService::GetCapabilities()</li>
+	<li>implements a set of boolean capability functions</li>
+	<li>prints the values of the functions</li>
+</ul>
+<p>The constructor takes a provider name, a file handle, and an
+MgByteReader containing the provider capabilities. The
+provider name is obtained from \link MgFeatureService::GetFeatureProviders MgFeatureService::GetFeatureProviders\endlink.
+The provider capabilities is obtained from
+\link MgFeatureService::GetCapabilities MgFeatureService::GetCapabilities\endlink.
+The file handle is for logging.</p>
+<p>PHP code</p>
+<pre><code class="lang-PHP">class ProviderCapabilities {
+   var $logFileHandle;
+   var $xpath;
+   var $providerName;
+
+   function ProviderCapabilities( $providerName, $logFileHandle, $byteReader ) {
+      try {
+     $this-&amp;gt;providerName = $providerName;
+     $this-&amp;gt;logFileHandle = $logFileHandle;
+     $doc = new DOMDocument();
+     $byteSink = new MgByteSink($byteReader);
+     $filePath = &amp;quot;temp_byte_reader_file.$providerName&amp;quot;;
+//     fwrite($this-&amp;gt;logFileHandle, &amp;quot;file path is \\&amp;quot;$filePath\\&amp;quot;\\n&amp;quot;);
+     $byteSink-&amp;gt;ToFile($filePath);
+     $doc-&amp;gt;load($filePath);
+//     unlink($filePath);
+     $this-&amp;gt;xpath = new DOMXPath($doc);
+     $this-&amp;gt;queryConnection();
+     $this-&amp;gt;querySchema();
+     $this-&amp;gt;queryCommand();
+     $this-&amp;gt;queryFilter();
+     $this-&amp;gt;queryExpression();
+     $this-&amp;gt;queryRaster();
+     $this-&amp;gt;queryTopology();
+     $this-&amp;gt;queryGeometry();
+      } catch (Exception $e) {
+     $msg = $e-&amp;gt;GetMessage();
+     fwrite($logFileHandle, &amp;quot;ProviderCapabilities PHP Exception: $msg\\n&amp;quot;);
+      }
+   }
+
+   function prtBool($bool) {
+      if ($bool) {
+     return &amp;quot;true&amp;quot;;
+      } else {
+     return &amp;quot;false&amp;quot;;
+      }
+   }
+
+   function queryBooleanElement($queryExpr, &amp;amp;$reference) {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query($queryExpr);
+      if ($domNodeList-&amp;gt;length == 0) return;
+      $domNode = $domNodeList-&amp;gt;item(0);
+      $value = $domNode-&amp;gt;nodeValue;
+      switch($value) {
+     case &amp;quot;true&amp;quot; : $reference = TRUE; break;
+     case &amp;quot;false&amp;quot; : $reference = FALSE; break;
+     default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;$queryExpr: unknown value: $value\\n&amp;quot;);
+      }
+   }
+
+/*
+   var $supports = FALSE;
+   function supports() {
+      return $this-&amp;gt;supports;
+   }
+\*/
+
+   // CONNECTION CAPABILITIES
+   // thread capability
+
+   var $supportsSingleThreaded = FALSE;
+   function supportsSingleThreaded() {
+      return $this-&amp;gt;supportsSingleThreaded;
+   }
+
+   var $supportsPerConnectionThreaded = FALSE;
+   function supportsPerConnectionThreaded() {
+      return $this-&amp;gt;supportsPerConnectionThreaded;
+   }
+
+   var $supportsPerCommandThreaded = FALSE;
+   function supportsPerCommandThreaded() {
+      return $this-&amp;gt;supportsPerCommandThreaded;
+   }
+
+   var $supportsMultiThreaded = FALSE;
+   function supportsMultiThreaded() {
+      return $this-&amp;gt;supportsMultiThreaded;
+   }
+
+   // spatial context extent type
+
+   var $supportsDynamic = FALSE;
+   function supportsDynamic() {
+      return $this-&amp;gt;supportsDynamic;
+   }
+
+   var $supportsStatic = FALSE;
+   function supportsStatic() {
+      return $this-&amp;gt;supportsStatic;
+   }
+
+   // rest of connection capabilities
+   var $supportsLocking = FALSE;
+   function supportsLocking() {
+      return $this-&amp;gt;supportsLocking;
+   }
+
+   var $supportsConnectionTimeout = FALSE;
+   function supportsConnectionTimeout() {
+      return $this-&amp;gt;supportsConnectionTimeout;
+   }
+
+   var $supportsTransactions = FALSE;
+   function supportsTransactions() {
+      return $this-&amp;gt;supportsTransactions;
+   }
+
+   var $supportsLongTransactions = FALSE;
+   function supportsLongTransactions() {
+      return $this-&amp;gt;supportsLongTransactions;
+   }
+
+   var $supportsSQL = FALSE;
+   function supportsSQL() {
+      return $this-&amp;gt;supportsSQL;
+   }
+
+   var $supportsConfiguration = FALSE;
+   function supportsConfiguration() {
+      return $this-&amp;gt;supportsConfiguration;
+   }
+
+   function queryConnection() {
+      $this-&amp;gt;queryThreadCapability();
+      $this-&amp;gt;querySpatialContextExtentType();
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Connection/SupportsLocking&amp;quot;, $this-&amp;gt;supportsLocking);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Connection/SupportsTimeout&amp;quot;, $this-&amp;gt;supportsConnectionTimeout);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Connection/SupportsTransactions&amp;quot;, $this-&amp;gt;supportsTransactions);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Connection/SupportsLongTransactions&amp;quot;, $this-&amp;gt;supportsLongTransactions);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Connection/SupportsSQL&amp;quot;, $this-&amp;gt;supportsSQL);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Connection/SupportsConfiguration&amp;quot;, $this-&amp;gt;supportsConfiguration);
+   }
+
+   function queryThreadCapability() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Connection/ThreadCapability&amp;quot;);
+      if ($domNodeList-&amp;gt;length == 0) return;
+      $domNode = $domNodeList-&amp;gt;item(0);
+      $value = $domNode-&amp;gt;nodeValue;
+      switch($value) {
+     case &amp;quot;PerConnectionThreaded&amp;quot; : $this-&amp;gt;supportsPerConnectionThreaded = TRUE; break;
+     case &amp;quot;SingleThreaded&amp;quot; : $this-&amp;gt;supportsSingleThreaded = TRUE; break;
+     case &amp;quot;PerCommandThreaded&amp;quot; : $this-&amp;gt;supportsPerCommandThreaded = TRUE; break;
+     case &amp;quot;MultiThreaded&amp;quot; : $this-&amp;gt;supportsMultiThreaded = TRUE; break;
+     default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown thread type: $value\\n&amp;quot;);
+      }
+   }
+
+   function querySpatialContextExtentType() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Connection/SpatialContextExtent/Type&amp;quot;);
+      if ($domNodeList-&amp;gt;length == 0) return;
+      $domNode = $domNodeList-&amp;gt;item(0);
+      $value = $domNode-&amp;gt;nodeValue;
+      switch($value) {
+     case &amp;quot;Static&amp;quot; : $this-&amp;gt;supportsStatic = TRUE; break;
+     case &amp;quot;Dynamic&amp;quot; : $this-&amp;gt;supportsDynamic = TRUE; break;
+     default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown spatial context extent type: $value\\n&amp;quot;);
+      }
+   }
+
+   // SCHEMA
+   // class type
+   var $supportsFeatureClass = FALSE;
+   function supportsFeatureClass() {
+      return $this-&amp;gt;supportsFeatureClass;
+   }
+
+   var $supportsClass = FALSE;
+   function supportsClass() {
+      return $this-&amp;gt;supportsClass;
+   }
+
+   // data types
+   var $supportsBoolean = FALSE;
+   function supportsBoolean() {
+      return $this-&amp;gt;supportsBoolean;
+   }
+
+   var $supportsByte = FALSE;
+   function supportsByte() {
+      return $this-&amp;gt;supportsByte;
+   }
+
+   var $supportsDateTime = FALSE;
+   function supportsDateTime() {
+      return $this-&amp;gt;supportsDateTime;
+   }
+
+   var $supportsDecimal = FALSE;
+   function supportsDecimal() {
+      return $this-&amp;gt;supportsDecimal;
+   }
+
+   var $supportsDouble = FALSE;
+   function supportsDouble() {
+      return $this-&amp;gt;supportsDouble;
+   }
+
+   var $supportsInt16 = FALSE;
+   function supportsInt16() {
+      return $this-&amp;gt;supportsInt16;
+   }
+
+   var $supportsInt32 = FALSE;
+   function supportsInt32() {
+      return $this-&amp;gt;supportsInt32;
+   }
+
+   var $supportsInt64 = FALSE;
+   function supportsInt64() {
+      return $this-&amp;gt;supportsInt64;
+   }
+
+   var $supportsSingle = FALSE;
+   function supportsSingle() {
+      return $this-&amp;gt;supportsSingle;
+   }
+
+   var $supportsString = FALSE;
+   function supportsString() {
+      return $this-&amp;gt;supportsString;
+   }
+
+   var $supportsBLOB = FALSE;
+   function supportsBLOB() {
+      return $this-&amp;gt;supportsBLOB;
+   }
+
+   var $supportsCLOB = FALSE;
+   function supportsCLOB() {
+      return $this-&amp;gt;supportsCLOB;
+   }
+
+   var $supportsUniqueID = FALSE;
+   function supportsUniqueID() {
+      return $this-&amp;gt;supportsUniqueID;
+   }
+
+   // rest of schema
+
+   var $supportsInheritance = FALSE;
+   function supportsInheritance() {
+      return $this-&amp;gt;supportsInheritance;
+   }
+
+   var $supportsMultipleSchemas = FALSE;
+   function supportsMultipleSchemas() {
+      return $this-&amp;gt;supportsMultipleSchemas;
+   }
+
+   var $supportsObjectProperties = FALSE;
+   function supportsObjectProperties() {
+      return $this-&amp;gt;supportsObjectProperties;
+   }
+
+   var $supportsAssociationProperties = FALSE;
+   function supportsAssociationProperties() {
+      return $this-&amp;gt;supportsAssociationProperties;
+   }
+
+   var $supportsSchemaOverrides = FALSE;
+   function supportsSchemaOverrides() {
+      return $this-&amp;gt;supportsSchemaOverrides;
+   }
+
+   var $supportsNetworkModel = FALSE;
+   function supportsNetworkModel() {
+      return $this-&amp;gt;supportsNetworkModel;
+   }
+
+   var $supportsAutoIdGeneration = FALSE;
+   function supportsAutoIdGeneration() {
+      return $this-&amp;gt;supportsAutoIdGeneration;
+   }
+
+   var $supportsDataStoreScopeUniqueIdGeneration = FALSE;
+   function supportsDataStoreScopeUniqueIdGeneration() {
+      return $this-&amp;gt;supportsDataStoreScopeUniqueIdGeneration;
+   }
+
+   var $supportsSchemaModification = FALSE;
+   function supportsSchemaModification() {
+      return $this-&amp;gt;supportsSchemaModification;
+   }
+
+   function querySchema() {
+      $this-&amp;gt;queryClassTypes();
+      $this-&amp;gt;queryDataTypes();
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsInheritance&amp;quot;, $this-&amp;gt;supportsInheritance);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsMultipleSchemas&amp;quot;, $this-&amp;gt;supportsMultipleSchemas);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsObjectProperties&amp;quot;, $this-&amp;gt;supportsObjectProperties);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsAssociationProperties&amp;quot;, $this-&amp;gt;supportsAssociationProperties);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsSchemaOverrides&amp;quot;, $this-&amp;gt;supportsSchemaOverrides);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsNetworkModel&amp;quot;, $this-&amp;gt;supportsNetworkModel);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsAutoIdGeneration&amp;quot;, $this-&amp;gt;supportsAutoIdGeneration);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsDataStoreScopeUniqueIdGeneration&amp;quot;, $this-&amp;gt;supportsDataStoreScopeUniqueIdGeneration);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Schema/SupportsSchemaModification&amp;quot;, $this-&amp;gt;supportsSchemaModification);
+   }
+
+   function queryClassTypes() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Schema/Class/Type&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Class&amp;quot; : $this-&amp;gt;supportsClass = TRUE; break;
+        case &amp;quot;FeatureClass&amp;quot; : $this-&amp;gt;supportsFeatureClass = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown schema class type: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   function queryDataTypes() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Schema/Data/Type&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Boolean&amp;quot; : $this-&amp;gt;supportsBoolean = TRUE; break;
+        case &amp;quot;Byte&amp;quot; : $this-&amp;gt;supportsByte = TRUE; break;
+        case &amp;quot;DateTime&amp;quot; : $this-&amp;gt;supportsDateTime = TRUE; break;
+        case &amp;quot;Decimal&amp;quot; : $this-&amp;gt;supportsDecimal = TRUE; break;
+        case &amp;quot;Double&amp;quot; : $this-&amp;gt;supportsDouble = TRUE; break;
+        case &amp;quot;Int16&amp;quot; : $this-&amp;gt;supportsInt16 = TRUE; break;
+        case &amp;quot;Int32&amp;quot; : $this-&amp;gt;supportsInt32 = TRUE; break;
+        case &amp;quot;Int64&amp;quot; : $this-&amp;gt;supportsInt64 = TRUE; break;
+        case &amp;quot;Single&amp;quot; : $this-&amp;gt;supportsSingle = TRUE; break;
+        case &amp;quot;String&amp;quot; : $this-&amp;gt;supportsString = TRUE; break;
+        case &amp;quot;CLOB&amp;quot; : $this-&amp;gt;supportsCLOB = TRUE; break;
+        case &amp;quot;BLOB&amp;quot; : $this-&amp;gt;supportsBLOB = TRUE; break;
+        case &amp;quot;UniqueID&amp;quot; : $this-&amp;gt;supportsUniqueID = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown data type: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   // COMMAND
+
+   var $supportsSelect = FALSE;
+   function supportsSelect() {
+      return $this-&amp;gt;supportsSelect;
+   }
+
+   var $supportsSelectAggregates = FALSE;
+   function supportsSelectAggregates() {
+      return $this-&amp;gt;supportsSelectAggregates;
+   }
+
+   var $supportsInsert = FALSE;
+   function supportsInsert() {
+      return $this-&amp;gt;supportsInsert;
+   }
+
+   var $supportsDelete = FALSE;
+   function supportsDelete() {
+      return $this-&amp;gt;supportsDelete;
+   }
+
+   var $supportsUpdate = FALSE;
+   function supportsUpdate() {
+      return $this-&amp;gt;supportsUpdate;
+   }
+
+   var $supportsDescribeSchema = FALSE;
+   function supportsDescribeSchema() {
+      return $this-&amp;gt;supportsDescribeSchema;
+   }
+
+   var $supportsDescribeSchemaMapping = FALSE;
+   function supportsDescribeSchemaMapping() {
+      return $this-&amp;gt;supportsDescribeSchemaMapping;
+   }
+
+   var $supportsApplySchema = FALSE;
+   function supportsApplySchema() {
+      return $this-&amp;gt;supportsApplySchema;
+   }
+
+   var $supportsDestroySchema = FALSE;
+   function supportsDestroySchema() {
+      return $this-&amp;gt;supportsDestroySchema;
+   }
+
+   var $supportsActivateSpatialContext = FALSE;
+   function supportsActivateSpatialContext() {
+      return $this-&amp;gt;supportsActivateSpatialContext;
+   }
+   var $supportsCreateSpatialContext = FALSE;
+   function supportsCreateSpatialContext() {
+      return $this-&amp;gt;supportsCreateSpatialContext;
+   }
+
+   var $supportsDestroySpatialContext = FALSE;
+   function supportsDestroySpatialContext() {
+      return $this-&amp;gt;supportsDestroySpatialContext;
+   }
+
+   var $supportsGetSpatialContexts = FALSE;
+   function supportsGetSpatialContexts() {
+      return $this-&amp;gt;supportsGetSpatialContexts;
+   }
+
+   var $supportsCreateMeasureUnit = FALSE;
+   function supportsCreateMeasureUnit() {
+      return $this-&amp;gt;supportsCreateMeasureUnit;
+   }
+
+   var $supportsDestroyMeasureUnit = FALSE;
+   function supportsDestroyMeasureUnit() {
+      return $this-&amp;gt;supportsDestroyMeasureUnit;
+   }
+
+   var $supportsGetMeasureUnits = FALSE;
+   function supportsGetMeasureUnits() {
+      return $this-&amp;gt;supportsGetMeasureUnits;
+   }
+   
+   var $supportsSQLCommand = FALSE;
+   function supportsSQLCommand() {
+      return $this-&amp;gt;supportsSQLCommand;
+   }
+
+   var $supportsAcquireLock = FALSE;
+   function supportsAcquireLock() {
+      return $this-&amp;gt;supportsAcquireLock;
+   }
+
+   var $supportsGetLockInfo = FALSE;
+   function supportsGetLockInfo() {
+      return $this-&amp;gt;supportsGetLockInfo;
+   }
+
+   var $supportsGetLockedObjects = FALSE;
+   function supportsGetLockedObjects() {
+      return $this-&amp;gt;supportsGetLockedObjects;
+   }
+
+   var $supportsGetLockOwners = FALSE;
+   function supportsGetLockOwners() {
+      return $this-&amp;gt;supportsGetLockOwners;
+   }
+
+   var $supportsReleaseLock = FALSE;
+   function supportsReleaseLock() {
+      return $this-&amp;gt;supportsReleaseLock;
+   }
+
+   var $supportsActivateLongTransaction = FALSE;
+   function supportsActivateLongTransaction() {
+      return $this-&amp;gt;supportsActivateLongTransaction;
+   }
+
+   var $supportsCommitLongTransaction = FALSE;
+   function supportsCommitLongTransaction() {
+      return $this-&amp;gt;supportsCommitLongTransaction;
+   }
+
+   var $supportsCreateLongTransaction = FALSE;
+   function supportsCreateLongTransaction() {
+      return $this-&amp;gt;supportsCreateLongTransaction;
+   }
+
+   var $supportsGetLongTransactions = FALSE;
+   function supportsGetLongTransactions() {
+      return $this-&amp;gt;supportsGetLongTransactions;
+   }
+
+   var $supportsFreezeLongTransaction = FALSE;
+   function supportsFreezeLongTransaction() {
+      return $this-&amp;gt;supportsFreezeLongTransaction;
+   }
+
+   var $supportsRollbackLongTransaction = FALSE;
+   function supportsRollbackLongTransaction() {
+      return $this-&amp;gt;supportsRollbackLongTransaction;
+   }
+
+   var $supportsActivateLongTransactionCheckpoint = FALSE;
+   function supportsActivateLongTransactionCheckpoint() {
+      return $this-&amp;gt;supportsActivateLongTransactionCheckpoint;
+   }
+
+   var $supportsCreateLongTransactionCheckpoint = FALSE;
+   function supportsCreateLongTransactionCheckpoint() {
+      return $this-&amp;gt;supportsCreateLongTransactionCheckpoint;
+   }
+
+   var $supportsGetLongTransactionCheckpoints = FALSE;
+   function supportsGetLongTransactionCheckpoints() {
+      return $this-&amp;gt;supportsGetLongTransactionCheckpoints;
+   }
+
+   var $supportsRollbackLongTransactionCheckpoint = FALSE;
+   function supportsRollbackLongTransactionCheckpoint() {
+      return $this-&amp;gt;supportsRollbackLongTransactionCheckpoint;
+   }
+
+   var $supportsChangeLongTransactionPrivileges = FALSE;
+   function supportsChangeLongTransactionPrivileges() {
+      return $this-&amp;gt;supportsChangeLongTransactionPrivileges;
+   }
+
+   var $supportsGetLongTransactionPrivileges = FALSE;
+   function supportsGetLongTransactionPrivileges() {
+      return $this-&amp;gt;supportsGetLongTransactionPrivileges;
+   }
+
+   var $supportsChangeLongTransactionSet = FALSE;
+   function supportsChangeLongTransactionSet() {
+      return $this-&amp;gt;supportsChangeLongTransactionSet;
+   }
+
+   var $supportsGetLongTransactionsInSet = FALSE;
+   function supportsGetLongTransactionsInSet() {
+      return $this-&amp;gt;supportsGetLongTransactionsInSet;
+   }
+
+   var $supportsFirstProviderCommand = FALSE;
+   function supportsFirstProviderCommand() {
+      return $this-&amp;gt;supportsFirstProviderCommand;
+   }
+
+   var $supportsDeactivateLongTransaction = FALSE;
+   function supportsDeactivateLongTransaction() {
+      return $this-&amp;gt;supportsDeactivateLongTransaction;
+   }
+
+   // rest of Commands
+
+   var $supportsParameters = FALSE;
+   function supportsParameters() {
+      return $this-&amp;gt;supportsParameters;
+   }
+
+   var $supportsCommandTimeout = FALSE;
+   function supportsCommandTimeout() {
+      return $this-&amp;gt;supportsCommandTimeout;
+   }
+
+   var $supportsSelectExpressions = FALSE;
+   function supportsSelectExpressions() {
+      return $this-&amp;gt;supportsSelectExpressions;
+   }
+
+   var $supportsSelectFunctions = FALSE;
+   function supportsSelectFunctions() {
+      return $this-&amp;gt;supportsSelectFunctions;
+   }
+
+   var $supportsSelectDistinct = FALSE;
+   function supportsSelectDistinct() {
+      return $this-&amp;gt;supportsSelectDistinct;
+   }
+
+   var $supportsSelectOrdering = FALSE;
+   function supportsSelectOrdering() {
+      return $this-&amp;gt;supportsSelectOrdering;
+   }
+
+   var $supportsSelectGrouping = FALSE;
+   function supportsSelectGrouping() {
+      return $this-&amp;gt;supportsSelectGrouping;
+   }
+
+   function queryCommand() {
+      $this-&amp;gt;queryCommands();
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsParameters&amp;quot;, $this-&amp;gt;supportsParameters);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsTimeout&amp;quot;, $this-&amp;gt;supportsCommandTimeout);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsSelectExpressions&amp;quot;, $this-&amp;gt;supportsSelectExpressions);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsSelectFunctions&amp;quot;, $this-&amp;gt;supportsSelectFunctions);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsSelectDistinct&amp;quot;, $this-&amp;gt;supportsSelectDistinct);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsSelectOrdering&amp;quot;, $this-&amp;gt;supportsSelectOrdering);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Command/SupportsSelectGrouping&amp;quot;, $this-&amp;gt;supportsSelectGrouping);
+   }
+
+   function queryCommands() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Command/SupportedCommands/Name&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Insert&amp;quot; : $this-&amp;gt;supportsInsert = TRUE; break;
+        case &amp;quot;Delete&amp;quot; : $this-&amp;gt;supportsDelete = TRUE; break;
+        case &amp;quot;Update&amp;quot; : $this-&amp;gt;supportsUpdate = TRUE; break;
+        case &amp;quot;Select&amp;quot; : $this-&amp;gt;supportsSelect = TRUE; break;
+        case &amp;quot;SelectAggregates&amp;quot; : $this-&amp;gt;supportsSelectAggregates = TRUE; break;
+        case &amp;quot;DescribeSchema&amp;quot; : $this-&amp;gt;supportsDescribeSchema = TRUE; break;
+        case &amp;quot;DescribeSchemaMapping&amp;quot; : $this-&amp;gt;supportsDescribeSchemaMapping = TRUE; break;
+        case &amp;quot;DestroySchema&amp;quot; : $this-&amp;gt;supportsDestroySchema = TRUE; break;
+        case &amp;quot;ApplySchema&amp;quot; : $this-&amp;gt;supportsApplySchema = TRUE; break;
+        case &amp;quot;SQLCommand&amp;quot; : $this-&amp;gt;supportsSQLCommand = TRUE; break;
+        case &amp;quot;ActivateSpatialContext&amp;quot; : $this-&amp;gt;supportsActivateSpatialContext = TRUE; break;
+        case &amp;quot;CreateSpatialContext&amp;quot; : $this-&amp;gt;supportsCreateSpatialContext = TRUE; break;
+        case &amp;quot;DestroySpatialContext&amp;quot; : $this-&amp;gt;supportsDestroySpatialContext = TRUE; break;
+        case &amp;quot;GetSpatialContexts&amp;quot; : $this-&amp;gt;supportsGetSpatialContexts = TRUE; break;
+        case &amp;quot;CreateMeasureUnit&amp;quot; : $this-&amp;gt;supportsCreateMeasureUnit = TRUE; break;
+        case &amp;quot;DestroyMeasureUnit&amp;quot; : $this-&amp;gt;supportsDestroyMeasureUnit = TRUE; break;
+        case &amp;quot;GetMeasureUnits&amp;quot; : $this-&amp;gt;supportsGetMeasureUnits = TRUE; break;
+        case &amp;quot;AcquireLock&amp;quot; : $this-&amp;gt;supportsAcquireLock = TRUE; break;
+        case &amp;quot;GetLockInfo&amp;quot; : $this-&amp;gt;supportsGetLockInfo = TRUE; break;
+        case &amp;quot;GetLockedObjects&amp;quot; : $this-&amp;gt;supportsGetLockedObjects = TRUE; break;
+        case &amp;quot;GetLockOwners&amp;quot; : $this-&amp;gt;supportsGetLockOwners = TRUE; break;
+        case &amp;quot;ReleaseLock&amp;quot; : $this-&amp;gt;supportsReleaseLock = TRUE; break;
+        case &amp;quot;ActivateLongTransaction&amp;quot; : $this-&amp;gt;supportsActivateLongTransaction = TRUE; break;
+        case &amp;quot;CommitLongTransaction&amp;quot; : $this-&amp;gt;supportsCommitLongTransaction = TRUE; break;
+        case &amp;quot;CreateLongTransaction&amp;quot; : $this-&amp;gt;supportsCreateLongTransaction = TRUE; break;
+        case &amp;quot;GetLongTransactions&amp;quot; : $this-&amp;gt;supportsGetLongTransactions = TRUE; break;
+        case &amp;quot;FreezeLongTransaction&amp;quot; : $this-&amp;gt;supportsFreezeLongTransaction = TRUE; break;
+        case &amp;quot;RollbackLongTransaction&amp;quot; : $this-&amp;gt;supportsRollbackLongTransaction = TRUE; break;
+        case &amp;quot;ActivateLongTransactionCheckpoint&amp;quot; : $this-&amp;gt;supportsActivateLongTransactionCheckpoint = TRUE; break;
+        case &amp;quot;CreateLongTransactionCheckpoint&amp;quot; : $this-&amp;gt;supportsCreateLongTransactionCheckpoint = TRUE; break;
+        case &amp;quot;GetLongTransactionCheckpoints&amp;quot; : $this-&amp;gt;supportsGetLongTransactionCheckpoints = TRUE; break;
+        case &amp;quot;RollbackLongTransactionCheckpoint&amp;quot; : $this-&amp;gt;supportsRollbackLongTransactionCheckpoint = TRUE; break;
+        case &amp;quot;ChangeLongTransactionPrivileges&amp;quot; : $this-&amp;gt;supportsChangeLongTransactionPrivileges = TRUE; break;
+        case &amp;quot;GetLongTransactionPrivileges&amp;quot; : $this-&amp;gt;supportsGetLongTransactionPrivileges = TRUE; break;
+        case &amp;quot;ChangeLongTransactionSet&amp;quot; : $this-&amp;gt;supportsChangeLongTransactionSet = TRUE; break;
+        case &amp;quot;GetLongTransactionsInSet&amp;quot; : $this-&amp;gt;supportsGetLongTransactionsInSet = TRUE; break;
+        case &amp;quot;FirstProviderCommand&amp;quot; : $this-&amp;gt;supportsFirstProviderCommand = TRUE; break;
+        case &amp;quot;DeactivateLongTransaction&amp;quot; : $this-&amp;gt;supportsDeactivateLongTransaction = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown command type: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   // FILTER
+
+   // Condition types
+
+   var $supportsComparison = FALSE;
+   function supportsComparison() {
+      return $this-&amp;gt;supportsComparison;
+   }
+
+   var $supportsLike = FALSE;
+   function supportsLike() {
+      return $this-&amp;gt;supportsLike;
+   }
+
+   var $supportsIn = FALSE;
+   function supportsIn() {
+      return $this-&amp;gt;supportsIn;
+   }
+
+   var $supportsNull = FALSE;
+   function supportsNull() {
+      return $this-&amp;gt;supportsNull;
+   }
+
+   var $supportsSpatial = FALSE;
+   function supportsSpatial() {
+      return $this-&amp;gt;supportsSpatial;
+   }
+
+   var $supportsDistance = FALSE;
+   function supportsDistance() {
+      return $this-&amp;gt;supportsDistance;
+   }
+
+   // Spatial types
+
+   var $supportsContains = FALSE;
+   function supportsContains() {
+      return $this-&amp;gt;supportsContains;
+   }
+
+   var $supportsCrosses = FALSE;
+   function supportsCrosses() {
+      return $this-&amp;gt;supportsCrosses;
+   }
+
+   var $supportsDisjoint = FALSE;
+   function supportsDisjoint() {
+      return $this-&amp;gt;supportsDisjoint;
+   }
+
+   var $supportsEquals = FALSE;
+   function supportsEquals() {
+      return $this-&amp;gt;supportsEquals;
+   }
+
+   var $supportsIntersects = FALSE;
+   function supportsIntersects() {
+      return $this-&amp;gt;supportsIntersects;
+   }
+
+   var $supportsOverlaps = FALSE;
+   function supportsOverlaps() {
+      return $this-&amp;gt;supportsOverlaps;
+   }
+
+   var $supportsTouches = FALSE;
+   function supportsTouches() {
+      return $this-&amp;gt;supportsTouches;
+   }
+
+   var $supportsSpatialWithin = FALSE;
+   function supportsSpatialWithin() {
+      return $this-&amp;gt;supportsSpatialWithin;
+   }
+
+   var $supportsCoveredBy = FALSE;
+   function supportsCoveredBy() {
+      return $this-&amp;gt;supportsCoveredBy;
+   }
+
+   var $supportsInside = FALSE;
+   function supportsInside() {
+      return $this-&amp;gt;supportsInside;
+   }
+
+   var $supportsEnvelopeIntersects = FALSE;
+   function supportsEnvelopeIntersects() {
+      return $this-&amp;gt;supportsEnvelopeIntersects;
+   }
+
+   // Distance types
+
+   var $supportsBeyond = FALSE;
+   function supportsBeyond() {
+      return $this-&amp;gt;supportsBeyond;
+   }
+
+   var $supportsDistanceWithin = FALSE;
+   function supportsDistanceWithin() {
+      return $this-&amp;gt;supportsDistanceWithin;
+   }
+
+   // rest of Filter
+
+   var $supportsGeodesicDistance = FALSE;
+   function supportsGeodesicDistance() {
+      return $this-&amp;gt;supportsGeodesicDistance;
+   }
+
+   var $supportsNonLiteralGeometricOperations = FALSE;
+   function supportsNonLiteralGeometricOperations() {
+      return $this-&amp;gt;supportsNonLiteralGeometricOperations;
+   }
+
+   function queryFilter() {
+      $this-&amp;gt;queryConditionType();
+      $this-&amp;gt;querySpatialOperations();
+      $this-&amp;gt;queryDistanceOperations();
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Filter/SupportsGeodesicDistance&amp;quot;, $this-&amp;gt;supportsGeodesicDistance);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Filter/SupportsNonLiteralGeometricOperations&amp;quot;, $this-&amp;gt;supportsNonLiteralGeometricOperations);
+   }
+
+   function queryConditionType() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Filter/Condition/Type&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Comparison&amp;quot; : $this-&amp;gt;supportsComparison = TRUE; break;
+        case &amp;quot;Like&amp;quot; : $this-&amp;gt;supportsLike = TRUE; break;
+        case &amp;quot;In&amp;quot; : $this-&amp;gt;supportsIn = TRUE; break;
+        case &amp;quot;Null&amp;quot; : $this-&amp;gt;supportsNull = TRUE; break;
+        case &amp;quot;Spatial&amp;quot; : $this-&amp;gt;supportsSpatial = TRUE; break;
+        case &amp;quot;Distance&amp;quot; : $this-&amp;gt;supportsDistance = TRUE; break;
+; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown filter condition type: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   function querySpatialOperations() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Filter/Spatial/Operation&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Contains&amp;quot; : $this-&amp;gt;supportsContains = TRUE; break;
+        case &amp;quot;Crosses&amp;quot; : $this-&amp;gt;supportsCrosses = TRUE; break;
+        case &amp;quot;Disjoint&amp;quot; : $this-&amp;gt;supportsDisjoint = TRUE; break;
+        case &amp;quot;Equals&amp;quot; : $this-&amp;gt;supportsEquals = TRUE; break;
+        case &amp;quot;Intersects&amp;quot; : $this-&amp;gt;supportsIntersects = TRUE; break;
+        case &amp;quot;Overlaps&amp;quot; : $this-&amp;gt;supportsOverlaps = TRUE; break;
+        case &amp;quot;Touches&amp;quot; : $this-&amp;gt;supportsTouches = TRUE; break;
+        case &amp;quot;Within&amp;quot; : $this-&amp;gt;supportsSpatialWithin = TRUE; break;
+        case &amp;quot;CoveredBy&amp;quot; : $this-&amp;gt;supportsCoveredBy = TRUE; break;
+        case &amp;quot;Inside&amp;quot; : $this-&amp;gt;supportsInside = TRUE; break;
+        case &amp;quot;EnvelopeIntersects&amp;quot; : $this-&amp;gt;supportsEnvelopeIntersects = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown filter spatial operation: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   function queryDistanceOperations() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Filter/Distance/Operation&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Within&amp;quot; : $this-&amp;gt;supportsDistanceWithin = TRUE; break;
+        case &amp;quot;Beyond&amp;quot; : $this-&amp;gt;supportsBeyond = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown filter distance operation: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+
+   // EXPRESSION
+
+   // types
+
+   var $supportsBasic = FALSE;
+   function supportsBasic() {
+      return $this-&amp;gt;supportsBasic;
+   }
+
+   var $supportsFunction = FALSE;
+   function supportsFunction() {
+      return $this-&amp;gt;supportsFunction;
+   }
+
+   var $supportsParameter = FALSE;
+   function supportsParameter() {
+      return $this-&amp;gt;supportsParameter;
+   }
+
+   var $supportsAvg = FALSE;
+   function supportsAvg() {
+      return $this-&amp;gt;supportsAvg;
+   }
+
+   var $supportsCeil = FALSE;
+   function supportsCeil() {
+      return $this-&amp;gt;supportsCeil;
+   }
+
+   var $supportsCLIP = FALSE;
+   function supportsCLIP() {
+      return $this-&amp;gt;supportsCLIP;
+   }
+
+   var $supportsConcat = FALSE;
+   function supportsConcat() {
+      return $this-&amp;gt;supportsConcat;
+   }
+
+   var $supportsCount = FALSE;
+   function supportsCount() {
+      return $this-&amp;gt;supportsCount;
+   }
+
+   var $supportsFloor = FALSE;
+   function supportsFloor() {
+      return $this-&amp;gt;supportsFloor;
+   }
+
+   var $supportsLower = FALSE;
+   function supportsLower() {
+      return $this-&amp;gt;supportsLower;
+   }
+
+   var $supportsMax = FALSE;
+   function supportsMax() {
+      return $this-&amp;gt;supportsMax;
+   }
+
+   var $supportsMin = FALSE;
+   function supportsMin() {
+      return $this-&amp;gt;supportsMin;
+   }
+
+   var $supportsMOSAIC = FALSE;
+   function supportsMOSAIC() {
+      return $this-&amp;gt;supportsMOSAIC;
+   }
+
+   var $supportsStdDev = FALSE;
+   function supportsStdDev() {
+      return $this-&amp;gt;supportsStdDev;
+   }
+
+   var $supportsSum = FALSE;
+   function supportsSum() {
+      return $this-&amp;gt;supportsSum;
+   }
+
+   var $supportsUpper = FALSE;
+   function supportsUpper() {
+      return $this-&amp;gt;supportsUpper;
+   }
+
+   function queryExpression() {
+      $this-&amp;gt;queryExpressionType();
+      $this-&amp;gt;queryFunctionDefinitions();
+   }
+
+   function queryExpressionType() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Expression/Type/Name&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Basic&amp;quot; : $this-&amp;gt;supportsBasic = TRUE; break;
+        case &amp;quot;Function&amp;quot; : $this-&amp;gt;supportsFunction = TRUE; break;
+        case &amp;quot;Parameter&amp;quot; : $this-&amp;gt;supportsParameter = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown filter distance operation: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   function queryFunctionDefinitions() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Expression/FunctionDefinitionCollection/FunctionDefinition/Name&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Avg&amp;quot; : $this-&amp;gt;supportsAvg = TRUE; break;
+        case &amp;quot;Ceil&amp;quot; : $this-&amp;gt;supportsCeil = TRUE; break;
+        case &amp;quot;CLIP&amp;quot; : $this-&amp;gt;supportsCLIP = TRUE; break;
+        case &amp;quot;Concat&amp;quot; : $this-&amp;gt;supportsConcat = TRUE; break;
+        case &amp;quot;Count&amp;quot; : $this-&amp;gt;supportsCount = TRUE; break;
+        case &amp;quot;Floor&amp;quot; : $this-&amp;gt;supportsFloor = TRUE; break;
+        case &amp;quot;Lower&amp;quot; : $this-&amp;gt;supportsLower = TRUE; break;
+        case &amp;quot;Max&amp;quot; : $this-&amp;gt;supportsMax = TRUE; break;
+        case &amp;quot;Min&amp;quot; : $this-&amp;gt;supportsMin = TRUE; break;
+        case &amp;quot;MOSAIC&amp;quot; : $this-&amp;gt;supportsMOSAIC = TRUE; break;
+        case &amp;quot;StdDev&amp;quot; : $this-&amp;gt;supportsStdDev = TRUE; break;
+        case &amp;quot;Sum&amp;quot; : $this-&amp;gt;supportsSum = TRUE; break;
+        case &amp;quot;Upper&amp;quot; : $this-&amp;gt;supportsUpper = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown expression function name: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   // RASTER
+
+   var $supportsRaster = FALSE;
+   function supportsRaster() {
+      return $this-&amp;gt;supportsRaster;
+   }
+
+   var $supportsStitching = FALSE;
+   function supportsStitching() {
+      return $this-&amp;gt;supportsStitching;
+   }
+
+   var $supportsSubsampling = FALSE;
+   function supportsSubsampling() {
+      return $this-&amp;gt;supportsSubsampling;
+   }
+
+   function queryRaster() {
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Raster/SupportsRaster&amp;quot;, $this-&amp;gt;supportsRaster);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Raster/SupportsStitching&amp;quot;, $this-&amp;gt;supportsStitching);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Raster/SupportsSubsampling&amp;quot;, $this-&amp;gt;supportsSubsampling);
+   }
+
+   // TOPOLOGY
+
+   var $supportsTopology = FALSE;
+   function supportsTopology() {
+      return $this-&amp;gt;supportsTopology;
+   }
+
+   var $supportsTopologicalHierarchy = FALSE;
+   function supportsTopologicalHierarchy() {
+      return $this-&amp;gt;supportsTopologicalHierarchy;
+   }
+
+   var $supportsBreaksCurveCrossingsAutomatically = FALSE;
+   function supportsBreaksCurveCrossingsAutomatically() {
+      return $this-&amp;gt;supportsBreaksCurveCrossingsAutomatically;
+   }
+
+   var $supportsActivatesTopologyByArea = FALSE;
+   function supportsActivatesTopologyByArea() {
+      return $this-&amp;gt;supportsActivatesTopologyByArea;
+   }
+
+   var $supportsConstrainsFeatureMovements = FALSE;
+   function supportsConstrainsFeatureMovements() {
+      return $this-&amp;gt;supportsConstrainsFeatureMovements;
+   }
+
+   function queryTopology() {
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Topology/SupportsTopology&amp;quot;, $this-&amp;gt;supportsTopology);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Topology/SupportsTopologicalHierarchy&amp;quot;, $this-&amp;gt;supportsTopologicalHierarchy);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Topology/BreaksCurveCrossingsAutomatically&amp;quot;, $this-&amp;gt;supportsBreaksCurveCrossingsAutomatically);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Topology/ActivatesTopologyByArea&amp;quot;, $this-&amp;gt;supportsActivatesTopologyByArea);
+      $this-&amp;gt;queryBooleanElement(&amp;quot;//FeatureProviderCapabilities/Topology/ConstrainsFeatureMovements&amp;quot;, $this-&amp;gt;supportsConstrainsFeatureMovements);
+   }
+
+   // GEOMETRY
+
+   var $supportsPoint = FALSE;
+   function supportsPoint() {
+      return $this-&amp;gt;supportsPoint;
+   }
+
+   var $supportsMultiPoint = FALSE;
+   function supportsMultiPoint() {
+      return $this-&amp;gt;supportsMultiPoint;
+   }
+
+   var $supportsLineString = FALSE;
+   function supportsLineString() {
+      return $this-&amp;gt;supportsLineString;
+   }
+
+   var $supportsMultiLineString = FALSE;
+   function supportsMultiLineString() {
+      return $this-&amp;gt;supportsMultiLineString;
+   }
+
+   var $supportsPolygon = FALSE;
+   function supportsPolygon() {
+      return $this-&amp;gt;supportsPolygon;
+   }
+
+   var $supportsMultiPolygon = FALSE;
+   function supportsMultiPolygon() {
+      return $this-&amp;gt;supportsMultiPolygon;
+   }
+
+   var $supportsCurveString = FALSE;
+   function supportsCurveString() {
+      return $this-&amp;gt;supportsCurveString;
+   }
+
+   var $supportsMultiCurveString = FALSE;
+   function supportsMultiCurveString() {
+      return $this-&amp;gt;supportsMultiCurveString;
+   }
+
+   var $supportsCurvePolygon = FALSE;
+   function supportsCurvePolygon() {
+      return $this-&amp;gt;supportsCurvePolygon;
+   }
+
+   var $supportsMultiCurvePolygon = FALSE;
+   function supportsMultiCurvePolygon() {
+      return $this-&amp;gt;supportsMultiCurvePolygon;
+   }
+
+   var $supportsMultiGeometry = FALSE;
+   function supportsMultiGeometry() {
+      return $this-&amp;gt;supportsMultiGeometry;
+   }
+
+   var $supportsLinearRing = FALSE;
+   function supportsLinearRing() {
+      return $this-&amp;gt;supportsLinearRing;
+   }
+   var $supportsLinearSegment = FALSE;
+   function supportsLinearSegment() {
+      return $this-&amp;gt;supportsLinearSegment;
+   }
+   var $supportsArcSegment = FALSE;
+   function supportsArcSegment() {
+      return $this-&amp;gt;supportsArcSegment;
+   }
+   var $supportsCurveRing = FALSE;
+   function supportsCurveRing() {
+      return $this-&amp;gt;supportsCurveRing;
+   }
+
+   var $dimensionality = -1;
+   function getDimensionality() {
+      return $this-&amp;gt;dimensionality;
+   }
+
+   function queryGeometry() {
+      $this-&amp;gt;queryGeometries();
+      $this-&amp;gt;queryComponents();
+      $this-&amp;gt;queryDimensionality();
+   }
+
+   function queryGeometries() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Geometry/Type&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;Point&amp;quot; : $this-&amp;gt;supportsPoint = TRUE; break;
+        case &amp;quot;MultiPoint&amp;quot; : $this-&amp;gt;supportsMultiPoint = TRUE; break;
+        case &amp;quot;LineString&amp;quot; : $this-&amp;gt;supportsLineString = TRUE; break;
+        case &amp;quot;MultiLineString&amp;quot; : $this-&amp;gt;supportsMultiLineString = TRUE; break;
+        case &amp;quot;Polygon&amp;quot; : $this-&amp;gt;supportsPolygon = TRUE; break;
+        case &amp;quot;MultiPolygon&amp;quot; : $this-&amp;gt;supportsMultiPolygon = TRUE; break;
+        case &amp;quot;CurveString&amp;quot; : $this-&amp;gt;supportsCurveString = TRUE; break;
+        case &amp;quot;MultiCurveString&amp;quot; : $this-&amp;gt;supportsMultiCurveString = TRUE; break;
+        case &amp;quot;CurvePolygon&amp;quot; : $this-&amp;gt;supportsCurvePolygon = TRUE; break;
+        case &amp;quot;MultiCurvePolygon&amp;quot; : $this-&amp;gt;supportsMultiCurvePolygon = TRUE; break;
+        case &amp;quot;MultiGeometry&amp;quot; : $this-&amp;gt;supportsMultiGeometry = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown geometry type: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   function queryComponents() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Geometry/Components/Type&amp;quot;);
+      $count = $domNodeList-&amp;gt;length;
+      for($i=0; $i&amp;lt;$count; $i++) {
+     $domNode = $domNodeList-&amp;gt;item($i);
+     $value = $domNode-&amp;gt;nodeValue;
+     switch($value) {
+        case &amp;quot;LinearRing&amp;quot; : $this-&amp;gt;supportsLinearRing = TRUE; break;
+        case &amp;quot;LinearSegment&amp;quot; : $this-&amp;gt;supportsLinearSegment = TRUE; break;
+        case &amp;quot;ArcSegment&amp;quot; : $this-&amp;gt;supportsArcSegment = TRUE; break;
+        case &amp;quot;CurveRing&amp;quot; : $this-&amp;gt;supportsCurveRing = TRUE; break;
+        default : fwrite($this-&amp;gt;logFileHandle, &amp;quot;unknown geometry component type: $value\\n&amp;quot;);
+     }
+      }
+   }
+
+   function queryDimensionality() {
+      $domNodeList = $this-&amp;gt;xpath-&amp;gt;query(&amp;quot;//FeatureProviderCapabilities/Geometry/Dimensionality&amp;quot;);
+      if ($domNodeList-&amp;gt;length == 0) return;
+      $domNode = $domNodeList-&amp;gt;item(0);
+      $value = $domNode-&amp;gt;nodeValue;
+      $this-&amp;gt;dimensionality = $value;
+   }
+
+   function logCapabilities() {
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Capabilities for $this-&amp;gt;providerName\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Connection\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tThreadCapability\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\tsupportsSingleThreaded(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSingleThreaded()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsPerConnectionThreaded(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsPerConnectionThreaded()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsPerCommandThreaded(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsPerCommandThreaded()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiThreaded(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiThreaded()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tSpatialContextExtent\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tType\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDynamic(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDynamic()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsStatic(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsStatic()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsLocking(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLocking()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsConnectionTimeout(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsConnectionTimeout()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsTransactions(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsTransactions()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsLongTransactions(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLongTransactions()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSQL(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSQL()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsConfiguration(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsConfiguration()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Schema\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tClass\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tType\\n&amp;quot;);
+     $logEntry = &amp;quot;\\t\\t\\tsupportsClass(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsClass()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsFeatureClass(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsFeatureClass()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tData\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tType\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsBoolean(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsBoolean()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsByte(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsByte()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDateTime(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDateTime()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDecimal(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDecimal()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDouble(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDouble()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsInt16(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsInt16()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsInt32(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsInt32()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsInt64(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsInt64()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsSingle(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSingle()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsString(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsString()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsBLOB(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsBLOB()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCLOB(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCLOB()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsUniqueID(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsUniqueID()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsInheritance(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsInheritance()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsMultipleSchemas(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultipleSchemas()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsObjectProperties(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsObjectProperties()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsAssociationProperties(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsAssociationProperties()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSchemaOverrides(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSchemaOverrides()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsNetworkModel(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsNetworkModel()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsAutoIdGeneration(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsAutoIdGeneration()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsDataStoreScopeUniqueIdGeneration(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDataStoreScopeUniqueIdGeneration()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSchemaModification(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSchemaModification()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Command\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tSupportedCommands\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tName\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsSelect(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelect()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsInsert(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsInsert()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDelete(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDelete()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsUpdate(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsUpdate()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsSelectAggregates(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelectAggregates()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDescribeSchema(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDescribeSchema()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDescribeSchemaMapping(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDescribeSchemaMapping()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDestroySchema(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDestroySchema()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsApplySchema(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsApplySchema()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsActivateSpatialContext(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsActivateSpatialContext()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCreateSpatialContext(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCreateSpatialContext()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDestroySpatialContext(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDestroySpatialContext()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDestroySpatialContext(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetSpatialContexts) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCreateMeasureUnit(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCreateMeasureUnit()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDestroyMeasureUnit()t: &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDestroyMeasureUnit()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetMeasureUnits(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetMeasureUnits()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsSQLCommand(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSQLCommand()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsAcquireLock(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsAcquireLock()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLockInfo(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLockInfo()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLockedObjects(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLockedObjects()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLockOwners(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLockOwners()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsReleaseLock(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsReleaseLock()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsActivateLongTransaction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsActivateLongTransaction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCommitLongTransaction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCommitLongTransaction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCreateLongTransaction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCreateLongTransaction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLongTransactions(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLongTransactions()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsFreezeLongTransaction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsFreezeLongTransaction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsRollbackLongTransaction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsRollbackLongTransaction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsActivateLongTransactionCheckpoint(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsActivateLongTransactionCheckpoint()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCreateLongTransactionCheckpoint(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCreateLongTransactionCheckpoint()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLongTransactionCheckpoints(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLongTransactionCheckpoints()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsRollbackLongTransactionCheckpoint(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsRollbackLongTransactionCheckpoint()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsChangeLongTransactionPrivileges(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsChangeLongTransactionPrivileges()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLongTransactionPrivileges(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLongTransactionPrivileges()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsChangeLongTransactionSet(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsChangeLongTransactionSet()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsGetLongTransactionsInSet(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGetLongTransactionsInSet()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsFirstProviderCommand(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsFirstProviderCommand()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDeactivateLongTransaction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDeactivateLongTransaction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsParameters(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsParameters()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsCommandTimeout(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCommandTimeout()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSelectExpressions(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelectExpressions()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSelectFunctions(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelectFunctions()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSelectDistinct(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelectDistinct()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSelectOrdering(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelectOrdering()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSelectGrouping(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSelectGrouping()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Filter\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tCondition\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tType\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsComparison(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsComparison()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsLike(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLike()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsIn(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsIn()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsNull(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsNull()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsSpatial(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSpatial()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDistance(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDistance()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tSpatial\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tOperation\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsContains(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsContains()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCrosses(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCrosses()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDisjoint(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDisjoint()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsEquals(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsEquals()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsIntersects(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsIntersects()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsOverlaps()s: &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsOverlaps()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsTouches(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsTouches()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsSpatialWithin(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSpatialWithin()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCoveredBy(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCoveredBy()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsInside(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsInside()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsEnvelopeIntersects(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsEnvelopeIntersects()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tDistance\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tOperation\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsDistanceWithin(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsDistanceWithin()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsBeyond(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsBeyond()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsGeodesicDistance(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsGeodesicDistance()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsNonLiteralGeometricOperations(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsNonLiteralGeometricOperations()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Expression\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tType\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tName\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsBasic(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsBasic()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsFunction(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsFunction()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsParameter(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsParameter()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tFunctionDefinitionCollection\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tFunctionDefinition\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\t\\tName\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsAvg(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsAvg()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsCeil(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCeil()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsCLIP(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCLIP()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsConcat(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsConcat()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsCount(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCount()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsFloor(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsFloor()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsLower(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLower()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsMax(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMax()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsMin(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMin()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsMOSAIC(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMOSAIC()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsStdDev(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsStdDev()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsSum(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSum()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\t\\tsupportsUpper(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsUpper()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Raster\\n&amp;quot;);
+      $logEntry = &amp;quot;\\tsupportsRaster(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsRaster()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsStitching(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsStitching()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsSubsampling(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsSubsampling()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Topology\\n&amp;quot;);
+      $logEntry = &amp;quot;\\tsupportsTopology(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsTopology()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsTopologicalHierarchy(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsTopologicalHierarchy()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsBreaksCurveCrossingsAutomatically(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsBreaksCurveCrossingsAutomatically()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsActivatesTopologyByArea(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsActivatesTopologyByArea()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tsupportsConstrainsFeatureMovements(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsConstrainsFeatureMovements()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;Geometry\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tType\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\tsupportsPoint(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsPoint()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiPoint(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiPoint()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsLineString(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLineString()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiLineString(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiLineString()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsPolygon(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsPolygon()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiPolygon(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiPolygon()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsCurveString(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCurveString()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiCurveString(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiCurveString()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsCurvePolygon(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCurvePolygon()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiCurvePolygon(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiCurvePolygon()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\tsupportsMultiGeometry(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsMultiGeometry()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\tComponents\\n&amp;quot;);
+      fwrite($this-&amp;gt;logFileHandle, &amp;quot;\\t\\tType\\n&amp;quot;);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsLinearRing(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLinearRing()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsLinearSegment(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsLinearSegment()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsArcSegment(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsArcSegment()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\t\\t\\tsupportsCurveRing(): &amp;quot; . $this-&amp;gt;prtBool($this-&amp;gt;supportsCurveRing()) . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+      $logEntry = &amp;quot;\\tdimensionality(): &amp;quot; . $this-&amp;gt;getDimensionality() . &amp;quot;\\n&amp;quot;;
+      fwrite($this-&amp;gt;logFileHandle, $logEntry);
+   }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Connection to Feature Source | MapGuide API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Connection to Feature Source | MapGuide API Reference ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide API Reference">
+            MapGuide API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="connection-to-feature-source">Connection to Feature Source</h1>
+
+<h2 id="about-feature-sources">About feature sources</h2>
+<p>A feature source contains feature data. The term 'feature
+source' refers to a feature data resource in the site server
+repository. The feature source is installed in the repository
+using the resource service (<code>MgResourceService</code>).</p>
+<p>What constitutes a feature source varies depending on the
+nature of the actual data source. For example, some data
+sources are text files, some are binary files, and some are
+relational databases. If the data source is a file, the file
+itself is stored in the repository. If the data source is a
+relational database, a connection specification is stored in
+the repository. Some relational databases support
+partitioning into multiple data sources. Each partition
+requires a separate connection specification.</p>
+<h2 id="storing-and-identifying-feature-sources">Storing and identifying feature sources</h2>
+<p>In addition to features sources, the site server repository
+contains many other objects, which are collectively referred
+to as resources and identified by resource identifiers
+(<code>MgResourceIdentifier</code>) (<a href="../dotnet_api/api/OSGeo.MapGuide.MgResourceIdentifier.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgResourceIdentifier.html">Java</a>, <a href="TODO.html">PHP</a>). The resource identifier specifies the
+location of a resource in the repository by using a URL.</p>
+<p>The feature source URL is of the form
+<code>Library:://.../&lt;featureSourceName&gt;.FeatureSource</code>. The
+ellipsis (<code>...</code>) represents an optional folder structure
+contained within the root Library folder. An example
+identifier is
+<code>Library://FeatureService/PointsMDB.FeatureSource</code>. The
+FeatureSource extension is specific to the feature source
+resource. All of the methods in the MgFeatureService API that
+do actual work require an MgResourceIdentifier object as an
+argument.</p>
+<p>
+  
+</p>
+<h2 id="before-installing-a-feature-source-in-the-repository">Before installing a feature source in the repository</h2>
+<p>The <code>MgFeatureService</code> (<a href="../dotnet_api/api/OSGeo.MapGuide.MgFeatureService.html">.net</a>, <a href="../java_api/org/osgeo/mapguide/MgFeatureService.html">Java</a>, <a href="TODO.html">PHP</a>) API provides a <code>TestConnection</code>
+method for testing the connection parameter values for a
+feature source prior to installation in the repository. For
+file-based feature sources the connection value could be a
+file name, a folder name, or a symbolic name which is used
+by the provider to query the operating system for the file
+location. For relational database feature sources, possible
+connection values include host name, service name, service
+instance name, user name, password, and datastore name.</p>
+<p>The connection string used to connect to a feature source is
+specific to the feature source. Examples follow for various
+providers.</p>
+<p>The <code>MgFeatureService</code> API provides a <code>GetConnectionPropertyValues</code>
+method for listing the names of the feature source partitions
+within a relational database. You can then construct a
+connection string for each partition and test it using <code>TestConnection</code></p>
+<p>After the installation of the feature source in the
+repository, connection is done by a different <code>TestConnection(MgResourceIdentifier)</code>
+method that takes the feature source's resource identifier as
+an argument.</p>
+<h2 id="installing-the-feature-source-in-the-repository">Installing the feature source in the repository</h2>
+<p>Install a feature source in the repository by:</p>
+<ul>
+<li>Specifying the location of the feature source in the
+repository in a resource identifier.</li>
+<li>Uploading a feature source XML value containing the
+property values used to connect to and configure the feature
+source. The structure of a feature source XML value conforms
+to the <a href="xmlschema-featuresource.md">FeatureSource</a> XML schema. The element values
+vary according to the feature source type. Examples for each
+provider follow.</li>
+<li>Uploading an XML value containing values governing the
+security of the feature source. See the \link ResourceDocumentHeader_schema ResourceDocumentHeader \endlink
+and <a href="xmlschema-resourcesecurity.md">ResourceSecurity</a> schema topics for a general
+discussion about the XML element definitions. See the
+contents of an example header file at the end of this topic.</li>
+<li>Uploading the file or files which constitute the feature
+source if the feature source is file-based.
+Upload the feature source property XML file and document
+header XML file using the
+<code>MgResourceService::SetResource</code> method
+Upload a feature source file using the <code>MgResourceService::SetResourceData</code> method.</li>
+</ul>
+<h2 id="examples-for-various-providers">Examples for various providers</h2>
+<h3 id="autodeskoracle20-provider">Autodesk.Oracle.2.0 Provider</h3>
+<p>
+  The feature source is a relational database, which supports
+  multiple partitions, referred to as datastores. Each
+  datastore can be a feature source. You use Sysadmin.exe to
+  create datastores and add usernames and passwords. The tool
+  and documentation for doing these and other tasks is
+  contained in the installation. For a typical installation,
+  the path is <i>C:\\Program Files\\Common Files\\Autodesk
+  Shared\\GIS\\FDO\\2.0\\Oracle</i>.
+</p>
+<p>Example Connection String</p>
+<pre><code>Username=smith;Password=test;Service=TuxService;DataStore=TUX
+</code></pre>
+<p>All parameters are required.</p>
+<p>The <code>DataStore</code> property value identifies the feature source
+partition within the database. This value can be retrieved
+from the database using the <code>MgFeatureService::GetConnectionPropertyValues</code> Method.</p>
+<p>The Service property value identifies an entry in the <code>tnsnames.ora</code> file located in the Oracle instance or Oracle client
+installation on the local host.</p>
+<p>Feature Source XML File</p>
+<p>The filename is <code>TuxService.FeatureSource</code>.</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;FeatureSource version=&quot;1.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;FeatureSource-1.0.0.xsd&quot;&gt;
+  &lt;Provider&gt;Autodesk.Oracle.2.0&lt;/Provider&gt;
+  &lt;ConnectionProperties&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;DataStore&lt;/Name&gt;
+      &lt;Value&gt;TUX&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Username&lt;/Name&gt;
+      &lt;Value&gt;smith&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Password&lt;/Name&gt;
+      &lt;Value&gt;test&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Service&lt;/Name&gt;
+      &lt;Value&gt;TuxService&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+  &lt;/ConnectionProperties&gt;
+  &lt;Configuration/&gt;
+  &lt;SpatialContext/&gt;
+  &lt;LongTransaction/&gt;
+&lt;/FeatureSource&gt;
+</code></pre>
+<h3 id="autodeskarcsde10-provider">Autodesk.ArcSDE.1.0 Provider</h3>
+<p>The feature source is a relational database. Access to it is
+indirect. The provider talks to an ArcSDE client, which talks
+to the ArcSDE server, which talks to the feature source.</p>
+<p>Example Connection String</p>
+<pre><code>Username=smith;Password=test;Server=otwhost1;Instance=sde_inst1;Datastore=Default Datastore
+</code></pre>
+<p>All parameters are required.</p>
+<p>The <code>Server</code> value is a hostname whose IP address can be
+resolved using a network domain name server.</p>
+<p>The <code>instance</code> value must appear in the services file on the
+local host. The path is <code>C:\\WINDOWS\\system32\\drivers\\etc\\services</code>.
+An example entry is <code>sde_inst1 5151/tcp \#ArcSDE Server listening port</code>.</p>
+<p>The <code>Datastore</code> property value identifies the feature source
+partition within the database. This value can be retrieved
+from the database using the <code>MgFeatureService::GetConnectionPropertyValues</code> Method.</p>
+<p>A value of <code>Default Datastore</code> indicates that only one
+partition exists.</p>
+<p>Feature Source XML File</p>
+<p>The filename is <code>sde_inst1.FeatureSource</code></p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;FeatureSource version=&quot;1.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;FeatureSource-1.0.0.xsd&quot;&gt;
+  &lt;Provider&gt;Autodesk.ArcSDE.1.0&lt;/Provider&gt;
+  &lt;ConnectionProperties&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Datastore&lt;/Name&gt;
+      &lt;Value&gt;Default Datastore&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Username&lt;/Name&gt;
+      &lt;Value&gt;smith&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Password&lt;/Name&gt;
+      &lt;Value&gt;test&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Server&lt;/Name&gt;
+      &lt;Value&gt;otwhost1&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Instance&lt;/Name&gt;
+      &lt;Value&gt;sde_inst1&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+  &lt;/ConnectionProperties&gt;
+  &lt;Configuration/&gt;
+  &lt;SpatialContext/&gt;
+&lt;LongTransaction/&gt;
+&lt;/FeatureSource&gt;
+</code></pre>
+<h3 id="autodesksdf30-provider">Autodesk.Sdf.3.0 Provider</h3>
+<p>The feature source is a file. As part of installing the
+feature source in the repository, the <i>.sdf</i> file is
+loaded into the repository.</p>
+<p>Example Connection String</p>
+<pre><code>File=C:/SDFFeatureResources/testSDF.sdf;ReadOnly=FALSE
+</code></pre>
+<p>The <code>File</code> parameter is mandatory, and the <code>ReadOnly</code> parameter
+defaults to <code>FALSE</code>.</p>
+<p>Feature Source XML File</p>
+<p>The <code>ConnectionProperty</code> element whose <code>Name</code> is <code>File</code> has a <code>Value</code> element that is a symbolic reference to the location of the <code>.sdf</code> file in the repository.</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;FeatureSource version=&quot;1.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;FeatureSource-1.0.0.xsd&quot;&gt;
+  &lt;Provider&gt;Autodesk.Sdf.3.0&lt;/Provider&gt;
+  &lt;ConnectionProperties&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;File&lt;/Name&gt;
+      &lt;Value&gt;%MG_DATA_FILE_PATH%&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;ReadOnly&lt;/Name&gt;
+      &lt;Value&gt;FALSE&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+  &lt;/ConnectionProperties&gt;
+  &lt;SpatialContext/&gt;
+  &lt;LongTransaction/&gt;
+&lt;/FeatureSource&gt;
+</code></pre>
+<h3 id="autodeskshp10-provider">Autodesk.Shp.1.0 Provider</h3>
+<p>The feature source is a set of up to 4 related files,
+collectively referred to as shapefiles. They consist of a <i>.shp</i> file containing the shape geometry, the <i>.shx</i> file
+containing the shape row index, the <i>.dbf</i> file
+containing shape attributes in dBASE format, and the <i>.prj</i> file containing the coordinate system.</p>
+<p>It is possible to connect to a <i>.shp</i> file by itself.
+The SHP provider treats each <i>.shp</i> and associated <i>.dbf</i> file as a feature class with a single geometry property and
+optionally, with data attribute properties.</p>
+<p>The four files can be accessed by applications other than the
+provider. In addition the provider may create two files that
+are used by the provider and not by other applications: an <i>.idx</i> file containing a spatial index and an .xml configuration
+file containing a mapping of the SHP data in the <i>.shp</i> file and the DBF data in the <i>.dbf</i> file to feature
+classes and properties in the FDO data model.</p>
+<p>The connection string used as an argument to the
+<code>TestConnection()</code> method references a folder in the file
+system. As part of installing the feature source in the
+repository, the shapefiles (<i>.shp</i>, <i>.shx</i>, <i>.dbf</i>,
+and <i>.prj</i> files) are loaded into the repository. The
+value of the DefaultFileLocation element as specified in the
+feature source XML file is a symbolic reference to the
+location of the shapefiles in the repository.</p>
+<p>Example Connection String</p>
+<pre><code>DefaultFileLocation=C:/SHPFeatureResources;TemporaryFileLocation=C:/SHPFeatureResources
+</code></pre>
+<p>Feature Source XML File</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;FeatureSource version=&quot;1.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;FeatureSource-1.0.0.xsd&quot;&gt;
+  &lt;Provider&gt;Autodesk.Shp.1.0&lt;/Provider&gt;
+  &lt;ConnectionProperties&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;DefaultFileLocation&lt;/Name&gt;
+      &lt;Value&gt;%MG_DATA_FILE_PATH%&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;TemporaryFileLocation&lt;/Name&gt;
+    &lt;/ConnectionProperty&gt;
+  &lt;/ConnectionProperties&gt;
+  &lt;SpatialContext/&gt;
+  &lt;LongTransaction/&gt;
+&lt;/FeatureSource&gt;
+</code></pre>
+<h3 id="autodeskrfp10-provider">Autodesk.RFP.1.0 Provider</h3>
+<p>Example Connection String</p>
+<pre><code>DefaultRasterFileLocation=C:/RasterFeatureResources
+</code></pre>
+<p>Feature Source XML File</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;FeatureSource version=&quot;1.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;FeatureSource-1.0.0.xsd&quot;&gt;
+  &lt;Provider&gt;Autodesk.RFP.1.0&lt;/Provider&gt;
+  &lt;ConnectionProperties&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;DefaultRasterFileLocation&lt;/Name&gt;
+      &lt;Value&gt;%MG_DATA_FILE_PATH%&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+  &lt;/ConnectionProperties&gt;
+  &lt;SpatialContext/&gt;
+  &lt;LongTransaction/&gt;
+&lt;/FeatureSource&gt;
+</code></pre>
+<h3 id="autodeskodbc10-provider">Autodesk.ODBC.1.0 Provider</h3>
+<p>Typically you use this provider is to access text-based
+feature source files.</p>
+<p>The essential first step is to use a Windows OS
+administrative tool to define a data source name. This action
+associates a symbolic name with a file path. You then use the
+symbolic name in the connection string and XML feature source
+file.</p>
+<p>On an XP computer, the path to the ODBC Data Source
+Administrator is Start &gt; Settings &gt; Control Panel &gt;
+Administrative Tools &gt; Data Sources (ODBC). You can create a
+User DSN (Data Source Name), a System DSN or File DSN in the
+ODBC Data Source Administrator dialog box.</p>
+<p>The sequence of clicks or data entry to create a User or
+System DSN for a Microsoft Access <i>.mdb</i> file is System
+DSN or User DSN/Add &gt; Create New Data Source/Microsoft
+Access Driver (<i>*.mdb</i>) &gt; Finish &gt; ODBC Microsoft
+Access Setup/&lt;type name&gt; &gt; Select &gt; Select
+Database/&lt;select folder&gt; &gt; &lt;select file&gt; &gt; OK &gt; ODBC
+Microsoft Access Setup/OK. The name that you enter is the DSN
+name and is used in the connection string and the XML feature
+source file.</p>
+<p>The sequence of clicks or data entry to create a User or
+System DSN for a dBase <i>.dbf</i> file is System DNS or User
+DSN/Add &gt; Create New Data Source/Microsoft dBase Driver (<i>*.dbf</i>)
+&gt; Finish &gt; ODBC dBase Setup/&lt;type name&gt; &gt; Save &gt; Create
+New Data Source/Next &gt; Finish &gt; Select Directory&gt; Select
+Database/&lt;select folder&gt; &gt; &lt;select file&gt; &gt; OK &gt; ODBC
+dBase Setup/OK. If &quot;Select Directory&quot; is unavailable, clear
+&quot;Use Current Directory&quot;. The name that you enter is the DSN
+name and is used in the connection string and XML feature
+source file.</p>
+<p>The sequence of clicks or data entry to create a File DSN for
+a Microsoft Access <i>.mdb</i> file is File DSN/Add &gt; Create
+New Data Source/Microsoft Access Driver (<i>*.mdb</i>) &gt;
+Next&gt; Browse &gt; Save As/&lt;pick folder&gt; &gt; &lt;type filename&gt;
+Finish &gt; ODBC Microsoft Access Setup/Select &gt; Select
+Database/&lt;select folder&gt; &gt; &lt;select file&gt; &gt; OK &gt; ODBC
+Microsoft Access Setup/OK. The filename that you enter will
+be given an extension of <i>.dsn</i>.</p>
+<p>Example Connection String</p>
+<pre><code>DataSourceName=Country
+</code></pre>
+<p>Feature Source XML File</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;FeatureSource version=&quot;1.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;FeatureSource-1.0.0.xsd&quot;&gt;
+  &lt;Provider&gt;Autodesk.ODBC.1.0&lt;/Provider&gt;
+  &lt;ConnectionProperties&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;DataSourceName&lt;/Name&gt;
+      &lt;Value&gt;Country&lt;/Value&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;UserId&lt;/Name&gt;
+    &lt;/ConnectionProperty&gt;
+    &lt;ConnectionProperty&gt;
+      &lt;Name&gt;Password&lt;/Name&gt;
+    &lt;/ConnectionProperty&gt;
+  &lt;/ConnectionProperties&gt;
+  &lt;Configuration/&gt;
+  &lt;SpatialContext/&gt;
+  &lt;LongTransaction/&gt;
+&lt;/FeatureSource&gt;
+</code></pre>
+<p>ResourceDocumentHeader XML File</p>
+<pre><code class="lang-XML">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ResourceDocumentHeader xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance &quot; xsi:noNamespaceSchemaLocation=&quot;ResourceDocumentHeader-1.0.0.xsd&quot;&gt;
+  &lt;Security&gt;
+    &lt;Inherited&gt;true&lt;/Inherited&gt;
+  &lt;/Security&gt;
+&lt;/ResourceDocumentHeader&gt;
+</code></pre>
+<h2 id="examples">Examples</h2>
+<p>The code samples here how to add feature sources to the
+repository. You connect to a feature source in the
+repository. For example code showing how to connect to a
+feature source, see <code>MgFeatureService::TestConnection</code>.</p>
+<p>The first example adds a resource to the repository for a
+connection to an FDO Provider for Oracle. Since the
+connection is to a relational database and not a file, you
+need only call <code>MgResourceService::SetResource</code> passing in the
+FeatureSource XML containing the property values for the
+connection to the provider.</p>
+<p>PHP code</p>
+<pre><code class="lang-PHP">&lt;?php
+// creating the resource in the repository for a
+// connection to an FDO Provider for Oracle
+// first arg to $resourceService-&gt;SetResource()
+$featSrcResIdArg = &quot;Library://FeatureService/testOracle.FeatureSource&quot;;
+$featSrcResId = new MgResourceIdentifier($featSrcResIdArg);
+
+// second arg to $resourceService-&gt;SetResource()
+$featSrcFileByteContent = new MgByteSource($pathToFeatSrcFile);
+$featSrcFileReaderContent = $featSrcFileByteContent-&gt;GetReader();
+
+// third arg to $resourceService-&gt;SetResource()
+$headerPathByteContent = new MgByteSource($headerPath);
+$headerPathReaderContent = $headerPathByteContent-&gt;GetReader();
+
+// add the resource to the repository
+$resourceService-&gt;SetResource($featSrcResId, $featSrcFileReaderContent, $headerPathReaderContent);
+?&gt;
+\endcode
+\htmlinclude ExampleBottom.html
+\htmlinclude PHPExampleTop.html
+The second example adds a resource to the repository for a
+connection to an FDO Provider for SDF. Since the connection
+is to a file, you must call MgResourceService::SetResource
+passing in the FeatureSource XML containing the property
+values for the connection to the SDF file, and you must call
+MgResourceService::SetResourceData passing in the contents of
+the SDF file.
+\code
+&lt;?php
+// creating the resource in the repository for a
+// connection to an FDO Provider for SDF
+// first arg to $resourceService-&gt;SetResource()
+$featSrcResIdArg = &quot;Library://FeatureService/testSDF.FeatureSource&quot;;
+$featSrcResId = new MgResourceIdentifier($featSrcResIdArg);
+
+// second arg to $resourceService-&gt;SetResource()
+$featSrcFileByteContent = new MgByteSource($pathToFeatSrcFile);
+$featSrcFileReaderContent = $featSrcFileByteContent-&gt;GetReader();
+
+// third arg to $resourceService-&gt;SetResource()
+$headerPathByteContent = new MgByteSource($headerPath);
+$headerPathReaderContent = $headerPathByteContent-&gt;GetReader();
+
+// add the resource to the repository
+$resourceService-&gt;SetResource($featSrcResId, $featSrcFileReaderContent, $headerPathReaderContent);
+
+// add the contents of the SDF file to the repository
+$fileByteContent = new MgByteSource($pathToDataFile);
+$fileReader = $fileByteContent-&gt;GetReader();
+$resourceService-&gt;SetResourceData($featSrcResId, $fileName, &quot;File&quot;, $fileReader);
+?&gt;
+</code></pre>
+<p>C# code</p>
+<pre><code class="lang-C#">using OSGeo.MapGuide;
+using OSGeo.MapGuide.Schema.FeatureSource;
+// The MgResourceService example code shows the creation of an instance.
+private MgResourceService resourceService;
+
+public void ConnectToSdfFeatureClassFile(MgResourceIdentifier resourceId,
+	Boolean readOnly, String filename, String SDFProviderName)
+{
+	FileInfo info = new FileInfo(fileName);
+
+	// Check if the specified file exists
+	if (!info.Exists)
+	{
+		throw new FileNotFoundException(
+			string.Format(&quot;The specified file {1} doesn't exist.&quot;, info.FullName));
+	}
+
+	// an xml string containing values for the two SDF connection parameters: File and ReadOnly
+	String featureSourceDefinition;
+
+	// Build the feature source object model
+	FeatureSourceType fsType = new FeatureSourceType();
+
+	fsType.Provider = SDFProviderName; // FDO provider name, case sensitive
+
+	NameValuePairType p1 = new NameValuePairType();
+	p1.Name = &quot;ReadOnly&quot;;
+	p1.Value = readOnly.ToString(); // non case sensitive
+	NameValuePairType p2 = new NameValuePairType();
+	p2.Name = &quot;File&quot;;
+	p2.Value = info.FullName; // Either double backslash or single backslash is OK for the file path
+
+	fsType.Parameter = new NameValuePairType[] { p2, p1 };
+
+	// Serialize the feature source object model to xml string
+	using (StringWriter writer = new StringWriter())
+	{
+		XmlSerializer xs = new XmlSerializer(fsType.GetType());
+		xs.Serialize(writer, fsType);
+		featureSourceDefinition =  writer.ToString();
+	}
+
+	// Add the resource to repository
+	byte[] bytes = Utilities.StringToBytes(featureSourceDefinition);
+	MgByteSource source = new MgByteSource(bytes, bytes.Length);
+	resourceService.SetResource(resourceId, source.GetReader(), null);
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgObjectPropertyDefinition
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgObjectPropertyDefinition
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgObjectPropertyDefinition" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition" class="text-break">
+    Class MgObjectPropertyDefinition
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.PlatformBase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines a feature property which contains one or more objects
+whose type is a feature class. If there is more than one
+object, an identity property is defined that is used to
+select an object from the collection.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgObjectPropertyDefinition : MgPropertyDefinition, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html">MgNamedSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgProperty.html">MgProperty</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html">MgPropertyDefinition</a></div>
+      <div><span class="xref">MgObjectPropertyDefinition</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_getCPtr_OSGeo_MapGuide_MgPropertyDefinition_">MgPropertyDefinition.getCPtr(MgPropertyDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_swigRelease_OSGeo_MapGuide_MgPropertyDefinition_">MgPropertyDefinition.swigRelease(MgPropertyDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_PropertyType">MgPropertyDefinition.PropertyType</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_Description">MgPropertyDefinition.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_QualifiedName">MgPropertyDefinition.QualifiedName</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_GetPropertyType">MgPropertyDefinition.GetPropertyType()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_SetDescription_System_String_">MgPropertyDefinition.SetDescription(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_GetDescription">MgPropertyDefinition.GetDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_SetQualifiedName_System_String_">MgPropertyDefinition.SetQualifiedName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_GetQualifiedName">MgPropertyDefinition.GetQualifiedName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgPropertyDefinition.html#OSGeo_MapGuide_MgPropertyDefinition_Delete">MgPropertyDefinition.Delete()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgProperty.html#OSGeo_MapGuide_MgProperty_Name">MgProperty.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgProperty.html#OSGeo_MapGuide_MgProperty_GetName">MgProperty.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgProperty.html#OSGeo_MapGuide_MgProperty_SetName_System_String_">MgProperty.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_getCPtr_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.getCPtr(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_swigRelease_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.swigRelease(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition__ctor_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition__ctor_System_String_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.#ctor(System.String)">
+  MgObjectPropertyDefinition(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a <a class="xref" href="OSGeo.MapGuide.MgObjectPropertyDefinition.html">MgObjectPropertyDefinition</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgObjectPropertyDefinition(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The name of the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_ClassDefinition_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.ClassDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_ClassDefinition" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.ClassDefinition">
+  ClassDefinition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgClassDefinition ClassDefinition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_IdentityProperty_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.IdentityProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_IdentityProperty" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.IdentityProperty">
+  IdentityProperty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDataPropertyDefinition IdentityProperty { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_ObjectType_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.ObjectType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_ObjectType" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.ObjectType">
+  ObjectType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ObjectType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_OrderType_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.OrderType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_OrderType" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.OrderType">
+  OrderType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OrderType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_Dispose_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetClassDefinition_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetClassDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetClassDefinition" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetClassDefinition">
+  GetClassDefinition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a> object that defines the type of
+this property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgClassDefinition GetClassDefinition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetIdentityProperty_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetIdentityProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetIdentityProperty" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetIdentityProperty">
+  GetIdentityProperty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a> object that defines the
+property used to identify an object property uniquely.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgDataPropertyDefinition GetIdentityProperty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a> object if the type of
+the object property is <a class="xref" href="OSGeo.MapGuide.MgObjectPropertyType.html">MgObjectPropertyType</a>::Collection or
+<a class="xref" href="OSGeo.MapGuide.MgObjectPropertyType.html">MgObjectPropertyType</a>::OrderedCollection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetObjectType_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetObjectType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetObjectType" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetObjectType">
+  GetObjectType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of this object property (value, collection, or
+ordered collection).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetObjectType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgObjectPropertyType.html">MgObjectPropertyType</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetOrderType_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetOrderType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_GetOrderType" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.GetOrderType">
+  GetOrderType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OSGeo.MapGuide.MgOrderingOption.html">MgOrderingOption</a> value (ascending or descending) for
+this object property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetOrderType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgOrderingOption.html">MgOrderingOption</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetClassDefinition_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetClassDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetClassDefinition_OSGeo_MapGuide_MgClassDefinition_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetClassDefinition(OSGeo.MapGuide.MgClassDefinition)">
+  SetClassDefinition(MgClassDefinition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a reference to the <a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a> that defines the
+type of this property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClassDefinition(MgClassDefinition classDef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>classDef</code> <a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgClassDefinition.html">MgClassDefinition</a>) The class definition used to create the object or objects that constitute the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetIdentityProperty_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetIdentityProperty*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetIdentityProperty_OSGeo_MapGuide_MgDataPropertyDefinition_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetIdentityProperty(OSGeo.MapGuide.MgDataPropertyDefinition)">
+  SetIdentityProperty(MgDataPropertyDefinition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a reference to an <a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a> used to
+create the identity properties that uniquely identify the
+objects that constitute the object property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIdentityProperty(MgDataPropertyDefinition propDef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propDef</code> <a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgDataPropertyDefinition.html">MgDataPropertyDefinition</a>) The data property definition used to create the identity properties for the object collection in this object property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetObjectType_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetObjectType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetObjectType_System_Int32_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetObjectType(System.Int32)">
+  SetObjectType(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="OSGeo.MapGuide.MgObjectPropertyType.html">MgObjectPropertyType</a> type (either value, collection,
+or ordered collection) of this object property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObjectType(int objType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The <a class="xref" href="OSGeo.MapGuide.MgObjectPropertyType.html">MgObjectPropertyType</a> type of this object property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetOrderType_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetOrderType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgObjectPropertyDefinition_SetOrderType_System_Int32_" data-uid="OSGeo.MapGuide.MgObjectPropertyDefinition.SetOrderType(System.Int32)">
+  SetOrderType(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="OSGeo.MapGuide.MgOrderingOption.html">MgOrderingOption</a> type (either ascending or
+descending) for this object property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrderType(int orderType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>orderType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The ordering option type of this object property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

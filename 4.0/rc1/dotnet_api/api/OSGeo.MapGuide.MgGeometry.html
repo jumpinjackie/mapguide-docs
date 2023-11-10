@@ -1,0 +1,1090 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgGeometry
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgGeometry
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgGeometry">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgGeometry" data-uid="OSGeo.MapGuide.MgGeometry" class="text-break">
+    Class MgGeometry
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> is an abstract base class for all of the geometry
+types.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgGeometry : MgGeometricEntity, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html">MgGeometricEntity</a></div>
+      <div><span class="xref">MgGeometry</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="OSGeo.MapGuide.MgAggregateGeometry.html">MgAggregateGeometry</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgCurve.html">MgCurve</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgPoint.html">MgPoint</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgRegion.html">MgRegion</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Dimension">MgGeometricEntity.Dimension</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Area">MgGeometricEntity.Area</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Length">MgGeometricEntity.Length</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Centroid">MgGeometricEntity.Centroid</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_GetDimension">MgGeometricEntity.GetDimension()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_IsEmpty">MgGeometricEntity.IsEmpty()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_IsSimple">MgGeometricEntity.IsSimple()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_IsClosed">MgGeometricEntity.IsClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_IsValid">MgGeometricEntity.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Envelope">MgGeometricEntity.Envelope()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Copy">MgGeometricEntity.Copy()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_Transform_OSGeo_MapGuide_MgTransform_">MgGeometricEntity.Transform(MgTransform)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_GetArea">MgGeometricEntity.GetArea()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_GetLength">MgGeometricEntity.GetLength()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGeometricEntity.html#OSGeo_MapGuide_MgGeometricEntity_GetCentroid">MgGeometricEntity.GetCentroid()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_GeometryType_" data-uid="OSGeo.MapGuide.MgGeometry.GeometryType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_GeometryType" data-uid="OSGeo.MapGuide.MgGeometry.GeometryType">
+  GeometryType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GeometryType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Boundary_" data-uid="OSGeo.MapGuide.MgGeometry.Boundary*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Boundary" data-uid="OSGeo.MapGuide.MgGeometry.Boundary">
+  Boundary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry Boundary()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> that represents this geometric entity's
+boundary.
+&lt;h2&gt;'Mod 2' Union Rule&lt;/h2&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Buffer_" data-uid="OSGeo.MapGuide.MgGeometry.Buffer*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Buffer_System_Double_OSGeo_MapGuide_MgMeasure_" data-uid="OSGeo.MapGuide.MgGeometry.Buffer(System.Double,OSGeo.MapGuide.MgMeasure)">
+  Buffer(double, MgMeasure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a geometry that represents all points whose distance
+from this geometric entity is less than or equal to a given
+distance. By default, the distance computation is done using
+a linear algorithm unless a custom measure is supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry Buffer(double distance, MgMeasure measure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The distance from the geometry in units. This value cannot be zero.</p>
+</dd>
+    <dt><code>measure</code> <a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a>) The <a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a> instance to use when computing the buffer. If null, a linear distance algorithm is used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> that represents the geometric entity's buffer, or
+NULL if the geometry cannot be buffered.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Contains_" data-uid="OSGeo.MapGuide.MgGeometry.Contains*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Contains_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Contains(OSGeo.MapGuide.MgGeometry)">
+  Contains(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This is a convenience method. Given 2 geometries a and b,
+a.Contains(b) is true if and only if b.<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>::Within(a)
+is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the other geometry is within this geometry, false
+otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_ConvexHull_" data-uid="OSGeo.MapGuide.MgGeometry.ConvexHull*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_ConvexHull" data-uid="OSGeo.MapGuide.MgGeometry.ConvexHull">
+  ConvexHull()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry ConvexHull()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> that represents the convex hull of the
+geometric entity.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Crosses_" data-uid="OSGeo.MapGuide.MgGeometry.Crosses*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Crosses_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Crosses(OSGeo.MapGuide.MgGeometry)">
+  Crosses(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given 2 geometries a and b, a.Crosses(b) is true if and only
+if the dimension of the intersection of the interior of a and
+the interior of b is less than the greater of the dimension
+of the interior of a and the dimension of the interior of b
+and the intersection of a and b is neither a nor b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Crosses(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry spatially crosses the other geometry,
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Difference_" data-uid="OSGeo.MapGuide.MgGeometry.Difference*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Difference_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Difference(OSGeo.MapGuide.MgGeometry)">
+  Difference(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry Difference(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Disjoint_" data-uid="OSGeo.MapGuide.MgGeometry.Disjoint*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Disjoint_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Disjoint(OSGeo.MapGuide.MgGeometry)">
+  Disjoint(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given 2 geometries a and b, a.Disjoint(b)is true if and only
+if the intersection of a and b is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Disjoint(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry is spatially disjoint from the other
+geometry, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Dispose_" data-uid="OSGeo.MapGuide.MgGeometry.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgGeometry.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Distance_" data-uid="OSGeo.MapGuide.MgGeometry.Distance*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Distance_OSGeo_MapGuide_MgGeometry_OSGeo_MapGuide_MgMeasure_" data-uid="OSGeo.MapGuide.MgGeometry.Distance(OSGeo.MapGuide.MgGeometry,OSGeo.MapGuide.MgMeasure)">
+  Distance(MgGeometry, MgMeasure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the shortest distance between this geometry and
+another. By default distance computation is done using a
+linear algorithm unless a custom measure is supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Distance(MgGeometry other, MgMeasure measure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to determine the distance to.</p>
+</dd>
+    <dt><code>measure</code> <a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a>) The <a class="xref" href="OSGeo.MapGuide.MgMeasure.html">MgMeasure</a> instance to use when computing the distance. If null, a linear distance algorithm is used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A double value representing the shortest distance between two
+geometries.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Equals_" data-uid="OSGeo.MapGuide.MgGeometry.Equals*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Equals_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Equals(OSGeo.MapGuide.MgGeometry)">
+  Equals(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given 2 geometries a and b, a.Equals(b) is true if the 2
+geometries are spatially equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry is spatially equal to the other
+geometry, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_GetGeometryType_" data-uid="OSGeo.MapGuide.MgGeometry.GetGeometryType*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_GetGeometryType" data-uid="OSGeo.MapGuide.MgGeometry.GetGeometryType">
+  GetGeometryType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of this geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGeometryType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the value defined in <a class="xref" href="OSGeo.MapGuide.MgGeometryType.html">MgGeometryType</a> corresponding to
+this geometry.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Intersection_" data-uid="OSGeo.MapGuide.MgGeometry.Intersection*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Intersection_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Intersection(OSGeo.MapGuide.MgGeometry)">
+  Intersection(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a geometry that represents the point set
+intersection of this geometry and another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry Intersection(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to compute the intersection with this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> that represents the intersection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Intersects_" data-uid="OSGeo.MapGuide.MgGeometry.Intersects*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Intersects_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Intersects(OSGeo.MapGuide.MgGeometry)">
+  Intersects(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This is a convenience method. Given 2 geometries a and b,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Intersects(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry is not disjoint with respect to the
+other geometry, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Overlaps_" data-uid="OSGeo.MapGuide.MgGeometry.Overlaps*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Overlaps_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Overlaps(OSGeo.MapGuide.MgGeometry)">
+  Overlaps(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given 2 geometries a and b, a.Overlaps(b) is true if and only
+if the dimension of the interior of a equals the dimension of
+the interior of b equals the dimension of the intersection of
+the interior of a and the interior of b and the intersection
+of a and b is neither a nor b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Overlaps(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry spatially overlaps the other geometry,
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Prepare_" data-uid="OSGeo.MapGuide.MgGeometry.Prepare*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Prepare" data-uid="OSGeo.MapGuide.MgGeometry.Prepare">
+  Prepare()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a prepared version of this geometry that is optimized for
+repeated evaluation of spatial predicate operations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgPreparedGeometry Prepare()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgPreparedGeometry.html">MgPreparedGeometry</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgPreparedGeometry.html">MgPreparedGeometry</a> representing the prepared version of this geometry</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_SymetricDifference_" data-uid="OSGeo.MapGuide.MgGeometry.SymetricDifference*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_SymetricDifference_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.SymetricDifference(OSGeo.MapGuide.MgGeometry)">
+  SymetricDifference(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry SymetricDifference(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Tessellate_" data-uid="OSGeo.MapGuide.MgGeometry.Tessellate*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Tessellate" data-uid="OSGeo.MapGuide.MgGeometry.Tessellate">
+  Tessellate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a tessellated version of this geometry. A tessellated version of this
+geometry will have all arc/curve geometry components approximated with line
+strings. Thus, this method is only applicable for curve geometries and has
+no effect on non-curve geometries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry Tessellate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>A tesellated version of this geometry. If this geometry is not curve-based, the operation does nothing and this method returns itself.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Touches_" data-uid="OSGeo.MapGuide.MgGeometry.Touches*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Touches_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Touches(OSGeo.MapGuide.MgGeometry)">
+  Touches(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given 2 geometries a and b, a.Touches(b) is true if and only
+if the intersection of the interior of a and the interior of
+b is empty and the intersection of a and b is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Touches(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry spatially touches the other geometry,
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Union_" data-uid="OSGeo.MapGuide.MgGeometry.Union*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Union_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Union(OSGeo.MapGuide.MgGeometry)">
+  Union(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a geometry that represents the point set union of
+this geometry with another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgGeometry Union(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to union with this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> representing the union of the two geometries.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgGeometry_Within_" data-uid="OSGeo.MapGuide.MgGeometry.Within*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgGeometry_Within_OSGeo_MapGuide_MgGeometry_" data-uid="OSGeo.MapGuide.MgGeometry.Within(OSGeo.MapGuide.MgGeometry)">
+  Within(MgGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given 2 geometries a and b, a.Within(b) is true if and only
+if the intersection of a and b is a and the intersection of
+the interior of a and the interior of b is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Within(MgGeometry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a>) The <a class="xref" href="OSGeo.MapGuide.MgGeometry.html">MgGeometry</a> to test against this one.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this geometry is spatially within the other geometry,
+false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

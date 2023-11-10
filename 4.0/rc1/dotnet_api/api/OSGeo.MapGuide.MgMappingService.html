@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgMappingService
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgMappingService
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgMappingService">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgMappingService" data-uid="OSGeo.MapGuide.MgMappingService" class="text-break">
+    Class MgMappingService
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Performs map related operations such as getting an eMap DWF
+representing a map or updates to a map, or querying features
+from maps or layers of a map.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgMappingService : MgService, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgService.html">MgService</a></div>
+      <div><span class="xref">MgMappingService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_HasWarnings">MgService.HasWarnings()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgService.html#OSGeo_MapGuide_MgService_GetWarningsObject">MgService.GetWarningsObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_CreateRuntimeMap_" data-uid="OSGeo.MapGuide.MgMappingService.CreateRuntimeMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_CreateRuntimeMap_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgMappingService.CreateRuntimeMap(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.Int32,System.Int32)">
+  CreateRuntimeMap(MgResourceIdentifier, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new runtime map from the specified Map Definition resource id and returns an XML-based description of the runtime
+map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader CreateRuntimeMap(MgResourceIdentifier mapDefinition, string sessionId, int requestedFeatures, int iconsPerScaleRange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapDefinition</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a> object identifying the map definition resource.</p>
+</dd>
+    <dt><code>sessionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The session ID</p>
+</dd>
+    <dt><code>requestedFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) A bitmask representing the desired information to return in the XML response: 1=Layer/Group structure, 2=Layer Icons, 4=Layer Feature Source Information</p>
+</dd>
+    <dt><code>iconsPerScaleRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The number of legend icons per scale range to render inline in the XML response as base64 strings. If a scale range contains a number of rules that exceeds this value, only the first and last rules of a type style in the scale range will have inline icons</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an XML-based description of the runtime map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_CreateRuntimeMap_" data-uid="OSGeo.MapGuide.MgMappingService.CreateRuntimeMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_CreateRuntimeMap_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgMappingService.CreateRuntimeMap(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+  CreateRuntimeMap(MgResourceIdentifier, string, string, string, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new runtime map from the specified Map Definition resource id and returns an XML-based description of the runtime
+map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader CreateRuntimeMap(MgResourceIdentifier mapDefinition, string targetMapName, string sessionId, string iconFormat, int iconWidth, int iconHeight, int requestedFeatures, int iconsPerScaleRange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapDefinition</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a> object identifying the map definition resource.</p>
+</dd>
+    <dt><code>targetMapName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The desired name of the runtime map</p>
+</dd>
+    <dt><code>sessionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The session ID</p>
+</dd>
+    <dt><code>iconFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The desired image format for icons (from <a class="xref" href="OSGeo.MapGuide.MgImageFormats.html">MgImageFormats</a>)</p>
+</dd>
+    <dt><code>iconWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The width of each individual inline legend icons. Has no effect if icons was not requested in the response.</p>
+</dd>
+    <dt><code>iconHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The height of each individual inline legend icons. Has no effect if icons was not requested in the response.</p>
+</dd>
+    <dt><code>requestedFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) A bitmask representing the desired information to return in the XML response: 1=Layer/Group structure, 2=Layer Icons, 4=Layer Feature Source Information</p>
+</dd>
+    <dt><code>iconsPerScaleRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The number of legend icons per scale range to render inline in the XML response as base64 strings. If a scale range contains a number of rules that exceeds this value, only the first and last rules of a type style in the scale range will have inline icons</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an XML-based description of the runtime map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_DescribeRuntimeMap_" data-uid="OSGeo.MapGuide.MgMappingService.DescribeRuntimeMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_DescribeRuntimeMap_OSGeo_MapGuide_MgMap_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgMappingService.DescribeRuntimeMap(OSGeo.MapGuide.MgMap,System.Int32,System.Int32)">
+  DescribeRuntimeMap(MgMap, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an XML-based description of the runtime map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader DescribeRuntimeMap(MgMap map, int requestedFeatures, int iconsPerScaleRange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a>) The map to describe</p>
+</dd>
+    <dt><code>requestedFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) A bitmask representing the desired information to return in the XML response: 1=Layer/Group structure, 2=Layer Icons, 4=Layer Feature Source Information</p>
+</dd>
+    <dt><code>iconsPerScaleRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The number of legend icons per scale range to render inline in the XML response as base64 strings. If a scale range contains a number of rules that exceeds this value, only the first and last rules of a type style in the scale range will have inline icons</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an XML-based description of the runtime map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_DescribeRuntimeMap_" data-uid="OSGeo.MapGuide.MgMappingService.DescribeRuntimeMap*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_DescribeRuntimeMap_OSGeo_MapGuide_MgMap_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgMappingService.DescribeRuntimeMap(OSGeo.MapGuide.MgMap,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+  DescribeRuntimeMap(MgMap, string, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an XML-based description of the given runtime map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader DescribeRuntimeMap(MgMap map, string iconFormat, int iconWidth, int iconHeight, int requestedFeatures, int iconsPerScaleRange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a>) The map to describe</p>
+</dd>
+    <dt><code>iconFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) The desired image format for icons (from <a class="xref" href="OSGeo.MapGuide.MgImageFormats.html">MgImageFormats</a>)</p>
+</dd>
+    <dt><code>iconWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The width of each individual inline legend icons. Has no effect if icons was not requested in the response.</p>
+</dd>
+    <dt><code>iconHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The height of each individual inline legend icons. Has no effect if icons was not requested in the response.</p>
+</dd>
+    <dt><code>requestedFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) A bitmask representing the desired information to return in the XML response: 1=Layer/Group structure, 2=Layer Icons, 4=Layer Feature Source Information</p>
+</dd>
+    <dt><code>iconsPerScaleRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) The number of legend icons per scale range to render inline in the XML response as base64 strings. If a scale range contains a number of rules that exceeds this value, only the first and last rules of a type style in the scale range will have inline icons</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an XML-based description of the runtime map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_Dispose_" data-uid="OSGeo.MapGuide.MgMappingService.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgMappingService.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_GenerateLegendImage_" data-uid="OSGeo.MapGuide.MgMappingService.GenerateLegendImage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_GenerateLegendImage_OSGeo_MapGuide_MgResourceIdentifier_System_Double_System_Int32_System_Int32_System_String_System_Int32_System_Int32_" data-uid="OSGeo.MapGuide.MgMappingService.GenerateLegendImage(OSGeo.MapGuide.MgResourceIdentifier,System.Double,System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+  GenerateLegendImage(MgResourceIdentifier, double, int, int, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>GenerateLegendImage() returns the legend image for the specified layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GenerateLegendImage(MgResourceIdentifier resource, double scale, int width, int height, string format, int geomType, int themeCategory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a>) Input <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a> object identifying the layer definition resource.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) Input The scale at which the symbolization is requested.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The requested image width in pixels.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The requested image height in pixels.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>(String/string) Input Image format, from <a class="xref" href="OSGeo.MapGuide.MgImageFormats.html">MgImageFormats</a>. Example: PNG, JPG, PNG8, etc</p>
+</dd>
+    <dt><code>geomType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The type of symbolization required: 1=Point, 2=Line, 3=Area, 4=Composite</p>
+</dd>
+    <dt><code>themeCategory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>(int) Input The value indicating which theme category swatch to return. Used when there is a theme defined at this scale. An exception will be thrown if a requested them category doesn&amp;apos;t exist.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns a stream representing the legend image.
+The default returned image format will be PNG8 unless a different supported
+format is requested. An exception will be thrown if an unsupported image
+format is requested.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgArgumentOutOfRangeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidResourceTypeException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgInvalidImageFormatException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_GenerateMultiPlot_" data-uid="OSGeo.MapGuide.MgMappingService.GenerateMultiPlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_GenerateMultiPlot_OSGeo_MapGuide_MgMapPlotCollection_OSGeo_MapGuide_MgDwfVersion_" data-uid="OSGeo.MapGuide.MgMappingService.GenerateMultiPlot(OSGeo.MapGuide.MgMapPlotCollection,OSGeo.MapGuide.MgDwfVersion)">
+  GenerateMultiPlot(MgMapPlotCollection, MgDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TODO: API Documentation is missing or failed to translate doxygen brief directive (message inserted by IMake.exe)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GenerateMultiPlot(MgMapPlotCollection mapPlots, MgDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapPlots</code> <a class="xref" href="OSGeo.MapGuide.MgMapPlotCollection.html">MgMapPlotCollection</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMapPlotCollection.html">MgMapPlotCollection</a>) A collection of MapPlot objects.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a>) DWF specification required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF
+in ePlot format with multiple sheets, one for each
+map.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_GeneratePlot_" data-uid="OSGeo.MapGuide.MgMappingService.GeneratePlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_GeneratePlot_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgCoordinate_System_Double_OSGeo_MapGuide_MgPlotSpecification_OSGeo_MapGuide_MgLayout_OSGeo_MapGuide_MgDwfVersion_" data-uid="OSGeo.MapGuide.MgMappingService.GeneratePlot(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgCoordinate,System.Double,OSGeo.MapGuide.MgPlotSpecification,OSGeo.MapGuide.MgLayout,OSGeo.MapGuide.MgDwfVersion)">
+  GeneratePlot(MgMap, MgCoordinate, double, MgPlotSpecification, MgLayout, MgDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plot the map to an EPlot DWF using the specified center and scale.  The extents
+will be computed to fill the space within the page margins.  If the layout
+paramter is null, no adornments will be added to the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GeneratePlot(MgMap map, MgCoordinate center, double scale, MgPlotSpecification plotSpec, MgLayout layout, MgDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a>) Map object describing current state of map.</p>
+</dd>
+    <dt><code>center</code> <a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgCoordinate.html">MgCoordinate</a>) The coordinates of the center of the map for the plot.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>(double) The scale to use for the plot.</p>
+</dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a>) Plotting specifications for the generated plot.</p>
+</dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a>) Layout specifications to use for the generated plot.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a>) DWF version required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF in ePlot format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_GeneratePlot_" data-uid="OSGeo.MapGuide.MgMappingService.GeneratePlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_GeneratePlot_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgEnvelope_System_Boolean_OSGeo_MapGuide_MgPlotSpecification_OSGeo_MapGuide_MgLayout_OSGeo_MapGuide_MgDwfVersion_" data-uid="OSGeo.MapGuide.MgMappingService.GeneratePlot(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgEnvelope,System.Boolean,OSGeo.MapGuide.MgPlotSpecification,OSGeo.MapGuide.MgLayout,OSGeo.MapGuide.MgDwfVersion)">
+  GeneratePlot(MgMap, MgEnvelope, bool, MgPlotSpecification, MgLayout, MgDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plot the map to an EPlot DWF using the extent specified in the mapping
+coordinate space.  The center and scale will be computed based on the extent
+specified.  If expandToFit is true, then the extent specified will be expanded
+in the X or Y direction to fill the space within the page margins.  If the
+layout paramter is null, no adornments will be added to the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GeneratePlot(MgMap map, MgEnvelope extents, bool expandToFit, MgPlotSpecification plotSpec, MgLayout layout, MgDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a>) Map object describing current state of map.</p>
+</dd>
+    <dt><code>extents</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a>) The extents of the map to be plotted..</p>
+</dd>
+    <dt><code>expandToFit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>(boolean/bool) Flag indicating whether the extents should be expanded to fill the space withing the page margins.</p>
+</dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a>) Plotting specifications for the generated plot.</p>
+</dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a>) Layout specifications to use for the generated plot.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a>) DWF version required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF in ePlot format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_GeneratePlot_" data-uid="OSGeo.MapGuide.MgMappingService.GeneratePlot*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_GeneratePlot_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgPlotSpecification_OSGeo_MapGuide_MgLayout_OSGeo_MapGuide_MgDwfVersion_" data-uid="OSGeo.MapGuide.MgMappingService.GeneratePlot(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgPlotSpecification,OSGeo.MapGuide.MgLayout,OSGeo.MapGuide.MgDwfVersion)">
+  GeneratePlot(MgMap, MgPlotSpecification, MgLayout, MgDwfVersion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plot The map to an EPlot DWF using the center and scale from the map.  The
+extents will be computed to fill the space within the page margins.  If the
+layout paramter is null, no adornments will be added to the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader GeneratePlot(MgMap map, MgPlotSpecification plotSpec, MgLayout layout, MgDwfVersion dwfVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a>) Map object describing current state of map.</p>
+</dd>
+    <dt><code>plotSpec</code> <a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgPlotSpecification.html">MgPlotSpecification</a>) Plotting specifications for the generated plot.</p>
+</dd>
+    <dt><code>layout</code> <a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgLayout.html">MgLayout</a>) Layout specifications to use for the generated plot.</p>
+</dd>
+    <dt><code>dwfVersion</code> <a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a></dt>
+    <dd><p>(<a class="xref" href="OSGeo.MapGuide.MgDwfVersion.html">MgDwfVersion</a>) DWF version required by the client. This determines the schema and file versions used to generate the DWFs sent back to the client.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns an <a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a> object containing a DWF in ePlot format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgException.html">MgException</a></dt>
+    <dd><p>MgNullArgumentException&quot;&gt;</p>
+</dd>
+  </dl>
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_QueryFeatures_" data-uid="OSGeo.MapGuide.MgMappingService.QueryFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_QueryFeatures_OSGeo_MapGuide_MgMap_OSGeo_MapGuide_MgStringCollection_System_Int32_System_Int32_System_Int32_System_String_" data-uid="OSGeo.MapGuide.MgMappingService.QueryFeatures(OSGeo.MapGuide.MgMap,OSGeo.MapGuide.MgStringCollection,System.Int32,System.Int32,System.Int32,System.String)">
+  QueryFeatures(MgMap, MgStringCollection, int, int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Queries feature information for each feature visible at the
+specified point of interest, on a given set of layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader QueryFeatures(MgMap map, MgStringCollection layerNames, int x, int y, int maxFeatures, string coordinateSpace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Map object containing current view state of the map.</p>
+</dd>
+    <dt><code>layerNames</code> <a class="xref" href="OSGeo.MapGuide.MgStringCollection.html">MgStringCollection</a></dt>
+    <dd><p>List of layers to return information from. Each layer must be in the specified <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>X coordinate for point of interest</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Y coordinate for point of interest</p>
+</dd>
+    <dt><code>maxFeatures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Maximum number of feature that should be returned for a given layer greater than 0, usually 1. If the number of features sharing the requested location is greater than maxFeatures the subset of features returned depends on the provider.</p>
+</dd>
+    <dt><code>coordinateSpace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input specifies the coordinate system the geometry should be returned in. See <a class="xref" href="OSGeo.MapGuide.MgCoordinateSpace.html">MgCoordinateSpace</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>Returns a byte reader containing an XML document with the feature
+information described in GML (Geography Markup Language). GML
+is defined by the OpenGIS consortium. A specification for
+this language can be found at: /// <a href="https://portal.opengeospatial.org/files/?artifact_id=7174">https://portal.opengeospatial.org/files/?artifact_id=7174</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMappingService_QueryFeatures_" data-uid="OSGeo.MapGuide.MgMappingService.QueryFeatures*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMappingService_QueryFeatures_OSGeo_MapGuide_MgMap_System_String_System_String_" data-uid="OSGeo.MapGuide.MgMappingService.QueryFeatures(OSGeo.MapGuide.MgMap,System.String,System.String)">
+  QueryFeatures(MgMap, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>(NOTE: This API is not officially supported and may be subject to removal in a future release without warning. Use with caution.)
+Queries and returns each of the visible features on the
+specified layer of the specified map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgByteReader QueryFeatures(MgMap map, string layerName, string coordinateSpace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a></dt>
+    <dd><p>Input map object containing current viewed state of map.</p>
+</dd>
+    <dt><code>layerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input name of the layer to query properties for</p>
+</dd>
+    <dt><code>coordinateSpace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Input specifies the coordinate system the geometry should be returned in. See <a class="xref" href="OSGeo.MapGuide.MgCoordinateSpace.html">MgCoordinateSpace</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgByteReader.html">MgByteReader</a></dt>
+    <dd><p>A byte reader containing an XML document with the feature
+information described in GML (Geography Markup Language). GML
+is defined by the OpenGIS consortium. A specification for
+this language can be found at: /// <a href="https://portal.opengeospatial.org/files/?artifact_id=7174">https://portal.opengeospatial.org/files/?artifact_id=7174</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

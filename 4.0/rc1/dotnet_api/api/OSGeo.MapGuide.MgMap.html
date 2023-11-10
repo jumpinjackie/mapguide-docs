@@ -1,0 +1,800 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MgMap
+ | MapGuide .net API reference (4.0 RC1) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MgMap
+ | MapGuide .net API reference (4.0 RC1) ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MapGuide .net API reference">
+            MapGuide .net API reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="OSGeo.MapGuide.MgMap">
+
+
+
+  <h1 id="OSGeo_MapGuide_MgMap" data-uid="OSGeo.MapGuide.MgMap" class="text-break">
+    Class MgMap
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="OSGeo.html">OSGeo</a>.<a class="xref" href="OSGeo.MapGuide.html">MapGuide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>OSGeo.MapGuide.MapGuideCommon.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines the runtime state of a map.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MgMap : MgMapBase, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgObject.html">MgObject</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgDisposable.html">MgDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html">MgGuardDisposable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgSerializable.html">MgSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html">MgNamedSerializable</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgResource.html">MgResource</a></div>
+      <div><a class="xref" href="OSGeo.MapGuide.MgMapBase.html">MgMapBase</a></div>
+      <div><span class="xref">MgMap</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_Name">MgMapBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_SessionId">MgMapBase.SessionId</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_MapDefinition">MgMapBase.MapDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_MapSRS">MgMapBase.MapSRS</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_MapExtent">MgMapBase.MapExtent</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_ViewCenter">MgMapBase.ViewCenter</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_ViewScale">MgMapBase.ViewScale</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_DataExtent">MgMapBase.DataExtent</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_DisplayDpi">MgMapBase.DisplayDpi</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_DisplayWidth">MgMapBase.DisplayWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_DisplayHeight">MgMapBase.DisplayHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_FiniteDisplayScaleCount">MgMapBase.FiniteDisplayScaleCount</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetName">MgMapBase.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetSessionId">MgMapBase.GetSessionId()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetObjectId">MgMapBase.GetObjectId()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetMapDefinition">MgMapBase.GetMapDefinition()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetMapSRS">MgMapBase.GetMapSRS()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetMapExtent">MgMapBase.GetMapExtent()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetLayers">MgMapBase.GetLayers()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetLayerGroups">MgMapBase.GetLayerGroups()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_Create_OSGeo_MapGuide_MgResourceService_OSGeo_MapGuide_MgResourceIdentifier_System_String_">MgMapBase.Create(MgResourceService, MgResourceIdentifier, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_Open_OSGeo_MapGuide_MgResourceService_System_String_">MgMapBase.Open(MgResourceService, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetViewCenter">MgMapBase.GetViewCenter()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetViewScale">MgMapBase.GetViewScale()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetDataExtent">MgMapBase.GetDataExtent()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetDisplayDpi">MgMapBase.GetDisplayDpi()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_SetDisplayDpi_System_Int32_">MgMapBase.SetDisplayDpi(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetDisplayWidth">MgMapBase.GetDisplayWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetDisplayHeight">MgMapBase.GetDisplayHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetFiniteDisplayScaleCount">MgMapBase.GetFiniteDisplayScaleCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetFiniteDisplayScaleAt_System_Int32_">MgMapBase.GetFiniteDisplayScaleAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgMapBase.html#OSGeo_MapGuide_MgMapBase_GetBackgroundColor">MgMapBase.GetBackgroundColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgResource.html#OSGeo_MapGuide_MgResource_GetResourceId">MgResource.GetResourceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgResource.html#OSGeo_MapGuide_MgResource_Open_OSGeo_MapGuide_MgResourceService_OSGeo_MapGuide_MgResourceIdentifier_">MgResource.Open(MgResourceService, MgResourceIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgResource.html#OSGeo_MapGuide_MgResource_Save_OSGeo_MapGuide_MgResourceService_">MgResource.Save(MgResourceService)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_getCPtr_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.getCPtr(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgNamedSerializable.html#OSGeo_MapGuide_MgNamedSerializable_swigRelease_OSGeo_MapGuide_MgNamedSerializable_">MgNamedSerializable.swigRelease(MgNamedSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_getCPtr_OSGeo_MapGuide_MgSerializable_">MgSerializable.getCPtr(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgSerializable.html#OSGeo_MapGuide_MgSerializable_swigRelease_OSGeo_MapGuide_MgSerializable_">MgSerializable.swigRelease(MgSerializable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_getCPtr_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.getCPtr(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgGuardDisposable.html#OSGeo_MapGuide_MgGuardDisposable_swigRelease_OSGeo_MapGuide_MgGuardDisposable_">MgGuardDisposable.swigRelease(MgGuardDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_getCPtr_OSGeo_MapGuide_MgDisposable_">MgDisposable.getCPtr(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgDisposable.html#OSGeo_MapGuide_MgDisposable_swigRelease_OSGeo_MapGuide_MgDisposable_">MgDisposable.swigRelease(MgDisposable)</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_swigCMemOwn">MgObject.swigCMemOwn</a>
+    </div>
+    <div>
+      <a class="xref" href="OSGeo.MapGuide.MgObject.html#OSGeo_MapGuide_MgObject_Dispose">MgObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMap__ctor_" data-uid="OSGeo.MapGuide.MgMap.#ctor*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap__ctor_OSGeo_MapGuide_MgSiteConnection_" data-uid="OSGeo.MapGuide.MgMap.#ctor(OSGeo.MapGuide.MgSiteConnection)">
+  MgMap(MgSiteConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object that takes an <a class="xref" href="OSGeo.MapGuide.MgSiteConnection.html">MgSiteConnection</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgMap(MgSiteConnection siteConnection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>siteConnection</code> <a class="xref" href="OSGeo.MapGuide.MgSiteConnection.html">MgSiteConnection</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgSiteConnection.html">MgSiteConnection</a> instance the <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object can use to allocate service instances. &amp;lt;!-- Example (PHP) --&amp;gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="OSGeo_MapGuide_MgMap_Create_" data-uid="OSGeo.MapGuide.MgMap.Create*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Create_OSGeo_MapGuide_MgResourceIdentifier_System_String_" data-uid="OSGeo.MapGuide.MgMap.Create(OSGeo.MapGuide.MgResourceIdentifier,System.String)">
+  Create(MgResourceIdentifier, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object given a map definition or tile set
+definition and a name for the map. This method is used for
+MapGuide Viewers or for offline map production.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Create(MgResourceIdentifier resource, string mapName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a> that specifies the location of the map definition in a resource repository.</p>
+</dd>
+    <dt><code>mapName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that specifies the name of the map.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_Create_" data-uid="OSGeo.MapGuide.MgMap.Create*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Create_OSGeo_MapGuide_MgResourceIdentifier_System_String_System_Int32_System_Int32_System_Double_System_Double_System_Double_System_Int32_" data-uid="OSGeo.MapGuide.MgMap.Create(OSGeo.MapGuide.MgResourceIdentifier,System.String,System.Int32,System.Int32,System.Double,System.Double,System.Double,System.Int32)">
+  Create(MgResourceIdentifier, string, int, int, double, double, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="OSGeo.MapGuide.MgMap.html">MgMap</a> object given a map definition or tile set
+definition and a name for the map with initial display parameters set.
+This method is used for MapGuide Viewers or for offline map production.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Create(MgResourceIdentifier resource, string mapName, int displayWidth, int displayheight, double x, double y, double scale, int dpi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a> that specifies the location of the map definition in a resource repository.</p>
+</dd>
+    <dt><code>mapName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that specifies the name of the map.</p>
+</dd>
+    <dt><code>displayWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The display width to initially set for the map</p>
+</dd>
+    <dt><code>displayheight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The view center X coordinate to initially set for the map</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The view center Y coordinate to initially set for the map</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The view scale to initially set for the map</p>
+</dd>
+    <dt><code>dpi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The display DPI to initially set for the map</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_Create_" data-uid="OSGeo.MapGuide.MgMap.Create*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Create_System_String_OSGeo_MapGuide_MgEnvelope_System_String_" data-uid="OSGeo.MapGuide.MgMap.Create(System.String,OSGeo.MapGuide.MgEnvelope,System.String)">
+  Create(string, MgEnvelope, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new Map object given a spatial reference system,
+spatial extent of the map, and a name for the map. This method
+is used for the WMS service implementation and creates a map
+without any layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Create(string mapSRS, MgEnvelope mapExtent, string mapName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapSRS</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string specifying the spatial reference system in OpenGIS WKT format.</p>
+</dd>
+    <dt><code>mapExtent</code> <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a></dt>
+    <dd><p>An <a class="xref" href="OSGeo.MapGuide.MgEnvelope.html">MgEnvelope</a> defining the overall extent of the map.</p>
+</dd>
+    <dt><code>mapName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that specifies the name of the map.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_Dispose_" data-uid="OSGeo.MapGuide.MgMap.Dispose*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Dispose_System_Boolean_" data-uid="OSGeo.MapGuide.MgMap.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_GetTileFormat_" data-uid="OSGeo.MapGuide.MgMap.GetTileFormat*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_GetTileFormat" data-uid="OSGeo.MapGuide.MgMap.GetTileFormat">
+  GetTileFormat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the tile content format for the tile set definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTileFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the tile content format</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_GetTilePixelRatio_" data-uid="OSGeo.MapGuide.MgMap.GetTilePixelRatio*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_GetTilePixelRatio" data-uid="OSGeo.MapGuide.MgMap.GetTilePixelRatio">
+  GetTilePixelRatio()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the tile pixel ratio for retina tiles. This is only
+applicable for XYZ tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTilePixelRatio()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns the tile pixel ratio for retina tiles</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_GetTileSetDefinition_" data-uid="OSGeo.MapGuide.MgMap.GetTileSetDefinition*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_GetTileSetDefinition" data-uid="OSGeo.MapGuide.MgMap.GetTileSetDefinition">
+  GetTileSetDefinition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the resource id of the Tile Set Definition that created
+this map, or the Tile Set Definition linked from the Map Definition
+used to created this map. If it was created from a Map Definition and
+that does not link to a Tile Set Definition, then NULL is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MgResourceIdentifier GetTileSetDefinition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>Returns the resource id of the Tile Set Definition. NULL if created from a Map Definition that does not link
+to a Tile Set</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_GetTileSetProvider_" data-uid="OSGeo.MapGuide.MgMap.GetTileSetProvider*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_GetTileSetProvider" data-uid="OSGeo.MapGuide.MgMap.GetTileSetProvider">
+  GetTileSetProvider()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the provider name of the referenced tile set definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTileSetProvider()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the tile set provider name. Or an empty string if this map does not reference a tile set</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_GetWatermarkUsage_" data-uid="OSGeo.MapGuide.MgMap.GetWatermarkUsage*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_GetWatermarkUsage" data-uid="OSGeo.MapGuide.MgMap.GetWatermarkUsage">
+  GetWatermarkUsage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the watermark usage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWatermarkUsage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_Open_" data-uid="OSGeo.MapGuide.MgMap.Open*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Open_System_String_" data-uid="OSGeo.MapGuide.MgMap.Open(System.String)">
+  Open(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the map object from a session repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open(string mapName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that specifies the name of the map. This</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_Save_" data-uid="OSGeo.MapGuide.MgMap.Save*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Save" data-uid="OSGeo.MapGuide.MgMap.Save">
+  Save()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the Map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="OSGeo_MapGuide_MgMap_Save_" data-uid="OSGeo.MapGuide.MgMap.Save*"></a>
+
+  <h3 id="OSGeo_MapGuide_MgMap_Save_OSGeo_MapGuide_MgResourceService_OSGeo_MapGuide_MgResourceIdentifier_" data-uid="OSGeo.MapGuide.MgMap.Save(OSGeo.MapGuide.MgResourceService,OSGeo.MapGuide.MgResourceIdentifier)">
+  Save(MgResourceService, MgResourceIdentifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the Map using the specified resource service and
+resource identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(MgResourceService resourceService, MgResourceIdentifier resourceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resourceService</code> <a class="xref" href="OSGeo.MapGuide.MgResourceService.html">MgResourceService</a></dt>
+    <dd><p>Resource service to use to save the Map.</p>
+</dd>
+    <dt><code>resourceId</code> <a class="xref" href="OSGeo.MapGuide.MgResourceIdentifier.html">MgResourceIdentifier</a></dt>
+    <dd><p>Resource identifier.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
