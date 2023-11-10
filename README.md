@@ -1,2 +1,3 @@
 # mapguide-docs
-MapGuide API documentation host
+
+This repo hosts the generated MapGuide API documentation 
